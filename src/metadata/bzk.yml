@@ -1,0 +1,27 @@
+# PURL configuration for http://purl.obolibrary.org/obo/bzk
+
+idspace: BZK
+base_url: /obo/bzk
+
+products:
+- bzk.owl: https://raw.githubusercontent.com/ISE-FIZKarlsruhe/bzko/main/bzk.owl
+- bzk.obo: https://raw.githubusercontent.com/ISE-FIZKarlsruhe/bzko/main/bzk.obo
+
+term_browser: ontobee
+example_terms:
+- BZK_0000000
+
+entries:
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/ISE-FIZKarlsruhe/bzko/v
+
+- prefix: /tracker/
+  replacement: https://github.com/ISE-FIZKarlsruhe/bzko/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/BZK?iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/ISE-FIZKarlsruhe/bzko/main/

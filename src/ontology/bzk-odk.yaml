@@ -1,0 +1,53 @@
+id: bzk
+title: "BZK Ontology"
+github_org: ISE-FIZKarlsruhe
+git_main_branch: main
+repo: bzko
+uribase: https://bzk.fiz-karlsruhe.de/ontology
+
+release_artefacts:
+# - base
+  - full
+#  - simple
+#  - minimal
+primary_release: full
+export_formats:
+  - owl
+  - ttl
+remove_owl_nothing: true
+import_group:
+  # definition source, definiton, editor note, example of usage
+  annotation_properties: ['rdfs:label', 'IAO:0000119','IAO:0000115', 'IAO:0000116', 'IAO:0000112', 'skos:definition', 'skos:example', 'skos:comment', 'rdfs:comment' ]
+
+  products:
+    - id: bfo
+      mirror_from: http://purl.obolibrary.org/obo/bfo/2020/notime/bfo.owl
+    - id: ro
+      mirror_from: http://purl.obolibrary.org/obo/ro.owl
+    - id: iao
+#    - id: cob
+#      use_base: true
+#    - id: nfdicore
+#      mirror_from: https://raw.githubusercontent.com/ISE-FIZKarlsruhe/nfdicore/refs/tags/v3.0.4/nfdicore-base.owl
+#    - id: time
+#      mirror_from: https://raw.githubusercontent.com/w3c/sdw/gh-pages/time/rdf/time.ttl
+
+#components:
+#  products:
+#      - filename: imports-edit.owl
+
+#documentation:
+#  documentation_system: mkdocs
+robot_java_args: "-Xmx8G"
+robot_report:
+  use_labels: TRUE
+  fail_on: ERROR
+  custom_profile: TRUE
+  report_on:
+    - edit
+workflows:
+   - None
+#  - qc
+#  - diff
+ci:
+  - github_actions
