@@ -20,21 +20,22 @@ import_group:
   annotation_properties: ['rdfs:label', 'IAO:0000119','IAO:0000115', 'IAO:0000116', 'IAO:0000112', 'skos:definition', 'skos:example', 'skos:comment', 'rdfs:comment' ]
 
   products:
-    - id: bfo
-      mirror_from: http://purl.obolibrary.org/obo/bfo/2020/notime/bfo.owl
-    - id: ro
-      mirror_from: http://purl.obolibrary.org/obo/ro.owl
-    - id: iao
+#    - id: bfo
+#      mirror_from: http://purl.obolibrary.org/obo/bfo/2020/notime/bfo.owl
+#    - id: ro
+#      mirror_from: http://purl.obolibrary.org/obo/ro/core.owl
+#    - id: iao
 #    - id: cob
 #      use_base: true
-#    - id: nfdicore
-#      mirror_from: https://raw.githubusercontent.com/ISE-FIZKarlsruhe/nfdicore/refs/tags/v3.0.4/nfdicore-base.owl
+    - id: nfdicore
+      mirror_from: https://raw.githubusercontent.com/ISE-FIZKarlsruhe/nfdicore/refs/tags/v3.0.4/nfdicore-full.owl
 #    - id: time
 #      mirror_from: https://raw.githubusercontent.com/w3c/sdw/gh-pages/time/rdf/time.ttl
 
-#components:
-#  products:
-#      - filename: imports-edit.owl
+components:
+  products:
+      - filename: imports-edit.owl
+      - filename: main.owl
 
 #documentation:
 #  documentation_system: mkdocs

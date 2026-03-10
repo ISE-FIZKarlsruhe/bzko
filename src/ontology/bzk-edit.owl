@@ -9,15 +9,14 @@ Prefix(dcterms:=<http://purl.org/dc/terms/>)
 
 
 Ontology(<https://bzk.fiz-karlsruhe.de/ontology/>
-Import(<https://bzk.fiz-karlsruhe.de/ontology/bzk/imports/bfo_import.owl>)
-Import(<https://bzk.fiz-karlsruhe.de/ontology/bzk/imports/iao_import.owl>)
-Import(<https://bzk.fiz-karlsruhe.de/ontology/bzk/imports/ro_import.owl>)
+Import(<https://bzk.fiz-karlsruhe.de/ontology/bzk/components/imports-edit.owl>)
+Import(<https://bzk.fiz-karlsruhe.de/ontology/bzk/components/main.owl>)
+Import(<https://bzk.fiz-karlsruhe.de/ontology/bzk/imports/nfdicore_import.owl>)
 Annotation(dcterms:description "None")
 Annotation(dcterms:license <https://creativecommons.org/licenses/unspecified>)
 Annotation(dcterms:title "BZK Ontology")
 
-Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000030>))
-Declaration(Class(<https://bzk.fiz-karlsruhe.de//BZK_0000000>))
+Declaration(Class(:BZK_0000000))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
 Declaration(AnnotationProperty(dcterms:title))
@@ -43,9 +42,10 @@ AnnotationAssertion(rdfs:label dcterms:title "title")
 #   Classes
 ############################
 
-# Class: <https://bzk.fiz-karlsruhe.de//BZK_0000000> (root node)
+# Class: :BZK_0000000 (bzk applicant role)
 
-AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de//BZK_0000000> "root node"@en)
+AnnotationAssertion(rdfs:label :BZK_0000000 "bzk applicant role"@en)
+SubClassOf(:BZK_0000000 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000229>)
 
 
 )
