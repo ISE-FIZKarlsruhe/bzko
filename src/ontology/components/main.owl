@@ -1,15 +1,296 @@
 <?xml version="1.0"?>
-<rdf:RDF 
-     xml:base="https://bzk.fiz-karlsruhe.de/ontology/"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+<rdf:RDF xmlns="https://bzk.fiz-karlsruhe.de/ontology/bzk/components/main.owl#"
+     xml:base="https://bzk.fiz-karlsruhe.de/ontology/bzk/components/main.owl"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:obo="http://purl.obolibrary.org/obo/">
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="https://bzk.fiz-karlsruhe.de/ontology/bzk/components/main.owl"/>
+    
 
-    <!-- This is a placeholder, it will be regenerated when makefile is first executed -->
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMO_0002000 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OMO_0002000"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000081 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000081"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000023 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000023"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000029 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000029"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000030"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0020000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0020000"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0020015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0020015"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0020017 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0020017"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000245 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000245"/>
+    
+
+
+    <!-- https://bzk.fiz-karlsruhe.de/ontology/BZK_0000000 -->
+
+    <owl:Class rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0000000">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000229"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000081"/>
+                        <owl:someValuesFrom rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">bzk victim role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://bzk.fiz-karlsruhe.de/ontology/BZK_0000001 -->
+
+    <owl:Class rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0000001">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000229"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000081"/>
+                        <owl:someValuesFrom rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="de">bzk applicant role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://bzk.fiz-karlsruhe.de/ontology/BZK_0000002 -->
+
+    <owl:Class rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0000002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
+        <rdfs:label xml:lang="de">bzk card</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://bzk.fiz-karlsruhe.de/ontology/BZK_0000003 -->
+
+    <owl:Class rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0000003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0020000"/>
+        <rdfs:label xml:lang="de">bzk number</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://bzk.fiz-karlsruhe.de/ontology/BZK_0000004 -->
+
+    <owl:Class rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0000004">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000023"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000081"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="de">compensation office role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://bzk.fiz-karlsruhe.de/ontology/BZK_0000005 -->
+
+    <owl:Class rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0000005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0020015"/>
+        <rdfs:label xml:lang="de">alt first name</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://bzk.fiz-karlsruhe.de/ontology/BZK_0000006 -->
+
+    <owl:Class rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0000006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0020017"/>
+        <rdfs:label xml:lang="de">birth name</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://bzk.fiz-karlsruhe.de/ontology/BZK_0000007 -->
+
+    <owl:Class rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0000007">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0020017"/>
+        <rdfs:label xml:lang="de">alt last name</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://bzk.fiz-karlsruhe.de/ontology/BZK_0000008 -->
+
+    <owl:Class rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0000008">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000023"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000081"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000029"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:OMO_0002000>PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt;
+PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;
+PREFIX person: &lt;https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004&gt; 
+PREFIX has_participant: &lt;http://purl.obolibrary.org/obo/RO_0000057&gt;
+PREFIX environs: &lt;http://purl.obolibrary.org/obo/BFO_0000183&gt; 
+PREFIX has_role: &lt;http://purl.obolibrary.org/obo/RO_0000087&gt;
+PREFIX death_place_role: &lt;https://bzk.fiz-karlsruhe.de/ontology/BZK_0000008&gt;
+PREFIX has_value: &lt;https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001007&gt; 
+
+CONSTRUCT {  ?p &lt;https://schema.org/deathPlace&gt;  ?label }
+ WHERE { 
+?p a  person: .
+?proc has_participant: ?p. 
+?loc environs: ?proc .
+?loc has_role: ?role .
+?role a  death_place_role: .
+?loc has_value: ?label .
+}</obo:OMO_0002000>
+        <rdfs:label xml:lang="de">death place role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://bzk.fiz-karlsruhe.de/ontology/BZK_0000009 -->
+
+    <owl:Class rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0000009">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000023"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000081"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000029"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:OMO_0002000>PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt;
+PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;
+PREFIX person: &lt;https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004&gt; 
+PREFIX has_participant: &lt;http://purl.obolibrary.org/obo/RO_0000057&gt;
+PREFIX environs: &lt;http://purl.obolibrary.org/obo/BFO_0000183&gt; 
+PREFIX has_role: &lt;http://purl.obolibrary.org/obo/RO_0000087&gt;
+PREFIX birth_place_role: &lt;https://bzk.fiz-karlsruhe.de/ontology/BZK_0000009&gt;
+PREFIX has_value: &lt;https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001007&gt; 
+
+CONSTRUCT {  ?p &lt;https://schema.org/birthPlace&gt;  ?label }
+ WHERE { 
+?p a  person: .
+?proc has_participant: ?p. 
+?loc environs: ?proc .
+?loc has_role: ?role .
+?role a  birth_place_role: .
+?loc has_value: ?label .
+}</obo:OMO_0002000>
+        <rdfs:label xml:lang="de">birth place role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004 -->
+
+    <owl:Class rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004"/>
+    
+
+
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000229 -->
+
+    <owl:Class rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000229"/>
 </rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
 
