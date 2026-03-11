@@ -28,3 +28,5 @@ http://purl.obolibrary.org/obo/RO_0000059 # concretizes
 http://purl.obolibrary.org/obo/BFO_0000055 # realizes
 
 https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001007 #  has_value
+
+http://purl.obolibrary.org/obo/OMO_0002000 # defined by construct
