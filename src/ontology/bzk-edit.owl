@@ -17,6 +17,16 @@ Annotation(dcterms:license <https://creativecommons.org/licenses/unspecified>)
 Annotation(dcterms:title "BZK Ontology")
 
 Declaration(Class(:BZK_0000000))
+Declaration(Class(:BZK_0000001))
+Declaration(Class(:BZK_0000002))
+Declaration(Class(:BZK_0000003))
+Declaration(Class(:BZK_0000004))
+Declaration(Class(:BZK_0000005))
+Declaration(Class(:BZK_0000006))
+Declaration(Class(:BZK_0000007))
+Declaration(Class(:BZK_0000008))
+Declaration(Class(:BZK_0000009))
+Declaration(DataProperty(<http://www.w3.org/2006/time#inXSDDate>))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
 Declaration(AnnotationProperty(dcterms:title))
@@ -38,14 +48,61 @@ AnnotationAssertion(rdfs:label dcterms:title "title")
 
 
 
+
+
 ############################
 #   Classes
 ############################
 
-# Class: :BZK_0000000 (bzk applicant role)
+# Class: :BZK_0000000 (bzk victim role)
 
-AnnotationAssertion(rdfs:label :BZK_0000000 "bzk applicant role"@en)
-SubClassOf(:BZK_0000000 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000229>)
+AnnotationAssertion(rdfs:label :BZK_0000000 "bzk victim role"@en)
+SubClassOf(:BZK_0000000 ObjectIntersectionOf(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000229> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000081> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004>)))
+
+# Class: :BZK_0000001 (bzk applicant role)
+
+AnnotationAssertion(rdfs:label :BZK_0000001 "bzk applicant role"@de)
+SubClassOf(:BZK_0000001 ObjectIntersectionOf(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000229> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000081> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004>)))
+
+# Class: :BZK_0000002 (bzk card)
+
+AnnotationAssertion(rdfs:label :BZK_0000002 "bzk card"@de)
+SubClassOf(:BZK_0000002 <http://purl.obolibrary.org/obo/BFO_0000030>)
+
+# Class: :BZK_0000003 (bzk number)
+
+AnnotationAssertion(rdfs:label :BZK_0000003 "bzk number"@de)
+SubClassOf(:BZK_0000003 <http://purl.obolibrary.org/obo/IAO_0020000>)
+
+# Class: :BZK_0000004 (compensation office role)
+
+AnnotationAssertion(rdfs:label :BZK_0000004 "compensation office role"@de)
+SubClassOf(:BZK_0000004 ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000023> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000081> <http://purl.obolibrary.org/obo/OBI_0000245>)))
+
+# Class: :BZK_0000005 (alt first name)
+
+AnnotationAssertion(rdfs:label :BZK_0000005 "alt first name"@de)
+SubClassOf(:BZK_0000005 <http://purl.obolibrary.org/obo/IAO_0020015>)
+
+# Class: :BZK_0000006 (birth name)
+
+AnnotationAssertion(rdfs:label :BZK_0000006 "birth name"@de)
+SubClassOf(:BZK_0000006 <http://purl.obolibrary.org/obo/IAO_0020017>)
+
+# Class: :BZK_0000007 (alt last name)
+
+AnnotationAssertion(rdfs:label :BZK_0000007 "alt last name"@de)
+SubClassOf(:BZK_0000007 <http://purl.obolibrary.org/obo/IAO_0020017>)
+
+# Class: :BZK_0000008 (death place role)
+
+AnnotationAssertion(rdfs:label :BZK_0000008 "death place role"@de)
+SubClassOf(:BZK_0000008 ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000023> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000081> <http://purl.obolibrary.org/obo/BFO_0000029>)))
+
+# Class: :BZK_0000009 (birth place role)
+
+AnnotationAssertion(rdfs:label :BZK_0000009 "birth place role"@de)
+SubClassOf(:BZK_0000009 ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000023> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000081> <http://purl.obolibrary.org/obo/BFO_0000029>)))
 
 
 )
