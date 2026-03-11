@@ -82,10 +82,6 @@ prefix = """
 @prefix death_place_role: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000008> .
 @prefix birth_place_role: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000009> .
 
-[ a owl:Ontology ;
-   owl:imports <https://nfdi.fiz-karlsruhe.de/ontology/3.0.4>
- ] .
-
 """
 
 print (prefix)
@@ -151,7 +147,8 @@ birth_date_tmplt="""
 birth_place_tmplt="""
 <BIRTH_place> environs: <BIRTH> .
 <BIRTH_place> a site: .
-<BIRTH_place> has_role: birth_place_role: .
+<BIRTH_place> has_role: <BIRTH_place_role> .
+<BIRTH_place_role> a birth_place_role: .
 <BIRTH_place> has_value: "PLACELABEL" .
 """
 
@@ -175,7 +172,8 @@ death_date_tmplt="""
 death_place_tmplt="""
 <DEATH_place> environs: <DEATH> .
 <DEATH_place> a site: .
-<DEATH_place> has_role: death_place_role: .
+<DEATH_place> has_role: <DEATH_place_role> .
+<DEATH_place_role> a death_place_role: .
 <DEATH_place> has_value: "PLACELABEL" .
 """
 
@@ -329,12 +327,12 @@ with open('test.csv', newline='') as csvfile:
 			deathIRI=victimIRI+"_death"
 			deathRDF=death_tmplt.replace("DEATH", deathIRI).replace("PERSON", victimIRI)
 
-			victimDeathDate=row[16]
+			victimDeathDate=row[18]
 			if victimDeathDate:
 				deathDateRDF=death_date_tmplt.replace("DEATH", deathIRI).replace("TIME", victimDeathDate)
 				print (deathDateRDF)
 
-			victimDeathPlace=row[17]
+			victimDeathPlace=row[19]
 			if victimDeathPlace:
 				deathPlaceRDF=death_place_tmplt.replace("DEATH", deathIRI).replace("PLACELABEL", victimDeathPlace)
 				print (deathPlaceRDF)
