@@ -16,6 +16,7 @@ Annotation(dcterms:description "None")
 Annotation(dcterms:license <https://creativecommons.org/licenses/unspecified>)
 Annotation(dcterms:title "BZK Ontology")
 
+Declaration(Class(:BZK_0010000))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
 Declaration(AnnotationProperty(dcterms:title))
@@ -35,6 +36,15 @@ AnnotationAssertion(rdfs:label dcterms:license "license")
 
 AnnotationAssertion(rdfs:label dcterms:title "title")
 
+
+
+############################
+#   Classes
+############################
+
+# Class: :BZK_0010000 (test)
+
+AnnotationAssertion(rdfs:label :BZK_0010000 "test"@en)
 
 
 )
