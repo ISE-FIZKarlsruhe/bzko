@@ -44,6 +44,7 @@ AnnotationAssertion(rdfs:label dcterms:title "title")
 
 # Class: :BZK_0010000 (test)
 
+AnnotationAssertion(rdfs:comment :BZK_0010000 "hello test")
 AnnotationAssertion(rdfs:label :BZK_0010000 "test"@en)
 
 
