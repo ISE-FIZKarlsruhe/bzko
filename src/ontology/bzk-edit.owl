@@ -16,7 +16,6 @@ Annotation(dcterms:description "None")
 Annotation(dcterms:license <https://creativecommons.org/licenses/unspecified>)
 Annotation(dcterms:title "BZK Ontology")
 
-Declaration(Class(:BZK_0010000))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
 Declaration(AnnotationProperty(dcterms:title))
@@ -38,14 +37,5 @@ AnnotationAssertion(rdfs:label dcterms:title "title")
 
 
 
-############################
-#   Classes
-############################
-
-# Class: :BZK_0010000 (test)
-
-AnnotationAssertion(rdfs:comment :BZK_0010000 "hello test")
-AnnotationAssertion(rdfs:label :BZK_0010000 "test"@en)
-
-
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :BZK_0010000 "A process in which a person applies to a compensation office for themselves or on behalf of persecuted people.")
 )

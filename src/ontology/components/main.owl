@@ -40,9 +40,86 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/RO_0000057 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000057"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RO_0000081 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000081"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000087 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000087"/>
+    
+
+
+    <!-- https://bzk.fiz-karlsruhe.de/ontology/BZK_0010013 -->
+
+    <owl:ObjectProperty rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010013">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010009"/>
+                    <rdf:Description rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010010"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010012"/>
+        <rdfs:label xml:lang="en">applies for compensation to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://bzk.fiz-karlsruhe.de/ontology/BZK_0010014 -->
+
+    <owl:ObjectProperty rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010014">
+        <rdfs:domain rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010010"/>
+        <rdfs:range rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010009"/>
+        <rdfs:label xml:lang="en">is applied for compensation by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://bzk.fiz-karlsruhe.de/ontology/BZK_0010015 -->
+
+    <owl:ObjectProperty rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010015">
+        <rdfs:domain rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0000002"/>
+        <rdfs:range rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004"/>
+        <rdfs:label xml:lang="en">has layout type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://bzk.fiz-karlsruhe.de/ontology/BZK_0010016 -->
+
+    <owl:ObjectProperty rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010016">
+        <rdfs:domain rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010009"/>
+        <rdfs:range rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010010"/>
+        <rdfs:label xml:lang="en">applies for compensation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.ica.org/standards/RiC/ontology#hasOrHadDigitalInstantiation -->
+
+    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#hasOrHadDigitalInstantiation">
+        <rdfs:domain rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0000002"/>
+        <rdfs:range rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010011"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.ica.org/standards/RiC/ontology#hasOrHadIdentifier -->
+
+    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#hasOrHadIdentifier">
+        <rdfs:domain rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0000002"/>
+        <rdfs:range rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0000003"/>
+    </owl:ObjectProperty>
     
 
 
@@ -54,6 +131,12 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
     
 
 
@@ -75,6 +158,28 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000031"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000303 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000303">
+        <rdfs:comment xml:lang="en">TODO: move to skos:definition
+
+A textual entity intended to identify a particular compensation office</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000422 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000422"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0020000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0020000"/>
@@ -83,7 +188,16 @@
 
     <!-- http://purl.obolibrary.org/obo/IAO_0020015 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0020015"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0020015">
+        <rdfs:comment xml:lang="en">In our ontology, a personal name is the full name of a person, consisting of a given name and familiy name, and sometimes also birth name.</rdfs:comment>
+        <rdfs:comment>equivalane to pnv:literal name</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0020016 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0020016"/>
     
 
 
@@ -99,49 +213,14 @@
     
 
 
-    <!-- https://bzk.fiz-karlsruhe.de/ontology/BZK_0000000 -->
-
-    <owl:Class rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0000000">
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000229"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000081"/>
-                        <owl:someValuesFrom rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">bzk victim role</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://bzk.fiz-karlsruhe.de/ontology/BZK_0000001 -->
-
-    <owl:Class rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0000001">
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000229"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000081"/>
-                        <owl:someValuesFrom rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="de">bzk applicant role</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- https://bzk.fiz-karlsruhe.de/ontology/BZK_0000002 -->
 
     <owl:Class rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0000002">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
-        <rdfs:label xml:lang="de">bzk card</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#Record"/>
+        <rdfs:comment>TODO: move to skos:defintion
+
+A BZK Index Card, or simply a BZK Card, is a document used to initiate the compensation process.</rdfs:comment>
+        <rdfs:label xml:lang="en">bzk card</rdfs:label>
     </owl:Class>
     
 
@@ -150,35 +229,11 @@
 
     <owl:Class rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0000003">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0020000"/>
-        <rdfs:label xml:lang="de">bzk number</rdfs:label>
-    </owl:Class>
-    
+        <rdfs:comment xml:lang="en">A BZK number is not unique, viz., the same number can occur on different BZK Cards issued by different compensation offices.</rdfs:comment>
+        <rdfs:comment xml:lang="en">TODO: move to skos:definition 
 
-
-    <!-- https://bzk.fiz-karlsruhe.de/ontology/BZK_0000004 -->
-
-    <owl:Class rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0000004">
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000023"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000081"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="de">compensation office role</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://bzk.fiz-karlsruhe.de/ontology/BZK_0000005 -->
-
-    <owl:Class rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0000005">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0020015"/>
-        <rdfs:label xml:lang="de">alt first name</rdfs:label>
+A BZK number is an identifier of a BZK Card.</rdfs:comment>
+        <rdfs:label xml:lang="en">bzk number</rdfs:label>
     </owl:Class>
     
 
@@ -187,6 +242,9 @@
 
     <owl:Class rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0000006">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0020017"/>
+        <rdfs:comment xml:lang="en">TODO: move to skos:definition
+
+A birth name is a family name that a woman had before marriage.</rdfs:comment>
         <rdfs:label xml:lang="en">birth name</rdfs:label>
     </owl:Class>
     
@@ -196,7 +254,8 @@
 
     <owl:Class rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0000007">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0020017"/>
-        <rdfs:label xml:lang="de">alt last name</rdfs:label>
+        <rdfs:comment>In BZKO, an alternative last name can happen in two ways: the family name was changed to a German or Latin form, or the person changed their family name.</rdfs:comment>
+        <rdfs:label xml:lang="en">alternative last name</rdfs:label>
     </owl:Class>
     
 
@@ -235,7 +294,7 @@ CONSTRUCT {  ?p &lt;https://schema.org/deathPlace&gt;  ?label }
 ?role a  death_place_role: .
 ?loc has_value: ?label .
 }</obo:OMO_0002000>
-        <rdfs:label xml:lang="de">death place role</rdfs:label>
+        <rdfs:label xml:lang="en">death place role</rdfs:label>
     </owl:Class>
     
 
@@ -274,7 +333,211 @@ CONSTRUCT {  ?p &lt;https://schema.org/birthPlace&gt;  ?label }
 ?role a  birth_place_role: .
 ?loc has_value: ?label .
 }</obo:OMO_0002000>
-        <rdfs:label xml:lang="de">birth place role</rdfs:label>
+        <rdfs:label xml:lang="en">birth place role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://bzk.fiz-karlsruhe.de/ontology/BZK_0010000 -->
+
+    <owl:Class rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                <owl:someValuesFrom rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0000002"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                <owl:someValuesFrom rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010012"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010009"/>
+                            <rdf:Description rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010010"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">TODO: move to skos:definition
+
+A BZK process is a process in which a person applies to a compensation office for themselves or on behalf of persecuted people.</rdfs:comment>
+        <rdfs:comment>At the end of a BZK process, a BZK Index card is created by a compensation office for a persecuted person.</rdfs:comment>
+        <rdfs:label xml:lang="en">bzk process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://bzk.fiz-karlsruhe.de/ontology/BZK_0010001 -->
+
+    <owl:Class rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010001">
+        <rdfs:subClassOf rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000229"/>
+        <rdfs:comment xml:lang="en">TODO move to skos:definition
+
+A BZK compensation office role is inherited by governmental offices, which is realised when a BZK applicant applies for compensation for at least one persecuted person and the office claims a BZK card.</rdfs:comment>
+        <rdfs:label xml:lang="en">compensation office role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://bzk.fiz-karlsruhe.de/ontology/BZK_0010002 -->
+
+    <owl:Class rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010002">
+        <rdfs:subClassOf rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000229"/>
+        <rdfs:comment>TODO: move to skos:defintion
+
+A person who has a persecutee role is oppressed, harassed, or maltreated because of their gender, race, religion, or beliefs.</rdfs:comment>
+        <rdfs:label xml:lang="en">persecutee role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://bzk.fiz-karlsruhe.de/ontology/BZK_0010003 -->
+
+    <owl:Class rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
+        <rdfs:comment xml:lang="en">TODO: move skos:definition
+A person who has an applicant role applies to an organisation for themselves or for another person.</rdfs:comment>
+        <rdfs:label xml:lang="en">applicant role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004 -->
+
+    <owl:Class rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+        <rdfs:comment>TODO: move to skos:defintion
+
+A BZK card layout refers to the pattern in which the components of a BZK card are arranged or grouped.</rdfs:comment>
+        <rdfs:label xml:lang="en">bzk card layout</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://bzk.fiz-karlsruhe.de/ontology/BZK_0010005 -->
+
+    <owl:Class rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000303"/>
+        <rdfs:label xml:lang="en">compensation office name</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://bzk.fiz-karlsruhe.de/ontology/BZK_0010006 -->
+
+    <owl:Class rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000422"/>
+        <rdfs:comment xml:lang="en">TODO: move to skos: definition
+
+In this context, a BZK current address is the postal address of a BZK applicant or persecutee at the time of their compensation application.</rdfs:comment>
+        <rdfs:label xml:lang="en">bzk current address</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://bzk.fiz-karlsruhe.de/ontology/BZK_0010007 -->
+
+    <owl:Class rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010007">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0020016"/>
+        <rdfs:comment xml:lang="en">In BZKO, an alternative first name can happen in two ways: the name was changed to a German or Latin form, or the person changed their first name.</rdfs:comment>
+        <rdfs:label xml:lang="en">alternative first name</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://bzk.fiz-karlsruhe.de/ontology/BZK_0010008 -->
+
+    <owl:Class rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010008">
+        <rdfs:subClassOf rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0000006"/>
+        <rdfs:comment xml:lang="en">In BZKO, an alternative birth name is a German or Latin form of the family name in the original language.</rdfs:comment>
+        <rdfs:label xml:lang="en">alternative birth name</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://bzk.fiz-karlsruhe.de/ontology/BZK_0010009 -->
+
+    <owl:Class rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010009">
+        <rdfs:subClassOf rdf:resource="https://personsincontext.org/model#PersonObservation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010003"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010013"/>
+                <owl:someValuesFrom rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010012"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A BZK applicant can be a persecutee at the same time.</rdfs:comment>
+        <rdfs:comment xml:lang="en">TODO: move to skos:definition
+
+A BZK applicant is a person who was recorded as an applicant on a BZK card and applies for compensation for a persecuted person.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The name of a BZK applicant can occur on diffent cards.</rdfs:comment>
+        <rdfs:label xml:lang="en">bzk applicant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://bzk.fiz-karlsruhe.de/ontology/BZK_0010010 -->
+
+    <owl:Class rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010010">
+        <rdfs:subClassOf rdf:resource="https://personsincontext.org/model#PersonObservation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010002"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010014"/>
+                <owl:someValuesFrom rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010009"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">TODO: move to skos:definition
+
+A BZK persecutee is a person who was recorded as a persecutee on a BZK card.</rdfs:comment>
+        <rdfs:label xml:lang="en">bzk persecutee</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://bzk.fiz-karlsruhe.de/ontology/BZK_0010011 -->
+
+    <owl:Class rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010011">
+        <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#Instantiation"/>
+        <rdfs:comment xml:lang="en">TODO: move to description
+
+A digitised BZK Card refers to a scanned version of the corresponding physical BZK card.</rdfs:comment>
+        <rdfs:label xml:lang="en">digitised bzk card</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://bzk.fiz-karlsruhe.de/ontology/BZK_0010012 -->
+
+    <owl:Class rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010012">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A compensation office is a government agency that reviews claims and provides compensation to persecuted people.</rdfs:comment>
+        <rdfs:label xml:lang="en">compensation office</rdfs:label>
     </owl:Class>
     
 
@@ -285,9 +548,50 @@ CONSTRUCT {  ?p &lt;https://schema.org/birthPlace&gt;  ?label }
     
 
 
+    <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000022 -->
+
+    <owl:Class rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000022"/>
+    
+
+
     <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000229 -->
 
     <owl:Class rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000229"/>
+    
+
+
+    <!-- https://personsincontext.org/model#PersonObservation -->
+
+    <owl:Class rdf:about="https://personsincontext.org/model#PersonObservation">
+        <rdfs:subClassOf rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004"/>
+    </owl:Class>
+    
+
+
+    <!-- https://www.ica.org/standards/RiC/ontology#Instantiation -->
+
+    <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#Instantiation">
+        <rdfs:subClassOf rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000022"/>
+        <rdfs:comment xml:lang="en">In RiCo, both rico:Instantiation and rico:RecordSource can include both physical or digital archival element. In our modelling, all the physical cards are instances of rico:Record, and their scans are of rico:Instantiation.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://www.ica.org/standards/RiC/ontology#Record -->
+
+    <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#Record">
+        <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordResource"/>
+        <rdfs:comment>In RiCo, both rico:Instantiation and rico:RecordSource can include both physical or digital archival elements. In our modelling, all the physical cards are instances of rico:Record (and rico:RecordResource), and their scans are instances of rico:Instantiation.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://www.ica.org/standards/RiC/ontology#RecordResource -->
+
+    <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#RecordResource">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
+        <rdfs:comment>In RiCo, both rico:Instantiation and rico:RecordSource can include both physical or digital archival elements. In our modelling, all the physical cards are instances of rico:Record (and rico:RecordResource), and their scans are instances of rico:Instantiation.</rdfs:comment>
+    </owl:Class>
 </rdf:RDF>
 
 
