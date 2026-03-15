@@ -37,5 +37,4 @@ AnnotationAssertion(rdfs:label dcterms:title "title")
 
 
 
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :BZK_0010000 "A process in which a person applies to a compensation office for themselves or on behalf of persecuted people.")
 )

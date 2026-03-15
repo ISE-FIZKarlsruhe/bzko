@@ -50,9 +50,14 @@ Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0020016>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0020017>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000245>))
 Declaration(Class(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004>))
+Declaration(Class(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000005>))
+Declaration(Class(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000022>))
 Declaration(Class(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000100>))
 Declaration(Class(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000102>))
+Declaration(Class(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000106>))
+Declaration(Class(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000119>))
 Declaration(Class(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000131>))
+Declaration(Class(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000134>))
 Declaration(Class(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000203>))
 Declaration(Class(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000224>))
 Declaration(Class(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000229>))
@@ -842,7 +847,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/IAO_0020015> <http://purl.obolibrary.
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0020016> "A personal name that specifies and differentiates between members of a group of individuals, especially in a family, all of whose members usually share the same family name (surname). A given name is purposefully given, usually by a child's parents at or near birth, in contrast to an inherited one such as a family name"@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/IAO_0020016> "http://en.wikipedia.org/wiki/Given_name")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0020016> "given name"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/IAO_0020016> <http://purl.obolibrary.org/obo/IAO_0020015>)
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0020016> <http://purl.obolibrary.org/obo/IAO_0020000>)
 
 # Class: <http://purl.obolibrary.org/obo/IAO_0020017> (family name)
 
@@ -894,6 +899,38 @@ AnnotationAssertion(rdfs:label <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004> "Harald Sack, Tabea Tietz, Sasha Bruns, Etienne Posthumus")
 SubClassOf(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000102>)
 SubClassOf(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000030> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000087> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000229>)))
+
+# Class: <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000005> (place)
+
+AnnotationAssertion(rdfs:comment <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000005> "A site that refers to geographical locations, such as cities, countries, landmarks, and natural environments."@en)
+AnnotationAssertion(rdfs:label <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000005> "place"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000005> "Hessen, Berlin, Schweiz")
+SubClassOf(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000005> <http://purl.obolibrary.org/obo/BFO_0000029>)
+
+# Class: <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000106> (city)
+
+AnnotationAssertion(rdfs:comment <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000106> "A place that refers to a densely populated urban area."@en)
+AnnotationAssertion(rdfs:label <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000106> "city"@en)
+SubClassOf(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000106> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000005>)
+
+#Class: <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000119> (country)
+
+AnnotationAssertion(rdfs:comment <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000119> "A place that refers to a defined geographical area distinguished by its territorial boundaries, governance structure, and sovereignty."@en)
+AnnotationAssertion(rdfs:label <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000119> "country"@en)
+SubClassOf(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000119> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000005>)
+
+#Class: <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000134> (federal state)
+
+AnnotationAssertion(rdfs:comment <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000134> "A place that refers to a geographical territory forming part of a country."@en)
+AnnotationAssertion(rdfs:label <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000134> "federal state"@en)
+SubClassOf(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000134> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000005>)
+
+# Class: <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000022> (document)
+
+AnnotationAssertion(rdfs:comment <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000022> "A collection of information content entities intended to be understood together as a whole."@en)
+AnnotationAssertion(rdfs:label <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000022> "document"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000022> "A journal article, patent application, laboratory notebook, or a book"@en)
+SubClassOf(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000022> <http://purl.obolibrary.org/obo/IAO_0000030>)
 
 # Class: <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000100> (academic discipline)
 
@@ -1366,8 +1403,8 @@ ClassAssertion(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000100> <https://nf
 DisjointClasses(<http://purl.obolibrary.org/obo/BFO_0000004> <http://purl.obolibrary.org/obo/BFO_0000020> <http://purl.obolibrary.org/obo/BFO_0000031>)
 DisjointClasses(<http://purl.obolibrary.org/obo/BFO_0000006> <http://purl.obolibrary.org/obo/BFO_0000029> <http://purl.obolibrary.org/obo/BFO_0000140>)
 DisjointClasses(<http://purl.obolibrary.org/obo/BFO_0000008> <http://purl.obolibrary.org/obo/BFO_0000011> <http://purl.obolibrary.org/obo/BFO_0000015> <http://purl.obolibrary.org/obo/BFO_0000035>)
-DLSafeRule(Body(ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0000053> Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>)) ClassAtom(<http://purl.obolibrary.org/obo/BFO_0000016> Variable(<urn:swrl:var#d>)))Head(ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0000091> Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>))))
-DLSafeRule(Body(ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0000053> Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>)) ClassAtom(<http://purl.obolibrary.org/obo/BFO_0000019> Variable(<urn:swrl:var#d>)))Head(ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0000086> Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>))))
-DLSafeRule(Body(ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0000053> Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>)) ClassAtom(<http://purl.obolibrary.org/obo/BFO_0000023> Variable(<urn:swrl:var#d>)))Head(ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0000087> Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>))))
-DLSafeRule(Body(ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0000053> Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>)) ClassAtom(<http://purl.obolibrary.org/obo/BFO_0000034> Variable(<urn:swrl:var#d>)))Head(ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0000085> Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>))))
+DLSafeRule(Body(ClassAtom(<http://purl.obolibrary.org/obo/BFO_0000016> Variable(<urn:swrl:var#d>)) ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0000053> Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>)))Head(ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0000091> Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>))))
+DLSafeRule(Body(ClassAtom(<http://purl.obolibrary.org/obo/BFO_0000019> Variable(<urn:swrl:var#d>)) ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0000053> Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>)))Head(ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0000086> Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>))))
+DLSafeRule(Body(ClassAtom(<http://purl.obolibrary.org/obo/BFO_0000023> Variable(<urn:swrl:var#d>)) ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0000053> Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>)))Head(ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0000087> Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>))))
+DLSafeRule(Body(ClassAtom(<http://purl.obolibrary.org/obo/BFO_0000034> Variable(<urn:swrl:var#d>)) ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0000053> Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>)))Head(ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0000085> Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>))))
 )
