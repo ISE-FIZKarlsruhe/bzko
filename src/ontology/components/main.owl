@@ -238,6 +238,9 @@
     <owl:DatatypeProperty rdf:about="https://schema.org/birthDate">
         <rdfs:domain rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment xml:lang="en">the range can be: http://www.w3.org/2001/XMLSchema#dateTime 
+
+But a birth date can be &quot;unknown&quot;.</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -255,7 +258,9 @@
 
     <owl:DatatypeProperty rdf:about="https://schema.org/deathDate">
         <rdfs:domain rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment xml:lang="en">The range can be: http://www.w3.org/2001/XMLSchema#dateTime 
+
+But a death date can be &quot;unknown&quot;.</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -265,6 +270,7 @@
     <owl:DatatypeProperty rdf:about="https://schema.org/deathPlace">
         <rdfs:domain rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment>A death place can be &quot;unknown&quot;.</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -467,10 +473,10 @@ equivalent to pnv:literal name</rdfs:comment>
 
     <owl:Class rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0000003">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0020000"/>
-        <rdfs:comment xml:lang="en">A BZK number is not unique, viz., the same number can occur on different BZK Cards issued by different compensation offices.</rdfs:comment>
         <rdfs:comment>A BZK number can be modelled as a part of a digitised BZK card. However, in some layout types, the BZK number appears in one of the textual parts instead of at the top-right of the card.</rdfs:comment>
+        <rdfs:comment xml:lang="en">A BZK number is not unique, viz., the same number can occur on different BZK Cards issued by different compensation offices.</rdfs:comment>
         <rdfs:label xml:lang="en">bzk number</rdfs:label>
-        <skos:definition xml:lang="en">A BZK number is an identifier of a BZK Card.</skos:definition>
+        <skos:definition xml:lang="en">A BZK number is an identifier for a BZK Card, which is a Federal Central Register number used for compensation claims.</skos:definition>
     </owl:Class>
     
 
@@ -959,6 +965,8 @@ CONSTRUCT {  ?p &lt;https://schema.org/birthPlace&gt;  ?label }
                 <owl:someValuesFrom rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0000009"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">In the future, &quot;death place&quot; will also be connected to &quot;deportation process&quot; along with &quot;death process&quot;.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Places should be matched to their GeoNames IDs.</rdfs:comment>
     </owl:Class>
     
 
@@ -1015,6 +1023,7 @@ CONSTRUCT {  ?p &lt;https://schema.org/birthPlace&gt;  ?label }
                 <owl:someValuesFrom rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010008"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">equivalent to EAD(DDB)-WGM:Person</rdfs:comment>
     </owl:Class>
     
 
