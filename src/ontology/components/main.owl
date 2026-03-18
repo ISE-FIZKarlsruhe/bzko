@@ -24,6 +24,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OMO_0002000 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OMO_0002000"/>
@@ -105,6 +111,20 @@
     
 
 
+    <!-- http://www.w3.org/ns/prov#hadPrimarySource -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#hadPrimarySource">
+        <rdfs:range rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0000002"/>
+        <obo:IAO_0000116 xml:lang="en">In the PROV-O documentation, it is understood that something that had a primary source is a derivation. That is also why the superrelation of &quot;had primary source&quot; is &quot;was derived from&quot;. 
+For instance, a chart had a primary source from a database, or a quotation was derived from a text.
+
+In the PiCo documentation, it is used to relate &quot;Person Observation&quot; to &quot;Source&quot;, where &quot;Source&quot; refers to the historical record or document where &quot;Person Observation&quot;s are found. Indeed, in PiCo, a source is any resource where a person is mentioned, including archival records, books, or personal documents, not just traditional archives. 
+
+However, it is not a person observation but the name or address of a person observation recorded in a source. Similarly, a BZK number is on a BZK Index Card. Thereby, the domain of the prov:hadPrimarySource is the classes that are about Person Observation.</obo:IAO_0000116>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://bzk.fiz-karlsruhe.de/ontology/BZK_0010013 -->
 
     <owl:ObjectProperty rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010013">
@@ -169,6 +189,14 @@
         <rdfs:domain rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010012"/>
         <rdfs:range rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0000002"/>
         <rdfs:label xml:lang="en">issues</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/holdingArchive -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/holdingArchive">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
     </owl:ObjectProperty>
     
 
@@ -370,7 +398,20 @@ But a death date can be &quot;unknown&quot;.</rdfs:comment>
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000422 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000422"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000422">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000005"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="https://personsincontext.org/model#PersonObservation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
     
 
 
@@ -383,6 +424,12 @@ But a death date can be &quot;unknown&quot;.</rdfs:comment>
     <!-- http://purl.obolibrary.org/obo/IAO_0020015 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0020015">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">A given (first) and family (last) names are parts of a personal name.</rdfs:comment>
         <rdfs:comment xml:lang="en">In our ontology, a personal name is the full name of a person, consisting of a given name and familiy name, and sometimes also birth name.</rdfs:comment>
         <rdfs:comment xml:lang="en">TODO
@@ -393,13 +440,27 @@ equivalent to pnv:literal name</rdfs:comment>
 
     <!-- http://purl.obolibrary.org/obo/IAO_0020016 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0020016"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0020016">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0020017 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0020017"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0020017">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
     
 
 
@@ -413,6 +474,24 @@ equivalent to pnv:literal name</rdfs:comment>
 
     <owl:Class rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0000002">
         <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#Record"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010015"/>
+                <owl:someValuesFrom rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadDigitalInstantiation"/>
+                <owl:someValuesFrom rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010011"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.ica.org/standards/RiC/ontology#hasOrHadIdentifier"/>
+                <owl:someValuesFrom rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0000003"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">A BZK card is a physical card that is stored in an archive.</rdfs:comment>
         <rdfs:comment xml:lang="en">All digitised BZK cards are digital versions of physical BZK Cards, but some BZK Cards may not have their scans in the database. For instance, the back of a BZK card may not have been scanned or linked to the front of the card.</rdfs:comment>
         <rdfs:label xml:lang="en">bzk card</rdfs:label>
@@ -425,6 +504,12 @@ equivalent to pnv:literal name</rdfs:comment>
 
     <owl:Class rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0000003">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0020000"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0000002"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment>A BZK number can be modelled as a part of a digitised BZK card. However, in some layout types, the BZK number appears in one of the textual parts instead of at the top-right of the card.</rdfs:comment>
         <rdfs:comment xml:lang="en">A BZK number is not unique, viz., the same number can occur on different BZK Cards issued by different compensation offices.</rdfs:comment>
         <rdfs:label xml:lang="en">bzk number</rdfs:label>
@@ -680,6 +765,12 @@ CONSTRUCT {  ?p &lt;https://schema.org/birthPlace&gt;  ?label }
 
     <owl:Class rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010005">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000303"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010012"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">compensation office name</rdfs:label>
         <skos:definition xml:lang="en">A textual entity intended to identify a particular compensation office</skos:definition>
     </owl:Class>
@@ -690,6 +781,7 @@ CONSTRUCT {  ?p &lt;https://schema.org/birthPlace&gt;  ?label }
 
     <owl:Class rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010006">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000422"/>
+        <rdfs:comment xml:lang="en">TODO: A BZK current address can only belong to persons who are alive at the time of the BZK process.</rdfs:comment>
         <rdfs:label xml:lang="en">bzk current address</rdfs:label>
         <skos:definition xml:lang="en">In this context, a BZK current address is the postal address of a BZK applicant or persecutee at the time of their compensation application.</skos:definition>
     </owl:Class>
@@ -879,6 +971,321 @@ CONSTRUCT {  ?p &lt;https://schema.org/birthPlace&gt;  ?label }
         <rdfs:comment xml:lang="en">Examples include concentration camps, prisons and prison camps, refugee camps, and military bases.</rdfs:comment>
         <rdfs:label xml:lang="en">compound</rdfs:label>
         <skos:definition xml:lang="en">A settlement that does not fit the description of any administrative unit.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://bzk.fiz-karlsruhe.de/ontology/BZK_0010029 -->
+
+    <owl:Class rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010029">
+        <rdfs:subClassOf rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004"/>
+        <rdfs:label xml:lang="en">NRW-Frühe-Phase</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://bzk.fiz-karlsruhe.de/ontology/BZK_0010030 -->
+
+    <owl:Class rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010030">
+        <rdfs:subClassOf rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004"/>
+        <rdfs:label xml:lang="en">RLP-Frühe-Phase</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://bzk.fiz-karlsruhe.de/ontology/BZK_0010031 -->
+
+    <owl:Class rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010031">
+        <rdfs:subClassOf rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004"/>
+        <rdfs:label xml:lang="en">ABC-Karten</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://bzk.fiz-karlsruhe.de/ontology/BZK_0010032 -->
+
+    <owl:Class rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010032">
+        <rdfs:subClassOf rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004"/>
+        <rdfs:label xml:lang="en">BW-Hauptphase</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://bzk.fiz-karlsruhe.de/ontology/BZK_0010033 -->
+
+    <owl:Class rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010033">
+        <rdfs:subClassOf rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004"/>
+        <rdfs:label xml:lang="en">BY-BE-Hauptphase</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://bzk.fiz-karlsruhe.de/ontology/BZK_0010034 -->
+
+    <owl:Class rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010034">
+        <rdfs:subClassOf rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004"/>
+        <rdfs:label xml:lang="en">BY-eigener-Typ</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://bzk.fiz-karlsruhe.de/ontology/BZK_0010035 -->
+
+    <owl:Class rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010035">
+        <rdfs:subClassOf rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004"/>
+        <rdfs:label xml:lang="en">BY-eigener-Typ (abweichend 1)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://bzk.fiz-karlsruhe.de/ontology/BZK_0010036 -->
+
+    <owl:Class rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010036">
+        <rdfs:subClassOf rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004"/>
+        <rdfs:label xml:lang="en">BY-eigener-Typ (abweichend 2)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://bzk.fiz-karlsruhe.de/ontology/BZK_0010037 -->
+
+    <owl:Class rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010037">
+        <rdfs:subClassOf rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004"/>
+        <rdfs:label xml:lang="en">BY-Spätphase (abweichend 1)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://bzk.fiz-karlsruhe.de/ontology/BZK_0010038 -->
+
+    <owl:Class rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010038">
+        <rdfs:subClassOf rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004"/>
+        <rdfs:label xml:lang="en">HH-NI-NRW-SH-Hauptphase</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://bzk.fiz-karlsruhe.de/ontology/BZK_0010039 -->
+
+    <owl:Class rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010039">
+        <rdfs:subClassOf rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004"/>
+        <rdfs:label xml:lang="en">HH-NI-NRW-SH-Hauptphase (abweichend 1)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://bzk.fiz-karlsruhe.de/ontology/BZK_0010040 -->
+
+    <owl:Class rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010040">
+        <rdfs:subClassOf rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004"/>
+        <rdfs:label xml:lang="en">HH-NI-NRW-SH-Hauptphase (abweichend 2)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://bzk.fiz-karlsruhe.de/ontology/BZK_0010041 -->
+
+    <owl:Class rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010041">
+        <rdfs:subClassOf rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004"/>
+        <rdfs:label xml:lang="en">HE-Hauptphase</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://bzk.fiz-karlsruhe.de/ontology/BZK_0010042 -->
+
+    <owl:Class rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010042">
+        <rdfs:subClassOf rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004"/>
+        <rdfs:label xml:lang="en">NRW-Innenministerium</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://bzk.fiz-karlsruhe.de/ontology/BZK_0010043 -->
+
+    <owl:Class rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010043">
+        <rdfs:subClassOf rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004"/>
+        <rdfs:label xml:lang="en">NRW-Köln-Art-V</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://bzk.fiz-karlsruhe.de/ontology/BZK_0010044 -->
+
+    <owl:Class rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010044">
+        <rdfs:subClassOf rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004"/>
+        <rdfs:label xml:lang="en">RLP-Hauptphase</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://bzk.fiz-karlsruhe.de/ontology/BZK_0010045 -->
+
+    <owl:Class rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010045">
+        <rdfs:subClassOf rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004"/>
+        <rdfs:label xml:lang="en">RLP-Hauptphase (abweichend 1)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://bzk.fiz-karlsruhe.de/ontology/BZK_0010046 -->
+
+    <owl:Class rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010046">
+        <rdfs:subClassOf rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004"/>
+        <rdfs:label xml:lang="en">RLP-Hauptphase (abweichend 2)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://bzk.fiz-karlsruhe.de/ontology/BZK_0010047 -->
+
+    <owl:Class rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010047">
+        <rdfs:subClassOf rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004"/>
+        <rdfs:label xml:lang="en">BY-Spätphase</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://bzk.fiz-karlsruhe.de/ontology/BZK_0010048 -->
+
+    <owl:Class rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010048">
+        <rdfs:subClassOf rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004"/>
+        <rdfs:label xml:lang="en">HH-NI-NRW-SH-Hauptphase (abweichend 3)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://bzk.fiz-karlsruhe.de/ontology/BZK_0010049 -->
+
+    <owl:Class rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010049">
+        <rdfs:subClassOf rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004"/>
+        <rdfs:label xml:lang="en">HH-NI-NRW-SH-Hauptphase (abweichend 4)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://bzk.fiz-karlsruhe.de/ontology/BZK_0010050 -->
+
+    <owl:Class rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010050">
+        <rdfs:subClassOf rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004"/>
+        <rdfs:label xml:lang="en">HB-Spätphase</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://bzk.fiz-karlsruhe.de/ontology/BZK_0010051 -->
+
+    <owl:Class rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010051">
+        <rdfs:subClassOf rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004"/>
+        <rdfs:label xml:lang="en">NRW-LRB</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://bzk.fiz-karlsruhe.de/ontology/BZK_0010052 -->
+
+    <owl:Class rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010052">
+        <rdfs:subClassOf rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004"/>
+        <rdfs:label xml:lang="en">NRW-Köln-Härtefonds</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://bzk.fiz-karlsruhe.de/ontology/BZK_0010053 -->
+
+    <owl:Class rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010053">
+        <rdfs:subClassOf rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004"/>
+        <rdfs:label xml:lang="en">RLP-Hauptphase (abweichend 3)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://bzk.fiz-karlsruhe.de/ontology/BZK_0010054 -->
+
+    <owl:Class rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010054">
+        <rdfs:subClassOf rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004"/>
+        <rdfs:label xml:lang="en">RLP-Hauptphase (abweichend 4)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://bzk.fiz-karlsruhe.de/ontology/BZK_0010055 -->
+
+    <owl:Class rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010055">
+        <rdfs:subClassOf rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004"/>
+        <rdfs:label xml:lang="en">Tabellentyp</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://bzk.fiz-karlsruhe.de/ontology/BZK_0010056 -->
+
+    <owl:Class rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010056">
+        <rdfs:subClassOf rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004"/>
+        <rdfs:label xml:lang="en">Tabellentyp (abweichend)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://bzk.fiz-karlsruhe.de/ontology/BZK_0010057 -->
+
+    <owl:Class rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010057">
+        <rdfs:subClassOf rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004"/>
+        <rdfs:label xml:lang="en">Auskünfte-Statistisches-Landesamt-NRW</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://bzk.fiz-karlsruhe.de/ontology/BZK_0010058 -->
+
+    <owl:Class rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010058">
+        <rdfs:subClassOf rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004"/>
+        <rdfs:label xml:lang="en">Auskünfte-Statistisches-Landesamt-NRW (abweichend)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://bzk.fiz-karlsruhe.de/ontology/BZK_0010060 -->
+
+    <owl:Class rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010060">
+        <rdfs:subClassOf rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004"/>
+        <rdfs:label xml:lang="en">BY-HB-Frühe-Phase</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://bzk.fiz-karlsruhe.de/ontology/BZK_0010061 -->
+
+    <owl:Class rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010061">
+        <rdfs:subClassOf rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004"/>
+        <rdfs:label xml:lang="en">HH-Frühe-Phase</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://bzk.fiz-karlsruhe.de/ontology/BZK_0010062 -->
+
+    <owl:Class rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010062">
+        <rdfs:subClassOf rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004"/>
+        <rdfs:label xml:lang="en">HE-Frühe-Phase</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://bzk.fiz-karlsruhe.de/ontology/BZK_0010063 -->
+
+    <owl:Class rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010063">
+        <rdfs:subClassOf rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004"/>
+        <rdfs:label xml:lang="en">NI-Frühe-Phase</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://bzk.fiz-karlsruhe.de/ontology/BZK_0010065 -->
+
+    <owl:Class rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010065">
+        <rdfs:subClassOf rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004"/>
+        <rdfs:label xml:lang="en">Hinweiskarte (Mainz/Neustadt)</rdfs:label>
     </owl:Class>
     
 
