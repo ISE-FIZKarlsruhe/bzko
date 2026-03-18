@@ -50,7 +50,6 @@
     <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000050">
-        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
     </owl:ObjectProperty>
     
@@ -160,6 +159,16 @@
         <rdfs:domain rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004"/>
         <rdfs:range rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0000002"/>
         <rdfs:label xml:lang="en">is layout type of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://bzk.fiz-karlsruhe.de/ontology/BZK_0010024 -->
+
+    <owl:ObjectProperty rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010024">
+        <rdfs:domain rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010012"/>
+        <rdfs:range rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0000002"/>
+        <rdfs:label xml:lang="en">issues</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -361,50 +370,7 @@ But a death date can be &quot;unknown&quot;.</rdfs:comment>
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000422 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000422">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010020"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010021"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010022"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010023"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000106"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000119"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000134"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000422"/>
     
 
 
@@ -427,27 +393,13 @@ equivalent to pnv:literal name</rdfs:comment>
 
     <!-- http://purl.obolibrary.org/obo/IAO_0020016 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0020016">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0020015"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0020016"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0020017 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0020017">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0020015"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0020017"/>
     
 
 
@@ -842,6 +794,12 @@ CONSTRUCT {  ?p &lt;https://schema.org/birthPlace&gt;  ?label }
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
                 <owl:someValuesFrom rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010024"/>
+                <owl:someValuesFrom rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0000002"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>

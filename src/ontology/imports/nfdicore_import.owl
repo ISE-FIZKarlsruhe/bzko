@@ -907,24 +907,6 @@ AnnotationAssertion(rdfs:label <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000005> "Hessen, Berlin, Schweiz")
 SubClassOf(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000005> <http://purl.obolibrary.org/obo/BFO_0000029>)
 
-# Class: <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000106> (city)
-
-AnnotationAssertion(rdfs:comment <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000106> "A place that refers to a densely populated urban area."@en)
-AnnotationAssertion(rdfs:label <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000106> "city"@en)
-SubClassOf(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000106> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000005>)
-
-#Class: <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000119> (country)
-
-AnnotationAssertion(rdfs:comment <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000119> "A place that refers to a defined geographical area distinguished by its territorial boundaries, governance structure, and sovereignty."@en)
-AnnotationAssertion(rdfs:label <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000119> "country"@en)
-SubClassOf(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000119> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000005>)
-
-#Class: <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000134> (federal state)
-
-AnnotationAssertion(rdfs:comment <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000134> "A place that refers to a geographical territory forming part of a country."@en)
-AnnotationAssertion(rdfs:label <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000134> "federal state"@en)
-SubClassOf(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000134> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000005>)
-
 # Class: <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000022> (document)
 
 AnnotationAssertion(rdfs:comment <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000022> "A collection of information content entities intended to be understood together as a whole."@en)
@@ -949,12 +931,30 @@ EquivalentClasses(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000102> ObjectIn
 SubClassOf(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000102> <http://purl.obolibrary.org/obo/BFO_0000004>)
 SubClassOf(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000102> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000087> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000229>))
 
+# Class: <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000106> (city)
+
+AnnotationAssertion(rdfs:comment <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000106> "A place that refers to a densely populated urban area."@en)
+AnnotationAssertion(rdfs:label <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000106> "city"@en)
+SubClassOf(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000106> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000005>)
+
+# Class: <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000119> (country)
+
+AnnotationAssertion(rdfs:comment <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000119> "A place that refers to a defined geographical area distinguished by its territorial boundaries, governance structure, and sovereignty."@en)
+AnnotationAssertion(rdfs:label <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000119> "country"@en)
+SubClassOf(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000119> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000005>)
+
 # Class: <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000131> (event)
 
 AnnotationAssertion(rdfs:comment <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000131> "An process that represents an organized happening that unfolds in time."@en)
 AnnotationAssertion(rdfs:label <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000131> "event"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000131> "conferences, celebrations, workshops, meetings, or any other specific incident or happening that has been planned somehow."@en)
 SubClassOf(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000131> <http://purl.obolibrary.org/obo/BFO_0000015>)
+
+# Class: <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000134> (federal state)
+
+AnnotationAssertion(rdfs:comment <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000134> "A place that refers to a geographical territory forming part of a country."@en)
+AnnotationAssertion(rdfs:label <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000134> "federal state"@en)
+SubClassOf(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000134> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000005>)
 
 # Class: <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000203> (specification)
 
@@ -1403,8 +1403,8 @@ ClassAssertion(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000100> <https://nf
 DisjointClasses(<http://purl.obolibrary.org/obo/BFO_0000004> <http://purl.obolibrary.org/obo/BFO_0000020> <http://purl.obolibrary.org/obo/BFO_0000031>)
 DisjointClasses(<http://purl.obolibrary.org/obo/BFO_0000006> <http://purl.obolibrary.org/obo/BFO_0000029> <http://purl.obolibrary.org/obo/BFO_0000140>)
 DisjointClasses(<http://purl.obolibrary.org/obo/BFO_0000008> <http://purl.obolibrary.org/obo/BFO_0000011> <http://purl.obolibrary.org/obo/BFO_0000015> <http://purl.obolibrary.org/obo/BFO_0000035>)
-DLSafeRule(Body(ClassAtom(<http://purl.obolibrary.org/obo/BFO_0000016> Variable(<urn:swrl:var#d>)) ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0000053> Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>)))Head(ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0000091> Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>))))
-DLSafeRule(Body(ClassAtom(<http://purl.obolibrary.org/obo/BFO_0000019> Variable(<urn:swrl:var#d>)) ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0000053> Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>)))Head(ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0000086> Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>))))
-DLSafeRule(Body(ClassAtom(<http://purl.obolibrary.org/obo/BFO_0000023> Variable(<urn:swrl:var#d>)) ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0000053> Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>)))Head(ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0000087> Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>))))
-DLSafeRule(Body(ClassAtom(<http://purl.obolibrary.org/obo/BFO_0000034> Variable(<urn:swrl:var#d>)) ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0000053> Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>)))Head(ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0000085> Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>))))
+DLSafeRule(Body(ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0000053> Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>)) ClassAtom(<http://purl.obolibrary.org/obo/BFO_0000016> Variable(<urn:swrl:var#d>)))Head(ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0000091> Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>))))
+DLSafeRule(Body(ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0000053> Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>)) ClassAtom(<http://purl.obolibrary.org/obo/BFO_0000019> Variable(<urn:swrl:var#d>)))Head(ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0000086> Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>))))
+DLSafeRule(Body(ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0000053> Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>)) ClassAtom(<http://purl.obolibrary.org/obo/BFO_0000023> Variable(<urn:swrl:var#d>)))Head(ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0000087> Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>))))
+DLSafeRule(Body(ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0000053> Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>)) ClassAtom(<http://purl.obolibrary.org/obo/BFO_0000034> Variable(<urn:swrl:var#d>)))Head(ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0000085> Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>))))
 )
