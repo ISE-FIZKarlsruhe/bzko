@@ -975,6 +975,42 @@ CONSTRUCT {  ?p &lt;https://schema.org/birthPlace&gt;  ?label }
     
 
 
+    <!-- https://bzk.fiz-karlsruhe.de/ontology/BZK_0010025 -->
+
+    <owl:Class rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010025">
+        <rdfs:subClassOf rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004"/>
+        <rdfs:label xml:lang="en">Gerichtsurteile</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://bzk.fiz-karlsruhe.de/ontology/BZK_0010026 -->
+
+    <owl:Class rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010026">
+        <rdfs:subClassOf rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004"/>
+        <rdfs:label xml:lang="en">Gelbe Hinweiskarte</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://bzk.fiz-karlsruhe.de/ontology/BZK_0010027 -->
+
+    <owl:Class rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010027">
+        <rdfs:subClassOf rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004"/>
+        <rdfs:label xml:lang="en">Suchkarte-Hinweiskarte</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://bzk.fiz-karlsruhe.de/ontology/BZK_0010028 -->
+
+    <owl:Class rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010028">
+        <rdfs:subClassOf rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004"/>
+        <rdfs:label xml:lang="en">Hinweiskarte-schwarzes-Datum</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://bzk.fiz-karlsruhe.de/ontology/BZK_0010029 -->
 
     <owl:Class rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010029">
