@@ -1,0 +1,4 @@
+https://www.ica.org/standards/RiC/ontology#RecordResource
+https://www.ica.org/standards/RiC/ontology#Record
+https://www.ica.org/standards/RiC/ontology#hasOrHadDigitalInstantiation
+https://www.ica.org/standards/RiC/ontology#hasOrHadIdentifier

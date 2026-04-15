@@ -1,0 +1,66 @@
+Prefix(:=<https://bzk.fiz-karlsruhe.de/ontology/bzk/imports/rico_import.owl#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<https://bzk.fiz-karlsruhe.de/ontology/bzk/imports/rico_import.owl>
+<https://bzk.fiz-karlsruhe.de/ontology/bzk/releases/2026-04-15/imports/rico_import.owl>
+Annotation(owl:versionInfo "2026-04-15")
+
+Declaration(Class(<https://www.ica.org/standards/RiC/ontology#Record>))
+Declaration(Class(<https://www.ica.org/standards/RiC/ontology#RecordResource>))
+Declaration(ObjectProperty(<https://www.ica.org/standards/RiC/ontology#hasOrHadDigitalInstantiation>))
+Declaration(ObjectProperty(<https://www.ica.org/standards/RiC/ontology#hasOrHadIdentifier>))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: <https://www.ica.org/standards/RiC/ontology#hasOrHadDigitalInstantiation> (has or had digital instantiation)
+
+AnnotationAssertion(rdfs:comment <https://www.ica.org/standards/RiC/ontology#hasOrHadDigitalInstantiation> "Connects a record resource to one of its digital instantiations,
+         whether it exists or has been lost or destroyed."@en)
+AnnotationAssertion(rdfs:label <https://www.ica.org/standards/RiC/ontology#hasOrHadDigitalInstantiation> "a ou a eu pour instanciation numérique"@fr)
+AnnotationAssertion(rdfs:label <https://www.ica.org/standards/RiC/ontology#hasOrHadDigitalInstantiation> "has or had digital instantiation"@en)
+AnnotationAssertion(rdfs:label <https://www.ica.org/standards/RiC/ontology#hasOrHadDigitalInstantiation> "tiene o tenía como instanciación digital"@es)
+ObjectPropertyDomain(<https://www.ica.org/standards/RiC/ontology#hasOrHadDigitalInstantiation> <https://www.ica.org/standards/RiC/ontology#RecordResource>)
+
+# Object Property: <https://www.ica.org/standards/RiC/ontology#hasOrHadIdentifier> (tiene o tenía como identificador)
+
+AnnotationAssertion(rdfs:comment <https://www.ica.org/standards/RiC/ontology#hasOrHadIdentifier> "Connects a Thing to one of its past or present
+         Identifiers."@en)
+AnnotationAssertion(rdfs:label <https://www.ica.org/standards/RiC/ontology#hasOrHadIdentifier> "a ou a eu pour identifiant"@fr)
+AnnotationAssertion(rdfs:label <https://www.ica.org/standards/RiC/ontology#hasOrHadIdentifier> "has or had identifier"@en)
+AnnotationAssertion(rdfs:label <https://www.ica.org/standards/RiC/ontology#hasOrHadIdentifier> "tiene o tenía como identificador"@es)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <https://www.ica.org/standards/RiC/ontology#Record> (Record)
+
+AnnotationAssertion(rdfs:comment <https://www.ica.org/standards/RiC/ontology#Record> "Discrete information content formed and inscribed, at least once,
+         by any method on any carrier in any persistent, recoverable form by an Agent in the course
+         of life or work activity."@en)
+AnnotationAssertion(rdfs:label <https://www.ica.org/standards/RiC/ontology#Record> "Documento"@es)
+AnnotationAssertion(rdfs:label <https://www.ica.org/standards/RiC/ontology#Record> "Objet informationnel"@fr)
+AnnotationAssertion(rdfs:label <https://www.ica.org/standards/RiC/ontology#Record> "Record"@de)
+AnnotationAssertion(rdfs:label <https://www.ica.org/standards/RiC/ontology#Record> "Record"@en)
+SubClassOf(<https://www.ica.org/standards/RiC/ontology#Record> <https://www.ica.org/standards/RiC/ontology#RecordResource>)
+
+# Class: <https://www.ica.org/standards/RiC/ontology#RecordResource> (Recordressource)
+
+AnnotationAssertion(rdfs:comment <https://www.ica.org/standards/RiC/ontology#RecordResource> "Information produced or acquired and retained by an Agent in the
+         course of life or work activity."@en)
+AnnotationAssertion(rdfs:label <https://www.ica.org/standards/RiC/ontology#RecordResource> "Record Resource"@en)
+AnnotationAssertion(rdfs:label <https://www.ica.org/standards/RiC/ontology#RecordResource> "Recordressource"@de)
+AnnotationAssertion(rdfs:label <https://www.ica.org/standards/RiC/ontology#RecordResource> "Recurso documental"@es)
+AnnotationAssertion(rdfs:label <https://www.ica.org/standards/RiC/ontology#RecordResource> "Ressource archivistique"@fr)
+
+
+)

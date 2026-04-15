@@ -10,11 +10,13 @@ Prefix(dcterms:=<http://purl.org/dc/terms/>)
 
 Ontology(<https://bzk.fiz-karlsruhe.de/ontology/>
 Import(<https://bzk.fiz-karlsruhe.de/ontology/bzk/components/imports-edit.owl>)
-Import(<https://bzk.fiz-karlsruhe.de/ontology/bzk/components/main.owl>)
+Import(<https://bzk.fiz-karlsruhe.de/ontology/bzk/components/non-rigid.owl>)
 Import(<https://bzk.fiz-karlsruhe.de/ontology/bzk/imports/nfdicore_import.owl>)
+
 Annotation(dcterms:description "None")
 Annotation(dcterms:license <https://creativecommons.org/licenses/unspecified>)
 Annotation(dcterms:title "BZK Ontology")
+
 
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
@@ -34,6 +36,8 @@ AnnotationAssertion(rdfs:label dcterms:license "license")
 # Annotation Property: dcterms:title (title)
 
 AnnotationAssertion(rdfs:label dcterms:title "title")
+
+
 
 
 

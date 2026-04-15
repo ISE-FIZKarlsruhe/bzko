@@ -1,0 +1,99 @@
+Prefix(:=<https://bzk.fiz-karlsruhe.de/ontology/bzk/imports/schema_import.owl#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<https://bzk.fiz-karlsruhe.de/ontology/bzk/imports/schema_import.owl>
+<https://bzk.fiz-karlsruhe.de/ontology/bzk/releases/2026-04-15/imports/schema_import.owl>
+Annotation(owl:versionInfo "2026-04-15")
+
+Declaration(ObjectProperty(<https://schema.org/address>))
+Declaration(ObjectProperty(<https://schema.org/archiveHeld>))
+Declaration(ObjectProperty(<https://schema.org/birthDate>))
+Declaration(ObjectProperty(<https://schema.org/birthPlace>))
+Declaration(ObjectProperty(<https://schema.org/deathDate>))
+Declaration(ObjectProperty(<https://schema.org/deathPlace>))
+Declaration(ObjectProperty(<https://schema.org/familyName>))
+Declaration(ObjectProperty(<https://schema.org/givenName>))
+Declaration(ObjectProperty(<https://schema.org/holdingArchive>))
+Declaration(ObjectProperty(<https://schema.org/name>))
+Declaration(DataProperty(<https://schema.org/birthDate>))
+Declaration(DataProperty(<https://schema.org/deathDate>))
+Declaration(AnnotationProperty(<https://schema.org/name>))
+############################
+#   Annotation Properties
+############################
+
+# Annotation Property: <https://schema.org/name> (name)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/name> "The name of the item."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/name> <https://schema.org/name>)
+AnnotationAssertion(rdfs:label <https://schema.org/name> "name"@en)
+
+
+############################
+#   Object Properties
+############################
+
+# Object Property: <https://schema.org/address> (address)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/address> "Physical address of the item."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/address> <https://schema.org/address>)
+AnnotationAssertion(rdfs:label <https://schema.org/address> "address"@en)
+
+# Object Property: <https://schema.org/archiveHeld> (archiveHeld)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/archiveHeld> "Collection, <a href=\"https://en.wikipedia.org/wiki/Fonds\">fonds</a>, or item held, kept or maintained by an <a class=\"localLink\" href=\"/ArchiveOrganization\">ArchiveOrganization</a>."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/archiveHeld> <https://pending.schema.org/archiveHeld>)
+AnnotationAssertion(rdfs:label <https://schema.org/archiveHeld> "archiveHeld"@en)
+InverseObjectProperties(<https://schema.org/archiveHeld> <https://schema.org/holdingArchive>)
+
+# Object Property: <https://schema.org/birthDate> (birthDate)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/birthDate> "Date of birth."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/birthDate> <https://schema.org/birthDate>)
+AnnotationAssertion(rdfs:label <https://schema.org/birthDate> "birthDate"@en)
+
+# Object Property: <https://schema.org/birthPlace> (birthPlace)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/birthPlace> "The place where the person was born."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/birthPlace> <https://schema.org/birthPlace>)
+AnnotationAssertion(rdfs:label <https://schema.org/birthPlace> "birthPlace"@en)
+
+# Object Property: <https://schema.org/deathDate> (deathDate)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/deathDate> "Date of death."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/deathDate> <https://schema.org/deathDate>)
+AnnotationAssertion(rdfs:label <https://schema.org/deathDate> "deathDate"@en)
+
+# Object Property: <https://schema.org/deathPlace> (deathPlace)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/deathPlace> "The place where the person died."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/deathPlace> <https://schema.org/deathPlace>)
+AnnotationAssertion(rdfs:label <https://schema.org/deathPlace> "deathPlace"@en)
+
+# Object Property: <https://schema.org/familyName> (familyName)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/familyName> "Family name. In the U.S., the last name of a Person."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/familyName> <https://schema.org/familyName>)
+AnnotationAssertion(rdfs:label <https://schema.org/familyName> "familyName"@en)
+
+# Object Property: <https://schema.org/givenName> (givenName)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/givenName> "Given name. In the U.S., the first name of a Person."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/givenName> <https://schema.org/givenName>)
+AnnotationAssertion(rdfs:label <https://schema.org/givenName> "givenName"@en)
+
+# Object Property: <https://schema.org/holdingArchive> (holdingArchive)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/holdingArchive> "<a class=\"localLink\" href=\"/ArchiveOrganization\">ArchiveOrganization</a> that holds, keeps or maintains the <a class=\"localLink\" href=\"/ArchiveComponent\">ArchiveComponent</a>."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/holdingArchive> <https://pending.schema.org/holdingArchive>)
+AnnotationAssertion(rdfs:label <https://schema.org/holdingArchive> "holdingArchive"@en)
+
+
+
+
+)

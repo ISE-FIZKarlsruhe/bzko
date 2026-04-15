@@ -1,0 +1,9 @@
+https://schema.org/birthDate
+https://schema.org/birthPlace
+https://schema.org/deathDate
+https://schema.org/deathPlace
+https://schema.org/address
+https://schema.org/familyName
+https://schema.org/givenName
+https://schema.org/name
+https://schema.org/holdingArchive

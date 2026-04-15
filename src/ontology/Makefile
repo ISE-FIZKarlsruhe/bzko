@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                27a0a481125f5a37d0b39cf5663a31014b3933187611eb7b60d4e9a155374805
+CONFIG_HASH=                f952aeb3c936950cd6d3fd87c94a988d17ef87ca3fc49169a74acde313176caa
 
 
 # ----------------------------------------
@@ -58,7 +58,7 @@ OBODATE ?=                  $(shell date +'%d:%m:%Y %H:%M')
 VERSION=                    $(TODAY)
 ANNOTATE_ONTOLOGY_VERSION = annotate -V $(ONTBASE)/releases/$(VERSION)/$@ --annotation owl:versionInfo $(VERSION)
 ANNOTATE_CONVERT_FILE =     annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) convert -f ofn --output $@.tmp.owl && mv $@.tmp.owl $@
-OTHER_SRC =                 $(COMPONENTSDIR)/imports-edit.owl $(COMPONENTSDIR)/main.owl 
+OTHER_SRC =                 $(COMPONENTSDIR)/imports-edit.owl $(COMPONENTSDIR)/non-rigid.owl 
 ONTOLOGYTERMS =             $(TMPDIR)/ontologyterms.txt
 EDIT_PREPROCESSED =         $(TMPDIR)/$(ONT)-preprocess.owl
 
@@ -188,7 +188,7 @@ all_main: $(MAIN_FILES)
 # ----------------------------------------
 
 
-IMPORTS =  nfdicore
+IMPORTS =  nfdicore rico pico schema prov
 
 IMPORT_ROOTS = $(patsubst %, $(IMPORTDIR)/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -452,13 +452,13 @@ all_components: $(OTHER_SRC)
 .PHONY: recreate-components
 recreate-components:
 	$(MAKE) --assume-new=$(TMPDIR)/stamp-component-imports-edit.owl \
-		--assume-new=$(TMPDIR)/stamp-component-main.owl \
+		--assume-new=$(TMPDIR)/stamp-component-non-rigid.owl \
 		COMP=true IMP=false MIR=true PAT=true all_components
 
 .PHONY: no-mirror-recreate-components
 no-mirror-recreate-components:
 	$(MAKE) --assume-new=$(TMPDIR)/stamp-component-imports-edit.owl \
-		--assume-new=$(TMPDIR)/stamp-component-main.owl \
+		--assume-new=$(TMPDIR)/stamp-component-non-rigid.owl \
 		COMP=true IMP=false MIR=false PAT=true all_components
 
 .PHONY: recreate-%
@@ -492,6 +492,34 @@ ifeq ($(MIR),true)
 .PRECIOUS: $(MIRRORDIR)/nfdicore.owl
 mirror-nfdicore: | $(TMPDIR)
 	$(ROBOT) convert -I https://raw.githubusercontent.com/ISE-FIZKarlsruhe/nfdicore/refs/tags/v3.0.4/nfdicore-full.owl -o $(TMPDIR)/$@.owl
+
+
+## ONTOLOGY: rico
+.PHONY: mirror-rico
+.PRECIOUS: $(MIRRORDIR)/rico.owl
+mirror-rico: | $(TMPDIR)
+	$(ROBOT) convert -I https://raw.githubusercontent.com/ICA-EGAD/RiC-O/refs/heads/master/ontology/current-version/RiC-O_1-1.rdf -o $(TMPDIR)/$@.owl
+
+
+## ONTOLOGY: pico
+.PHONY: mirror-pico
+.PRECIOUS: $(MIRRORDIR)/pico.owl
+mirror-pico: | $(TMPDIR)
+	$(ROBOT) convert -I https://raw.githubusercontent.com/CBG-Centrum-voor-familiegeschiedenis/PiCo/refs/tags/v.1.1.0/pico.ttl -o $(TMPDIR)/$@.owl
+
+
+## ONTOLOGY: schema
+.PHONY: mirror-schema
+.PRECIOUS: $(MIRRORDIR)/schema.owl
+mirror-schema: | $(TMPDIR)
+	$(ROBOT) convert -I https://raw.githubusercontent.com/schemaorg/schemaorg/refs/tags/v28.1-release/data/releases/28.1/schemaorg.owl -o $(TMPDIR)/$@.owl
+
+
+## ONTOLOGY: prov
+.PHONY: mirror-prov
+.PRECIOUS: $(MIRRORDIR)/prov.owl
+mirror-prov: | $(TMPDIR)
+	$(ROBOT) convert -I https://www.w3.org/ns/prov-o -o $(TMPDIR)/$@.owl
 
 
 $(MIRRORDIR)/%.owl: mirror-% | $(MIRRORDIR)

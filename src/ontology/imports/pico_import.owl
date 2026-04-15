@@ -1,0 +1,50 @@
+Prefix(:=<https://bzk.fiz-karlsruhe.de/ontology/bzk/imports/pico_import.owl#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<https://bzk.fiz-karlsruhe.de/ontology/bzk/imports/pico_import.owl>
+<https://bzk.fiz-karlsruhe.de/ontology/bzk/releases/2026-04-15/imports/pico_import.owl>
+Annotation(owl:versionInfo "2026-04-15")
+
+Declaration(Class(<https://personsincontext.org/model#PersonObservation>))
+Declaration(DataProperty(<https://personsincontext.org/model#deceased>))
+Declaration(DataProperty(<https://personsincontext.org/model#eventDate>))
+Declaration(DataProperty(<https://personsincontext.org/model#eventPlace>))
+Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#definition>))
+
+############################
+#   Data Properties
+############################
+
+# Data Property: <https://personsincontext.org/model#deceased> (deceased)
+
+AnnotationAssertion(rdfs:label <https://personsincontext.org/model#deceased> "deceased"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://personsincontext.org/model#deceased> "Indication if a person is deceased.")
+
+# Data Property: <https://personsincontext.org/model#eventDate> (eventDate)
+
+AnnotationAssertion(rdfs:label <https://personsincontext.org/model#eventDate> "eventDate"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://personsincontext.org/model#eventDate> "The date of a life event.")
+
+# Data Property: <https://personsincontext.org/model#eventPlace> (eventPlace)
+
+AnnotationAssertion(rdfs:label <https://personsincontext.org/model#eventPlace> "eventPlace"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://personsincontext.org/model#eventPlace> "The place where a life event occured.")
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <https://personsincontext.org/model#PersonObservation> (PersonObservation)
+
+AnnotationAssertion(rdfs:label <https://personsincontext.org/model#PersonObservation> "PersonObservation"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://personsincontext.org/model#PersonObservation> "A Person observation is a person that can be observed on a Source"@en)
+
+
+)

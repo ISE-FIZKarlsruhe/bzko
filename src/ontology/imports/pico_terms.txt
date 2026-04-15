@@ -1,0 +1,4 @@
+https://personsincontext.org/model#PersonObservation
+https://personsincontext.org/model#deceased
+https://personsincontext.org/model#eventDate
+https://personsincontext.org/model#eventPlace

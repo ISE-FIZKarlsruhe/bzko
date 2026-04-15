@@ -19,6 +19,7 @@ import_group:
   # definition source, definiton, editor note, example of usage
   annotation_properties: ['rdfs:label', 'IAO:0000119','IAO:0000115', 'IAO:0000116', 'IAO:0000112', 'skos:definition', 'skos:example', 'skos:comment', 'rdfs:comment' ]
 
+
   products:
 #    - id: bfo
 #      mirror_from: http://purl.obolibrary.org/obo/bfo/2020/notime/bfo.owl
@@ -27,15 +28,29 @@ import_group:
 #    - id: iao
 #    - id: cob
 #      use_base: true
+
     - id: nfdicore
       mirror_from: https://raw.githubusercontent.com/ISE-FIZKarlsruhe/nfdicore/refs/tags/v3.0.4/nfdicore-full.owl
 #    - id: time
 #      mirror_from: https://raw.githubusercontent.com/w3c/sdw/gh-pages/time/rdf/time.ttl
 
+    - id: rico
+      mirror_from: https://raw.githubusercontent.com/ICA-EGAD/RiC-O/refs/heads/master/ontology/current-version/RiC-O_1-1.rdf
+
+    - id: pico
+      mirror_from: https://raw.githubusercontent.com/CBG-Centrum-voor-familiegeschiedenis/PiCo/refs/tags/v.1.1.0/pico.ttl
+
+    - id: schema
+      mirror_from:  "https://raw.githubusercontent.com/schemaorg/schemaorg/refs/tags/v28.1-release/data/releases/28.1/schemaorg.owl"
+
+    - id: prov
+      mirror_from: https://www.w3.org/ns/prov-o
+
 components:
   products:
       - filename: imports-edit.owl
-      - filename: main.owl
+      - filename: non-rigid.owl
+
 
 #documentation:
 #  documentation_system: mkdocs

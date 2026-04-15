@@ -1,0 +1,182 @@
+Prefix(:=<https://bzk.fiz-karlsruhe.de/ontology/>)
+Prefix(dce:=<http://purl.org/dc/elements/1.1/>)
+Prefix(obo:=<http://purl.obolibrary.org/obo/>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(dcterms:=<http://purl.org/dc/terms/>)
+
+
+Ontology(<https://bzk.fiz-karlsruhe.de/ontology/extension>
+Import(<https://bzk.fiz-karlsruhe.de/ontology/bzk/components/imports-edit.owl>)
+Import(<https://bzk.fiz-karlsruhe.de/ontology/bzk/components/non-rigid.owl>)
+Import(<https://bzk.fiz-karlsruhe.de/ontology/bzk/imports/nfdicore_import.owl>)
+Import(<https://bzk.fiz-karlsruhe.de/ontology/bzk/imports/pico_import.owl>)
+Import(<https://bzk.fiz-karlsruhe.de/ontology/bzk/imports/prov_import.owl>)
+Import(<https://bzk.fiz-karlsruhe.de/ontology/bzk/imports/rico_import.owl>)
+Import(<https://bzk.fiz-karlsruhe.de/ontology/bzk/imports/schema_import.owl>)
+Annotation(dcterms:description "None")
+Annotation(dcterms:license <https://creativecommons.org/licenses/unspecified>)
+Annotation(dcterms:title "BZK Ontology Extension")
+
+Declaration(Class(:BZK_0010009))
+Declaration(Class(:BZK_0010010))
+Declaration(Class(:BZK_0010012))
+Declaration(ObjectProperty(:BZK_0010013))
+Declaration(ObjectProperty(:BZK_0010014))
+Declaration(ObjectProperty(:BZK_0010015))
+Declaration(ObjectProperty(:BZK_0010016))
+Declaration(ObjectProperty(:BZK_0010017))
+Declaration(ObjectProperty(:BZK_0010024))
+
+Declaration(AnnotationProperty(dcterms:description))
+Declaration(AnnotationProperty(dcterms:license))
+Declaration(AnnotationProperty(dcterms:title))
+############################
+#   Annotation Properties
+############################
+
+# Annotation Property: dcterms:description (description)
+
+AnnotationAssertion(rdfs:label dcterms:description "description")
+
+# Annotation Property: dcterms:license (license)
+
+AnnotationAssertion(rdfs:label dcterms:license "license")
+
+# Annotation Property: dcterms:title (title)
+
+AnnotationAssertion(rdfs:label dcterms:title "title")
+
+
+############################
+#   Object Properties
+############################
+
+# Object Property: :BZK_0010013 (applies for compensation to)
+
+AnnotationAssertion(rdfs:label :BZK_0010013 "applies for compensation to"@en)
+ObjectPropertyDomain(:BZK_0010013 ObjectUnionOf(:BZK_0010009 :BZK_0010010))
+ObjectPropertyRange(:BZK_0010013 :BZK_0010012)
+
+# Object Property: :BZK_0010014 (is applied for compensation by)
+
+AnnotationAssertion(rdfs:label :BZK_0010014 "is applied for compensation by"@en)
+ObjectPropertyDomain(:BZK_0010014 :BZK_0010010)
+ObjectPropertyRange(:BZK_0010014 :BZK_0010009)
+
+# Object Property: :BZK_0010015 (has layout type)
+
+AnnotationAssertion(rdfs:label :BZK_0010015 "has layout type"@en)
+InverseObjectProperties(:BZK_0010015 :BZK_0010017)
+ObjectPropertyDomain(:BZK_0010015 :BZK_0000002)
+ObjectPropertyRange(:BZK_0010015 :BZK_0010004)
+
+# Object Property: :BZK_0010016 (applies for compensation)
+
+AnnotationAssertion(rdfs:label :BZK_0010016 "applies for compensation"@en)
+ObjectPropertyDomain(:BZK_0010016 :BZK_0010009)
+ObjectPropertyRange(:BZK_0010016 :BZK_0010010)
+
+# Object Property: :BZK_0010017 (is layout type of)
+
+AnnotationAssertion(rdfs:label :BZK_0010017 "is layout type of"@en)
+ObjectPropertyDomain(:BZK_0010017 :BZK_0010004)
+ObjectPropertyRange(:BZK_0010017 :BZK_0000002)
+
+# Object Property: :BZK_0010024 (issues)
+
+AnnotationAssertion(rdfs:label :BZK_0010024 "issues"@en)
+ObjectPropertyDomain(:BZK_0010024 :BZK_0010012)
+ObjectPropertyRange(:BZK_0010024 :BZK_0000002)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: :BZK_0000002 (bzk card)
+
+SubClassOf(:BZK_0000002 <https://www.ica.org/standards/RiC/ontology#Record>)
+SubClassOf(:BZK_0000002 ObjectSomeValuesFrom(:BZK_0010015 :BZK_0010004))
+SubClassOf(:BZK_0000002 ObjectSomeValuesFrom(<https://www.ica.org/standards/RiC/ontology#hasOrHadDigitalInstantiation> :BZK_0010011))
+SubClassOf(:BZK_0000002 ObjectSomeValuesFrom(<https://www.ica.org/standards/RiC/ontology#hasOrHadIdentifier> :BZK_0000003))
+
+# Class: :BZK_0010009 (bzk applicant)
+
+AnnotationAssertion(rdfs:comment :BZK_0010009 "A BZK applicant can be a persecutee at the same time."@en)
+AnnotationAssertion(rdfs:comment :BZK_0010009 "The name of a BZK applicant can occur on diffent cards."@en)
+AnnotationAssertion(rdfs:label :BZK_0010009 "bzk applicant"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :BZK_0010009 "A BZK applicant is a person who was recorded as an applicant on a BZK card and applies for compensation as a persecuted person."@en)
+SubClassOf(:BZK_0010009 ObjectSomeValuesFrom(obo:RO_0000087 :BZK_0010003))
+SubClassOf(:BZK_0010009 ObjectSomeValuesFrom(:BZK_0010013 :BZK_0010012))
+
+# Class: :BZK_0010010 (bzk persecutee)
+
+AnnotationAssertion(rdfs:label :BZK_0010010 "bzk persecutee"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :BZK_0010010 "A BZK persecutee is a person who was recorded as a persecutee on a BZK card."@en)
+SubClassOf(:BZK_0010010 ObjectSomeValuesFrom(obo:RO_0000087 :BZK_0010002))
+SubClassOf(:BZK_0010010 ObjectSomeValuesFrom(:BZK_0010014 :BZK_0010009))
+
+# Class: :BZK_0010012 (compensation office)
+
+AnnotationAssertion(rdfs:label :BZK_0010012 "compensation office"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :BZK_0010012 "A compensation office is a government agency that reviews claims and provides compensation to persecuted people."@en)
+SubClassOf(:BZK_0010012 obo:OBI_0000245)
+SubClassOf(:BZK_0010012 ObjectSomeValuesFrom(obo:RO_0000087 :BZK_0010001))
+SubClassOf(:BZK_0010012 ObjectSomeValuesFrom(:BZK_0010024 :BZK_0000002))
+SubClassOf(:BZK_0010012 ObjectAllValuesFrom(obo:IAO_0000235 :BZK_0010005))
+
+
+AnnotationAssertion(obo:IAO_0000116 <http://www.w3.org/ns/prov#hadPrimarySource> "In the PROV-O documentation, it is understood that something that had a primary source is a derivation. That is also why the superrelation of \"had primary source\" is \"was derived from\". 
+For instance, a chart had a primary source from a database, or a quotation was derived from a text.
+
+In the PiCo documentation, it is used to relate \"Person Observation\" to \"Source\", where \"Source\" refers to the historical record or document where \"Person Observation\"s are found. Indeed, in PiCo, a source is any resource where a person is mentioned, including archival records, books, or personal documents, not just traditional archives. 
+
+However, it is not a person observation but the name or address of a person observation recorded in a source. Similarly, a BZK number is on a BZK Index Card. Thereby, the domain of the prov:hadPrimarySource is the classes that are about Person Observation."@en)
+AnnotationAssertion(obo:OMO_0002000 :BZK_0000008 "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX person: <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004> 
+PREFIX has_participant: <http://purl.obolibrary.org/obo/RO_0000057>
+PREFIX environs: <http://purl.obolibrary.org/obo/BFO_0000183> 
+PREFIX has_role: <http://purl.obolibrary.org/obo/RO_0000087>
+PREFIX death_place_role: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000008>
+PREFIX has_value: <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001007> 
+
+CONSTRUCT {  ?p <https://schema.org/deathPlace>  ?label }
+ WHERE { 
+?p a  person: .
+?proc has_participant: ?p. 
+?loc environs: ?proc .
+?loc has_role: ?role .
+?role a  death_place_role: .
+?loc has_value: ?label .
+}")
+AnnotationAssertion(obo:OMO_0002000 :BZK_0000009 "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX person: <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004> 
+PREFIX has_participant: <http://purl.obolibrary.org/obo/RO_0000057>
+PREFIX environs: <http://purl.obolibrary.org/obo/BFO_0000183> 
+PREFIX has_role: <http://purl.obolibrary.org/obo/RO_0000087>
+PREFIX birth_place_role: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000009>
+PREFIX has_value: <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001007> 
+
+CONSTRUCT {  ?p <https://schema.org/birthPlace>  ?label }
+ WHERE { 
+?p a  person: .
+?proc has_participant: ?p. 
+?loc environs: ?proc .
+?loc has_role: ?role .
+?role a  birth_place_role: .
+?loc has_value: ?label .
+}")
+AnnotationAssertion(obo:OMO_0002000 :BZK_0000011 "... schema.org/name ...")
+AnnotationAssertion(rdfs:comment <https://personsincontext.org/model#eventPlace> "This data property can be used for death place and birth place."@en)
+)
