@@ -1,4 +1,4 @@
-Prefix(:=<https://bzk.fiz-karlsruhe.de/ontology/bzk/components/non-rigid.owl#>)
+Prefix(:=<https://bzk.fiz-karlsruhe.de/ontology/bzk/components/rigid.owl#>)
 Prefix(obo:=<http://purl.obolibrary.org/obo/>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
 Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
@@ -9,7 +9,7 @@ Prefix(skos:=<http://www.w3.org/2004/02/skos/core#>)
 Prefix(oboInOwl:=<http://www.geneontology.org/formats/oboInOwl#>)
 
 
-Ontology(<https://bzk.fiz-karlsruhe.de/ontology/bzk/components/non-rigid.owl>
+Ontology(<https://bzk.fiz-karlsruhe.de/ontology/bzk/components/rigid.owl>
 
 Declaration(Class(obo:BFO_0000015))
 Declaration(Class(obo:BFO_0000023))

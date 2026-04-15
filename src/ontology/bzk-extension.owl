@@ -11,7 +11,7 @@ Prefix(dcterms:=<http://purl.org/dc/terms/>)
 
 Ontology(<https://bzk.fiz-karlsruhe.de/ontology/extension>
 Import(<https://bzk.fiz-karlsruhe.de/ontology/bzk/components/imports-edit.owl>)
-Import(<https://bzk.fiz-karlsruhe.de/ontology/bzk/components/non-rigid.owl>)
+Import(<https://bzk.fiz-karlsruhe.de/ontology/bzk/components/rigid.owl>)
 Import(<https://bzk.fiz-karlsruhe.de/ontology/bzk/imports/nfdicore_import.owl>)
 Import(<https://bzk.fiz-karlsruhe.de/ontology/bzk/imports/pico_import.owl>)
 Import(<https://bzk.fiz-karlsruhe.de/ontology/bzk/imports/prov_import.owl>)

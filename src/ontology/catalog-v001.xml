@@ -7,6 +7,6 @@
     <uri name="https://bzk.fiz-karlsruhe.de/ontology/bzk/imports/schema_import.owl" uri="imports/schema_import.owl" />
     <uri name="https://bzk.fiz-karlsruhe.de/ontology/bzk/imports/prov_import.owl" uri="imports/prov_import.owl" />
     <uri name="https://bzk.fiz-karlsruhe.de/ontology/bzk/components/imports-edit.owl" uri="components/imports-edit.owl" />
-    <uri name="https://bzk.fiz-karlsruhe.de/ontology/bzk/components/non-rigid.owl" uri="components/non-rigid.owl" />
+    <uri name="https://bzk.fiz-karlsruhe.de/ontology/bzk/components/rigid.owl" uri="components/rigid.owl" />
   </group>
 </catalog>

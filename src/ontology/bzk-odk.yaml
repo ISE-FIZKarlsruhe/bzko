@@ -49,7 +49,7 @@ import_group:
 components:
   products:
       - filename: imports-edit.owl
-      - filename: non-rigid.owl
+      - filename: rigid.owl
 
 
 #documentation:
