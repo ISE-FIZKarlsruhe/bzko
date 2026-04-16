@@ -30,7 +30,6 @@ Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0000006>))
 Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0000007>))
 Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0000008>))
 Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0000009>))
-Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0000011>))
 Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010000>))
 Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010001>))
 Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010002>))
@@ -211,11 +210,6 @@ CONSTRUCT {  ?p <https://schema.org/birthPlace>  ?label }
 AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000009> "birth place role"@en)
 SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0000009> ObjectIntersectionOf(obo:BFO_0000023 ObjectSomeValuesFrom(obo:RO_0000081 obo:BFO_0000029)))
 SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0000009> ObjectSomeValuesFrom(obo:BFO_0000054 <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010019>))
-
-# Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000011> (catname)
-
-AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000011> "catname"@en)
-SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0000011> obo:IAO_0020000)
 
 # Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010000> (bzk process)
 
