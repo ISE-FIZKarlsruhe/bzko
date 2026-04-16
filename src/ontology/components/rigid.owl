@@ -105,14 +105,6 @@ Declaration(AnnotationProperty(obo:IAO_0000116))
 Declaration(AnnotationProperty(obo:OMO_0002000))
 Declaration(AnnotationProperty(skos:definition))
 
-############################
-#   Classes
-############################
-
-Declaration(Class(:BZK_0000011))
-# Class: :BZK_0000002 (bzk card)
-
-SubClassOf(:BZK_0000002 <http://purl.obolibrary.org/obo/BFO_0000030>)
 
 
 ############################
@@ -145,6 +137,7 @@ AnnotationAssertion(rdfs:comment <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000
 AnnotationAssertion(rdfs:comment <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000002> "All digitised BZK cards are digital versions of physical BZK Cards, but some BZK Cards may not have their scans in the database. For instance, the back of a BZK card may not have been scanned or linked to the front of the card."@en)
 AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000002> "bzk card"@en)
 AnnotationAssertion(skos:definition <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000002> "A BZK Index Card, or simply a BZK Card, is a document used to initiate the compensation process."@en)
+SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0000002> obo:BFO_0000030)
 
 # Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000003> (bzk number)
 
@@ -226,6 +219,7 @@ SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0000011> obo:IAO_0020000)
 
 # Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010000> (bzk process)
 
+AnnotationAssertion(obo:IAO_0000116 <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010000> "the compensation application process")
 AnnotationAssertion(rdfs:comment <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010000> "At the end of a BZK process, a BZK Index card is created by a compensation office for a persecuted person."@en)
 AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010000> "bzk process"@en)
 AnnotationAssertion(skos:definition <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010000> "A process in which a person applies to a compensation office for themselves or on behalf of persecuted people."@en)
@@ -291,6 +285,7 @@ AnnotationAssertion(rdfs:comment <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010
 AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010011> "digitised bzk card"@en)
 AnnotationAssertion(skos:definition <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010011> "A digitised BZK Card refers to a scanned version of the corresponding physical BZK card."@en)
 SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010011> obo:IAO_0000030)
+SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010011> ObjectSomeValuesFrom(obo:IAO_0000136 <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000002>))
 
 # Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010018> (death process)
 
