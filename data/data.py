@@ -39,17 +39,17 @@ def niri():
 	IRIcount = IRIcount + 1
 	return "http://bzk.fiz-karlsruhe.de/data/" + str(IRIcount)
 
-
 prefix = """
 
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
 # reused classes
-@prefix organization: <http://purl.obolibrary.org/obo/OBI_0000245> .
-@prefix site: <http://purl.obolibrary.org/obo/BFO_0000029> .
-@prefix address: <http://purl.obolibrary.org/obo/IAO_0000422> . # postal addresss
-@prefix organization_name: <http://purl.obolibrary.org/obo/IAO_0000303> . # institutional identification
-@prefix process: <http://purl.obolibrary.org/obo/BFO_0000015> . 
+@prefix organization: <http://purl.obolibrary.org/obo/OBI_0000245> . #
+@prefix site: <http://purl.obolibrary.org/obo/BFO_0000029> . 
+
+@prefix address: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010006> . # bzk current address
+@prefix organization_name: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010005> . # compensation office name
+@prefix bzk_process: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010000> . 
 @prefix given_name: <http://purl.obolibrary.org/obo/IAO_0020016> .
 @prefix last_name: <http://purl.obolibrary.org/obo/IAO_0020017> .
 
@@ -67,20 +67,23 @@ prefix = """
 @prefix environs: <http://purl.obolibrary.org/obo/BFO_0000183> .
 @prefix temporal_instant: <http://purl.obolibrary.org/obo/BFO_0000203> .
 @prefix person: <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004> .
+@prefix causally_influenced_by: <http://purl.obolibrary.org/obo/RO_0000087> .
+@prefix birth_process: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010019> .
+@prefix death_process: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010018> .
 
-# new required BZK classes
+@prefix bzk_nummer: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000003> . # the bzk nummer
+@prefix has_time: <http://www.w3.org/2006/time#inXSDDate> .
+@prefix office_role: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010001> .
+@prefix applicant_role: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010003> .
+@prefix persecutee_role: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010002> . # persecutee role
+@prefix card: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000002> .  # bfo object
+@prefix death_place_role: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000008> .
+@prefix birth_place_role: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000009> .
 
 @prefix alt_first_name: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000005> .
 @prefix alt_last_name: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000007> .
 @prefix birth_name: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000006> .
-@prefix identifier: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000003> .
-@prefix has_time: <http://www.w3.org/2006/time#inXSDDate> .
-@prefix office_role: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000004> .
-@prefix applicant_role: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000001> .
-@prefix victim_role: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000000> .
-@prefix card: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000002> .  # bfo object
-@prefix death_place_role: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000008> .
-@prefix birth_place_role: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000009> .
+
 
 """
 
@@ -102,13 +105,13 @@ office_process="""
 """
 
 bzk_num_tmplt="""
-<BZKIRI> a identifier: .
+<BZKIRI> a bzk_nummer: .
 <BZKIRI> has_value: "BZKLABEL" .
 <BZKIRI> is_about: <BZKIRI_card> . 
 <BZKIRI_card> a card: . 
 <BZKIRI_card> participates_in: <CASEIRI> .
 <CASEIRI> concretizes: <BZKIRI> .
-<CASEIRI> a process: .
+<CASEIRI> a bzk_process: .
 """
 
 def getNameTmplt(nametype):
@@ -121,20 +124,22 @@ def getNameTmplt(nametype):
 case_has_applicant="""
 <APPLICANT> participates_in: <CASEIRI> .
 <APPLICANT> a person: .
-<APPLICANT> has_role: applicant_role: .
-<CASEIRI> realizes: applicant_role: .
+<APPLICANT> has_role: <APPLICANT_appl_role> .
+<CASEIRI> realizes: <APPLICANT_appl_role> .
+<APPLICANT_appl_role> a applicant_role: .
 """
 
 case_has_victim="""
 <VICTIM> participates_in: <CASEIRI> .
 <VICTIM> a person: .
-<VICTIM> has_role: victim_role: .
-<CASEIRI> realizes: victim_role: .
+<VICTIM> has_role: <VICTIM_per_role> .
+<CASEIRI> realizes: <VICTIM_per_role> .
+<VICTIM_per_role> a persecutee_role: .
 """
 
 
 birth_tmplt="""
-<BIRTH> a process: . 
+<BIRTH> a birth_process: . 
 <BIRTH> has_participant: <PERSON> .
 """
 
@@ -159,7 +164,7 @@ address="""
 """
 
 death_tmplt="""
-<DEATH> a process: . 
+<DEATH> a death_process: . 
 <DEATH> has_participant: <PERSON> .
 """
 
