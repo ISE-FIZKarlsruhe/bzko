@@ -23,8 +23,9 @@ import_group:
   products:
 #    - id: bfo
 #      mirror_from: http://purl.obolibrary.org/obo/bfo/2020/notime/bfo.owl
-#    - id: ro
-#      mirror_from: http://purl.obolibrary.org/obo/ro/core.owl
+    - id: ro
+      #mirror_from: http://purl.obolibrary.org/obo/ro/core.owl
+      mirror_from: http://purl.obolibrary.org/obo/ro.owl
 #    - id: iao
 #    - id: cob
 #      use_base: true

@@ -33,8 +33,6 @@ $(IMPORTDIR)/pico_import.owl: $(MIRRORDIR)/pico.owl $(IMPORTDIR)/pico_terms.txt 
 		        --select complement --select annotation-properties \
 		 $(ANNOTATE_CONVERT_FILE)
 
-
-
 $(IMPORTDIR)/prov_import.owl: $(MIRRORDIR)/prov.owl $(IMPORTDIR)/prov_terms.txt | all_robot_plugins
 	$(ROBOT) annotate --input $< --remove-annotations \
 		 extract --term-file $(IMPORTDIR)/prov_terms.txt  \
@@ -43,5 +41,17 @@ $(IMPORTDIR)/prov_import.owl: $(MIRRORDIR)/prov.owl $(IMPORTDIR)/prov_terms.txt 
 		         --method STAR \
 		 remove $(foreach p, $(ANNOTATION_PROPERTIES), --term $(p)) \
 		        --term-file $(IMPORTDIR)/prov_terms.txt $(T_IMPORTSEED) \
+		        --select complement --select annotation-properties \
+		 $(ANNOTATE_CONVERT_FILE)		 
+
+
+$(IMPORTDIR)/ro_import.owl: $(MIRRORDIR)/ro.owl $(IMPORTDIR)/ro_terms.txt | all_robot_plugins
+	$(ROBOT) annotate --input $< --remove-annotations \
+		 extract --term-file $(IMPORTDIR)/ro_terms.txt  \
+		         --force true --copy-ontology-annotations true \
+		         --individuals include \
+		         --method SUBSET \
+		 remove $(foreach p, $(ANNOTATION_PROPERTIES), --term $(p)) \
+		        --term-file $(IMPORTDIR)/ro_terms.txt $(T_IMPORTSEED) \
 		        --select complement --select annotation-properties \
 		 $(ANNOTATE_CONVERT_FILE)		 

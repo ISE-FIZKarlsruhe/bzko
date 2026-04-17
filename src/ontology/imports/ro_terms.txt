@@ -1,0 +1,7 @@
+
+# more or less recommended by prov-bfo mapping with respect to prov:hadPrimarySource
+http://purl.obolibrary.org/obo/RO_0002559 # causally influenced by  
+http://purl.obolibrary.org/obo/RO_0002566 # causally influences
+
+# we need continuant as range for the above
+http://purl.obolibrary.org/obo/BFO_0000002

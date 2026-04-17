@@ -12,6 +12,7 @@ Ontology(<https://bzk.fiz-karlsruhe.de/ontology/>
 Import(<https://bzk.fiz-karlsruhe.de/ontology/bzk/components/imports-edit.owl>)
 Import(<https://bzk.fiz-karlsruhe.de/ontology/bzk/components/rigid.owl>)
 Import(<https://bzk.fiz-karlsruhe.de/ontology/bzk/imports/nfdicore_import.owl>)
+Import(<https://bzk.fiz-karlsruhe.de/ontology/bzk/imports/ro_import.owl>)
 Annotation(dcterms:description "None")
 Annotation(dcterms:license <https://creativecommons.org/licenses/unspecified>)
 Annotation(dcterms:title "BZK Ontology")

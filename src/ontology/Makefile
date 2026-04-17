@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                6bfb49933e3631132cf177c8652e2d6146d300cdefdb69f5180530960cb12b6d
+CONFIG_HASH=                7452b9eecac2cce0004a7399f1b079493d7fec0f9317e1fed77c1cf75d04080d
 
 
 # ----------------------------------------
@@ -188,7 +188,7 @@ all_main: $(MAIN_FILES)
 # ----------------------------------------
 
 
-IMPORTS =  nfdicore rico pico schema prov
+IMPORTS =  ro nfdicore rico pico schema prov
 
 IMPORT_ROOTS = $(patsubst %, $(IMPORTDIR)/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -485,6 +485,13 @@ endif # COMP=true
 # ----------------------------------------
 
 ifeq ($(MIR),true)
+
+
+## ONTOLOGY: ro
+.PHONY: mirror-ro
+.PRECIOUS: $(MIRRORDIR)/ro.owl
+mirror-ro: | $(TMPDIR)
+	$(ROBOT) convert -I http://purl.obolibrary.org/obo/ro.owl -o $(TMPDIR)/$@.owl
 
 
 ## ONTOLOGY: nfdicore
