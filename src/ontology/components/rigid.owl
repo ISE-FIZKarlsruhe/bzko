@@ -446,16 +446,6 @@ SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010063> <https://bzk.fiz-
 AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010065> "Hinweiskarte (Mainz/Neustadt)"@en)
 SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010065> <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004>)
 
-# Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0023010> (birth date)
-
-AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0023010> "birth date"@en)
-SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0023010> obo:BFO_0000203)
-
-# Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0023012> (death date)
-
-AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0023012> "death date"@en)
-SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0023012> obo:BFO_0000203)
-
 # Class: <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004> (person)
 
 SubClassOf(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004> ObjectSomeValuesFrom(obo:IAO_0000235 obo:IAO_0020016))

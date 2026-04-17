@@ -30,7 +30,6 @@ Declaration(ObjectProperty(:BZK_0010015))
 Declaration(ObjectProperty(:BZK_0010016))
 Declaration(ObjectProperty(:BZK_0010017))
 Declaration(ObjectProperty(:BZK_0010024))
-
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
 Declaration(AnnotationProperty(dcterms:title))
@@ -105,7 +104,7 @@ SubClassOf(:BZK_0000002 ObjectSomeValuesFrom(:BZK_0010015 :BZK_0010004))
 SubClassOf(:BZK_0000002 ObjectSomeValuesFrom(<https://www.ica.org/standards/RiC/ontology#hasOrHadDigitalInstantiation> :BZK_0010011))
 SubClassOf(:BZK_0000002 ObjectSomeValuesFrom(<https://www.ica.org/standards/RiC/ontology#hasOrHadIdentifier> :BZK_0000003))
 
-# Class: :BZK_0010009 (bzk applicant)
+# Class: :BZK_0010009 (death process boundary)
 
 AnnotationAssertion(rdfs:comment :BZK_0010009 "A BZK applicant can be a persecutee at the same time."@en)
 AnnotationAssertion(rdfs:comment :BZK_0010009 "The name of a BZK applicant can occur on diffent cards."@en)
@@ -129,6 +128,16 @@ SubClassOf(:BZK_0010012 obo:OBI_0000245)
 SubClassOf(:BZK_0010012 ObjectSomeValuesFrom(obo:RO_0000087 :BZK_0010001))
 SubClassOf(:BZK_0010012 ObjectSomeValuesFrom(:BZK_0010024 :BZK_0000002))
 SubClassOf(:BZK_0010012 ObjectAllValuesFrom(obo:IAO_0000235 :BZK_0010005))
+
+# Class: :BZK_0023010 (birth date)
+
+AnnotationAssertion(rdfs:label :BZK_0023010 "birth date"@en)
+SubClassOf(:BZK_0023010 obo:BFO_0000203)
+
+# Class: :BZK_0023012 (death date)
+
+AnnotationAssertion(rdfs:label :BZK_0023012 "death date"@en)
+SubClassOf(:BZK_0023012 obo:BFO_0000203)
 
 
 AnnotationAssertion(obo:IAO_0000116 <http://www.w3.org/ns/prov#hadPrimarySource> "In the PROV-O documentation, it is understood that something that had a primary source is a derivation. That is also why the superrelation of \"had primary source\" is \"was derived from\". 
