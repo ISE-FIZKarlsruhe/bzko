@@ -103,7 +103,6 @@ Declaration(ObjectProperty(obo:RO_0000059))
 Declaration(ObjectProperty(obo:RO_0000081))
 Declaration(ObjectProperty(obo:RO_0000087))
 Declaration(AnnotationProperty(obo:IAO_0000116))
-Declaration(AnnotationProperty(obo:OMO_0002000))
 Declaration(AnnotationProperty(skos:definition))
 
 
