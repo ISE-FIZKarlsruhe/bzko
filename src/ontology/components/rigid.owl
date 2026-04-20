@@ -29,6 +29,10 @@ Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0000002>))
 Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0000003>))
 Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0000006>))
 Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0000007>))
+Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0000014>))
+Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0000015>))
+Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0000016>))
+Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0000017>))
 Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010000>))
 Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010001>))
 Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010002>))
@@ -108,10 +112,6 @@ Declaration(AnnotationProperty(skos:definition))
 #   Classes
 ############################
 
-# Class: obo:IAO_0000422 (postal address)
-
-SubClassOf(obo:IAO_0000422 ObjectSomeValuesFrom(obo:BFO_0000051 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000005>))
-
 # Class: obo:IAO_0020016 (given name)
 
 AnnotationAssertion(rdfs:comment obo:IAO_0020016 "\"personal name\", the parent class of \"given name\", is not included in the ontology, because it is ambigious whether a given name is a part of a personal name, or a subclass of it. An issue will be created for this in the IAO GitHub repository.")
@@ -150,6 +150,26 @@ SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0000006> obo:IAO_0020017)
 AnnotationAssertion(rdfs:comment <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000007> "In BZKO, an alternative last name can happen in two ways: the family name was changed to a German or Latin form, or the person changed their family name.")
 AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000007> "alternative last name"@en)
 SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0000007> obo:IAO_0020017)
+
+# Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000014> (street name)
+
+AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000014> "street name"@en)
+SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0000014> obo:IAO_0020000)
+
+# Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000015> (house number)
+
+AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000015> "house number"@en)
+SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0000015> obo:IAO_0020000)
+
+# Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000016> (unit number)
+
+AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000016> "unit number"@en)
+SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0000016> obo:IAO_0020000)
+
+# Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000017> (postal code)
+
+AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000017> "postal code"@en)
+SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0000017> obo:IAO_0020000)
 
 # Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010000> (compensation process)
 
