@@ -55,3 +55,12 @@ $(IMPORTDIR)/ro_import.owl: $(MIRRORDIR)/ro.owl $(IMPORTDIR)/ro_terms.txt | all_
 		        --term-file $(IMPORTDIR)/ro_terms.txt $(T_IMPORTSEED) \
 		        --select complement --select annotation-properties \
 		 $(ANNOTATE_CONVERT_FILE)		 
+
+
+
+
+## make extension release artefact:
+
+$(ONT)-extension.ttl: $(ONT).ttl
+	$(ROBOT) merge -i bzk-extension.owl -o $@ 
+

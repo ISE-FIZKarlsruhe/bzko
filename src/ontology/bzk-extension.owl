@@ -61,7 +61,7 @@ AnnotationAssertion(rdfs:label dcterms:title "title")
 # Object Property: :BZK_0010013 (applies for compensation to)
 
 AnnotationAssertion(rdfs:label :BZK_0010013 "applies for compensation to"@en)
-ObjectPropertyDomain(:BZK_0010013 ObjectUnionOf(:BZK_0010009 :BZK_0010010))
+ObjectPropertyDomain(:BZK_0010013 :BZK_0000013)
 ObjectPropertyRange(:BZK_0010013 :BZK_0010012)
 
 # Object Property: :BZK_0010014 (is applied for compensation by)
@@ -114,16 +114,14 @@ AnnotationAssertion(obo:IAO_0000116 :BZK_0000013 "The name of a BZK applicant ca
 A BZK applicant can be a persecutee at the same time.")
 AnnotationAssertion(rdfs:label :BZK_0000013 "bzk applicant"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :BZK_0000013 "A BZK applicant is a person who was recorded as an applicant on a BZK card and applies for compensation as a persecuted person.")
-SubClassOf(:BZK_0000013 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004>)
-SubClassOf(:BZK_0000013 ObjectSomeValuesFrom(obo:RO_0000087 :BZK_0010003))
+EquivalentClasses(:BZK_0000013 ObjectIntersectionOf(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004> ObjectSomeValuesFrom(obo:RO_0000087 :BZK_0010003)))
 SubClassOf(:BZK_0000013 ObjectSomeValuesFrom(:BZK_0010013 :BZK_0010012))
 
 # Class: :BZK_0010010 (bzk persecutee)
 
 AnnotationAssertion(rdfs:label :BZK_0010010 "bzk persecutee"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :BZK_0010010 "A BZK persecutee is a person who was recorded as a persecutee on a BZK card."@en)
-SubClassOf(:BZK_0010010 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004>)
-SubClassOf(:BZK_0010010 ObjectSomeValuesFrom(obo:RO_0000087 :BZK_0010002))
+EquivalentClasses(:BZK_0010010 ObjectIntersectionOf(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004> ObjectSomeValuesFrom(obo:RO_0000087 :BZK_0010002)))
 SubClassOf(:BZK_0010010 ObjectSomeValuesFrom(:BZK_0010014 :BZK_0010009))
 
 # Class: :BZK_0010012 (compensation office)
