@@ -10,6 +10,7 @@ Prefix(dcterms:=<http://purl.org/dc/terms/>)
 
 
 Ontology(<https://bzk.fiz-karlsruhe.de/ontology/extension>
+Import(<file:/Users/joerg/Development/bzk/bzko/data/data-mini.ttl>)
 Import(<https://bzk.fiz-karlsruhe.de/ontology/bzk/components/imports-edit.owl>)
 Import(<https://bzk.fiz-karlsruhe.de/ontology/bzk/components/rigid.owl>)
 Import(<https://bzk.fiz-karlsruhe.de/ontology/bzk/imports/nfdicore_import.owl>)
@@ -77,10 +78,35 @@ InverseObjectProperties(:BZK_0010015 :BZK_0010017)
 ObjectPropertyDomain(:BZK_0010015 :BZK_0000002)
 ObjectPropertyRange(:BZK_0010015 :BZK_0010004)
 
-# Object Property: :BZK_0010016 (applies for compensation)
+# Object Property: :BZK_0010016 (applies for compensation of)
 
-AnnotationAssertion(rdfs:label :BZK_0010016 "applies for compensation"@en)
-ObjectPropertyDomain(:BZK_0010016 :BZK_0010009)
+AnnotationAssertion(obo:OMO_0002000 :BZK_0010016 "PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX bzk_process: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010000>  
+PREFIX has_role: <http://purl.obolibrary.org/obo/RO_0000087> 
+PREFIX participates_in: <http://purl.obolibrary.org/obo/RO_0000056> 
+PREFIX realizes: <http://purl.obolibrary.org/obo/BFO_0000055> 
+PREFIX person: <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004> 
+PREFIX applicant_role: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010003> 
+PREFIX persecutee_role: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010002> 
+
+prefix applies_for_compensation_of: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010016> 
+
+CONSTRUCT { ?applicant  applies_for_compensation_of: ?persecutee } where {
+   ?applicant a person: .
+   ?applicant has_role:  ?app_role .
+   ?app_role a applicant_role: .  
+   ?applicant participates_in: ?proc .
+   ?proc a bzk_process: .
+   ?proc realizes: ?app_role .
+
+   ?persecutee a person: .
+   ?persecutee has_role:  ?pers_role .
+   ?pers_role a persecutee_role: .  
+   ?persecutee participates_in: ?proc .
+   ?proc realizes: ?persecutee_role .
+}")
+AnnotationAssertion(rdfs:label :BZK_0010016 "applies for compensation of"@en)
+ObjectPropertyDomain(:BZK_0010016 :BZK_0000013)
 ObjectPropertyRange(:BZK_0010016 :BZK_0010010)
 
 # Object Property: :BZK_0010017 (is layout type of)
@@ -91,6 +117,27 @@ ObjectPropertyRange(:BZK_0010017 :BZK_0000002)
 
 # Object Property: :BZK_0010024 (issues)
 
+AnnotationAssertion(obo:OMO_0002000 :BZK_0010024 "prefix owl: <http://www.w3.org/2002/07/owl#> 
+prefix organization: <http://purl.obolibrary.org/obo/OBI_0000245> 
+prefix bzk_process: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010000>  
+prefix has_role: <http://purl.obolibrary.org/obo/RO_0000087> 
+prefix realized_in: <http://purl.obolibrary.org/obo/BFO_0000054> 
+prefix participates_in: <http://purl.obolibrary.org/obo/RO_0000056> 
+prefix office_role: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010001> 
+prefix card: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000002> 
+
+prefix issues: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010024> 
+
+construct {?organization issues: ?card }  where {
+   ?organization a organization: .
+   ?proc a bzk_process: .
+   ?organization has_role:  ?r  .
+   ?r a office_role: .
+   ?r realized_in: ?proc .
+   ?organization participates_in: ?proc .
+   ?card a card: .
+   ?card participates_in: ?proc .
+}")
 AnnotationAssertion(rdfs:label :BZK_0010024 "issues"@en)
 ObjectPropertyDomain(:BZK_0010024 :BZK_0010012)
 ObjectPropertyRange(:BZK_0010024 :BZK_0000002)
@@ -128,8 +175,7 @@ SubClassOf(:BZK_0010010 ObjectSomeValuesFrom(:BZK_0010014 :BZK_0010009))
 
 AnnotationAssertion(rdfs:label :BZK_0010012 "compensation office"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :BZK_0010012 "A compensation office is a government agency that reviews claims and provides compensation to persecuted people."@en)
-SubClassOf(:BZK_0010012 obo:OBI_0000245)
-SubClassOf(:BZK_0010012 ObjectSomeValuesFrom(obo:RO_0000087 :BZK_0010001))
+EquivalentClasses(:BZK_0010012 ObjectIntersectionOf(obo:OBI_0000245 ObjectSomeValuesFrom(obo:RO_0000087 :BZK_0010001)))
 SubClassOf(:BZK_0010012 ObjectSomeValuesFrom(:BZK_0010024 :BZK_0000002))
 SubClassOf(:BZK_0010012 ObjectAllValuesFrom(obo:IAO_0000235 :BZK_0010005))
 
@@ -150,46 +196,5 @@ For instance, a chart had a primary source from a database, or a quotation was d
 In the PiCo documentation, it is used to relate \"Person Observation\" to \"Source\", where \"Source\" refers to the historical record or document where \"Person Observation\"s are found. Indeed, in PiCo, a source is any resource where a person is mentioned, including archival records, books, or personal documents, not just traditional archives. 
 
 However, it is not a person observation but the name or address of a person observation recorded in a source. Similarly, a BZK number is on a BZK Index Card. Thereby, the domain of the prov:hadPrimarySource is the classes that are about Person Observation."@en)
-AnnotationAssertion(obo:OMO_0002000 :BZK_0000008 "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX owl: <http://www.w3.org/2002/07/owl#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-PREFIX person: <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004> 
-PREFIX has_participant: <http://purl.obolibrary.org/obo/RO_0000057>
-PREFIX environs: <http://purl.obolibrary.org/obo/BFO_0000183> 
-PREFIX has_role: <http://purl.obolibrary.org/obo/RO_0000087>
-PREFIX death_place_role: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000008>
-PREFIX has_value: <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001007> 
-
-CONSTRUCT {  ?p <https://schema.org/deathPlace>  ?label }
- WHERE { 
-?p a  person: .
-?proc has_participant: ?p. 
-?loc environs: ?proc .
-?loc has_role: ?role .
-?role a  death_place_role: .
-?loc has_value: ?label .
-}")
-AnnotationAssertion(obo:OMO_0002000 :BZK_0000009 "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX owl: <http://www.w3.org/2002/07/owl#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-PREFIX person: <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004> 
-PREFIX has_participant: <http://purl.obolibrary.org/obo/RO_0000057>
-PREFIX environs: <http://purl.obolibrary.org/obo/BFO_0000183> 
-PREFIX has_role: <http://purl.obolibrary.org/obo/RO_0000087>
-PREFIX birth_place_role: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000009>
-PREFIX has_value: <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001007> 
-
-CONSTRUCT {  ?p <https://schema.org/birthPlace>  ?label }
- WHERE { 
-?p a  person: .
-?proc has_participant: ?p. 
-?loc environs: ?proc .
-?loc has_role: ?role .
-?role a  birth_place_role: .
-?loc has_value: ?label .
-}")
-AnnotationAssertion(obo:OMO_0002000 :BZK_0000011 "... schema.org/name ...")
 AnnotationAssertion(rdfs:comment <https://personsincontext.org/model#eventPlace> "This data property can be used for death place and birth place."@en)
 )
