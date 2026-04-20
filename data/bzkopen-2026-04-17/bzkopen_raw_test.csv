@@ -1,0 +1,79 @@
+split_row,CompensationOffice1,BZKNr,Layout class,ApplicantFirstName,ApplicantLastName,ApplicantAltFirstName,ApplicantBirthName,ApplicantAltLastName,ApplicantBirthDate,VictimFirstName,VictimLastName,VictimAltFirstName,VictimBirthName,VictimAltLastName,VictimBirthDate,VictimDeathDate
+0,Entschädigungsamt Berlin,62 507,BY-BE-Hauptphase,,,,,,,Emma,Levy,,Heilbrunn,,27.9.1842,verstorben
+1,"Bayerisches Landesent<UNK>igungsamt München 2, Arcisstraße 11",91130/VIII/4053,BY-HB-Frühe Phase,Elisabeth,Elsner,,,,,Lippmann,Rosenthal,,,,26.2.1846,verst.
+2,"Bayerisches Lande<UNK>digungsamt München 2, Arcisstraße 11",74 372/VII/1671 4,BY-HB-Frühe Phase,,,,,,,Jenö,Schönfeld,,,,5.8.50,
+3,Der Innenminister des Landes Nordrhein-Westfalen Abteilung V,19866,NRW-Innenministerium,Amalie,Baehr,,,,10.12.1853,,,,,,,
+4,Hildesheim,2/02979,HH-NI-NRW-SH-Hauptphase,Josef,Laubinger,,,,24.4.1858,Johann,Laubinger,,,,5.6.08,1944
+5,Hildesheim,,HH-NI-NRW-SH-Hauptphase,,,,,,,Johann,Laubinger,,,,5.6.08,1944
+6,Landesentschädigungsamt Saarbrücken,10 605,RLP-Hauptphase (abweichend 1 und 2),Helene,Cahn,,Löb,,2.10.1860,Nathan,Cahn,,,,30.8.64,1938
+7,Bayerisches Landesentschädigungsamt Central-Kartei,77607/VII/20241,BY-eigener-Typ,,,,,,,Fanny,Blumberg,,Makuse,,17.11.1862,
+8,"Bayerisches Landesentschädigungsamt München 2, Prinz-Ludwig-Straße 1-3",120108/VII/24265,BY-eigener-Typ,Luise,Cossmann,,,,23.12.1863,Nikolaus-Paul,Cossnann,,,,6.4.1869,
+9,Hildesheim,210271,HH-NI-NRW-SH-Hauptphase,Emma,Rosenbaum,,Fabian,,28.7.1864,,,,,,,
+10,Hess. Staatsministerium Der Minister des Innern Abt. VI. Wiedergutmachung,6706,HE-Frühe-Phase,,,,,,,Emma,Hatsky,,,,26.6.1866,
+11,"Freie und Hansestadt Hamburg Sozialbehörde Amt für Wiedergutmachung Hamburg 1, Altstädter Straße 8 (Sprinkenhof)",1906 67,HH-NI-NRW-SH-Hauptphase,Pinkas,Riesel,,,,19.6.67,Jankel,Riesel,Jacob,,,18.4.80,
+12,Bezirksamt für Wiedergutmachung Koblenz,404703,RLP-Hauptphase,ANA,SPATER,,,,5.5.1869,,,,,,,
+13,Hannover,1 28484 g,HH-NI-NRW-SH-Hauptphase,Fanny,Rosenbaum,,,Hanf,11.11.1870,Rosa,Rüdenberg,,Hanf,,6.8.1869,24.6.1941
+14,"Bayerisches Landesentschädigungsamt München 2, Arcisstraße 11",76.687/VII/19299,BY-HB-Frühe Phase,,,,,,,Denny,Federlein,,,,6.1.72,
+15,"Bayerisches Landesentschädigungsamt München 2, Arcisstraße 11",28524/III/3215,BY-HB-Frühe Phase,Johann; Friedrich,Messerer; Messerer,,,,,Johann,Messerer,,,,1.1.76,gestorben 19.2.47
+16,"Bayerisches Landesentschädigungsamt München 2, Arcisstraße 11",90954/VIII/3962,BY-HB-Frühe Phase,Helena,Vogeser,,,,,Franz,Schütt,,,,6.1.76,22.11.37
+17,Köln,763 934,HH-NI-NRW-SH-Hauptphase,Barthe,Wechsler,,,,6.1.1878,,,,,,,
+18,Bezirksamt für Wiedergutmachung Koblenz,166225,RLP-Hauptphase,Simbul,Amar,,,,1880,,,,,,,
+19,Köln,29535,NRW-Köln-Art-V,Schena-Rachel,Ruckenstein,,Balaceanu,,1880,,,,,,,
+20,Bezirksamt für Wiedergutmachung Koblenz,241789,RLP-Hauptphase,Rubin,Aronfeld,,,,1880,,,,,,,
+21,Bezirksamt für Wiedergutmachung Koblenz,162686,RLP-Hauptphase,Linda,Alfandari,,Elazar,,1880 gen. Dat. fehlt - 15.7.1966 <UNK>,,,,,,,
+22,Bayerisches Landesentschädigungsamt Zentral-Registratur,83624/III/8395,BY-HB-Frühe Phase,Sigmund,Hinlein,,,,,Erwin,Dr. Hinlein,,,,11/20/1880,3.8.1944
+23,1) Der Regierungspräsident - Dezernat für Wiedergutmachung - in Detmold,s. 170 241 a 170 241,HH-NI-NRW-SH-Hauptphase,Elfriede,Steeg,,Steinhorst,,18.10.1882,Julius,Steeg,,,,,25.8.1940
+24,Hessen Kassel,K-00341-85-A-Spei.,HE-Hauptphase,Felix,Speier,,,,2.10.1885,,,,,,,
+25,Bayerisches Landesentschädigungsamt,34067,BY-BE-Hauptphase,Fritz,Dannhorn,,,,3.2.1887,,,,,,,
+26,Landesamt für die Wiedergutmachung Karlsruhe Zuständig für Nordbaden,EK 21069 A,BW-Hauptphase,Roza,RABER,,Gerstner,,3.7.1890,,,,,,,
+27,"Bayerisches Landesentschädigungsamt München 2, Arcisstraße 11",85050/I0106062,BY-HB-Frühe Phase,,,,,,,Iwan,Kapusewitsch,Johann,,,30.7.90,
+28,,94612/VII/28146,BY-HB-Frühe Phase,Henny,Engel,,Sichel,,,Betty ; Victor ; Julius,Katz ; Engel ; Lichtenstaedter,,Strauss,,,
+29,Nordrhein-Westfalen,36 053,NRW-Frühe-Phase,,,,,,,Otto,Heisig,,,,15.9.90,
+30,Hess. Staatsministerium Der Minister des Innern Abt. VI. Wiedergutmachung,28761,HE-Frühe-Phase,,,,,,,Sebastian,OTT,,,,14.12.1890,
+31,Nordrhein-Westfalen,29 806,NRW-Frühe-Phase,,,,,,,Friedrich,Bräckelmann,,,,14.12.90,6.9.51
+32,Bayerisches Landesentschädigungsamt,BEG 69 095,BY-BE-Hauptphase,Adolph,Mehl,,,,20.11.93,,,,,,,
+33,Hess. Staatsministerium Der Minister des Innern Abt. VI. Wiedergutmachung,1366,HE-Frühe-Phase,,,,,,,Richard,Fröhlich,Jos.,,,1.1.94,
+34,Bezirksamt für Wiedergutmachung Neustadt a. d. W.,403 479,RLP-Hauptphase,Alex,Aron,,,,8.11.1895,Jetti,Aron,,,,24.12.1895,4.10.56
+35,Landesamt für die Wiedergutmachung Stuttgart,660,BW-Hauptphase,Karl,Morasch,,,,29.8.1898,,,,,,,
+36,STATISTISCHES LANDESAMT NORDRHEIN-WESTFALEN Bundeszentralkartei für Verfolgte (22a) Düsseldorf Ludwig-Beck-Str. 23,,Auskünfte_Statistisches_Landesamt_NRW,Maria,BACHURSKA,,,,11-1-1899,,,,,,,
+37,Köln,25 929,NRW-Köln-Art-V,Ester,Bornstein,,Ganeles,,2.1.1900,,,,,,,
+38,Entschädigungsamt Berlin,52 332,BY-BE-Hauptphase,Frieda,Edel,,Georges,,2.1.1900,,,,,,,
+39,,H.A. 4225 A,ABC-Karten,Erika,Atamer,,,,2.1.1900,,,,,,,
+40,Landesamt für die Wiedergutmachung Karlsruhe,EK 4717,BW-Hauptphase,Karl,Barth,,,,2.1.1900,Max,Keller,,,,22.10.1875,?
+41,Kreissonderhilfsausschuß Delmenhorst,,ABC-Karten,Magnus,"Müller,",,,,2.3.1901,,,,,,,
+42,"Hansestadt Hamburg, Amt für Wiedergutmachung, Hamburg 36, Drehbahn 36IV",15580 E.5.,HH-Frühe-Phase,,,,,,,Michael,Eisenhauer,,,,15.3.02,
+43,"Hansestadt Hamburg, Amt für Wiedergutmachung, Hamburg 36, Drehbahn 36IV",9952 Ho6,HH-Frühe-Phase,,,,,,,Walther,Hübenet,,,,4.1.03,
+44,Regierungsbezirkamt für Wiedergutmachung und kontrollierte Vermögen Montabaur,F - 1/50,RLP-Frühe-Phase,Ernst,Fries,,,,8.1.1903,,,,,,,
+45,"Hansestadt Hamburg, Sozialbehörde, Amt für Wiedergutmachung, Hamburg 36, Drehbahn 36 IV",30597,HH-Frühe-Phase,,,,,,,Bertha,Engländer,,,,9.1.03,
+46,"Hansestadt Hamburg, Sozialbehörde, Amt für Wiedergutmachung, Hamburg 36, Drehbahn 36 IV",11026 N7,HH-Frühe-Phase,,,,,,,Fritz,Nordhorn,,,,9.1.03,
+47,Statistisches Landesamt Nordrhein-Westfalen Bundeszentralkartei für Verfolgte (22a) Düsseldorf Ludwig-Beck-Str. 23,,Auskünfte_Statistisches_Landesamt_NRW,ANATOL,MAJEV,,,,10.1.1903,,,,,,,
+48,Peine,,ABC-Karten,Bernhard,Hinsmann,,,,16.1.1903,,,,,,,
+49,Regierungsbezirkamt für Wiedergutmachung und kontrollierte Vermögen Trier,B/328,RLP-Frühe-Phase,Charles,Isay,,,,16.1.1903,,,,,,,
+50,Amt für Wiedergutmachung und kontrollierte Vermögen Landau/Pfalz,Wg. a 211/III/20,RLP-Frühe-Phase,Wilhelmine,George,,Heintz,,17.01.03,,,,,,,
+51,Bezirksamt für Wiedergutmachung NEUSTADT a. d. Weinstr.,702 106.,RLP-Hauptphase,Joef,WEISS,José,,,26. März 1903,Edith,Weiss,,,,8.8.1931,?
+52,Entschädigungsamt Berlin,305 771,BY-BE-Hauptphase,Marta,Jez,,,,31.3.1903,Franz,Jez,,,,12.9.1900,
+53,"Landesamt für die Wiedergutmachung Stuttgart Stuttgart-S, Neue Weinsteige 21",ES/A 17oo8-1,BW-Hauptphase,Lewis,Field,Ludwig,,Rosenfelder,12.5.1903,,,,,,,
+54,STATISTISCHES LANDESAMT NORDRHEIN-WESTFALEN Bundeszentralkartei für Verfolgte (22a) Düsseldorf Ludwig-Beck-Str. 23,,Auskünfte_Statistisches_Landesamt_NRW,Nicolas,KUPRANEC,,,,3.1.1904,,,,,,,
+55,"Landesamt für die Wiedergutmachung Stuttgart Stuttgart-S, Neue Weinsteige 21",ES 16793,BW-Hauptphase,Fritz,Kutschke,,,,8.1.1904,,,,,,,
+56,Hess. Staatsministerium Der Minister des Innern Abt. VI. Wiedergutmachung,12074,HE-Frühe-Phase,,,,,,,Johann,Witty,,,,12.5.04,
+57,Köln,108. 645,NRW-Köln-Art-V,Anna,Lorand,,Verö,,18.3.1906,,,,,,,
+58,Landesentschädigungsamt Saarbrücken,5017,RLP-Hauptphase (abweichend 1 und 2),Selma,HIRSCH,,Moritz,Gruenewald,24.7.1906,,,,,,,
+59,Landesentschädigungsamt Saarbrücken,4907,RLP-Hauptphase (abweichend 1 und 2),Selma,HIRSCH,,Moritz,Grünewald,24. Juli 1906,Ludwig,GRUENEWALD,,,,2. Mai 1904,17. Nov. 1949
+60,Bayerisches Landesentschädigungsamt,BEG 22599,BY-BE-Hauptphase,Leon,Fishman,Leib,-.-,,22.5.1907,,,,,,,
+61,Bayerisches Landesentschädigungsamt,BEG 49601,BY-BE-Hauptphase,Rebeka,Marienberg,Regina,Jakubowicz,,22.5.1907,,,,,,,
+62,Bayerisches Landesentschädigungsamt,BEG 56 776,BY-BE-Hauptphase,Jakob,Paratz,,,,22.5.07,,,,,,,
+63,HESSEN,I 6 W 56248,HE-Hauptphase,Sara,Pohl,,,,13.9.1907,Sander,Steinbach,,,,,
+64,Nordrhein-Westfalen,29 206,NRW-Frühe-Phase,,,,,,,Heinrich,Goeke,,,,13.9.07,
+65,Landesamt für die Wiedergutmachung Karlsruhe Zuständig für Nordbaden,EK 21742 A,BW-Hauptphase,Trude,ALTSTAEDTER,,Levistein,,13.9.1907,,,,,,,
+66,"Landesbezirksstelle für die Wiedergutmachung, Stuttgart",ES 341 (7230),BY-HB-Frühe Phase,,,,,,,Elly,Schlodinski,,,,31.12.1907,
+67,Landesamt für die Wiedergutmachung Stuttgart,ES 7230,BW-Hauptphase,Elly,Schlodinski,,,,31.12.1907,Hersz,Karczmar,,,,?,?
+68,"Bayerisches Land<UNK>digungsamt München 2, Arcisstraße 11",77390/VII/20005,BY-HB-Frühe Phase,,,,,,,Moritz,Schwartz,,,,31.12.07,
+69,Bayerisches Landesentschädigungsamt,BEG 6941,BY-BE-Hauptphase,Siegfried,Karl,,-.-,,31.12.1907,,,,,,,
+70,HESSEN Darmstadt,44148/08 (A)DP/Hak,HE-Hauptphase,Symcha,Haken,,,,6.5.1908,,,,,,,
+71,Der Innenminister des Landes Nordrhein-Westfalen Abteilung V,15 172,NRW-Innenministerium,Eduard,Hartwagner,,,,6.5.08,,,,,,,
+72,HESSEN,I 6 W/34491,HE-Hauptphase,Fritz,Lohnstein,,,,6.5.1908,,,,,,,
+73,Bayerisches Landesentschädigungsamt,BEG 31420,BY-BE-Hauptphase,Babette,Srodek,,Maier,,9.1.1915,,,,,,,
+74,Rheinland-Pfalz Berlin,177 561,RLP-Hauptphase,Maria,WERNER,,Fantl,,30.3.1917,,,,,,,
+75,"Landesamt für die Wiedergutmachung Stuttgart Stuttgart-S, Neue Weinsteige 21",ES/A 12845(0),BW-Hauptphase,Israel,Weiss,,,,15.8.1921,,,,,,,
+76,Entschädigungsamt Berlin,354 197,BY-BE-Hauptphase,Paula,Glaser,,Freylich,,8.10.1921,,,,,,,
+77,Landesamt für Wiedergutmachung Bremen,E 11041,HH-NI-NRW-SH-Hauptphase,Anita,Flieg,Klara,,,26.2.22,Julius,Meyer,Isaac,,,2.9.65,6.3.1941
