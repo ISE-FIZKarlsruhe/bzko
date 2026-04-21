@@ -166,6 +166,7 @@ SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0000016> obo:IAO_0020000)
 
 # Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000017> (postal code)
 
+AnnotationAssertion(rdfs:comment <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000017> "http://purl.obolibrary.org/obo/IAO_0000646 #postal code")
 AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000017> "postal code"@en)
 SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0000017> obo:IAO_0020000)
 

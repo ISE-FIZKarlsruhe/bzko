@@ -69,3 +69,4 @@ src/patterns/all_pattern_terms.txt
 # End of ODK-managed rules
 src/ontology/components/rigid.properties
 src/ontology/bzk-extension.properties
+src/ontology/imports/nfdicore_import.properties
