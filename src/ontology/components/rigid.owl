@@ -48,45 +48,6 @@ Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010020>))
 Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010021>))
 Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010022>))
 Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010023>))
-Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010025>))
-Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010026>))
-Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010027>))
-Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010028>))
-Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010029>))
-Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010030>))
-Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010031>))
-Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010032>))
-Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010033>))
-Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010034>))
-Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010035>))
-Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010036>))
-Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010037>))
-Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010038>))
-Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010039>))
-Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010040>))
-Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010041>))
-Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010042>))
-Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010043>))
-Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010044>))
-Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010045>))
-Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010046>))
-Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010047>))
-Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010048>))
-Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010049>))
-Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010050>))
-Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010051>))
-Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010052>))
-Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010053>))
-Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010054>))
-Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010055>))
-Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010056>))
-Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010057>))
-Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010058>))
-Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010060>))
-Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010061>))
-Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010062>))
-Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010063>))
-Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010065>))
 Declaration(Class(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004>))
 Declaration(Class(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000005>))
 Declaration(Class(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000022>))
@@ -102,6 +63,45 @@ Declaration(ObjectProperty(obo:RO_0000057))
 Declaration(ObjectProperty(obo:RO_0000059))
 Declaration(ObjectProperty(obo:RO_0000081))
 Declaration(ObjectProperty(obo:RO_0000087))
+Declaration(NamedIndividual(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010075>))
+Declaration(NamedIndividual(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010076>))
+Declaration(NamedIndividual(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010078>))
+Declaration(NamedIndividual(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010079>))
+Declaration(NamedIndividual(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010081>))
+Declaration(NamedIndividual(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010082>))
+Declaration(NamedIndividual(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010083>))
+Declaration(NamedIndividual(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010084>))
+Declaration(NamedIndividual(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010085>))
+Declaration(NamedIndividual(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010086>))
+Declaration(NamedIndividual(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010087>))
+Declaration(NamedIndividual(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010090>))
+Declaration(NamedIndividual(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010091>))
+Declaration(NamedIndividual(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010092>))
+Declaration(NamedIndividual(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010093>))
+Declaration(NamedIndividual(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010094>))
+Declaration(NamedIndividual(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010095>))
+Declaration(NamedIndividual(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010096>))
+Declaration(NamedIndividual(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010097>))
+Declaration(NamedIndividual(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010098>))
+Declaration(NamedIndividual(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010099>))
+Declaration(NamedIndividual(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010100>))
+Declaration(NamedIndividual(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010101>))
+Declaration(NamedIndividual(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010102>))
+Declaration(NamedIndividual(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010103>))
+Declaration(NamedIndividual(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010104>))
+Declaration(NamedIndividual(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010105>))
+Declaration(NamedIndividual(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010106>))
+Declaration(NamedIndividual(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010107>))
+Declaration(NamedIndividual(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010108>))
+Declaration(NamedIndividual(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010109>))
+Declaration(NamedIndividual(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010110>))
+Declaration(NamedIndividual(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010111>))
+Declaration(NamedIndividual(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010112>))
+Declaration(NamedIndividual(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010113>))
+Declaration(NamedIndividual(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010114>))
+Declaration(NamedIndividual(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010115>))
+Declaration(NamedIndividual(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010116>))
+Declaration(NamedIndividual(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010117>))
 Declaration(AnnotationProperty(obo:IAO_0000116))
 Declaration(AnnotationProperty(skos:definition))
 
@@ -114,7 +114,6 @@ Declaration(AnnotationProperty(skos:definition))
 # Class: obo:IAO_0020016 (given name)
 
 AnnotationAssertion(rdfs:comment obo:IAO_0020016 "\"personal name\", the parent class of \"given name\", is not included in the ontology, because it is ambigious whether a given name is a part of a personal name, or a subclass of it. An issue will be created for this in the IAO GitHub repository.")
-SubClassOf(obo:IAO_0020016 obo:IAO_0020000)
 SubClassOf(obo:IAO_0020016 ObjectSomeValuesFrom(obo:IAO_0000136 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004>))
 
 # Class: obo:IAO_0020017 (family name)
@@ -268,201 +267,6 @@ AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_001002
 AnnotationAssertion(skos:definition <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010023> "A settlement that does not fit the description of any administrative unit."@en)
 SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010023> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000005>)
 
-# Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010025> (Gerichtsurteile)
-
-AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010025> "Gerichtsurteile"@en)
-SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010025> <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004>)
-
-# Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010026> (Gelbe Hinweiskarte)
-
-AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010026> "Gelbe Hinweiskarte"@en)
-SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010026> <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004>)
-
-# Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010027> (Suchkarte-Hinweiskarte)
-
-AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010027> "Suchkarte-Hinweiskarte"@en)
-SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010027> <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004>)
-
-# Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010028> (Hinweiskarte-schwarzes-Datum)
-
-AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010028> "Hinweiskarte-schwarzes-Datum"@en)
-SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010028> <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004>)
-
-# Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010029> (NRW-Frühe-Phase)
-
-AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010029> "NRW-Frühe-Phase"@en)
-SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010029> <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004>)
-
-# Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010030> (RLP-Frühe-Phase)
-
-AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010030> "RLP-Frühe-Phase"@en)
-SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010030> <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004>)
-
-# Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010031> (ABC-Karten)
-
-AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010031> "ABC-Karten"@en)
-SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010031> <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004>)
-
-# Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010032> (BW-Hauptphase)
-
-AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010032> "BW-Hauptphase"@en)
-SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010032> <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004>)
-
-# Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010033> (BY-BE-Hauptphase)
-
-AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010033> "BY-BE-Hauptphase"@en)
-SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010033> <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004>)
-
-# Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010034> (BY-eigener-Typ)
-
-AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010034> "BY-eigener-Typ"@en)
-SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010034> <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004>)
-
-# Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010035> (BY-eigener-Typ (abweichend 1))
-
-AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010035> "BY-eigener-Typ (abweichend 1)"@en)
-SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010035> <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004>)
-
-# Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010036> (BY-eigener-Typ (abweichend 2))
-
-AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010036> "BY-eigener-Typ (abweichend 2)"@en)
-SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010036> <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004>)
-
-# Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010037> (BY-Spätphase (abweichend 1))
-
-AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010037> "BY-Spätphase (abweichend 1)"@en)
-SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010037> <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004>)
-
-# Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010038> (HH-NI-NRW-SH-Hauptphase)
-
-AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010038> "HH-NI-NRW-SH-Hauptphase"@en)
-SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010038> <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004>)
-
-# Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010039> (HH-NI-NRW-SH-Hauptphase (abweichend 1))
-
-AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010039> "HH-NI-NRW-SH-Hauptphase (abweichend 1)"@en)
-SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010039> <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004>)
-
-# Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010040> (HH-NI-NRW-SH-Hauptphase (abweichend 2))
-
-AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010040> "HH-NI-NRW-SH-Hauptphase (abweichend 2)"@en)
-SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010040> <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004>)
-
-# Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010041> (HE-Hauptphase)
-
-AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010041> "HE-Hauptphase"@en)
-SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010041> <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004>)
-
-# Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010042> (NRW-Innenministerium)
-
-AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010042> "NRW-Innenministerium"@en)
-SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010042> <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004>)
-
-# Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010043> (NRW-Köln-Art-V)
-
-AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010043> "NRW-Köln-Art-V"@en)
-SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010043> <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004>)
-
-# Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010044> (RLP-Hauptphase)
-
-AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010044> "RLP-Hauptphase"@en)
-SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010044> <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004>)
-
-# Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010045> (RLP-Hauptphase (abweichend 1))
-
-AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010045> "RLP-Hauptphase (abweichend 1)"@en)
-SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010045> <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004>)
-
-# Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010046> (RLP-Hauptphase (abweichend 2))
-
-AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010046> "RLP-Hauptphase (abweichend 2)"@en)
-SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010046> <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004>)
-
-# Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010047> (BY-Spätphase)
-
-AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010047> "BY-Spätphase"@en)
-SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010047> <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004>)
-
-# Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010048> (HH-NI-NRW-SH-Hauptphase (abweichend 3))
-
-AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010048> "HH-NI-NRW-SH-Hauptphase (abweichend 3)"@en)
-SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010048> <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004>)
-
-# Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010049> (HH-NI-NRW-SH-Hauptphase (abweichend 4))
-
-AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010049> "HH-NI-NRW-SH-Hauptphase (abweichend 4)"@en)
-SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010049> <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004>)
-
-# Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010050> (HB-Spätphase)
-
-AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010050> "HB-Spätphase"@en)
-SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010050> <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004>)
-
-# Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010051> (NRW-LRB)
-
-AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010051> "NRW-LRB"@en)
-SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010051> <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004>)
-
-# Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010052> (NRW-Köln-Härtefonds)
-
-AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010052> "NRW-Köln-Härtefonds"@en)
-SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010052> <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004>)
-
-# Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010053> (RLP-Hauptphase (abweichend 3))
-
-AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010053> "RLP-Hauptphase (abweichend 3)"@en)
-SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010053> <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004>)
-
-# Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010054> (RLP-Hauptphase (abweichend 4))
-
-AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010054> "RLP-Hauptphase (abweichend 4)"@en)
-SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010054> <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004>)
-
-# Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010055> (Tabellentyp)
-
-AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010055> "Tabellentyp"@en)
-SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010055> <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004>)
-
-# Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010056> (Tabellentyp (abweichend))
-
-AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010056> "Tabellentyp (abweichend)"@en)
-SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010056> <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004>)
-
-# Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010057> (Auskünfte-Statistisches-Landesamt-NRW)
-
-AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010057> "Auskünfte-Statistisches-Landesamt-NRW"@en)
-SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010057> <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004>)
-
-# Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010058> (Auskünfte-Statistisches-Landesamt-NRW (abweichend))
-
-AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010058> "Auskünfte-Statistisches-Landesamt-NRW (abweichend)"@en)
-SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010058> <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004>)
-
-# Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010060> (BY-HB-Frühe-Phase)
-
-AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010060> "BY-HB-Frühe-Phase"@en)
-SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010060> <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004>)
-
-# Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010061> (HH-Frühe-Phase)
-
-AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010061> "HH-Frühe-Phase"@en)
-SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010061> <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004>)
-
-# Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010062> (HE-Frühe-Phase)
-
-AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010062> "HE-Frühe-Phase"@en)
-SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010062> <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004>)
-
-# Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010063> (NI-Frühe-Phase)
-
-AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010063> "NI-Frühe-Phase"@en)
-SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010063> <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004>)
-
-# Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010065> (Hinweiskarte (Mainz/Neustadt))
-
-AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010065> "Hinweiskarte (Mainz/Neustadt)"@en)
-SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010065> <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004>)
-
 # Class: <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004> (person)
 
 SubClassOf(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004> ObjectSomeValuesFrom(obo:IAO_0000235 obo:IAO_0020016))
@@ -472,6 +276,206 @@ SubClassOf(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004> ObjectSomeValue
 
 AnnotationAssertion(rdfs:comment <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000005> "In the future, \"death place\" will also be connected to \"deportation process\" along with \"death process\"."@en)
 AnnotationAssertion(rdfs:comment <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000005> "Places should be matched to their GeoNames IDs."@en)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010075> (ABC-Karten)
+
+AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010075> "ABC-Karten"@en)
+ClassAssertion(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010075>)
+
+# Individual: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010076> (Auskünfte-Statistisches-Landesamt-NRW)
+
+AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010076> "Auskünfte-Statistisches-Landesamt-NRW"@en)
+ClassAssertion(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010076>)
+
+# Individual: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010078> (Auskünfte-Statistisches-Landesamt-NRW (abweichend))
+
+AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010078> "Auskünfte-Statistisches-Landesamt-NRW (abweichend)"@en)
+ClassAssertion(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010078>)
+
+# Individual: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010079> (BW-Hauptphase)
+
+AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010079> "BW-Hauptphase"@en)
+ClassAssertion(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010079>)
+
+# Individual: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010081> (BY-BE-Hauptphase)
+
+AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010081> "BY-BE-Hauptphase"@en)
+ClassAssertion(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010081>)
+
+# Individual: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010082> (BY-eigener-Typ)
+
+AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010082> "BY-eigener-Typ"@en)
+ClassAssertion(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010082>)
+
+# Individual: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010083> (BY-eigener-Typ (abweichend 1))
+
+AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010083> "BY-eigener-Typ (abweichend 1)"@en)
+ClassAssertion(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010083>)
+
+# Individual: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010084> (BY-eigener-Typ (abweichend 2))
+
+AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010084> "BY-eigener-Typ (abweichend 2)"@en)
+ClassAssertion(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010084>)
+
+# Individual: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010085> (BY-HB-Frühe-Phase)
+
+AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010085> "BY-HB-Frühe-Phase"@en)
+ClassAssertion(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010085>)
+
+# Individual: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010086> (BY-Spätphase)
+
+AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010086> "BY-Spätphase"@en)
+ClassAssertion(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010086>)
+
+# Individual: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010087> (BY-Spätphase (abweichend 1))
+
+AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010087> "BY-Spätphase (abweichend 1)"@en)
+ClassAssertion(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010087>)
+
+# Individual: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010090> (Gerichtsurteile)
+
+AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010090> "Gerichtsurteile"@en)
+ClassAssertion(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010090>)
+
+# Individual: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010091> (HH-NI-NRW-SH-Hauptphase (abweichend 1))
+
+AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010091> "HH-NI-NRW-SH-Hauptphase (abweichend 1)"@en)
+ClassAssertion(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010091>)
+
+# Individual: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010092> (HH-NI-NRW-SH-Hauptphase (abweichend 2))
+
+AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010092> "HH-NI-NRW-SH-Hauptphase (abweichend 2)"@en)
+ClassAssertion(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010092>)
+
+# Individual: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010093> (HH-NI-NRW-SH-Hauptphase (abweichend 3))
+
+AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010093> "HH-NI-NRW-SH-Hauptphase (abweichend 3)"@en)
+ClassAssertion(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010093>)
+
+# Individual: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010094> (HH-NI-NRW-SH-Hauptphase (abweichend 4))
+
+AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010094> "HH-NI-NRW-SH-Hauptphase (abweichend 4)"@en)
+ClassAssertion(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010094>)
+
+# Individual: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010095> (RLP-Hauptphase (abweichend 1))
+
+AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010095> "RLP-Hauptphase (abweichend 1)"@en)
+ClassAssertion(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010095>)
+
+# Individual: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010096> (RLP-Hauptphase (abweichend 2))
+
+AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010096> "RLP-Hauptphase (abweichend 2)"@en)
+ClassAssertion(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010096>)
+
+# Individual: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010097> (RLP-Hauptphase (abweichend 3))
+
+AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010097> "RLP-Hauptphase (abweichend 3)"@en)
+ClassAssertion(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010097>)
+
+# Individual: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010098> (RLP-Hauptphase (abweichend 4))
+
+AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010098> "RLP-Hauptphase (abweichend 4)"@en)
+ClassAssertion(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010098>)
+
+# Individual: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010099> (Hinweiskarte-schwarzes-Datum)
+
+AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010099> "Hinweiskarte-schwarzes-Datum"@en)
+ClassAssertion(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010099>)
+
+# Individual: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010100> (Hinweiskarte (Mainz/Neustadt))
+
+AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010100> "Hinweiskarte (Mainz/Neustadt)"@en)
+ClassAssertion(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010100>)
+
+# Individual: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010101> (Gelbe Hinweiskarte)
+
+AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010101> "Gelbe Hinweiskarte"@en)
+ClassAssertion(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010101>)
+
+# Individual: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010102> (HB-Spätphase)
+
+AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010102> "HB-Spätphase"@en)
+ClassAssertion(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010102>)
+
+# Individual: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010103> (HE-Frühe-Phase)
+
+AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010103> "HE-Frühe-Phase"@en)
+ClassAssertion(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010103>)
+
+# Individual: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010104> (HE-Hauptphase)
+
+AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010104> "HE-Hauptphase"@en)
+ClassAssertion(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010104>)
+
+# Individual: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010105> (HH-Frühe-Phase)
+
+AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010105> "HH-Frühe-Phase"@en)
+ClassAssertion(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010105>)
+
+# Individual: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010106> (HH-NI-NRW-SH-Hauptphase)
+
+AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010106> "HH-NI-NRW-SH-Hauptphase"@en)
+ClassAssertion(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010106>)
+
+# Individual: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010107> (NI-Frühe-Phase)
+
+AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010107> "NI-Frühe-Phase"@en)
+ClassAssertion(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010107>)
+
+# Individual: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010108> (NRW-Frühe-Phase)
+
+AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010108> "NRW-Frühe-Phase"@en)
+ClassAssertion(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010108>)
+
+# Individual: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010109> (NRW-Innenministerium)
+
+AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010109> "NRW-Innenministerium"@en)
+ClassAssertion(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010109>)
+
+# Individual: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010110> (NRW-Köln-Art-V)
+
+AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010110> "NRW-Köln-Art-V"@en)
+ClassAssertion(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010110>)
+
+# Individual: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010111> (NRW-Köln-Härtefonds)
+
+AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010111> "NRW-Köln-Härtefonds"@en)
+ClassAssertion(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010111>)
+
+# Individual: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010112> (NRW-LRB)
+
+AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010112> "NRW-LRB"@en)
+ClassAssertion(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010112>)
+
+# Individual: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010113> (RLP-Frühe-Phase)
+
+AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010113> "RLP-Frühe-Phase"@en)
+ClassAssertion(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010113>)
+
+# Individual: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010114> (RLP-Hauptphase)
+
+AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010114> "RLP-Hauptphase"@en)
+ClassAssertion(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010114>)
+
+# Individual: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010115> (Suchkarte-Hinweiskarte)
+
+AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010115> "Suchkarte-Hinweiskarte"@en)
+ClassAssertion(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010115>)
+
+# Individual: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010116> (Tabellentyp)
+
+AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010116> "Tabellentyp"@en)
+ClassAssertion(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010116>)
+
+# Individual: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010117> (Tabellentyp (abweichend))
+
+AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010117> "Tabellentyp (abweichend)"@en)
+ClassAssertion(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010117>)
 
 
 )
