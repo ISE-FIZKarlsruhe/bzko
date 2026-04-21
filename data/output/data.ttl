@@ -68,8 +68,6 @@ occupies_temporal_region: a owl:ObjectProperty .
 denotes: a owl:ObjectProperty .
 realizes: a owl:ObjectProperty .
 environs: a owl:ObjectProperty .
-temporal_instant: a owl:ObjectProperty .
-person: a owl:ObjectProperty .
 causally_influenced_by: a owl:ObjectProperty .
 causally_influences: a owl:ObjectProperty .
 occurs_in: a owl:ObjectProperty .
