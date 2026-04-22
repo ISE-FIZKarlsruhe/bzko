@@ -13,11 +13,11 @@
 @base <https://bzk.fiz-karlsruhe.de/ontology/bzk.ttl> .
 
 <https://bzk.fiz-karlsruhe.de/ontology/bzk.ttl> rdf:type owl:Ontology ;
-                                                 owl:versionIRI <https://bzk.fiz-karlsruhe.de/ontology/bzk/releases/2026-04-20/bzk.ttl> ;
+                                                 owl:versionIRI <https://bzk.fiz-karlsruhe.de/ontology/bzk/releases/2026-04-22/bzk.ttl> ;
                                                  dcterms:description "None" ;
                                                  dcterms:license <https://creativecommons.org/licenses/unspecified> ;
                                                  dcterms:title "BZK Ontology" ;
-                                                 owl:versionInfo "2026-04-20" .
+                                                 owl:versionInfo "2026-04-22" .
 
 #################################################################
 #    Annotation properties
@@ -1106,12 +1106,6 @@ for now."""@en ;
                                                     rdfs:label "unit number"@en .
 
 
-###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0000017
-<https://bzk.fiz-karlsruhe.de/ontology/BZK_0000017> rdf:type owl:Class ;
-                                                    rdfs:subClassOf obo:IAO_0020000 ;
-                                                    rdfs:label "postal code"@en .
-
-
 ###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010000
 <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010000> rdf:type owl:Class ;
                                                     rdfs:subClassOf obo:BFO_0000015 ,
@@ -1241,240 +1235,6 @@ for now."""@en ;
                                                     rdfs:comment "Examples include concentration camps, prisons and prison camps, refugee camps, and military bases."@en ;
                                                     rdfs:label "compound"@en ;
                                                     skos:definition "A settlement that does not fit the description of any administrative unit."@en .
-
-
-###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010025
-<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010025> rdf:type owl:Class ;
-                                                    rdfs:subClassOf <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> ;
-                                                    rdfs:label "Gerichtsurteile"@en .
-
-
-###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010026
-<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010026> rdf:type owl:Class ;
-                                                    rdfs:subClassOf <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> ;
-                                                    rdfs:label "Gelbe Hinweiskarte"@en .
-
-
-###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010027
-<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010027> rdf:type owl:Class ;
-                                                    rdfs:subClassOf <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> ;
-                                                    rdfs:label "Suchkarte-Hinweiskarte"@en .
-
-
-###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010028
-<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010028> rdf:type owl:Class ;
-                                                    rdfs:subClassOf <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> ;
-                                                    rdfs:label "Hinweiskarte-schwarzes-Datum"@en .
-
-
-###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010029
-<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010029> rdf:type owl:Class ;
-                                                    rdfs:subClassOf <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> ;
-                                                    rdfs:label "NRW-Frühe-Phase"@en .
-
-
-###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010030
-<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010030> rdf:type owl:Class ;
-                                                    rdfs:subClassOf <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> ;
-                                                    rdfs:label "RLP-Frühe-Phase"@en .
-
-
-###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010031
-<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010031> rdf:type owl:Class ;
-                                                    rdfs:subClassOf <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> ;
-                                                    rdfs:label "ABC-Karten"@en .
-
-
-###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010032
-<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010032> rdf:type owl:Class ;
-                                                    rdfs:subClassOf <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> ;
-                                                    rdfs:label "BW-Hauptphase"@en .
-
-
-###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010033
-<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010033> rdf:type owl:Class ;
-                                                    rdfs:subClassOf <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> ;
-                                                    rdfs:label "BY-BE-Hauptphase"@en .
-
-
-###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010034
-<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010034> rdf:type owl:Class ;
-                                                    rdfs:subClassOf <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> ;
-                                                    rdfs:label "BY-eigener-Typ"@en .
-
-
-###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010035
-<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010035> rdf:type owl:Class ;
-                                                    rdfs:subClassOf <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> ;
-                                                    rdfs:label "BY-eigener-Typ (abweichend 1)"@en .
-
-
-###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010036
-<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010036> rdf:type owl:Class ;
-                                                    rdfs:subClassOf <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> ;
-                                                    rdfs:label "BY-eigener-Typ (abweichend 2)"@en .
-
-
-###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010037
-<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010037> rdf:type owl:Class ;
-                                                    rdfs:subClassOf <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> ;
-                                                    rdfs:label "BY-Spätphase (abweichend 1)"@en .
-
-
-###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010038
-<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010038> rdf:type owl:Class ;
-                                                    rdfs:subClassOf <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> ;
-                                                    rdfs:label "HH-NI-NRW-SH-Hauptphase"@en .
-
-
-###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010039
-<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010039> rdf:type owl:Class ;
-                                                    rdfs:subClassOf <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> ;
-                                                    rdfs:label "HH-NI-NRW-SH-Hauptphase (abweichend 1)"@en .
-
-
-###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010040
-<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010040> rdf:type owl:Class ;
-                                                    rdfs:subClassOf <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> ;
-                                                    rdfs:label "HH-NI-NRW-SH-Hauptphase (abweichend 2)"@en .
-
-
-###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010041
-<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010041> rdf:type owl:Class ;
-                                                    rdfs:subClassOf <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> ;
-                                                    rdfs:label "HE-Hauptphase"@en .
-
-
-###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010042
-<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010042> rdf:type owl:Class ;
-                                                    rdfs:subClassOf <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> ;
-                                                    rdfs:label "NRW-Innenministerium"@en .
-
-
-###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010043
-<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010043> rdf:type owl:Class ;
-                                                    rdfs:subClassOf <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> ;
-                                                    rdfs:label "NRW-Köln-Art-V"@en .
-
-
-###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010044
-<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010044> rdf:type owl:Class ;
-                                                    rdfs:subClassOf <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> ;
-                                                    rdfs:label "RLP-Hauptphase"@en .
-
-
-###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010045
-<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010045> rdf:type owl:Class ;
-                                                    rdfs:subClassOf <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> ;
-                                                    rdfs:label "RLP-Hauptphase (abweichend 1)"@en .
-
-
-###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010046
-<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010046> rdf:type owl:Class ;
-                                                    rdfs:subClassOf <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> ;
-                                                    rdfs:label "RLP-Hauptphase (abweichend 2)"@en .
-
-
-###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010047
-<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010047> rdf:type owl:Class ;
-                                                    rdfs:subClassOf <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> ;
-                                                    rdfs:label "BY-Spätphase"@en .
-
-
-###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010048
-<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010048> rdf:type owl:Class ;
-                                                    rdfs:subClassOf <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> ;
-                                                    rdfs:label "HH-NI-NRW-SH-Hauptphase (abweichend 3)"@en .
-
-
-###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010049
-<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010049> rdf:type owl:Class ;
-                                                    rdfs:subClassOf <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> ;
-                                                    rdfs:label "HH-NI-NRW-SH-Hauptphase (abweichend 4)"@en .
-
-
-###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010050
-<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010050> rdf:type owl:Class ;
-                                                    rdfs:subClassOf <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> ;
-                                                    rdfs:label "HB-Spätphase"@en .
-
-
-###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010051
-<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010051> rdf:type owl:Class ;
-                                                    rdfs:subClassOf <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> ;
-                                                    rdfs:label "NRW-LRB"@en .
-
-
-###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010052
-<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010052> rdf:type owl:Class ;
-                                                    rdfs:subClassOf <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> ;
-                                                    rdfs:label "NRW-Köln-Härtefonds"@en .
-
-
-###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010053
-<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010053> rdf:type owl:Class ;
-                                                    rdfs:subClassOf <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> ;
-                                                    rdfs:label "RLP-Hauptphase (abweichend 3)"@en .
-
-
-###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010054
-<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010054> rdf:type owl:Class ;
-                                                    rdfs:subClassOf <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> ;
-                                                    rdfs:label "RLP-Hauptphase (abweichend 4)"@en .
-
-
-###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010055
-<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010055> rdf:type owl:Class ;
-                                                    rdfs:subClassOf <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> ;
-                                                    rdfs:label "Tabellentyp"@en .
-
-
-###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010056
-<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010056> rdf:type owl:Class ;
-                                                    rdfs:subClassOf <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> ;
-                                                    rdfs:label "Tabellentyp (abweichend)"@en .
-
-
-###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010057
-<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010057> rdf:type owl:Class ;
-                                                    rdfs:subClassOf <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> ;
-                                                    rdfs:label "Auskünfte-Statistisches-Landesamt-NRW"@en .
-
-
-###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010058
-<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010058> rdf:type owl:Class ;
-                                                    rdfs:subClassOf <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> ;
-                                                    rdfs:label "Auskünfte-Statistisches-Landesamt-NRW (abweichend)"@en .
-
-
-###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010060
-<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010060> rdf:type owl:Class ;
-                                                    rdfs:subClassOf <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> ;
-                                                    rdfs:label "BY-HB-Frühe-Phase"@en .
-
-
-###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010061
-<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010061> rdf:type owl:Class ;
-                                                    rdfs:subClassOf <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> ;
-                                                    rdfs:label "HH-Frühe-Phase"@en .
-
-
-###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010062
-<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010062> rdf:type owl:Class ;
-                                                    rdfs:subClassOf <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> ;
-                                                    rdfs:label "HE-Frühe-Phase"@en .
-
-
-###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010063
-<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010063> rdf:type owl:Class ;
-                                                    rdfs:subClassOf <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> ;
-                                                    rdfs:label "NI-Frühe-Phase"@en .
-
-
-###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010065
-<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010065> rdf:type owl:Class ;
-                                                    rdfs:subClassOf <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> ;
-                                                    rdfs:label "Hinweiskarte (Mainz/Neustadt)"@en .
 
 
 ###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004
@@ -1638,6 +1398,13 @@ for now."""@en ;
                                                       skos:example "Professor, Associate Professor, Dr., PhD, Dr. Ing." .
 
 
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001041
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001041> rdf:type owl:Class ;
+                                                      rdfs:subClassOf obo:IAO_0020000 ;
+                                                      rdfs:comment "An identifier that denotes some postal delivery route, some aggregate of postal delivery routes or a geographical region and was created for the purpose of sorting and delivering mail." ;
+                                                      rdfs:label "postal code"@en .
+
+
 ###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001050
 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001050> rdf:type owl:Class ;
                                                       owl:equivalentClass [ owl:intersectionOf ( <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000203>
@@ -1793,6 +1560,240 @@ obo:OMO_0001000 rdf:type owl:NamedIndividual ;
                 obo:IAO_0000115 "The term was added to the ontology on the assumption it was in scope, but it turned out later that it was not."@en ;
                 obo:IAO_0000116 "This obsolesence reason should be used conservatively. Typical valid examples are: un-necessary grouping classes in disease ontologies, a phenotype term added on the assumption it was a disease."@en ;
                 rdfs:label "out of scope" .
+
+
+###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010075
+<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010075> rdf:type owl:NamedIndividual ,
+                                                             <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> ;
+                                                    rdfs:label "ABC-Karten"@en .
+
+
+###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010076
+<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010076> rdf:type owl:NamedIndividual ,
+                                                             <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> ;
+                                                    rdfs:label "Auskünfte-Statistisches-Landesamt-NRW"@en .
+
+
+###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010078
+<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010078> rdf:type owl:NamedIndividual ,
+                                                             <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> ;
+                                                    rdfs:label "Auskünfte-Statistisches-Landesamt-NRW (abweichend)"@en .
+
+
+###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010079
+<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010079> rdf:type owl:NamedIndividual ,
+                                                             <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> ;
+                                                    rdfs:label "BW-Hauptphase"@en .
+
+
+###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010081
+<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010081> rdf:type owl:NamedIndividual ,
+                                                             <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> ;
+                                                    rdfs:label "BY-BE-Hauptphase"@en .
+
+
+###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010082
+<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010082> rdf:type owl:NamedIndividual ,
+                                                             <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> ;
+                                                    rdfs:label "BY-eigener-Typ"@en .
+
+
+###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010083
+<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010083> rdf:type owl:NamedIndividual ,
+                                                             <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> ;
+                                                    rdfs:label "BY-eigener-Typ (abweichend 1)"@en .
+
+
+###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010084
+<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010084> rdf:type owl:NamedIndividual ,
+                                                             <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> ;
+                                                    rdfs:label "BY-eigener-Typ (abweichend 2)"@en .
+
+
+###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010085
+<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010085> rdf:type owl:NamedIndividual ,
+                                                             <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> ;
+                                                    rdfs:label "BY-HB-Frühe-Phase"@en .
+
+
+###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010086
+<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010086> rdf:type owl:NamedIndividual ,
+                                                             <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> ;
+                                                    rdfs:label "BY-Spätphase"@en .
+
+
+###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010087
+<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010087> rdf:type owl:NamedIndividual ,
+                                                             <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> ;
+                                                    rdfs:label "BY-Spätphase (abweichend 1)"@en .
+
+
+###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010090
+<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010090> rdf:type owl:NamedIndividual ,
+                                                             <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> ;
+                                                    rdfs:label "Gerichtsurteile"@en .
+
+
+###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010091
+<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010091> rdf:type owl:NamedIndividual ,
+                                                             <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> ;
+                                                    rdfs:label "HH-NI-NRW-SH-Hauptphase (abweichend 1)"@en .
+
+
+###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010092
+<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010092> rdf:type owl:NamedIndividual ,
+                                                             <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> ;
+                                                    rdfs:label "HH-NI-NRW-SH-Hauptphase (abweichend 2)"@en .
+
+
+###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010093
+<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010093> rdf:type owl:NamedIndividual ,
+                                                             <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> ;
+                                                    rdfs:label "HH-NI-NRW-SH-Hauptphase (abweichend 3)"@en .
+
+
+###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010094
+<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010094> rdf:type owl:NamedIndividual ,
+                                                             <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> ;
+                                                    rdfs:label "HH-NI-NRW-SH-Hauptphase (abweichend 4)"@en .
+
+
+###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010095
+<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010095> rdf:type owl:NamedIndividual ,
+                                                             <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> ;
+                                                    rdfs:label "RLP-Hauptphase (abweichend 1)"@en .
+
+
+###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010096
+<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010096> rdf:type owl:NamedIndividual ,
+                                                             <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> ;
+                                                    rdfs:label "RLP-Hauptphase (abweichend 2)"@en .
+
+
+###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010097
+<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010097> rdf:type owl:NamedIndividual ,
+                                                             <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> ;
+                                                    rdfs:label "RLP-Hauptphase (abweichend 3)"@en .
+
+
+###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010098
+<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010098> rdf:type owl:NamedIndividual ,
+                                                             <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> ;
+                                                    rdfs:label "RLP-Hauptphase (abweichend 4)"@en .
+
+
+###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010099
+<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010099> rdf:type owl:NamedIndividual ,
+                                                             <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> ;
+                                                    rdfs:label "Hinweiskarte-schwarzes-Datum"@en .
+
+
+###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010100
+<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010100> rdf:type owl:NamedIndividual ,
+                                                             <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> ;
+                                                    rdfs:label "Hinweiskarte (Mainz/Neustadt)"@en .
+
+
+###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010101
+<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010101> rdf:type owl:NamedIndividual ,
+                                                             <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> ;
+                                                    rdfs:label "Gelbe Hinweiskarte"@en .
+
+
+###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010102
+<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010102> rdf:type owl:NamedIndividual ,
+                                                             <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> ;
+                                                    rdfs:label "HB-Spätphase"@en .
+
+
+###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010103
+<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010103> rdf:type owl:NamedIndividual ,
+                                                             <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> ;
+                                                    rdfs:label "HE-Frühe-Phase"@en .
+
+
+###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010104
+<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010104> rdf:type owl:NamedIndividual ,
+                                                             <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> ;
+                                                    rdfs:label "HE-Hauptphase"@en .
+
+
+###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010105
+<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010105> rdf:type owl:NamedIndividual ,
+                                                             <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> ;
+                                                    rdfs:label "HH-Frühe-Phase"@en .
+
+
+###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010106
+<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010106> rdf:type owl:NamedIndividual ,
+                                                             <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> ;
+                                                    rdfs:label "HH-NI-NRW-SH-Hauptphase"@en .
+
+
+###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010107
+<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010107> rdf:type owl:NamedIndividual ,
+                                                             <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> ;
+                                                    rdfs:label "NI-Frühe-Phase"@en .
+
+
+###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010108
+<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010108> rdf:type owl:NamedIndividual ,
+                                                             <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> ;
+                                                    rdfs:label "NRW-Frühe-Phase"@en .
+
+
+###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010109
+<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010109> rdf:type owl:NamedIndividual ,
+                                                             <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> ;
+                                                    rdfs:label "NRW-Innenministerium"@en .
+
+
+###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010110
+<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010110> rdf:type owl:NamedIndividual ,
+                                                             <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> ;
+                                                    rdfs:label "NRW-Köln-Art-V"@en .
+
+
+###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010111
+<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010111> rdf:type owl:NamedIndividual ,
+                                                             <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> ;
+                                                    rdfs:label "NRW-Köln-Härtefonds"@en .
+
+
+###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010112
+<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010112> rdf:type owl:NamedIndividual ,
+                                                             <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> ;
+                                                    rdfs:label "NRW-LRB"@en .
+
+
+###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010113
+<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010113> rdf:type owl:NamedIndividual ,
+                                                             <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> ;
+                                                    rdfs:label "RLP-Frühe-Phase"@en .
+
+
+###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010114
+<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010114> rdf:type owl:NamedIndividual ,
+                                                             <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> ;
+                                                    rdfs:label "RLP-Hauptphase"@en .
+
+
+###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010115
+<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010115> rdf:type owl:NamedIndividual ,
+                                                             <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> ;
+                                                    rdfs:label "Suchkarte-Hinweiskarte"@en .
+
+
+###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010116
+<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010116> rdf:type owl:NamedIndividual ,
+                                                             <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> ;
+                                                    rdfs:label "Tabellentyp"@en .
+
+
+###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010117
+<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010117> rdf:type owl:NamedIndividual ,
+                                                             <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> ;
+                                                    rdfs:label "Tabellentyp (abweichend)"@en .
 
 
 ###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000157

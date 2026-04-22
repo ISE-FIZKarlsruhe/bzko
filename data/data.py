@@ -144,9 +144,6 @@ bzk_num_tmplt="""
 <BZKIRI> a bzk_nummer: .
 <BZKIRI> has_value: "BZKLABEL" .
 <BZKIRI> is_about: <BZKIRI_card> . 
-
-<CASEIRI> concretizes: <BZKIRI> .
-<CASEIRI> a bzk_process: .
 """
 
 def getNameTmplt(nametype):
@@ -225,6 +222,7 @@ with open('bzkopen-2026-04-17/bzkopen_raw_train.csv', newline='') as csvfile:
 
 			# the IRI of the compensation case (the row)
 			caseIRI=niri()
+			print (f"<{caseIRI}> a bzk_process: .")
 			split_row = row[0]
 			split_row_cases[split_row]={"case": caseIRI}
 
@@ -250,7 +248,7 @@ with open('bzkopen-2026-04-17/bzkopen_raw_train.csv', newline='') as csvfile:
 			print (bzk_card_tmplt.replace("BZKIRI", bzknumiri).replace("CASEIRI", caseIRI))
 
 			if bzknum:
-				bzkRDF=bzk_num_tmplt.replace("BZKIRI", bzknumiri).replace("BZKLABEL", bzknum).replace("CASEIRI", caseIRI)
+				bzkRDF=bzk_num_tmplt.replace("BZKIRI", bzknumiri).replace("BZKLABEL", bzknum)
 				print (bzkRDF)
 				
 
@@ -296,14 +294,15 @@ with open('bzkopen-2026-04-17/bzkopen_raw_train.csv', newline='') as csvfile:
 
 			birthIRI=applicantIRI+"_birth"
 			birthRDF=birth_tmplt.replace("BIRTH", birthIRI).replace("PERSON", applicantIRI)
-			print (birthRDF)
 
 			applicantBirthDate=row[9]
 			if applicantBirthDate:
 				birthDateRDF=birth_date_tmplt.replace("BIRTH", birthIRI).replace("TIME", applicantBirthDate)
+				print (birthRDF)
 				print (birthDateRDF)
 
 			split_row_cases[split_row]["applicant_birth"]=birthIRI
+			split_row_cases[split_row]["applicant_birth_rdf"]=birthRDF ## we will print it again for the place, if existing
 
 
 			victimIRI=niri()
@@ -346,44 +345,25 @@ with open('bzkopen-2026-04-17/bzkopen_raw_train.csv', newline='') as csvfile:
 			birthIRI=victimIRI+"_birth"
 			birthRDF=birth_tmplt.replace("BIRTH", birthIRI).replace("PERSON", victimIRI)
 			split_row_cases[split_row]["persecutee_birth"]=birthIRI
-			print (birthRDF)
+			split_row_cases[split_row]["persecutee_birth_rdf"]=birthRDF
 
 			victimBirthDate=row[15]
 			if victimBirthDate:
 				birthDateRDF=birth_date_tmplt.replace("BIRTH", birthIRI).replace("TIME", victimBirthDate)
+				print (birthRDF)
 				print (birthDateRDF)
-
-		#	victimBirthPlace=row[17]
-		#	if victimBirthPlace:
-		#		birthPlaceRDF=birth_place_tmplt.replace("BIRTH", birthIRI).replace("PLACELABEL", victimBirthPlace)
-		#		print (birthPlaceRDF)
-
-		#	if victimBirthPlace or victimBirthDate:
-		#		print (birthRDF)
-
 
 
 			deathIRI=victimIRI+"_death"
 			deathRDF=death_tmplt.replace("DEATH", deathIRI).replace("PERSON", victimIRI)
-		
-			#  print only if death date or death place are present
-			print (deathRDF)
-
 			split_row_cases[split_row]["persecutee_death"]=deathIRI
+			split_row_cases[split_row]["persecutee_death_rdf"]=deathRDF
 
 			victimDeathDate=row[16]
 			if victimDeathDate:
 				deathDateRDF=death_date_tmplt.replace("DEATH", deathIRI).replace("TIME", victimDeathDate)
+				print (deathRDF)
 				print (deathDateRDF)
-
-		#	victimDeathPlace=row[19]
-		#	if victimDeathPlace:
-		#		deathPlaceRDF=death_place_tmplt.replace("DEATH", deathIRI).replace("PLACELABEL", victimDeathPlace)
-		#		print (deathPlaceRDF)
-
-		#	if victimDeathPlace or victimDeathDate:
-		#		print (deathRDF)
-
 
 
 
@@ -393,7 +373,6 @@ address_tmplt="""
 <ADDRESS> has_value: "ADDRLABEL" .
 <ADDRESS> is_about: <PLACE> .
 <PLACE> a place: .
-<CARD> causally_influences: <ADDRESS> .
 """
 
 unit_tmplt="""
@@ -507,18 +486,17 @@ with open('bzkopen-2026-04-17/bzkopen_addresses_train.csv', newline='') as csvfi
 					rdf=places_tmplt.replace("TEMPLATE", label).replace("IRI", iri).replace("ADDRESS", addressIri).replace("VALUE", value)
 					print (rdf)
 
-
-
 			split_row = row[0]
 			caseIRI=split_row_cases[split_row]
-
 
 			# this field tells us the kind of place, and to whom it relates
 			field=row[1]
 
 			if field=="ApplicantBirthPlace":
 				birth=split_row_cases[split_row]["applicant_birth"]
+				birthRDF=split_row_cases[split_row]["applicant_birth_rdf"]
 				if birth:
+					print(birthRDF)
 					print(f"<{birth}> occurs_in: <{placeIRI}> .")
 					
 			if field=="ApplicantCurrentAddress":
@@ -529,7 +507,9 @@ with open('bzkopen-2026-04-17/bzkopen_addresses_train.csv', newline='') as csvfi
 			if field=="VictimBirthPlace":
 				if "victim_birth" in split_row_cases[split_row].keys():
 					birth=split_row_cases[split_row]["victim_birth"]
+					birthRDF=split_row_cases[split_row]["victim_birth_rdf"]
 					if birth:
+						print(birthRDF)
 						print(f"<{birth}> occurs_in: <{placeIRI}> .")
 					
 			if field=="VictimCurrentAddress":
@@ -542,7 +522,9 @@ with open('bzkopen-2026-04-17/bzkopen_addresses_train.csv', newline='') as csvfi
 			if field=="VictimDeathPlace":
 				if "victim_death" in split_row_cases[split_row].keys():
 					death=split_row_cases[split_row]["victim_death"]
+					deathRDF=split_row_cases[split_row]["victim_death_rdf"]
 					if death:
+						print(deathRDF)
 						print(f"<{death}> occurs_in: <{placeIRI}> .")
 
 
