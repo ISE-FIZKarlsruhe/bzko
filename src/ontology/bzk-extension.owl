@@ -27,6 +27,8 @@ Declaration(Class(:BZK_0000013))
 Declaration(Class(:BZK_0010009))
 Declaration(Class(:BZK_0010010))
 Declaration(Class(:BZK_0010012))
+Declaration(Class(:BZK_0010118))
+Declaration(Class(:BZK_0010119))
 Declaration(Class(:BZK_0023010))
 Declaration(Class(:BZK_0023012))
 Declaration(ObjectProperty(:BZK_0010013))
@@ -61,8 +63,9 @@ AnnotationAssertion(rdfs:label dcterms:title "title")
 
 # Object Property: :BZK_0010013 (applies for compensation to)
 
+AnnotationAssertion(rdfs:comment :BZK_0010013 "The domain must include both applicant and persecutee. Is it possible to define the domain by \"person observation\"?")
 AnnotationAssertion(rdfs:label :BZK_0010013 "applies for compensation to"@en)
-ObjectPropertyDomain(:BZK_0010013 :BZK_0000013)
+ObjectPropertyDomain(:BZK_0010013 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004>)
 ObjectPropertyRange(:BZK_0010013 :BZK_0010012)
 
 # Object Property: :BZK_0010014 (is applied for compensation by)
@@ -155,20 +158,22 @@ SubClassOf(:BZK_0000002 ObjectSomeValuesFrom(:BZK_0010015 :BZK_0010004))
 SubClassOf(:BZK_0000002 ObjectSomeValuesFrom(<https://www.ica.org/standards/RiC/ontology#hasOrHadDigitalInstantiation> :BZK_0010011))
 SubClassOf(:BZK_0000002 ObjectSomeValuesFrom(<https://www.ica.org/standards/RiC/ontology#hasOrHadIdentifier> :BZK_0000003))
 
-# Class: :BZK_0000013 (bzk applicant)
+# Class: :BZK_0000013 (wgm applicant)
 
 AnnotationAssertion(obo:IAO_0000116 :BZK_0000013 "The name of a BZK applicant can occur on diffent cards.
 A BZK applicant can be a persecutee at the same time.")
-AnnotationAssertion(rdfs:label :BZK_0000013 "bzk applicant"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :BZK_0000013 "A BZK applicant is a person who was recorded as an applicant on a BZK card and applies for compensation as a persecuted person.")
+AnnotationAssertion(rdfs:label :BZK_0000013 "wgm applicant"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :BZK_0000013 "A WGM applicant is a person who was recorded as an applicant on a BZK card and applies for compensation as a persecuted person.")
 EquivalentClasses(:BZK_0000013 ObjectIntersectionOf(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004> ObjectSomeValuesFrom(obo:RO_0000087 :BZK_0010003)))
+SubClassOf(:BZK_0000013 <https://personsincontext.org/model#PersonObservation>)
 SubClassOf(:BZK_0000013 ObjectSomeValuesFrom(:BZK_0010013 :BZK_0010012))
 
-# Class: :BZK_0010010 (bzk persecutee)
+# Class: :BZK_0010010 (persecutee of the nazi regimee)
 
-AnnotationAssertion(rdfs:label :BZK_0010010 "bzk persecutee"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :BZK_0010010 "A BZK persecutee is a person who was recorded as a persecutee on a BZK card."@en)
+AnnotationAssertion(rdfs:label :BZK_0010010 "persecutee of the nazi regimee"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :BZK_0010010 "A person who was subjected to persecution by the Nazi regimee, including but not limited to discrimination, dispossession, forced displacement, or violence, on political, racial, religious, or other grounds."@en)
 EquivalentClasses(:BZK_0010010 ObjectIntersectionOf(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004> ObjectSomeValuesFrom(obo:RO_0000087 :BZK_0010002)))
+SubClassOf(:BZK_0010010 <https://personsincontext.org/model#PersonObservation>)
 SubClassOf(:BZK_0010010 ObjectSomeValuesFrom(:BZK_0010014 :BZK_0010009))
 
 # Class: :BZK_0010012 (compensation office)
@@ -179,14 +184,28 @@ EquivalentClasses(:BZK_0010012 ObjectIntersectionOf(obo:OBI_0000245 ObjectSomeVa
 SubClassOf(:BZK_0010012 ObjectSomeValuesFrom(:BZK_0010024 :BZK_0000002))
 SubClassOf(:BZK_0010012 ObjectAllValuesFrom(obo:IAO_0000235 :BZK_0010005))
 
-# Class: :BZK_0023010 (birth date)
+# Class: :BZK_0010118 (birthplace)
 
-AnnotationAssertion(rdfs:label :BZK_0023010 "birth date"@en)
+AnnotationAssertion(rdfs:label :BZK_0010118 "birthplace"@en)
+EquivalentClasses(:BZK_0010118 ObjectIntersectionOf(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000005> ObjectSomeValuesFrom(obo:BFO_0000183 :BZK_0010008)))
+SubClassOf(:BZK_0010118 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000005>)
+
+# Class: :BZK_0010119 (deathplace)
+
+AnnotationAssertion(rdfs:label :BZK_0010119 "deathplace"@en)
+EquivalentClasses(:BZK_0010119 ObjectIntersectionOf(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000005> ObjectSomeValuesFrom(obo:BFO_0000183 :BZK_0010009)))
+SubClassOf(:BZK_0010119 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000005>)
+
+# Class: :BZK_0023010 (date of birth)
+
+AnnotationAssertion(rdfs:label :BZK_0023010 "date of birth"@en)
+EquivalentClasses(:BZK_0023010 ObjectIntersectionOf(obo:BFO_0000203 ObjectSomeValuesFrom(ObjectInverseOf(obo:BFO_0000199) :BZK_0010008)))
 SubClassOf(:BZK_0023010 obo:BFO_0000203)
 
-# Class: :BZK_0023012 (death date)
+# Class: :BZK_0023012 (date of death)
 
-AnnotationAssertion(rdfs:label :BZK_0023012 "death date"@en)
+AnnotationAssertion(rdfs:label :BZK_0023012 "date of death"@en)
+EquivalentClasses(:BZK_0023012 ObjectIntersectionOf(obo:BFO_0000203 ObjectSomeValuesFrom(ObjectInverseOf(obo:BFO_0000199) :BZK_0010009)))
 SubClassOf(:BZK_0023012 obo:BFO_0000203)
 
 
