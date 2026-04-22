@@ -60,7 +60,7 @@ prefix = """
 @prefix unit_number: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000016> .
 @prefix street_name: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000014> .
 @prefix house_number: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000015> . 
-@prefix postal_code: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000017> . 
+@prefix postal_code: <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001041> . 
 @prefix neighborhood: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010020> .
 @prefix city: <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000106> .
 @prefix district: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010021> .
@@ -361,8 +361,12 @@ with open('bzkopen-2026-04-17/bzkopen_raw_train.csv', newline='') as csvfile:
 		#	if victimBirthPlace or victimBirthDate:
 		#		print (birthRDF)
 
+
+
 			deathIRI=victimIRI+"_death"
 			deathRDF=death_tmplt.replace("DEATH", deathIRI).replace("PERSON", victimIRI)
+		
+			#  print only if death date or death place are present
 			print (deathRDF)
 
 			split_row_cases[split_row]["persecutee_death"]=deathIRI

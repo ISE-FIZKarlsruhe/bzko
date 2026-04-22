@@ -3,6 +3,7 @@ http://purl.obolibrary.org/obo/OBI_0000245 # organization
 http://purl.obolibrary.org/obo/BFO_0000029 # site
 http://purl.obolibrary.org/obo/IAO_0000422 # postal addresss
 
+
 http://purl.obolibrary.org/obo/IAO_0000303 # institutional identification
 http://purl.obolibrary.org/obo/BFO_0000015 # process
 http://purl.obolibrary.org/obo/IAO_0020016 # given_name
@@ -28,5 +29,6 @@ http://purl.obolibrary.org/obo/RO_0000059 # concretizes
 http://purl.obolibrary.org/obo/BFO_0000055 # realizes
 
 https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001007 #  has_value
+https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001041 # postal code (soon replaced by IAO postal code)
 
 http://purl.obolibrary.org/obo/OMO_0002000 # defined by construct
