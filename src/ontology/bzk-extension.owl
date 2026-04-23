@@ -10,7 +10,6 @@ Prefix(dcterms:=<http://purl.org/dc/terms/>)
 
 
 Ontology(<https://bzk.fiz-karlsruhe.de/ontology/extension>
-Import(<file:/Users/joerg/Development/bzk/bzko/data/data-mini.ttl>)
 Import(<https://bzk.fiz-karlsruhe.de/ontology/bzk/components/imports-edit.owl>)
 Import(<https://bzk.fiz-karlsruhe.de/ontology/bzk/components/rigid.owl>)
 Import(<https://bzk.fiz-karlsruhe.de/ontology/bzk/imports/nfdicore_import.owl>)
