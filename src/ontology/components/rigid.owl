@@ -29,9 +29,6 @@ Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0000002>))
 Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0000003>))
 Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0000006>))
 Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0000007>))
-Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0000014>))
-Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0000015>))
-Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0000016>))
 Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010000>))
 Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010001>))
 Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010002>))
@@ -43,10 +40,6 @@ Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010007>))
 Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010008>))
 Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010009>))
 Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010011>))
-Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010020>))
-Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010021>))
-Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010022>))
-Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010023>))
 Declaration(Class(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004>))
 Declaration(Class(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000005>))
 Declaration(Class(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000022>))
@@ -112,7 +105,6 @@ Declaration(AnnotationProperty(skos:definition))
 
 # Class: obo:IAO_0020016 (given name)
 
-AnnotationAssertion(rdfs:comment obo:IAO_0020016 "\"personal name\", the parent class of \"given name\", is not included in the ontology, because it is ambigious whether a given name is a part of a personal name, or a subclass of it. An issue will be created for this in the IAO GitHub repository.")
 SubClassOf(obo:IAO_0020016 ObjectSomeValuesFrom(obo:IAO_0000136 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004>))
 
 # Class: obo:IAO_0020017 (family name)
@@ -142,33 +134,16 @@ AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_000000
 AnnotationAssertion(skos:definition <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000006> "A birth name is a family name that a woman had before marriage."@en)
 SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0000006> obo:IAO_0020017)
 
-# Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000007> (alternative last name)
+# Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000007> (alternative family name)
 
-AnnotationAssertion(rdfs:comment <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000007> "In BZKO, an alternative last name can happen in two ways: the family name was changed to a German or Latin form, or the person changed their family name.")
-AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000007> "alternative last name"@en)
+AnnotationAssertion(rdfs:comment <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000007> "In BZKO, an alternative family name can happen in two ways: the family name was changed to a German or Latin form, or the person changed their family name.")
+AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000007> "alternative family name"@en)
 SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0000007> obo:IAO_0020017)
 
-# Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000014> (street name)
+# Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010000> (compensation card indexing)
 
-AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000014> "street name"@en)
-SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0000014> obo:IAO_0020000)
-
-# Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000015> (house number)
-
-AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000015> "house number"@en)
-SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0000015> obo:IAO_0020000)
-
-# Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000016> (unit number)
-
-AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000016> "unit number"@en)
-SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0000016> obo:IAO_0020000)
-
-# Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010000> (compensation process)
-
-AnnotationAssertion(obo:IAO_0000116 <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010000> "the compensation application process")
-AnnotationAssertion(rdfs:comment <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010000> "At the end of a BZK process, a BZK Index card is created by a compensation office for a persecuted person."@en)
-AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010000> "compensation process"@en)
-AnnotationAssertion(skos:definition <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010000> "A process in which a person applies to a compensation office for themselves or on behalf of persecuted people."@en)
+AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010000> "compensation card indexing"@en)
+AnnotationAssertion(skos:definition <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010000> "A process in which a BZK Index card is created by a compensation office for a persecuted person."@en)
 SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010000> obo:BFO_0000015)
 SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010000> ObjectSomeValuesFrom(obo:RO_0000057 <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000002>))
 SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010000> ObjectSomeValuesFrom(obo:RO_0000059 <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010011>))
@@ -176,7 +151,7 @@ SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010000> ObjectSomeValuesF
 # Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010001> (compensation office role)
 
 AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010001> "compensation office role"@en)
-AnnotationAssertion(skos:definition <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010001> "A BZK compensation office role is inherited by governmental offices, which is realised when a BZK applicant applies for compensation for at least one persecuted person and the office claims a BZK card."@en)
+AnnotationAssertion(skos:definition <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010001> "A compensation office role is a role that inheres in a governmental office and is realized in the administration, processing, or management of compensation-related matters."@en)
 SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010001> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000229>)
 SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010001> ObjectSomeValuesFrom(obo:BFO_0000054 <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010000>))
 
@@ -197,7 +172,7 @@ SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010003> ObjectSomeValuesF
 # Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> (bzk card layout)
 
 AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> "bzk card layout"@en)
-AnnotationAssertion(skos:definition <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> "A BZK card layout refers to the pattern in which the components of a BZK card are arranged or grouped."@en)
+AnnotationAssertion(skos:definition <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> "A BZK card layout refers to the classification of BZK index cards by experts at the Federal State Archive, based on the spatial distribution of information across the card layout."@en)
 SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> obo:BFO_0000031)
 
 # Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010005> (compensation office name)
@@ -209,67 +184,40 @@ SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010005> obo:IAO_0000303)
 
 # Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010006> (last residential address)
 
-AnnotationAssertion(rdfs:comment <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010006> "TODO: A BZK current address can only belong to persons who are alive at the time of the BZK process."@en)
 AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010006> "last residential address"@en)
-AnnotationAssertion(skos:definition <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010006> "In this context, a BZK current address is the postal address of a BZK applicant or persecutee at the time of their compensation application."@en)
+AnnotationAssertion(skos:definition <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010006> "A last residential address is the postal address of a person's residence at the relevant point in time."@en)
 SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010006> obo:IAO_0000422)
 
-# Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010007> (alternative first name)
+# Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010007> (alternative given name)
 
-AnnotationAssertion(rdfs:comment <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010007> "In BZKO, an alternative first name can happen in two ways: the name was changed to a German or Latin form, or the person changed their first name."@en)
-AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010007> "alternative first name"@en)
+AnnotationAssertion(rdfs:comment <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010007> "In BZKO, an alternative given name can happen in two ways: the name was changed to a German or Latin form, or the person changed their given name."@en)
+AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010007> "alternative given name"@en)
 SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010007> obo:IAO_0020016)
 
 # Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010008> (birth process boundary)
 
 AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010008> "birth process boundary"@en)
+AnnotationAssertion(skos:definition <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010008> "A birth process boundary is an instantaneous transition within a birth process that marks the instant at which an organism begins to exist.")
 SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010008> obo:BFO_0000035)
 
 # Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010009> (death process boundary)
 
 AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010009> "death process boundary"@en)
+AnnotationAssertion(skos:definition <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010009> "A death process boundary is an instantaneous transition within a death process that marks the instant at which an organism ceases to exist.")
 SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010009> obo:BFO_0000035)
 
 # Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010011> (digitised bzk card)
 
 AnnotationAssertion(rdfs:comment <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010011> "All digitised BZK cards are digital versions of physical BZK Cards, but some BZK Cards may not have their scans in the database. For instance, the back of a BZK card may not have been scanned or linked to the front of the card."@en)
-AnnotationAssertion(rdfs:comment <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010011> "Use rico:Instantiation in the mapping")
 AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010011> "digitised bzk card"@en)
 AnnotationAssertion(skos:definition <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010011> "A digitised BZK Card refers to a scanned version of the corresponding physical BZK card."@en)
 SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010011> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000022>)
 SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010011> ObjectSomeValuesFrom(obo:IAO_0000136 <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000002>))
 
-# Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010020> (neighborhood)
-
-AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010020> "neighborhood"@en)
-SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010020> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000005>)
-
-# Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010021> (district)
-
-AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010021> "district"@en)
-SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010021> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000005>)
-
-# Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010022> (region)
-
-AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010022> "region"@en)
-SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010022> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000005>)
-
-# Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010023> (compound)
-
-AnnotationAssertion(rdfs:comment <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010023> "Examples include concentration camps, prisons and prison camps, refugee camps, and military bases."@en)
-AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010023> "compound"@en)
-AnnotationAssertion(skos:definition <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010023> "A settlement that does not fit the description of any administrative unit."@en)
-SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010023> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000005>)
-
 # Class: <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004> (person)
 
 SubClassOf(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004> ObjectSomeValuesFrom(obo:IAO_0000235 obo:IAO_0020016))
 SubClassOf(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004> ObjectSomeValuesFrom(obo:IAO_0000235 obo:IAO_0020017))
-
-# Class: <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000005> (place)
-
-AnnotationAssertion(rdfs:comment <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000005> "In the future, \"death place\" will also be connected to \"deportation process\" along with \"death process\"."@en)
-AnnotationAssertion(rdfs:comment <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000005> "Places should be matched to their GeoNames IDs."@en)
 
 
 ############################

@@ -11,8 +11,6 @@ Ontology(<https://bzk.fiz-karlsruhe.de/ontology/bzk/imports/ro_import.owl>
 Annotation(owl:versionInfo "2026-04-17")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000002>))
-Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002559>))
-Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002566>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000116>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000119>))
@@ -53,25 +51,6 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/IAO_0000119> "Discussion on obo-discuss mailing-list, see http://bit.ly/hgm99w"@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/IAO_0000119> "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000119> "definition source"@en)
-
-
-############################
-#   Object Properties
-############################
-
-# Object Property: <http://purl.obolibrary.org/obo/RO_0002559> (causally influenced by)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/RO_0002559> <http://purl.obolibrary.org/obo/ro/docs/causal-relations>)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002559> "causally influenced by")
-InverseObjectProperties(<http://purl.obolibrary.org/obo/RO_0002559> <http://purl.obolibrary.org/obo/RO_0002566>)
-
-# Object Property: <http://purl.obolibrary.org/obo/RO_0002566> (causally influences)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RO_0002566> "The entity or characteristic A is causally upstream of the entity or characteristic B, A having an effect on B. An entity corresponds to any biological type of entity as long as a mass is measurable. A characteristic corresponds to a particular specificity of an entity (e.g., phenotype, shape, size).")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/RO_0002566> <http://purl.obolibrary.org/obo/ro/docs/causal-relations>)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002566> "causally influences")
-ObjectPropertyDomain(<http://purl.obolibrary.org/obo/RO_0002566> <http://purl.obolibrary.org/obo/BFO_0000002>)
-ObjectPropertyRange(<http://purl.obolibrary.org/obo/RO_0002566> <http://purl.obolibrary.org/obo/BFO_0000002>)
 
 
 

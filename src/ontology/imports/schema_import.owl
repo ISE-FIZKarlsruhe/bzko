@@ -19,20 +19,9 @@ Declaration(ObjectProperty(<https://schema.org/deathPlace>))
 Declaration(ObjectProperty(<https://schema.org/familyName>))
 Declaration(ObjectProperty(<https://schema.org/givenName>))
 Declaration(ObjectProperty(<https://schema.org/holdingArchive>))
-Declaration(ObjectProperty(<https://schema.org/name>))
 Declaration(DataProperty(<https://schema.org/birthDate>))
 Declaration(DataProperty(<https://schema.org/deathDate>))
 Declaration(AnnotationProperty(<https://schema.org/name>))
-############################
-#   Annotation Properties
-############################
-
-# Annotation Property: <https://schema.org/name> (name)
-
-AnnotationAssertion(rdfs:comment <https://schema.org/name> "The name of the item."@en)
-AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/name> <https://schema.org/name>)
-AnnotationAssertion(rdfs:label <https://schema.org/name> "name"@en)
-
 
 ############################
 #   Object Properties

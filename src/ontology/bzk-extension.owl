@@ -35,7 +35,9 @@ Declaration(ObjectProperty(:BZK_0010014))
 Declaration(ObjectProperty(:BZK_0010015))
 Declaration(ObjectProperty(:BZK_0010016))
 Declaration(ObjectProperty(:BZK_0010017))
+Declaration(ObjectProperty(:BZK_0010018))
 Declaration(ObjectProperty(:BZK_0010024))
+Declaration(ObjectProperty(:BZK_0010120))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
 Declaration(AnnotationProperty(dcterms:title))
@@ -60,30 +62,84 @@ AnnotationAssertion(rdfs:label dcterms:title "title")
 #   Object Properties
 ############################
 
+# Object Property: <http://www.w3.org/ns/prov#hadPrimarySource> (hadPrimarySource)
+
+AnnotationAssertion(obo:IAO_0000116 <http://www.w3.org/ns/prov#hadPrimarySource> "In the PROV-O documentation, it is understood that something that had a primary source is a derivation. That is also why the superrelation of \"had primary source\" is \"was derived from\". 
+For instance, a chart had a primary source from a database, or a quotation was derived from a text.
+
+In the PiCo documentation, it is used to relate \"Person Observation\" to \"Source\", where \"Source\" refers to the historical record or document where \"Person Observation\"s are found. Indeed, in PiCo, a source is any resource where a person is mentioned, including archival records, books, or personal documents, not just traditional archives. 
+
+However, it is not a person observation but the name or address of a person observation recorded in a source. Similarly, a BZK number is on a BZK Index Card. Thereby, the domain of the prov:hadPrimarySource is the classes that are about Person Observation."@en)
+ObjectPropertyRange(<http://www.w3.org/ns/prov#hadPrimarySource> :BZK_0010011)
+
 # Object Property: :BZK_0010013 (applies for compensation to)
 
-AnnotationAssertion(rdfs:comment :BZK_0010013 "The domain must include both applicant and persecutee. Is it possible to define the domain by \"person observation\"?")
+AnnotationAssertion(obo:OMO_0002000 :BZK_0010013 "PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX indexing: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010000>  
+PREFIX has_role: <http://purl.obolibrary.org/obo/RO_0000087> 
+PREFIX participates_in: <http://purl.obolibrary.org/obo/RO_0000056> 
+PREFIX realizes: <http://purl.obolibrary.org/obo/BFO_0000055> 
+PREFIX person: <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004> 
+PREFIX applicant_role: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010003> 
+PREFIX organization: <http://purl.obolibrary.org/obo/OBI_0000245>
+PREFIX CO_role: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010001> 
+
+
+PREFIX applies_for_compensation_to: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010013>
+
+CONSTRUCT { ?wgm_applicant  applies_for_compensation_to: ?compen_office} 
+where {
+   ?wgm_applicant a person: .
+   ?wgm_applicant has_role:  ?app_role .
+   ?app_role a applicant_role: .  
+   ?wgm_applicant participates_in: ?indexing1 .
+   ?indexing1 a indexing: .
+   ?indexing1 realizes: ?app_role .
+
+   ?compen_office a organization: .
+  ?compen_office has_role:  ?CO_role1 .
+   ?CO_role1 a CO_role: .  
+   ?compen_office participates_in: ?indexing1 .
+   ?indexing1 realizes: ?CO_role .
+}")
 AnnotationAssertion(rdfs:label :BZK_0010013 "applies for compensation to"@en)
-ObjectPropertyDomain(:BZK_0010013 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004>)
+ObjectPropertyDomain(:BZK_0010013 :BZK_0000013)
 ObjectPropertyRange(:BZK_0010013 :BZK_0010012)
 
 # Object Property: :BZK_0010014 (is applied for compensation by)
 
 AnnotationAssertion(rdfs:label :BZK_0010014 "is applied for compensation by"@en)
+InverseObjectProperties(:BZK_0010014 :BZK_0010016)
 ObjectPropertyDomain(:BZK_0010014 :BZK_0010010)
 ObjectPropertyRange(:BZK_0010014 :BZK_0010009)
 
 # Object Property: :BZK_0010015 (has layout type)
 
+AnnotationAssertion(obo:OMO_0002000 :BZK_0010015 "PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX labels: <http://www.w3.org/2000/01/rdf-schema#label>
+PREFIX bzk_card: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000002>
+PREFIX is_about: <http://purl.obolibrary.org/obo/IAO_0000136>
+
+PREFIX bzk_layout: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010015>
+
+CONSTRUCT {
+  ?bzk_card1 bzk_layout: ?label .
+}
+WHERE {
+  ?bzk_card1 a bzk_card: .
+  ?bzk_layout1 a bzk_layout: .
+  ?bzk_layout1 is_about: ?bzk_card1 .
+  ?bzk_layout1 labels: ?label .
+}")
 AnnotationAssertion(rdfs:label :BZK_0010015 "has layout type"@en)
 InverseObjectProperties(:BZK_0010015 :BZK_0010017)
 ObjectPropertyDomain(:BZK_0010015 :BZK_0000002)
 ObjectPropertyRange(:BZK_0010015 :BZK_0010004)
 
-# Object Property: :BZK_0010016 (applies for compensation of)
+# Object Property: :BZK_0010016 (applies for compensation for)
 
 AnnotationAssertion(obo:OMO_0002000 :BZK_0010016 "PREFIX owl: <http://www.w3.org/2002/07/owl#> 
-PREFIX bzk_process: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010000>  
+PREFIX indexing: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010000>  
 PREFIX has_role: <http://purl.obolibrary.org/obo/RO_0000087> 
 PREFIX participates_in: <http://purl.obolibrary.org/obo/RO_0000056> 
 PREFIX realizes: <http://purl.obolibrary.org/obo/BFO_0000055> 
@@ -91,23 +147,23 @@ PREFIX person: <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004>
 PREFIX applicant_role: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010003> 
 PREFIX persecutee_role: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010002> 
 
-prefix applies_for_compensation_of: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010016> 
+PREFIX applies_for_compensation_of: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010016> 
 
-CONSTRUCT { ?applicant  applies_for_compensation_of: ?persecutee } where {
-   ?applicant a person: .
-   ?applicant has_role:  ?app_role .
+CONSTRUCT { ?wgm_applicant  applies_for_compensation_for: ?persecutee_nazi } where {
+   ?wgm_applicant a person: .
+   ?wgm_applicant has_role:  ?app_role .
    ?app_role a applicant_role: .  
-   ?applicant participates_in: ?proc .
-   ?proc a bzk_process: .
-   ?proc realizes: ?app_role .
+   ?wgm_applicant participates_in: ?indexing1 .
+   ?indexing1 a indexing: .
+   ?indexing1 realizes: ?app_role .
 
-   ?persecutee a person: .
-   ?persecutee has_role:  ?pers_role .
+   ?persecutee_nazi a person: .
+   ?persecutee_nazi has_role:  ?pers_role .
    ?pers_role a persecutee_role: .  
-   ?persecutee participates_in: ?proc .
-   ?proc realizes: ?persecutee_role .
+   ?persecutee_nazi participates_in: ?indexing1 .
+   ?indexing1 realizes: ?persecutee_role .
 }")
-AnnotationAssertion(rdfs:label :BZK_0010016 "applies for compensation of"@en)
+AnnotationAssertion(rdfs:label :BZK_0010016 "applies for compensation for"@en)
 ObjectPropertyDomain(:BZK_0010016 :BZK_0000013)
 ObjectPropertyRange(:BZK_0010016 :BZK_0010010)
 
@@ -117,32 +173,95 @@ AnnotationAssertion(rdfs:label :BZK_0010017 "is layout type of"@en)
 ObjectPropertyDomain(:BZK_0010017 :BZK_0010004)
 ObjectPropertyRange(:BZK_0010017 :BZK_0000002)
 
+# Object Property: :BZK_0010018 (has given name)
+
+AnnotationAssertion(rdfs:label :BZK_0010018 "has given name"@en)
+ObjectPropertyDomain(:BZK_0010018 ObjectUnionOf(:BZK_0000013 :BZK_0010010))
+
 # Object Property: :BZK_0010024 (issues)
 
 AnnotationAssertion(obo:OMO_0002000 :BZK_0010024 "prefix owl: <http://www.w3.org/2002/07/owl#> 
 prefix organization: <http://purl.obolibrary.org/obo/OBI_0000245> 
-prefix bzk_process: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010000>  
+PREFIX indexing: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010000>  
 prefix has_role: <http://purl.obolibrary.org/obo/RO_0000087> 
 prefix realized_in: <http://purl.obolibrary.org/obo/BFO_0000054> 
 prefix participates_in: <http://purl.obolibrary.org/obo/RO_0000056> 
-prefix office_role: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010001> 
-prefix card: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000002> 
+PREFIX CO_role: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010001> 
+prefix bzk_card: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000002> 
 
 prefix issues: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010024> 
 
-construct {?organization issues: ?card }  where {
-   ?organization a organization: .
-   ?proc a bzk_process: .
-   ?organization has_role:  ?r  .
-   ?r a office_role: .
-   ?r realized_in: ?proc .
-   ?organization participates_in: ?proc .
-   ?card a card: .
-   ?card participates_in: ?proc .
+CONSTRUCT {?compen_office issues: ?bzk_card1 }  where {
+   ?compen_office a organization: .
+   ?indexing1 a indexing: .
+   ?compen_office has_role:  ?CO_role1  .
+   ?CO_role1 a CO_role: .
+   ?CO_role1 realized_in: ?indexing1 .
+   ?compen_office participates_in: ?indexing1 .
+   ?bzk_card1 a bzk_card: .
+   ?bzk_card1 participates_in: ?indexing1 .
 }")
 AnnotationAssertion(rdfs:label :BZK_0010024 "issues"@en)
 ObjectPropertyDomain(:BZK_0010024 :BZK_0010012)
 ObjectPropertyRange(:BZK_0010024 :BZK_0000002)
+
+# Object Property: :BZK_0010120 (has bzk number)
+
+AnnotationAssertion(obo:OMO_0002000 :BZK_0010120 "PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX denotes: <http://purl.obolibrary.org/obo/IAO_0000219>
+PREFIX labels: <http://www.w3.org/2000/01/rdf-schema#label>
+PREFIX bzk_card: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000002>
+PREFIX bzk_number: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000003>
+
+PREFIX has_bzk_number: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010120> 
+
+CONSTRUCT {
+  ?bzk_card1 has_bzk_number: ?label .
+}
+WHERE {
+  ?bzk_card1 a bzk_card: .
+  ?bzk_number1 a bzk_number: .
+  ?bzk_number1 denotes: ?bzk_card1 .
+  ?bzk_number1 labels: ?label .
+}")
+AnnotationAssertion(rdfs:label :BZK_0010120 "has bzk number"@en)
+ObjectPropertyDomain(:BZK_0010120 :BZK_0000002)
+
+# Object Property: <https://www.ica.org/standards/RiC/ontology#hasOrHadDigitalInstantiation> (has or had digital instantiation)
+
+AnnotationAssertion(obo:OMO_0002000 <https://www.ica.org/standards/RiC/ontology#hasOrHadDigitalInstantiation> "PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX bzk_card: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000002>
+PREFIX digitBZKcard: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010011>
+PREFIX is_about: <http://purl.obolibrary.org/obo/IAO_0000136>
+
+PREFIX hasOrHadDigitalInstantiation: <https://www.ica.org/standards/RiC/ontology#hasOrHadDigitalInstantiation>
+
+CONSTRUCT {
+  ?bzk_card1 hasOrHadDigitalInstantiation:  ?digitBZKcard1.
+}
+WHERE {
+  ?bzk_card1 a bzk_card: .
+  ?digitBZKcard1 a digitBZKcard: .
+  ?digitBZKcard1 is_about: ?bzk_card1 .
+}")
+
+# Object Property: <https://www.ica.org/standards/RiC/ontology#hasOrHadIdentifier> (tiene o tenía como identificador)
+
+AnnotationAssertion(obo:OMO_0002000 <https://www.ica.org/standards/RiC/ontology#hasOrHadIdentifier> "PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX denotes: <http://purl.obolibrary.org/obo/IAO_0000219>
+PREFIX bzk_card: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000002>
+PREFIX bzk_number: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000003>
+
+PREFIX hasOrHadIdentifier: <https://www.ica.org/standards/RiC/ontology#hasOrHadIdentifier> 
+
+CONSTRUCT {
+  ?bzk_card1 hasOrHadIdentifier: ?bzk_number1 .
+}
+WHERE {
+  ?bzk_card1 a bzk_card: .
+  ?bzk_number1 a bzk_number: .
+  ?bzk_number1 denotes: ?bzk_card1 .
+}")
 
 
 
@@ -208,11 +327,5 @@ EquivalentClasses(:BZK_0023012 ObjectIntersectionOf(obo:BFO_0000203 ObjectSomeVa
 SubClassOf(:BZK_0023012 obo:BFO_0000203)
 
 
-AnnotationAssertion(obo:IAO_0000116 <http://www.w3.org/ns/prov#hadPrimarySource> "In the PROV-O documentation, it is understood that something that had a primary source is a derivation. That is also why the superrelation of \"had primary source\" is \"was derived from\". 
-For instance, a chart had a primary source from a database, or a quotation was derived from a text.
-
-In the PiCo documentation, it is used to relate \"Person Observation\" to \"Source\", where \"Source\" refers to the historical record or document where \"Person Observation\"s are found. Indeed, in PiCo, a source is any resource where a person is mentioned, including archival records, books, or personal documents, not just traditional archives. 
-
-However, it is not a person observation but the name or address of a person observation recorded in a source. Similarly, a BZK number is on a BZK Index Card. Thereby, the domain of the prov:hadPrimarySource is the classes that are about Person Observation."@en)
 AnnotationAssertion(rdfs:comment <https://personsincontext.org/model#eventPlace> "This data property can be used for death place and birth place."@en)
 )
