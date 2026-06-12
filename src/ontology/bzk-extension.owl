@@ -36,6 +36,11 @@ Declaration(ObjectProperty(:BZK_0010015))
 Declaration(ObjectProperty(:BZK_0010016))
 Declaration(ObjectProperty(:BZK_0010017))
 Declaration(ObjectProperty(:BZK_0010018))
+Declaration(ObjectProperty(:BZK_0010019))
+Declaration(ObjectProperty(:BZK_0010020))
+Declaration(ObjectProperty(:BZK_0010021))
+Declaration(ObjectProperty(:BZK_0010022))
+Declaration(ObjectProperty(:BZK_0010023))
 Declaration(ObjectProperty(:BZK_0010024))
 Declaration(ObjectProperty(:BZK_0010120))
 Declaration(AnnotationProperty(dcterms:description))
@@ -116,20 +121,20 @@ ObjectPropertyRange(:BZK_0010014 :BZK_0010009)
 # Object Property: :BZK_0010015 (has layout type)
 
 AnnotationAssertion(obo:OMO_0002000 :BZK_0010015 "PREFIX owl: <http://www.w3.org/2002/07/owl#> 
-PREFIX labels: <http://www.w3.org/2000/01/rdf-schema#label>
+PREFIX labeled: <http://www.w3.org/2000/01/rdf-schema#label>
 PREFIX bzk_card: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000002>
+PREFIX bzk_layout: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004>
 PREFIX is_about: <http://purl.obolibrary.org/obo/IAO_0000136>
 
-PREFIX bzk_layout: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010015>
+PREFIX has_bzk_layout: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010015>
 
 CONSTRUCT {
-  ?bzk_card1 bzk_layout: ?label .
-}
+  ?bzk_card1 has_bzk_layout: ?label .}
 WHERE {
   ?bzk_card1 a bzk_card: .
   ?bzk_layout1 a bzk_layout: .
   ?bzk_layout1 is_about: ?bzk_card1 .
-  ?bzk_layout1 labels: ?label .
+  ?bzk_layout1 labeled: ?label .
 }")
 AnnotationAssertion(rdfs:label :BZK_0010015 "has layout type"@en)
 InverseObjectProperties(:BZK_0010015 :BZK_0010017)
@@ -147,9 +152,10 @@ PREFIX person: <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004>
 PREFIX applicant_role: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010003> 
 PREFIX persecutee_role: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010002> 
 
-PREFIX applies_for_compensation_of: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010016> 
+PREFIX applies_for_compensation_for: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010016> 
 
-CONSTRUCT { ?wgm_applicant  applies_for_compensation_for: ?persecutee_nazi } where {
+CONSTRUCT { ?wgm_applicant  applies_for_compensation_for: ?persecutee_nazi}
+WHERE {
    ?wgm_applicant a person: .
    ?wgm_applicant has_role:  ?app_role .
    ?app_role a applicant_role: .  
@@ -175,8 +181,126 @@ ObjectPropertyRange(:BZK_0010017 :BZK_0000002)
 
 # Object Property: :BZK_0010018 (has given name)
 
+AnnotationAssertion(obo:OMO_0002000 :BZK_0010018 "PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX denotedBy: <http://purl.obolibrary.org/obo/IAO_0000235>
+PREFIX wgm_applicant: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000013>
+PREFIX persecutee_nazi: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010010>
+PREFIX givenName: <http://purl.obolibrary.org/obo/IAO_0020016>
+PREFIX labeled: <http://www.w3.org/2000/01/rdf-schema#label>
+
+PREFIX has_given_name: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010018> 
+
+CONSTRUCT { ?wgm_agent has_given_name: ?label}
+WHERE {
+   ?wgm_agent a wgm_applicant: |  persecutee_nazi: .
+   ?givenName1 a givenName: .
+   ?wgm_agent denotedBy: ?givenName1: .
+   ?givenName1 labeled: ?label: .
+}")
 AnnotationAssertion(rdfs:label :BZK_0010018 "has given name"@en)
 ObjectPropertyDomain(:BZK_0010018 ObjectUnionOf(:BZK_0000013 :BZK_0010010))
+
+# Object Property: :BZK_0010019 (has alternative given name)
+
+AnnotationAssertion(obo:OMO_0002000 :BZK_0010019 "PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX denotedBy: <http://purl.obolibrary.org/obo/IAO_0000235>
+PREFIX wgm_applicant: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000013>
+PREFIX persecutee_nazi: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010010>
+PREFIX alterGivenName: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010007>
+PREFIX labeled: <http://www.w3.org/2000/01/rdf-schema#label>
+
+PREFIX has_alter_given_name: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010019> 
+
+CONSTRUCT { ?wgm_agent has_alter_given_name:: ?label}
+WHERE {
+   ?wgm_agent a wgm_applicant: |  persecutee_nazi: .
+   ?alterGivenName1 a alterGivenName: .
+   ?wgm_agent denotedBy: ?alterGivenName1: .
+   ?alterGivenName1 labeled: ?label: .
+}")
+AnnotationAssertion(rdfs:label :BZK_0010019 "has alternative given name"@en)
+SubObjectPropertyOf(:BZK_0010019 :BZK_0010018)
+
+# Object Property: :BZK_0010020 (has family name)
+
+AnnotationAssertion(obo:OMO_0002000 :BZK_0010020 "PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX denotedBy: <http://purl.obolibrary.org/obo/IAO_0000235>
+PREFIX wgm_applicant: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000013>
+PREFIX persecutee_nazi: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010010>
+PREFIX familyName: <http://purl.obolibrary.org/obo/IAO_0020017>
+PREFIX labeled: <http://www.w3.org/2000/01/rdf-schema#label>
+
+PREFIX has_family_name: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010020> 
+
+CONSTRUCT { ?wgm_agent has_family_name: ?label}
+WHERE {
+   ?wgm_agent a wgm_applicant: |  persecutee_nazi: .
+   ?familyName1 a familyName: .
+   ?wgm_agent denotedBy: ?familyName1: .
+   ?familyName1 labeled: ?label: .
+}")
+AnnotationAssertion(rdfs:label :BZK_0010020 "has family name"@en)
+
+# Object Property: :BZK_0010021 (has alternative family name)
+
+AnnotationAssertion(obo:OMO_0002000 :BZK_0010021 "PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX denotedBy: <http://purl.obolibrary.org/obo/IAO_0000235>
+PREFIX wgm_applicant: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000013>
+PREFIX persecutee_nazi: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010010>
+PREFIX alterFamilyName: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000007>
+PREFIX labeled: <http://www.w3.org/2000/01/rdf-schema#label>
+
+PREFIX has_alter_family_name: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010021> 
+
+CONSTRUCT { ?wgm_agent has_alter_family_name: ?label}
+WHERE {
+   ?wgm_agent a wgm_applicant: |  persecutee_nazi: .
+   ?alterFamilyName1 a alterFamilyName: .
+   ?wgm_agent denotedBy: ?alterFamilyName1: .
+   ?alterFamilyName1 labeled: ?label: .
+}")
+AnnotationAssertion(rdfs:label :BZK_0010021 "has alternative family name"@en)
+SubObjectPropertyOf(:BZK_0010021 :BZK_0010020)
+
+# Object Property: :BZK_0010022 (has birth name)
+
+AnnotationAssertion(obo:OMO_0002000 :BZK_0010022 "PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX denotedBy: <http://purl.obolibrary.org/obo/IAO_0000235>
+PREFIX wgm_applicant: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000013>
+PREFIX persecutee_nazi: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010010>
+PREFIX birthName: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000006>
+PREFIX labeled: <http://www.w3.org/2000/01/rdf-schema#label>
+
+PREFIX has_birth_name: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010022> 
+
+CONSTRUCT { ?wgm_agent has_birth_name: ?label}
+WHERE {
+   ?wgm_agent a wgm_applicant: |  persecutee_nazi: .
+   ?birthName1 a birthName: .
+   ?wgm_agent denotedBy: ?birthName1: .
+   ?birthName1 labeled: ?label: .
+}")
+AnnotationAssertion(rdfs:label :BZK_0010022 "has birth name"@en)
+SubObjectPropertyOf(:BZK_0010022 :BZK_0010020)
+
+# Object Property: :BZK_0010023 (has last residential address)
+
+AnnotationAssertion(obo:OMO_0002000 :BZK_0010023 "PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX is_about: <http://purl.obolibrary.org/obo/IAO_0000136>
+PREFIX persecutee_nazi: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010010>
+PREFIX lastResidentialAdd: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010006>
+PREFIX labeled: <http://www.w3.org/2000/01/rdf-schema#label>
+
+PREFIX has_last_residen_add: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010023> 
+
+CONSTRUCT { ?persecutee1 has_last_residen_add: ?label}
+WHERE {
+   ?persecutee1 a persecutee_nazi: .
+   ?lastResidentialAdd1 a lastResidentialAdd: .
+   ?lastResidentialAdd1 is_about: ?persecutee1: .
+   ?lastResidentialAdd1 labeled: ?label: .
+}")
+AnnotationAssertion(rdfs:label :BZK_0010023 "has last residential address"@en)
 
 # Object Property: :BZK_0010024 (issues)
 
@@ -208,21 +332,22 @@ ObjectPropertyRange(:BZK_0010024 :BZK_0000002)
 # Object Property: :BZK_0010120 (has bzk number)
 
 AnnotationAssertion(obo:OMO_0002000 :BZK_0010120 "PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX IAO: <http://purl.obolibrary.org/obo/IAO_> .
+
 PREFIX denotes: <http://purl.obolibrary.org/obo/IAO_0000219>
-PREFIX labels: <http://www.w3.org/2000/01/rdf-schema#label>
+PREFIX labeled: <http://www.w3.org/2000/01/rdf-schema#label>
 PREFIX bzk_card: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000002>
 PREFIX bzk_number: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000003>
 
 PREFIX has_bzk_number: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010120> 
 
 CONSTRUCT {
-  ?bzk_card1 has_bzk_number: ?label .
-}
+  ?bzk_card1 has_bzk_number: ?label .}
 WHERE {
   ?bzk_card1 a bzk_card: .
   ?bzk_number1 a bzk_number: .
   ?bzk_number1 denotes: ?bzk_card1 .
-  ?bzk_number1 labels: ?label .
+  ?bzk_number1 labeled: ?label .
 }")
 AnnotationAssertion(rdfs:label :BZK_0010120 "has bzk number"@en)
 ObjectPropertyDomain(:BZK_0010120 :BZK_0000002)
