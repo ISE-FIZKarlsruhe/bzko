@@ -7,3 +7,4 @@ https://schema.org/familyName
 https://schema.org/givenName
 https://schema.org/name
 https://schema.org/holdingArchive
+https://schema.org/url

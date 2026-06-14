@@ -13,9 +13,7 @@ Annotation(owl:versionInfo "2026-04-15")
 Declaration(ObjectProperty(<https://schema.org/address>))
 Declaration(ObjectProperty(<https://schema.org/archiveHeld>))
 Declaration(ObjectProperty(<https://schema.org/birthDate>))
-Declaration(ObjectProperty(<https://schema.org/birthPlace>))
 Declaration(ObjectProperty(<https://schema.org/deathDate>))
-Declaration(ObjectProperty(<https://schema.org/deathPlace>))
 Declaration(ObjectProperty(<https://schema.org/familyName>))
 Declaration(ObjectProperty(<https://schema.org/givenName>))
 Declaration(ObjectProperty(<https://schema.org/holdingArchive>))
@@ -46,23 +44,11 @@ AnnotationAssertion(rdfs:comment <https://schema.org/birthDate> "Date of birth."
 AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/birthDate> <https://schema.org/birthDate>)
 AnnotationAssertion(rdfs:label <https://schema.org/birthDate> "birthDate"@en)
 
-# Object Property: <https://schema.org/birthPlace> (birthPlace)
-
-AnnotationAssertion(rdfs:comment <https://schema.org/birthPlace> "The place where the person was born."@en)
-AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/birthPlace> <https://schema.org/birthPlace>)
-AnnotationAssertion(rdfs:label <https://schema.org/birthPlace> "birthPlace"@en)
-
 # Object Property: <https://schema.org/deathDate> (deathDate)
 
 AnnotationAssertion(rdfs:comment <https://schema.org/deathDate> "Date of death."@en)
 AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/deathDate> <https://schema.org/deathDate>)
 AnnotationAssertion(rdfs:label <https://schema.org/deathDate> "deathDate"@en)
-
-# Object Property: <https://schema.org/deathPlace> (deathPlace)
-
-AnnotationAssertion(rdfs:comment <https://schema.org/deathPlace> "The place where the person died."@en)
-AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/deathPlace> <https://schema.org/deathPlace>)
-AnnotationAssertion(rdfs:label <https://schema.org/deathPlace> "deathPlace"@en)
 
 # Object Property: <https://schema.org/familyName> (familyName)
 

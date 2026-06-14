@@ -30,5 +30,17 @@ http://purl.obolibrary.org/obo/BFO_0000055 # realizes
 
 https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001007 #  has_value
 https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001041 # postal code (soon replaced by IAO postal code)
+https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001008 # has_url
+https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010013 #term_tracker_annotation 
 
 http://purl.obolibrary.org/obo/OMO_0002000 # defined by construct
+
+http://purl.org/dc/elements/1.1/contributor 
+http://purl.org/dc/terms/bibliographicCitation 
+http://purl.org/dc/terms/creator
+
+http://www.w3.org/2002/07/owl#priorVersion
+http://www.w3.org/2002/07/owl#versionInfo
+http://www.w3.org/2000/01/rdf-schema#label
+
+http://usefulinc.com/ns/doap#repository
