@@ -30,6 +30,17 @@ Declaration(Class(:BZK_0010118))
 Declaration(Class(:BZK_0010119))
 Declaration(Class(:BZK_0023010))
 Declaration(Class(:BZK_0023012))
+Declaration(ObjectProperty(:BZK_0010013))
+Declaration(ObjectProperty(:BZK_0010016))
+Declaration(ObjectProperty(:BZK_0010024))
+Declaration(DataProperty(:BZK_0010020))
+Declaration(DataProperty(:BZK_0010021))
+Declaration(DataProperty(:BZK_0010025))
+Declaration(DataProperty(:BZK_0010026))
+Declaration(DataProperty(:BZK_0010027))
+Declaration(DataProperty(:BZK_0010028))
+Declaration(DataProperty(:BZK_0010029))
+Declaration(DataProperty(:BZK_0010121))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
 Declaration(AnnotationProperty(dcterms:title))
@@ -63,6 +74,103 @@ In the PiCo documentation, it is used to relate \"Person Observation\" to \"Sour
 
 However, it is not a person observation but the name or address of a person observation recorded in a source. Similarly, a BZK number is on a BZK Index Card. Thereby, the domain of the prov:hadPrimarySource is the classes that are about Person Observation."@en)
 ObjectPropertyRange(<http://www.w3.org/ns/prov#hadPrimarySource> :BZK_0010011)
+
+# Object Property: :BZK_0010013 (applies for compensation to)
+
+AnnotationAssertion(obo:OMO_0002000 :BZK_0010013 "PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX indexing: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010000>  
+PREFIX has_role: <http://purl.obolibrary.org/obo/RO_0000087> 
+PREFIX participates_in: <http://purl.obolibrary.org/obo/RO_0000056> 
+PREFIX realizes: <http://purl.obolibrary.org/obo/BFO_0000055> 
+PREFIX person: <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004> 
+PREFIX applicant_role: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010003> 
+PREFIX organization: <http://purl.obolibrary.org/obo/OBI_0000245>
+PREFIX CO_role: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010001> 
+
+
+PREFIX applies_for_compensation_to: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010013>
+
+CONSTRUCT { ?wgm_applicant1  applies_for_compensation_to: ?compen_office1}
+WHERE {
+   ?wgm_applicant1 a person: .
+   ?applicant_role1 a applicant_role: .  
+   ?indexing1 a indexing: .
+   ?wgm_applicant1 has_role:  ?applicant_role1 .
+   ?wgm_applicant1 participates_in: ?indexing1 .
+   ?indexing1 realizes: ?applicant_role1 .
+
+   ?compen_office1 a organization: .
+   ?CO_role1 a CO_role: .  
+  ?compen_office1 has_role:  ?CO_role1 .
+   ?compen_office1 participates_in: ?indexing1 .
+   ?indexing1 realizes: ?CO_role1 .
+}")
+AnnotationAssertion(rdfs:label :BZK_0010013 "applies for compensation to"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :BZK_0010013 "An applicant applies for compensation for on behalf of a persecuted person to a compensation office."@en)
+ObjectPropertyDomain(:BZK_0010013 :BZK_0000013)
+ObjectPropertyRange(:BZK_0010013 :BZK_0010012)
+
+# Object Property: :BZK_0010016 (applies for compensation for)
+
+AnnotationAssertion(obo:OMO_0002000 :BZK_0010016 "PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX indexing: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010000>  
+PREFIX has_role: <http://purl.obolibrary.org/obo/RO_0000087> 
+PREFIX participates_in: <http://purl.obolibrary.org/obo/RO_0000056> 
+PREFIX realizes: <http://purl.obolibrary.org/obo/BFO_0000055> 
+PREFIX person: <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004> 
+PREFIX applicant_role: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010003> 
+PREFIX persecutee_role: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010002> 
+
+PREFIX applies_for_compensation_for: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010016> 
+
+CONSTRUCT { ?wgm_applicant1  applies_for_compensation_for: ?persecutee_nazi1}
+WHERE {
+   ?wgm_applicant1 a person: .
+   ?applicant_role1 a applicant_role: .  
+   ?wgm_applicant1 has_role:  ?applicant_role1 .
+   ?indexing1 a indexing: .
+   ?wgm_applicant1 participates_in: ?indexing1 .
+   ?indexing1 realizes: ?applicant_role1 .
+
+   ?persecutee_nazi1 a person: .
+   ?persecutee_role1 a persecutee_role: .  
+   ?persecutee_nazi1 has_role:  ?persecutee_role1 .
+   ?persecutee_nazi1 participates_in: ?indexing1 .
+   ?indexing1 realizes: ?persecutee_role1 .
+}")
+AnnotationAssertion(rdfs:label :BZK_0010016 "applies for compensation for"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :BZK_0010016 "An applicant applies for compensation on behalf of at least one persecuted person."@en)
+ObjectPropertyDomain(:BZK_0010016 :BZK_0000013)
+ObjectPropertyRange(:BZK_0010016 :BZK_0010010)
+
+# Object Property: :BZK_0010024 (issues)
+
+AnnotationAssertion(obo:OMO_0002000 :BZK_0010024 "PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX organization: <http://purl.obolibrary.org/obo/OBI_0000245> 
+PREFIX indexing: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010000>  
+PREFIX has_role: <http://purl.obolibrary.org/obo/RO_0000087> 
+PREFIX realized_in: <http://purl.obolibrary.org/obo/BFO_0000054> 
+PREFIX participates_in: <http://purl.obolibrary.org/obo/RO_0000056> 
+PREFIX CO_role: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010001> 
+PREFIX bzk_card: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000002> 
+
+PREFIX issues: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010024> 
+
+CONSTRUCT {?compen_office1 issues: ?bzk_card1 }  
+WHERE {
+   ?compen_office1 a organization: .
+   ?indexing1 a indexing: .
+   ?CO_role1 a CO_role: .
+   ?bzk_card1 a bzk_card: .
+   ?compen_office1 has_role:  ?CO_role1  .
+   ?CO_role1 realized_in: ?indexing1 .
+   ?compen_office1 participates_in: ?indexing1 .
+   ?bzk_card1 participates_in: ?indexing1 .
+}")
+AnnotationAssertion(rdfs:label :BZK_0010024 "issues"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :BZK_0010024 "A compensation office issues compensation-related documents, including BZK index cards."@en)
+ObjectPropertyDomain(:BZK_0010024 :BZK_0010012)
+ObjectPropertyRange(:BZK_0010024 :BZK_0000002)
 
 # Object Property: <https://www.ica.org/standards/RiC/ontology#hasOrHadDigitalInstantiation> (has or had digital instantiation)
 
@@ -99,6 +207,221 @@ WHERE {
   ?bzk_number1 a bzk_number: .
   ?bzk_number1 denotes: ?bzk_card1 .
 }")
+
+
+############################
+#   Data Properties
+############################
+
+# Data Property: :BZK_0010020 (has bzk number)
+
+AnnotationAssertion(obo:OMO_0002000 :BZK_0010020 "PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX IAO: <http://purl.obolibrary.org/obo/IAO_> .
+
+PREFIX denotes: <http://purl.obolibrary.org/obo/IAO_0000219>
+PREFIX labeled: <http://www.w3.org/2000/01/rdf-schema#label>
+PREFIX bzk_card: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000002>
+PREFIX bzk_number: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000003>
+
+PREFIX has_bzk_number: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010020> 
+
+CONSTRUCT {
+  ?bzk_card1 has_bzk_number: ?label .}
+WHERE {
+  ?bzk_card1 a bzk_card: .
+  ?bzk_number1 a bzk_number: .
+  ?bzk_number1 denotes: ?bzk_card1 .
+  ?bzk_number1 labeled: ?label .
+}")
+AnnotationAssertion(rdfs:label :BZK_0010020 "has bzk number"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :BZK_0010020 "A BZK index card includes a BZK number, a Federal Central Register number used to track compensation claims. This data property links a BZK card to its identifier.")
+DataPropertyDomain(:BZK_0010020 :BZK_0000002)
+DataPropertyRange(:BZK_0010020 rdfs:Literal)
+
+# Data Property: :BZK_0010021 (has given name)
+
+AnnotationAssertion(obo:OMO_0002000 :BZK_0010021 "PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX denotedBy: <http://purl.obolibrary.org/obo/IAO_0000235>
+PREFIX indexing: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010000>  
+PREFIX has_role: <http://purl.obolibrary.org/obo/RO_0000087> 
+PREFIX participates_in: <http://purl.obolibrary.org/obo/RO_0000056> 
+PREFIX realizes: <http://purl.obolibrary.org/obo/BFO_0000055> 
+PREFIX person: <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004> 
+PREFIX applicant_role: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010003> 
+PREFIX persecutee_role: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010002> 
+PREFIX givenName: <http://purl.obolibrary.org/obo/IAO_0020016>
+PREFIX labeled: <http://www.w3.org/2000/01/rdf-schema#label>
+
+PREFIX has_given_name: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010021> 
+
+CONSTRUCT { ?wgm_agent has_given_name: ?label}
+WHERE {
+   ?wgm_applicant1 a person: .
+   ?applicant_role1 a applicant_role: .  
+   ?indexing1 a indexing: .
+   ?indexing2 a indexing: .
+   ?wgm_applicant1 has_role:  ?applicant_role1 .
+   ?wgm_applicant1 participates_in: ?indexing1 .
+   ?indexing1 realizes: ?applicant_role1 .
+
+   ?persecutee_nazi1 a person: .
+   ?persecutee_role1 a persecutee_role: .  
+   ?persecutee_nazi1 has_role:  ?persecutee_role1 .
+   ?persecutee_nazi1 participates_in: ?indexing1 | ?indexing2 .
+   ?indexing1 | ?indexing2 realizes: ?persecutee_role1 .
+
+   ?wgm_agent a wgm_applicant1: |  persecutee_nazi1: .
+   ?givenName1 a givenName: .
+   ?wgm_agent denotedBy: ?givenName1: .
+   ?givenName1 labeled: ?label: .
+}")
+AnnotationAssertion(rdfs:label :BZK_0010021 "has given name"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :BZK_0010021 "This data property links a person to their given (first) name."@en)
+DataPropertyDomain(:BZK_0010021 :BZK_0000013)
+DataPropertyDomain(:BZK_0010021 :BZK_0010010)
+DataPropertyRange(:BZK_0010021 rdfs:Literal)
+
+# Data Property: :BZK_0010025 (has last residential address)
+
+AnnotationAssertion(obo:OMO_0002000 :BZK_0010025 "PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX is_about: <http://purl.obolibrary.org/obo/IAO_0000136>
+PREFIX indexing: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010000>  
+PREFIX has_role: <http://purl.obolibrary.org/obo/RO_0000087> 
+PREFIX participates_in: <http://purl.obolibrary.org/obo/RO_0000056> 
+PREFIX realizes: <http://purl.obolibrary.org/obo/BFO_0000055> 
+PREFIX person: <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004> 
+PREFIX persecutee_role: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010002> 
+PREFIX lastResidentialAdd: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010006>
+PREFIX labeled: <http://www.w3.org/2000/01/rdf-schema#label>
+
+PREFIX has_last_residen_add: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010025> 
+
+CONSTRUCT { ?persecutee_nazi1 has_last_residen_add: ?label}
+WHERE {
+?persecutee_nazi1 a person: .
+?persecutee_role1 a persecutee_role: . 
+?indexing1 a indexing: . 
+?persecutee_nazi1 has_role:  ?persecutee_role1 .
+?persecutee_nazi1 participates_in: ?indexing1 .
+?indexing1 realizes: ?persecutee_role1 .
+
+?lastResidentialAdd1 a lastResidentialAdd: .
+?lastResidentialAdd1 is_about: ?persecutee_nazi1: .
+?lastResidentialAdd1 labeled: ?label: .
+}")
+AnnotationAssertion(rdfs:label :BZK_0010025 "has last residential address"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :BZK_0010025 "In BZKO, this data property links a person who either left Germany or died before the compensation process to their the last known address."@en)
+DataPropertyDomain(:BZK_0010025 :BZK_0010010)
+DataPropertyRange(:BZK_0010025 rdfs:Literal)
+
+# Data Property: :BZK_0010026 (has layout type)
+
+AnnotationAssertion(obo:OMO_0002000 :BZK_0010026 "PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX labeled: <http://www.w3.org/2000/01/rdf-schema#label>
+PREFIX bzk_card: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000002>
+PREFIX bzk_layout: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004>
+PREFIX is_about: <http://purl.obolibrary.org/obo/IAO_0000136>
+
+PREFIX has_bzk_layout: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010026>
+
+CONSTRUCT {
+  ?bzk_card1 has_bzk_layout: ?label .}
+WHERE {
+  ?bzk_card1 a bzk_card: .
+  ?bzk_layout1 a bzk_layout: .
+  ?bzk_layout1 is_about: ?bzk_card1 .
+  ?bzk_layout1 labeled: ?label .
+}")
+AnnotationAssertion(rdfs:label :BZK_0010026 "has layout type"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :BZK_0010026 "This data properry links a BZK index card to its layout type, which is determined by experts at the Federal State Archive."@en)
+DataPropertyDomain(:BZK_0010026 :BZK_0000002)
+
+# Data Property: :BZK_0010027 (has compensation office name)
+
+AnnotationAssertion(obo:OMO_0002000 :BZK_0010027 "PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX denotedBy: <http://purl.obolibrary.org/obo/IAO_0000235>
+PREFIX organization: <http://purl.obolibrary.org/obo/OBI_0000245> 
+PREFIX indexing: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010000>  
+PREFIX has_role: <http://purl.obolibrary.org/obo/RO_0000087> 
+PREFIX realized_in: <http://purl.obolibrary.org/obo/BFO_0000054> 
+PREFIX participates_in: <http://purl.obolibrary.org/obo/RO_0000056> 
+PREFIX CO_role: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010001> 
+PREFIX compOffiName: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010005>
+PREFIX labeled: <http://www.w3.org/2000/01/rdf-schema#label>
+
+PREFIX has_compen_off_name: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010027> 
+CONSTRUCT { ?compen_office1 has_compen_off_name: ?label}
+WHERE {
+   ?compen_office1 a organization: .
+   ?indexing1 a indexing: .
+   ?CO_role1 a CO_role: .
+   ?compen_office1 has_role:  ?CO_role1  .
+   ?CO_role1 realized_in: ?indexing1 .
+   ?compen_office1 participates_in: ?indexing1 .
+
+   ?compOffiName1 a compOffiName: .
+   ?compen_office1 denotedBy: ?compOffiName1: .
+   ?compOffiName1 labeled: ?label: .
+}")
+AnnotationAssertion(rdfs:label :BZK_0010027 "has compensation office name"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :BZK_0010027 "This property links a compensation office to its name."@en)
+DataPropertyDomain(:BZK_0010027 :BZK_0010012)
+
+# Data Property: :BZK_0010028 (has birthplace)
+
+AnnotationAssertion(rdfs:label :BZK_0010028 "has birthplace"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :BZK_0010028 "This data property links a person to the place where they were born."@en)
+DataPropertyDomain(:BZK_0010028 :BZK_0000013)
+DataPropertyDomain(:BZK_0010028 :BZK_0010010)
+DataPropertyRange(:BZK_0010028 rdfs:Literal)
+
+# Data Property: :BZK_0010029 (has deathplace)
+
+AnnotationAssertion(obo:OMO_0002000 :BZK_0010029 "PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX indexing: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010000>  
+PREFIX has_role: <http://purl.obolibrary.org/obo/RO_0000087> 
+PREFIX has_participant: <http://purl.obolibrary.org/obo/RO_0000057> 
+PREFIX realizes: <http://purl.obolibrary.org/obo/BFO_0000055> 
+PREFIX located_in <http://purl.obolibrary.org/obo/RO_0001025>
+PREFIX person: <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004> 
+PREFIX persecutee_role: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010002> 
+PREFIX deathProcessBound: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010009> 
+PREFIX place: <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000005>
+PREFIX environs: <http://purl.obolibrary.org/obo/BFO_0000183>
+PREFIX labeled: <http://www.w3.org/2000/01/rdf-schema#label>
+
+PREFIX has_deathplace: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010029> 
+CONSTRUCT { ?persecutee_nazi1 has_deathplace: ?label}
+WHERE {
+?persecutee_nazi1 a person: .
+?persecutee_role1 a persecutee_role: . 
+?indexing1 a indexing: . 
+
+?persecutee_nazi1 has_role:  ?persecutee_role1 .
+?persecutee_nazi1 participates_in: ?indexing1 .
+?indexing1 realizes: ?persecutee_role1 .
+
+?deathProcessBound1 a deathProcessBound: .
+?deathProcessBound1 has_participant: ?persecutee_nazi1 .
+?deathplace1 a place: .
+?deathplace1 environs: ?deathProcessBound1 . 
+?persecutee_nazi1 located_in: ?deathplace1 .
+?deathplace1 labeled: ?label: .
+
+}")
+AnnotationAssertion(rdfs:label :BZK_0010029 "has deathplace"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :BZK_0010029 "This data property links a person to the place where they were died."@en)
+DataPropertyDomain(:BZK_0010029 :BZK_0000013)
+DataPropertyDomain(:BZK_0010029 :BZK_0010010)
+DataPropertyRange(:BZK_0010029 rdfs:Literal)
+
+# Data Property: :BZK_0010121 (has family name)
+
+AnnotationAssertion(rdfs:label :BZK_0010121 "has family name"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :BZK_0010121 "This property links a person to their family (last) name."@en)
+DataPropertyDomain(:BZK_0010121 :BZK_0000013)
+DataPropertyDomain(:BZK_0010121 :BZK_0010010)
+DataPropertyRange(:BZK_0010121 rdfs:Literal)
 
 
 
