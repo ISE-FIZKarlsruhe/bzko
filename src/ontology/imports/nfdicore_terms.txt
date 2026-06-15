@@ -6,8 +6,10 @@ http://purl.obolibrary.org/obo/IAO_0000422 # postal addresss
 
 http://purl.obolibrary.org/obo/IAO_0000303 # institutional identification
 http://purl.obolibrary.org/obo/BFO_0000015 # process
+http://purl.obolibrary.org/obo/BFO_0000030 # 
 http://purl.obolibrary.org/obo/IAO_0020016 # given_name
 http://purl.obolibrary.org/obo/IAO_0020017 # last_name 
+
 
 http://purl.obolibrary.org/obo/RO_0000087 # has_role
 http://purl.obolibrary.org/obo/IAO_0000235 #  denoted_by
@@ -28,19 +30,39 @@ http://purl.obolibrary.org/obo/RO_0001025 # located in
 http://purl.obolibrary.org/obo/RO_0000059 # concretizes
 http://purl.obolibrary.org/obo/BFO_0000055 # realizes
 
-https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001007 #  has_value
+https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001007 # has_value
 https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001041 # postal code (soon replaced by IAO postal code)
 https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001008 # has_url
-https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010013 #term_tracker_annotation 
+https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010013 # term_tracker_annotation 
+
+https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004
+https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000005
+
+# obsoleted "document"
+#https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000022
+# instead we use
+http://purl.obolibrary.org/obo/IAO_0000310
+
+# ??
+https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000106
+https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000119
+https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000134
 
 http://purl.obolibrary.org/obo/OMO_0002000 # defined by construct
 
-http://purl.org/dc/elements/1.1/contributor 
-http://purl.org/dc/terms/bibliographicCitation 
-http://purl.org/dc/terms/creator
+# some annotation props
+http://purl.obolibrary.org/obo/IAO_0000112
+http://purl.obolibrary.org/obo/IAO_0000116
+http://purl.obolibrary.org/obo/IAO_0000118
+http://purl.obolibrary.org/obo/IAO_0100001
 
-http://www.w3.org/2002/07/owl#priorVersion
-http://www.w3.org/2002/07/owl#versionInfo
-http://www.w3.org/2000/01/rdf-schema#label
 
-http://usefulinc.com/ns/doap#repository
+#http://purl.org/dc/elements/1.1/contributor 
+#http://purl.org/dc/terms/bibliographicCitation 
+#http://purl.org/dc/terms/creator
+
+#http://www.w3.org/2002/07/owl#priorVersion
+#http://www.w3.org/2002/07/owl#versionInfo
+#http://www.w3.org/2000/01/rdf-schema#label
+
+#http://usefulinc.com/ns/doap#repository

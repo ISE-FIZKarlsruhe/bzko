@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                7452b9eecac2cce0004a7399f1b079493d7fec0f9317e1fed77c1cf75d04080d
+CONFIG_HASH=                8c37e8620e85b16c29f25db396e5c28ed4e8394ad0cdfa4d07dcd499acad242a
 
 
 # ----------------------------------------
@@ -498,7 +498,7 @@ mirror-ro: | $(TMPDIR)
 .PHONY: mirror-nfdicore
 .PRECIOUS: $(MIRRORDIR)/nfdicore.owl
 mirror-nfdicore: | $(TMPDIR)
-	$(ROBOT) convert -I https://raw.githubusercontent.com/ISE-FIZKarlsruhe/nfdicore/refs/tags/v3.0.4/nfdicore-full.owl -o $(TMPDIR)/$@.owl
+	$(ROBOT) convert -I https://raw.githubusercontent.com/ISE-FIZKarlsruhe/nfdicore/refs/tags/v3.0.5/nfdicore-full.owl -o $(TMPDIR)/$@.owl
 
 
 ## ONTOLOGY: rico

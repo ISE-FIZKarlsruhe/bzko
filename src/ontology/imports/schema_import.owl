@@ -7,19 +7,20 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<https://bzk.fiz-karlsruhe.de/ontology/bzk/imports/schema_import.owl>
-<https://bzk.fiz-karlsruhe.de/ontology/bzk/releases/2026-04-15/imports/schema_import.owl>
-Annotation(owl:versionInfo "2026-04-15")
+<https://bzk.fiz-karlsruhe.de/ontology/bzk/releases/2026-06-15/imports/schema_import.owl>
+Annotation(owl:versionInfo "2026-06-15")
 
 Declaration(ObjectProperty(<https://schema.org/address>))
 Declaration(ObjectProperty(<https://schema.org/archiveHeld>))
-Declaration(ObjectProperty(<https://schema.org/birthDate>))
-Declaration(ObjectProperty(<https://schema.org/deathDate>))
+Declaration(ObjectProperty(<https://schema.org/birthPlace>))
+Declaration(ObjectProperty(<https://schema.org/deathPlace>))
 Declaration(ObjectProperty(<https://schema.org/familyName>))
 Declaration(ObjectProperty(<https://schema.org/givenName>))
 Declaration(ObjectProperty(<https://schema.org/holdingArchive>))
+Declaration(ObjectProperty(<https://schema.org/name>))
+Declaration(ObjectProperty(<https://schema.org/url>))
 Declaration(DataProperty(<https://schema.org/birthDate>))
 Declaration(DataProperty(<https://schema.org/deathDate>))
-Declaration(AnnotationProperty(<https://schema.org/name>))
 
 ############################
 #   Object Properties
@@ -38,17 +39,17 @@ AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/archiveHeld> <https://p
 AnnotationAssertion(rdfs:label <https://schema.org/archiveHeld> "archiveHeld"@en)
 InverseObjectProperties(<https://schema.org/archiveHeld> <https://schema.org/holdingArchive>)
 
-# Object Property: <https://schema.org/birthDate> (birthDate)
+# Object Property: <https://schema.org/birthPlace> (birthPlace)
 
-AnnotationAssertion(rdfs:comment <https://schema.org/birthDate> "Date of birth."@en)
-AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/birthDate> <https://schema.org/birthDate>)
-AnnotationAssertion(rdfs:label <https://schema.org/birthDate> "birthDate"@en)
+AnnotationAssertion(rdfs:comment <https://schema.org/birthPlace> "The place where the person was born."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/birthPlace> <https://schema.org/birthPlace>)
+AnnotationAssertion(rdfs:label <https://schema.org/birthPlace> "birthPlace"@en)
 
-# Object Property: <https://schema.org/deathDate> (deathDate)
+# Object Property: <https://schema.org/deathPlace> (deathPlace)
 
-AnnotationAssertion(rdfs:comment <https://schema.org/deathDate> "Date of death."@en)
-AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/deathDate> <https://schema.org/deathDate>)
-AnnotationAssertion(rdfs:label <https://schema.org/deathDate> "deathDate"@en)
+AnnotationAssertion(rdfs:comment <https://schema.org/deathPlace> "The place where the person died."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/deathPlace> <https://schema.org/deathPlace>)
+AnnotationAssertion(rdfs:label <https://schema.org/deathPlace> "deathPlace"@en)
 
 # Object Property: <https://schema.org/familyName> (familyName)
 
@@ -68,6 +69,34 @@ AnnotationAssertion(rdfs:comment <https://schema.org/holdingArchive> "<a class=\
 AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/holdingArchive> <https://pending.schema.org/holdingArchive>)
 AnnotationAssertion(rdfs:label <https://schema.org/holdingArchive> "holdingArchive"@en)
 
+# Object Property: <https://schema.org/name> (name)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/name> "The name of the item."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/name> <https://schema.org/name>)
+AnnotationAssertion(rdfs:label <https://schema.org/name> "name"@en)
+
+# Object Property: <https://schema.org/url> (url)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/url> "URL of the item."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/url> <https://schema.org/url>)
+AnnotationAssertion(rdfs:label <https://schema.org/url> "url"@en)
+
+
+############################
+#   Data Properties
+############################
+
+# Data Property: <https://schema.org/birthDate> (birthDate)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/birthDate> "Date of birth."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/birthDate> <https://schema.org/birthDate>)
+AnnotationAssertion(rdfs:label <https://schema.org/birthDate> "birthDate"@en)
+
+# Data Property: <https://schema.org/deathDate> (deathDate)
+
+AnnotationAssertion(rdfs:comment <https://schema.org/deathDate> "Date of death."@en)
+AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/deathDate> <https://schema.org/deathDate>)
+AnnotationAssertion(rdfs:label <https://schema.org/deathDate> "deathDate"@en)
 
 
 
