@@ -35,12 +35,15 @@ Declaration(ObjectProperty(:BZK_0010016))
 Declaration(ObjectProperty(:BZK_0010024))
 Declaration(DataProperty(:BZK_0010020))
 Declaration(DataProperty(:BZK_0010021))
+Declaration(DataProperty(:BZK_0010022))
 Declaration(DataProperty(:BZK_0010025))
 Declaration(DataProperty(:BZK_0010026))
 Declaration(DataProperty(:BZK_0010027))
 Declaration(DataProperty(:BZK_0010028))
 Declaration(DataProperty(:BZK_0010029))
 Declaration(DataProperty(:BZK_0010121))
+Declaration(DataProperty(:BZK_0010122))
+Declaration(DataProperty(:BZK_0010123))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
 Declaration(AnnotationProperty(dcterms:title))
@@ -281,6 +284,15 @@ DataPropertyDomain(:BZK_0010021 :BZK_0000013)
 DataPropertyDomain(:BZK_0010021 :BZK_0010010)
 DataPropertyRange(:BZK_0010021 rdfs:Literal)
 
+# Data Property: :BZK_0010022 (has alternative given name)
+
+AnnotationAssertion(rdfs:label :BZK_0010022 "has alternative given name"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :BZK_0010022 "This data property links a person to a given name that has been altered or rendered in a German or Latin form.")
+SubDataPropertyOf(:BZK_0010022 :BZK_0010021)
+DataPropertyDomain(:BZK_0010022 :BZK_0000013)
+DataPropertyDomain(:BZK_0010022 :BZK_0010010)
+DataPropertyRange(:BZK_0010022 rdfs:Literal)
+
 # Data Property: :BZK_0010025 (has last residential address)
 
 AnnotationAssertion(obo:OMO_0002000 :BZK_0010025 "PREFIX owl: <http://www.w3.org/2002/07/owl#> 
@@ -422,6 +434,25 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :BZK_001012
 DataPropertyDomain(:BZK_0010121 :BZK_0000013)
 DataPropertyDomain(:BZK_0010121 :BZK_0010010)
 DataPropertyRange(:BZK_0010121 rdfs:Literal)
+
+# Data Property: :BZK_0010122 (has alternative family name)
+
+AnnotationAssertion(rdfs:label :BZK_0010122 "has alternative family name"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :BZK_0010122 "This data property links a person to a family name that has been altered or rendered in a German or Latin form."@en)
+SubDataPropertyOf(:BZK_0010122 :BZK_0010121)
+DataPropertyDomain(:BZK_0010122 :BZK_0000013)
+DataPropertyDomain(:BZK_0010122 :BZK_0010010)
+DataPropertyRange(:BZK_0010122 rdfs:Literal)
+
+# Data Property: :BZK_0010123 (has birth name)
+
+AnnotationAssertion(rdfs:comment :BZK_0010123 "Same as \"maiden name\""@en)
+AnnotationAssertion(rdfs:label :BZK_0010123 "has birth name"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :BZK_0010123 "This property links a woman to the family name she used before marriage."@en)
+SubDataPropertyOf(:BZK_0010123 :BZK_0010121)
+DataPropertyDomain(:BZK_0010123 :BZK_0000013)
+DataPropertyDomain(:BZK_0010123 :BZK_0010010)
+DataPropertyRange(:BZK_0010123 rdfs:Literal)
 
 
 

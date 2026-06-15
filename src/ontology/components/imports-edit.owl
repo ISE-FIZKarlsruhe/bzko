@@ -53,58 +53,6 @@
     
 
 
-    <!-- https://bzk.fiz-karlsruhe.de/ontology/BZK_0010021 -->
-
-    <owl:DatatypeProperty rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010021"/>
-    
-
-
-    <!-- https://bzk.fiz-karlsruhe.de/ontology/BZK_0010022 -->
-
-    <owl:DatatypeProperty rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010022">
-        <rdfs:subPropertyOf rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010021"/>
-        <rdfs:domain rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0000013"/>
-        <rdfs:domain rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010010"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <rdfs:label xml:lang="en">has alternative given name</rdfs:label>
-        <skos:definition>This data property links a person to a given name that has been altered or rendered in a German or Latin form.</skos:definition>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://bzk.fiz-karlsruhe.de/ontology/BZK_0010121 -->
-
-    <owl:DatatypeProperty rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010121"/>
-    
-
-
-    <!-- https://bzk.fiz-karlsruhe.de/ontology/BZK_0010122 -->
-
-    <owl:DatatypeProperty rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010122">
-        <rdfs:subPropertyOf rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010121"/>
-        <rdfs:domain rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0000013"/>
-        <rdfs:domain rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010010"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <rdfs:label xml:lang="en">has alternative family name</rdfs:label>
-        <skos:definition xml:lang="en">This data property links a person to a family name that has been altered or rendered in a German or Latin form.</skos:definition>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://bzk.fiz-karlsruhe.de/ontology/BZK_0010123 -->
-
-    <owl:DatatypeProperty rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010123">
-        <rdfs:subPropertyOf rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010121"/>
-        <rdfs:domain rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0000013"/>
-        <rdfs:domain rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010010"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <rdfs:comment xml:lang="en">Same as &quot;maiden name&quot;</rdfs:comment>
-        <rdfs:label xml:lang="en">has birth name</rdfs:label>
-        <skos:definition xml:lang="en">This property links a woman to the family name she used before marriage.</skos:definition>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
