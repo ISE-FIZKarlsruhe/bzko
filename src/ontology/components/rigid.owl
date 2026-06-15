@@ -135,7 +135,7 @@ SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0000006> obo:IAO_0020017)
 
 # Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000007> (alternative family name)
 
-AnnotationAssertion(rdfs:comment <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000007> "In BZKO, an alternative family name can happen in two ways: the family name was changed to a German or Latin form, or the person changed their family name.")
+AnnotationAssertion(rdfs:comment <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000007> "An alternative family name is a family (last) name that has been altered, adapted, transliterated, or rendered in a different language form.")
 AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000007> "alternative family name"@en)
 SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0000007> obo:IAO_0020017)
 
@@ -176,20 +176,20 @@ SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> obo:BFO_0000031)
 
 # Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010005> (compensation office name)
 
-AnnotationAssertion(rdfs:comment <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010005> "institutional identification can be a sublass of iao:identifier. the documentation will be read.")
 AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010005> "compensation office name"@en)
 AnnotationAssertion(skos:definition <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010005> "A textual entity intended to identify a particular compensation office"@en)
 SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010005> obo:IAO_0000303)
 
 # Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010006> (last residential address)
 
+AnnotationAssertion(rdfs:comment <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010006> "This is the last residential address of a person prior to a specified event, such as deportation, migration, relocation, or death.")
 AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010006> "last residential address"@en)
 AnnotationAssertion(skos:definition <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010006> "A last residential address is the postal address of a person's residence at the relevant point in time."@en)
 SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010006> obo:IAO_0000422)
 
 # Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010007> (alternative given name)
 
-AnnotationAssertion(rdfs:comment <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010007> "In BZKO, an alternative given name can happen in two ways: the name was changed to a German or Latin form, or the person changed their given name."@en)
+AnnotationAssertion(rdfs:comment <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010007> "An alternative given name is a given(first) name that has been altered, adapted, transliterated, or rendered in a different language form."@en)
 AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010007> "alternative given name"@en)
 SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010007> obo:IAO_0020016)
 

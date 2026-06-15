@@ -44,6 +44,7 @@ Declaration(DataProperty(:BZK_0010029))
 Declaration(DataProperty(:BZK_0010121))
 Declaration(DataProperty(:BZK_0010122))
 Declaration(DataProperty(:BZK_0010123))
+Declaration(DataProperty(:BZK_0010124))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
 Declaration(AnnotationProperty(dcterms:title))
@@ -218,9 +219,8 @@ WHERE {
 
 # Data Property: :BZK_0010020 (has bzk number)
 
-AnnotationAssertion(obo:OMO_0002000 :BZK_0010020 "PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+AnnotationAssertion(obo:OMO_0002000 :BZK_0010020 "PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX IAO: <http://purl.obolibrary.org/obo/IAO_> .
-
 PREFIX denotes: <http://purl.obolibrary.org/obo/IAO_0000219>
 PREFIX labeled: <http://www.w3.org/2000/01/rdf-schema#label>
 PREFIX bzk_card: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000002>
@@ -245,85 +245,67 @@ DataPropertyRange(:BZK_0010020 rdfs:Literal)
 
 AnnotationAssertion(obo:OMO_0002000 :BZK_0010021 "PREFIX owl: <http://www.w3.org/2002/07/owl#> 
 PREFIX denotedBy: <http://purl.obolibrary.org/obo/IAO_0000235>
-PREFIX indexing: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010000>  
-PREFIX has_role: <http://purl.obolibrary.org/obo/RO_0000087> 
-PREFIX participates_in: <http://purl.obolibrary.org/obo/RO_0000056> 
-PREFIX realizes: <http://purl.obolibrary.org/obo/BFO_0000055> 
 PREFIX person: <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004> 
-PREFIX applicant_role: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010003> 
-PREFIX persecutee_role: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010002> 
 PREFIX givenName: <http://purl.obolibrary.org/obo/IAO_0020016>
 PREFIX labeled: <http://www.w3.org/2000/01/rdf-schema#label>
 
 PREFIX has_given_name: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010021> 
 
-CONSTRUCT { ?wgm_agent has_given_name: ?label}
+CONSTRUCT { ?person1 has_given_name: ?label}
 WHERE {
-   ?wgm_applicant1 a person: .
-   ?applicant_role1 a applicant_role: .  
-   ?indexing1 a indexing: .
-   ?indexing2 a indexing: .
-   ?wgm_applicant1 has_role:  ?applicant_role1 .
-   ?wgm_applicant1 participates_in: ?indexing1 .
-   ?indexing1 realizes: ?applicant_role1 .
-
-   ?persecutee_nazi1 a person: .
-   ?persecutee_role1 a persecutee_role: .  
-   ?persecutee_nazi1 has_role:  ?persecutee_role1 .
-   ?persecutee_nazi1 participates_in: ?indexing1 | ?indexing2 .
-   ?indexing1 | ?indexing2 realizes: ?persecutee_role1 .
-
-   ?wgm_agent a wgm_applicant1: |  persecutee_nazi1: .
+   ?person1 a person: .
    ?givenName1 a givenName: .
-   ?wgm_agent denotedBy: ?givenName1: .
-   ?givenName1 labeled: ?label: .
+   ?person1 denotedBy: ?givenName1 .
+   ?givenName1 labeled: ?label .
 }")
 AnnotationAssertion(rdfs:label :BZK_0010021 "has given name"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :BZK_0010021 "This data property links a person to their given (first) name."@en)
-DataPropertyDomain(:BZK_0010021 :BZK_0000013)
-DataPropertyDomain(:BZK_0010021 :BZK_0010010)
+DataPropertyDomain(:BZK_0010021 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004>)
 DataPropertyRange(:BZK_0010021 rdfs:Literal)
 
 # Data Property: :BZK_0010022 (has alternative given name)
 
+AnnotationAssertion(obo:OMO_0002000 :BZK_0010022 "PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX denotedBy: <http://purl.obolibrary.org/obo/IAO_0000235>
+PREFIX alterGivenName: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010007>
+PREFIX person: <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004> 
+PREFIX labeled: <http://www.w3.org/2000/01/rdf-schema#label>
+
+PREFIX has_alter_given_name: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010022> 
+
+CONSTRUCT { ?person1 has_alter_given_name: ?label}
+WHERE {
+   ?person1 a person: .
+   ?alterGivenName1 a alterGivenName: .
+   ?person1 denotedBy: ?alterGivenName1 .
+   ?alterGivenName1 labeled: ?label .
+}")
 AnnotationAssertion(rdfs:label :BZK_0010022 "has alternative given name"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :BZK_0010022 "This data property links a person to a given name that has been altered or rendered in a German or Latin form.")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :BZK_0010022 "This data property links a person to an alternative given name.")
 SubDataPropertyOf(:BZK_0010022 :BZK_0010021)
-DataPropertyDomain(:BZK_0010022 :BZK_0000013)
-DataPropertyDomain(:BZK_0010022 :BZK_0010010)
+DataPropertyDomain(:BZK_0010022 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004>)
 DataPropertyRange(:BZK_0010022 rdfs:Literal)
 
 # Data Property: :BZK_0010025 (has last residential address)
 
 AnnotationAssertion(obo:OMO_0002000 :BZK_0010025 "PREFIX owl: <http://www.w3.org/2002/07/owl#> 
 PREFIX is_about: <http://purl.obolibrary.org/obo/IAO_0000136>
-PREFIX indexing: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010000>  
-PREFIX has_role: <http://purl.obolibrary.org/obo/RO_0000087> 
-PREFIX participates_in: <http://purl.obolibrary.org/obo/RO_0000056> 
-PREFIX realizes: <http://purl.obolibrary.org/obo/BFO_0000055> 
 PREFIX person: <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004> 
-PREFIX persecutee_role: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010002> 
 PREFIX lastResidentialAdd: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010006>
 PREFIX labeled: <http://www.w3.org/2000/01/rdf-schema#label>
 
 PREFIX has_last_residen_add: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010025> 
 
-CONSTRUCT { ?persecutee_nazi1 has_last_residen_add: ?label}
+CONSTRUCT { ?person1 has_last_residen_add: ?label}
 WHERE {
-?persecutee_nazi1 a person: .
-?persecutee_role1 a persecutee_role: . 
-?indexing1 a indexing: . 
-?persecutee_nazi1 has_role:  ?persecutee_role1 .
-?persecutee_nazi1 participates_in: ?indexing1 .
-?indexing1 realizes: ?persecutee_role1 .
-
+?person1 a person: .
 ?lastResidentialAdd1 a lastResidentialAdd: .
-?lastResidentialAdd1 is_about: ?persecutee_nazi1: .
-?lastResidentialAdd1 labeled: ?label: .
+?lastResidentialAdd1 is_about: ?person1 .
+?lastResidentialAdd1 labeled: ?label .
 }")
 AnnotationAssertion(rdfs:label :BZK_0010025 "has last residential address"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :BZK_0010025 "In BZKO, this data property links a person who either left Germany or died before the compensation process to their the last known address."@en)
-DataPropertyDomain(:BZK_0010025 :BZK_0010010)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :BZK_0010025 "This data property links a person to their last residential address before a specified event."@en)
+DataPropertyDomain(:BZK_0010025 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004>)
 DataPropertyRange(:BZK_0010025 rdfs:Literal)
 
 # Data Property: :BZK_0010026 (has layout type)
@@ -353,11 +335,6 @@ DataPropertyDomain(:BZK_0010026 :BZK_0000002)
 AnnotationAssertion(obo:OMO_0002000 :BZK_0010027 "PREFIX owl: <http://www.w3.org/2002/07/owl#> 
 PREFIX denotedBy: <http://purl.obolibrary.org/obo/IAO_0000235>
 PREFIX organization: <http://purl.obolibrary.org/obo/OBI_0000245> 
-PREFIX indexing: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010000>  
-PREFIX has_role: <http://purl.obolibrary.org/obo/RO_0000087> 
-PREFIX realized_in: <http://purl.obolibrary.org/obo/BFO_0000054> 
-PREFIX participates_in: <http://purl.obolibrary.org/obo/RO_0000056> 
-PREFIX CO_role: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010001> 
 PREFIX compOffiName: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010005>
 PREFIX labeled: <http://www.w3.org/2000/01/rdf-schema#label>
 
@@ -365,94 +342,193 @@ PREFIX has_compen_off_name: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010027>
 CONSTRUCT { ?compen_office1 has_compen_off_name: ?label}
 WHERE {
    ?compen_office1 a organization: .
-   ?indexing1 a indexing: .
-   ?CO_role1 a CO_role: .
-   ?compen_office1 has_role:  ?CO_role1  .
-   ?CO_role1 realized_in: ?indexing1 .
-   ?compen_office1 participates_in: ?indexing1 .
-
    ?compOffiName1 a compOffiName: .
-   ?compen_office1 denotedBy: ?compOffiName1: .
-   ?compOffiName1 labeled: ?label: .
+   ?compen_office1 denotedBy: ?compOffiName1 .
+   ?compOffiName1 labeled: ?label .
 }")
 AnnotationAssertion(rdfs:label :BZK_0010027 "has compensation office name"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :BZK_0010027 "This property links a compensation office to its name."@en)
 DataPropertyDomain(:BZK_0010027 :BZK_0010012)
+DataPropertyRange(:BZK_0010027 rdfs:Literal)
 
 # Data Property: :BZK_0010028 (has birthplace)
 
+AnnotationAssertion(obo:OMO_0002000 :BZK_0010028 "PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX person: <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004> 
+PREFIX birthProcessBound: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010008> 
+PREFIX place: <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000005>
+PREFIX has_participant: <http://purl.obolibrary.org/obo/RO_0000057> 
+PREFIX located_in <http://purl.obolibrary.org/obo/RO_0001025>
+PREFIX environs: <http://purl.obolibrary.org/obo/BFO_0000183>
+PREFIX labeled: <http://www.w3.org/2000/01/rdf-schema#label>
+
+PREFIX has_birthplace: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010028> 
+
+CONSTRUCT { ?person1 has_birthplace: ?label}
+WHERE {
+?person1 a person: .
+?birthProcessBound1 a birthProcessBound: .
+?birthplace1 a place: .
+?birthProcessBound1 has_participant: ?person1 .
+?birthplace1 environs: ?birthProcessBound1 . 
+?person1 located_in: ?birthplace1 .
+?birthplace1 labeled: ?label .
+}")
 AnnotationAssertion(rdfs:label :BZK_0010028 "has birthplace"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :BZK_0010028 "This data property links a person to the place where they were born."@en)
-DataPropertyDomain(:BZK_0010028 :BZK_0000013)
-DataPropertyDomain(:BZK_0010028 :BZK_0010010)
+DataPropertyDomain(:BZK_0010028 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004>)
 DataPropertyRange(:BZK_0010028 rdfs:Literal)
 
 # Data Property: :BZK_0010029 (has deathplace)
 
 AnnotationAssertion(obo:OMO_0002000 :BZK_0010029 "PREFIX owl: <http://www.w3.org/2002/07/owl#> 
-PREFIX indexing: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010000>  
-PREFIX has_role: <http://purl.obolibrary.org/obo/RO_0000087> 
 PREFIX has_participant: <http://purl.obolibrary.org/obo/RO_0000057> 
-PREFIX realizes: <http://purl.obolibrary.org/obo/BFO_0000055> 
 PREFIX located_in <http://purl.obolibrary.org/obo/RO_0001025>
 PREFIX person: <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004> 
-PREFIX persecutee_role: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010002> 
 PREFIX deathProcessBound: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010009> 
 PREFIX place: <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000005>
 PREFIX environs: <http://purl.obolibrary.org/obo/BFO_0000183>
 PREFIX labeled: <http://www.w3.org/2000/01/rdf-schema#label>
 
 PREFIX has_deathplace: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010029> 
-CONSTRUCT { ?persecutee_nazi1 has_deathplace: ?label}
+CONSTRUCT { ?person1 has_deathplace: ?label}
 WHERE {
-?persecutee_nazi1 a person: .
-?persecutee_role1 a persecutee_role: . 
-?indexing1 a indexing: . 
-
-?persecutee_nazi1 has_role:  ?persecutee_role1 .
-?persecutee_nazi1 participates_in: ?indexing1 .
-?indexing1 realizes: ?persecutee_role1 .
-
+?person1 a person: .
 ?deathProcessBound1 a deathProcessBound: .
-?deathProcessBound1 has_participant: ?persecutee_nazi1 .
 ?deathplace1 a place: .
+?deathProcessBound1 has_participant: ?person1 .
 ?deathplace1 environs: ?deathProcessBound1 . 
-?persecutee_nazi1 located_in: ?deathplace1 .
-?deathplace1 labeled: ?label: .
-
+?person1 located_in: ?deathplace1 .
+?deathplace1 labeled: ?label .
 }")
 AnnotationAssertion(rdfs:label :BZK_0010029 "has deathplace"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :BZK_0010029 "This data property links a person to the place where they were died."@en)
-DataPropertyDomain(:BZK_0010029 :BZK_0000013)
-DataPropertyDomain(:BZK_0010029 :BZK_0010010)
+DataPropertyDomain(:BZK_0010029 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004>)
 DataPropertyRange(:BZK_0010029 rdfs:Literal)
 
 # Data Property: :BZK_0010121 (has family name)
 
+AnnotationAssertion(obo:OMO_0002000 :BZK_0010121 "PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX denotedBy: <http://purl.obolibrary.org/obo/IAO_0000235>
+PREFIX person: <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004> 
+PREFIX familyName: <http://purl.obolibrary.org/obo/IAO_0020017>
+PREFIX labeled: <http://www.w3.org/2000/01/rdf-schema#label>
+
+PREFIX has_family_name: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010121> 
+
+CONSTRUCT { ?person1 has_family_name: ?label}
+WHERE {
+   ?person1 a person: .
+   ?familyName1 a familyName: .
+   ?person1 denotedBy: ?familyName1 .
+   ?familyName1 labeled: ?label .
+}")
 AnnotationAssertion(rdfs:label :BZK_0010121 "has family name"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :BZK_0010121 "This property links a person to their family (last) name."@en)
-DataPropertyDomain(:BZK_0010121 :BZK_0000013)
-DataPropertyDomain(:BZK_0010121 :BZK_0010010)
+DataPropertyDomain(:BZK_0010121 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004>)
 DataPropertyRange(:BZK_0010121 rdfs:Literal)
 
 # Data Property: :BZK_0010122 (has alternative family name)
 
+AnnotationAssertion(obo:OMO_0002000 :BZK_0010122 "PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX denotedBy: <http://purl.obolibrary.org/obo/IAO_0000235>
+PREFIX person: <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004> 
+PREFIX alterFamilyName: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000007>
+PREFIX labeled: <http://www.w3.org/2000/01/rdf-schema#label>
+
+PREFIX has_alter_family_name: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010122> 
+
+CONSTRUCT { ?person1 has_alter_family_name: ?label}
+WHERE {
+   ?person1 a person: .
+   ?alterFamilyName1 a alterFamilyName: .
+   ?person1 denotedBy: ?alterFamilyName1 .
+   ?alterFamilyName1 labeled: ?label .
+}")
 AnnotationAssertion(rdfs:label :BZK_0010122 "has alternative family name"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :BZK_0010122 "This data property links a person to a family name that has been altered or rendered in a German or Latin form."@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :BZK_0010122 "This data property links a person to an alternative family name."@en)
 SubDataPropertyOf(:BZK_0010122 :BZK_0010121)
-DataPropertyDomain(:BZK_0010122 :BZK_0000013)
-DataPropertyDomain(:BZK_0010122 :BZK_0010010)
+DataPropertyDomain(:BZK_0010122 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004>)
 DataPropertyRange(:BZK_0010122 rdfs:Literal)
 
 # Data Property: :BZK_0010123 (has birth name)
 
+AnnotationAssertion(obo:OMO_0002000 :BZK_0010123 "PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX denotedBy: <http://purl.obolibrary.org/obo/IAO_0000235>
+PREFIX person: <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004> 
+PREFIX birthName: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000006>
+PREFIX labeled: <http://www.w3.org/2000/01/rdf-schema#label>
+
+PREFIX has_birth_name: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010123> 
+
+CONSTRUCT { ?person1 has_birth_name: ?label}
+WHERE {
+   ?person1 a person: .
+   ?birthName1 a birthName: .
+   ?person1 denotedBy: ?birthName1 .
+   ?birthName1 labeled: ?label .
+}")
 AnnotationAssertion(rdfs:comment :BZK_0010123 "Same as \"maiden name\""@en)
 AnnotationAssertion(rdfs:label :BZK_0010123 "has birth name"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :BZK_0010123 "This property links a woman to the family name she used before marriage."@en)
 SubDataPropertyOf(:BZK_0010123 :BZK_0010121)
-DataPropertyDomain(:BZK_0010123 :BZK_0000013)
-DataPropertyDomain(:BZK_0010123 :BZK_0010010)
+DataPropertyDomain(:BZK_0010123 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004>)
 DataPropertyRange(:BZK_0010123 rdfs:Literal)
+
+# Data Property: :BZK_0010124 (has current address)
+
+AnnotationAssertion(obo:IAO_0000115 :BZK_0010124 "This data property links a person or an organisation to their current postal address.")
+AnnotationAssertion(rdfs:label :BZK_0010124 "has current address"@en)
+DataPropertyDomain(:BZK_0010124 ObjectUnionOf(obo:OBI_0000245 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004>))
+DataPropertyRange(:BZK_0010124 rdfs:Literal)
+
+# Data Property: <https://schema.org/birthDate> (birthDate)
+
+AnnotationAssertion(obo:OMO_0002000 <https://schema.org/birthDate> "PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX person: <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004> 
+PREFIX birthProcessBound: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010008> 
+PREFIX temporalInstant: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0023012>
+PREFIX occup_temp_region: <http://purl.obolibrary.org/obo/BFO_0000199>
+PREFIX has_participant: <http://purl.obolibrary.org/obo/RO_0000057> 
+PREFIX labeled: <http://www.w3.org/2000/01/rdf-schema#label>
+
+PREFIX birthdate: <https://schema.org/birthDate> 
+
+CONSTRUCT { ?person1 birthdate: ?label}
+WHERE {
+?person1 a person: .
+?birthProcessBound1 a birthProcessBound: .
+?dateOfBirth1 a temporalInstant: .
+?birthProcessBound1 has_participant: ?person1 .
+?birthProcessBound1 occup_temp_region: ?dateOfBirth1 .
+?dateOfBirth1 labeled: ?label .
+}")
+DataPropertyDomain(<https://schema.org/birthDate> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004>)
+DataPropertyRange(<https://schema.org/birthDate> rdfs:Literal)
+
+# Data Property: <https://schema.org/deathDate> (deathDate)
+
+AnnotationAssertion(obo:OMO_0002000 <https://schema.org/deathDate> "PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX person: <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004> 
+PREFIX deathProcessBound: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010009> 
+PREFIX temporalInstant: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0023012>
+PREFIX occup_temp_region: <http://purl.obolibrary.org/obo/BFO_0000199>
+PREFIX has_participant: <http://purl.obolibrary.org/obo/RO_0000057> 
+PREFIX labeled: <http://www.w3.org/2000/01/rdf-schema#label>
+
+PREFIX deathdate: <https://schema.org/deathDate> 
+
+CONSTRUCT { ?person1 deathdate: ?label}
+WHERE {
+?person1 a person: .
+?deathProcessBound1 a deathProcessBound: .
+?dateOfDeath1 a temporalInstant: .
+?deathProcessBound1 has_participant: ?person1 .
+?deathProcessBound1 occup_temp_region: ?dateOfDeath1 .
+?dateOfDeath1 labeled: ?label .
+}")
+DataPropertyDomain(<https://schema.org/deathDate> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004>)
+DataPropertyRange(<https://schema.org/deathDate> rdfs:Literal)
 
 
 
@@ -482,6 +558,10 @@ AnnotationAssertion(rdfs:label :BZK_0010010 "persecutee of the nazi regimee"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :BZK_0010010 "A person who was subjected to persecution by the Nazi regimee, including but not limited to discrimination, dispossession, forced displacement, or violence, on political, racial, religious, or other grounds."@en)
 EquivalentClasses(:BZK_0010010 ObjectIntersectionOf(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004> ObjectSomeValuesFrom(obo:RO_0000087 :BZK_0010002)))
 SubClassOf(:BZK_0010010 <https://personsincontext.org/model#PersonObservation>)
+
+# Class: :BZK_0010011 (digitised bzk card)
+
+SubClassOf(:BZK_0010011 <https://www.ica.org/standards/RiC/ontology#Instantiation>)
 
 # Class: :BZK_0010012 (compensation office)
 
@@ -517,37 +597,4 @@ SubClassOf(:BZK_0023012 obo:BFO_0000203)
 
 
 AnnotationAssertion(rdfs:comment <https://personsincontext.org/model#eventPlace> "This data property can be used for death place and birth place."@en)
-AnnotationAssertion(obo:OMO_0002000 <https://schema.org/deathDate> "PREFIX owl: <http://www.w3.org/2002/07/owl#> 
-PREFIX indexing: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010000>  
-PREFIX has_role: <http://purl.obolibrary.org/obo/RO_0000087> 
-PREFIX has_participant: <http://purl.obolibrary.org/obo/RO_0000057> 
-PREFIX realizes: <http://purl.obolibrary.org/obo/BFO_0000055> 
-PREFIX located_in <http://purl.obolibrary.org/obo/RO_0001025>
-PREFIX person: <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004> 
-PREFIX persecutee_role: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010002> 
-PREFIX deathProcessBound: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010009> 
-PREFIX occup_temp_region: <http://purl.obolibrary.org/obo/BFO_0000199>
-PREFIX temp_instant: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0023012>
-PREFIX labeled: <http://www.w3.org/2000/01/rdf-schema#label>
-
-PREFIX deathdate: <https://schema.org/deathDate> 
-
-CONSTRUCT { ?persecutee_nazi1 deathdate: ?label}
-WHERE {
-?persecutee_nazi1 a person: .
-?persecutee_role1 a persecutee_role: . 
-?indexing1 a indexing: . 
-
-?persecutee_nazi1 has_role:  ?persecutee_role1 .
-?persecutee_nazi1 participates_in: ?indexing1 .
-?indexing1 realizes: ?persecutee_role1 .
-
-?deathProcessBound1 a deathProcessBound: .
-?deathProcessBound1 has_participant: ?persecutee_nazi1 .
-
-?dateOfDeath1 a temp_instant: .
-?deathProcessBound1 occup_temp_region: ?dateOfDeath1 .
-?dateOfDeath1 labeled: ?label: .
-
-}")
 )

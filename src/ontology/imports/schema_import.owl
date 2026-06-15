@@ -10,7 +10,6 @@ Ontology(<https://bzk.fiz-karlsruhe.de/ontology/bzk/imports/schema_import.owl>
 <https://bzk.fiz-karlsruhe.de/ontology/bzk/releases/2026-06-15/imports/schema_import.owl>
 Annotation(owl:versionInfo "2026-06-15")
 
-Declaration(ObjectProperty(<https://schema.org/address>))
 Declaration(ObjectProperty(<https://schema.org/archiveHeld>))
 Declaration(ObjectProperty(<https://schema.org/birthPlace>))
 Declaration(ObjectProperty(<https://schema.org/deathPlace>))
@@ -25,12 +24,6 @@ Declaration(DataProperty(<https://schema.org/deathDate>))
 ############################
 #   Object Properties
 ############################
-
-# Object Property: <https://schema.org/address> (address)
-
-AnnotationAssertion(rdfs:comment <https://schema.org/address> "Physical address of the item."@en)
-AnnotationAssertion(rdfs:isDefinedBy <https://schema.org/address> <https://schema.org/address>)
-AnnotationAssertion(rdfs:label <https://schema.org/address> "address"@en)
 
 # Object Property: <https://schema.org/archiveHeld> (archiveHeld)
 
