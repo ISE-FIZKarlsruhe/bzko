@@ -31,7 +31,7 @@ import_group:
 #      use_base: true
 
     - id: nfdicore
-      mirror_from: https://raw.githubusercontent.com/ISE-FIZKarlsruhe/nfdicore/refs/tags/v3.0.4/nfdicore-full.owl
+      mirror_from: https://raw.githubusercontent.com/ISE-FIZKarlsruhe/nfdicore/refs/tags/v3.0.5/nfdicore-full.owl
 #    - id: time
 #      mirror_from: https://raw.githubusercontent.com/w3c/sdw/gh-pages/time/rdf/time.ttl
 
