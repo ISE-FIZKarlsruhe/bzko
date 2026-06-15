@@ -6,7 +6,7 @@ repo: bzko
 uribase: https://bzk.fiz-karlsruhe.de/ontology
 
 release_artefacts:
-# - base
+#  - base
   - full
 #  - simple
 #  - minimal
