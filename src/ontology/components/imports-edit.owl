@@ -67,24 +67,6 @@
     <!-- https://bzk.fiz-karlsruhe.de/ontology/BZK_0000002 -->
 
     <owl:Class rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0000002"/>
-    
-
-
-    <!-- https://bzk.fiz-karlsruhe.de/ontology/BZK_0000013 -->
-
-    <owl:Class rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0000013"/>
-    
-
-
-    <!-- https://bzk.fiz-karlsruhe.de/ontology/BZK_0010010 -->
-
-    <owl:Class rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010010"/>
-    
-
-
-    <!-- https://bzk.fiz-karlsruhe.de/ontology/BZK_0010012 -->
-
-    <owl:Class rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010012"/>
 </rdf:RDF>
 
 
