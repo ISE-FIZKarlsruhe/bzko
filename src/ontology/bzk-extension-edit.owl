@@ -69,16 +69,6 @@ AnnotationAssertion(rdfs:label dcterms:title "title")
 #   Object Properties
 ############################
 
-# Object Property: <http://www.w3.org/ns/prov#hadPrimarySource> (hadPrimarySource)
-
-AnnotationAssertion(obo:IAO_0000116 <http://www.w3.org/ns/prov#hadPrimarySource> "In the PROV-O documentation, it is understood that something that had a primary source is a derivation. That is also why the superrelation of \"had primary source\" is \"was derived from\". 
-For instance, a chart had a primary source from a database, or a quotation was derived from a text.
-
-In the PiCo documentation, it is used to relate \"Person Observation\" to \"Source\", where \"Source\" refers to the historical record or document where \"Person Observation\"s are found. Indeed, in PiCo, a source is any resource where a person is mentioned, including archival records, books, or personal documents, not just traditional archives. 
-
-However, it is not a person observation but the name or address of a person observation recorded in a source. Similarly, a BZK number is on a BZK Index Card. Thereby, the domain of the prov:hadPrimarySource is the classes that are about Person Observation."@en)
-ObjectPropertyRange(<http://www.w3.org/ns/prov#hadPrimarySource> :BZK_0010011)
-
 # Object Property: :BZK_0010013 (applies for compensation to)
 
 AnnotationAssertion(obo:OMO_0002000 :BZK_0010013 "PREFIX owl: <http://www.w3.org/2002/07/owl#> 
@@ -596,5 +586,11 @@ EquivalentClasses(:BZK_0023012 ObjectIntersectionOf(obo:BFO_0000203 ObjectSomeVa
 SubClassOf(:BZK_0023012 obo:BFO_0000203)
 
 
+AnnotationAssertion(obo:IAO_0000116 <http://www.w3.org/ns/prov#hadPrimarySource> "In the PROV-O documentation, it is understood that something that had a primary source is a derivation. That is also why the superrelation of \"had primary source\" is \"was derived from\". 
+For instance, a chart had a primary source from a database, or a quotation was derived from a text.
+
+In the PiCo documentation, it is used to relate \"Person Observation\" to \"Source\", where \"Source\" refers to the historical record or document where \"Person Observation\"s are found. Indeed, in PiCo, a source is any resource where a person is mentioned, including archival records, books, or personal documents, not just traditional archives. 
+
+However, it is not a person observation but the name or address of a person observation recorded in a source. Similarly, a BZK number is on a BZK Index Card. Thereby, the domain of the prov:hadPrimarySource is the classes that are about Person Observation."@en)
 AnnotationAssertion(rdfs:comment <https://personsincontext.org/model#eventPlace> "This data property can be used for death place and birth place."@en)
 )
