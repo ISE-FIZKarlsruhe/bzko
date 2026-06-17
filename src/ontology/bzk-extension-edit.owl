@@ -532,6 +532,25 @@ SubClassOf(:BZK_0000002 <https://www.ica.org/standards/RiC/ontology#Record>)
 SubClassOf(:BZK_0000002 ObjectSomeValuesFrom(<https://www.ica.org/standards/RiC/ontology#hasOrHadDigitalInstantiation> :BZK_0010011))
 SubClassOf(:BZK_0000002 ObjectSomeValuesFrom(<https://www.ica.org/standards/RiC/ontology#hasOrHadIdentifier> :BZK_0000003))
 
+# Class: :BZK_0000003 (bzk number)
+
+AnnotationAssertion(obo:OMO_0002000 :BZK_0000003 "PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX bzk_number: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000003>
+PREFIX digitBZKcard: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010011>
+PREFIX bzk_card: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000002> 
+PREFIX denotes: <http://purl.obolibrary.org/obo/IAO_0000219>
+PREFIX is_about: <http://purl.obolibrary.org/obo/IAO_0000136>
+PREFIX had_primary_source: <http://www.w3.org/ns/prov#hadPrimarySource>
+
+
+CONSTRUCT { ?bzk_number1  had_primary_source:  ?digitBZKcard1 }  
+WHERE
+ { ?bzk_number1 a bzk_number: .
+?bzk_card1 a bzk_card: .
+?digitBZKcard1 a digitBZKcard: .
+?bzk_number1  denotes: ?bzk_card1 .  
+?digitBZKcard1 is_about: ?bzk_card1 . }")
+
 # Class: :BZK_0000013 (wgm applicant)
 
 AnnotationAssertion(obo:IAO_0000116 :BZK_0000013 "The name of a BZK applicant can occur on diffent cards.
