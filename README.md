@@ -2,7 +2,7 @@
 
 The **BZK Ontology (BZKO)** is a BFO-based ontology for representing the **Federal Central Register (Bundeszentralkartei, BZK)** of the German *Wiedergutmachung* process. The ontology provides a semantically rigorous representation of BZK index cards documenting compensation claims submitted by victims of National Socialist persecution and their relatives.
 
-BZKO has been developed within the **Themenportal Wiedergutmachung** project to support semantic integration, provenance-aware knowledge graph construction, and interoperability with archival and Digital Humanities infrastructures.
+BZKO is being developed within the **Themenportal Wiedergutmachung** project to support semantic integration, provenance-aware knowledge graph construction, and interoperability with archival and Digital Humanities infrastructures.
 
 ---
 
@@ -11,12 +11,12 @@ BZKO has been developed within the **Themenportal Wiedergutmachung** project to 
 The ontology models the entities and relations represented on BZK index cards, including:
 
 - BZK cards and their digitized representations
-- Applicants and persecutees
+- BZK numbers
+- Applicants and persecutees of the Nazi Regime
 - Compensation offices
 - Personal names and identifiers
 - Birth and death information
 - Addresses and places
-- BZK numbers
 - Card layouts
 - Provenance links between extracted information and archival sources
 
@@ -33,7 +33,7 @@ The ontology distinguishes between a **knowledge layer**, containing ontological
 - semantic interoperability with existing Digital Humanities infrastructures,
 - provenance-preserving knowledge graph generation,
 - modular ontology reuse,
-- logically rigorous modeling based on BFO while remaining compatible with archival standards such as RiC-O.
+- logically rigorous modeling based on BFO while remaining compatible with archival standards such as RiC-O and PiCo.
 
 ---
 
@@ -45,7 +45,7 @@ BZKO is organized into two ontology layers.
 
 The knowledge layer contains the **core domain model**:
 
-- primitive ontology classes,
+- primitive domain classes,
 - rigid entities,
 - BFO-compliant representations,
 - domain-specific object properties.
@@ -62,7 +62,7 @@ The extension layer provides:
 - interoperability constructs,
 - SPARQL CONSTRUCT mappings.
 
-This separation allows applications to reuse the core ontology independently from archival or interoperability requirements.
+This separation allows applications to reuse the core ontology independently of archival or interoperability requirements.
 
 ---
 
