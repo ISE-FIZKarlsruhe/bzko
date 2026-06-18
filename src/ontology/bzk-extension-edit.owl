@@ -210,7 +210,6 @@ WHERE {
 # Data Property: :BZK_0010020 (has bzk number)
 
 AnnotationAssertion(obo:OMO_0002000 :BZK_0010020 "PREFIX owl: <http://www.w3.org/2002/07/owl#>
-PREFIX IAO: <http://purl.obolibrary.org/obo/IAO_> .
 PREFIX denotes: <http://purl.obolibrary.org/obo/IAO_0000219>
 PREFIX labeled: <http://www.w3.org/2000/01/rdf-schema#label>
 PREFIX bzk_card: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000002>
@@ -348,7 +347,7 @@ PREFIX person: <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004>
 PREFIX birthProcessBound: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010008> 
 PREFIX place: <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000005>
 PREFIX has_participant: <http://purl.obolibrary.org/obo/RO_0000057> 
-PREFIX located_in <http://purl.obolibrary.org/obo/RO_0001025>
+PREFIX located_in: <http://purl.obolibrary.org/obo/RO_0001025>
 PREFIX environs: <http://purl.obolibrary.org/obo/BFO_0000183>
 PREFIX labeled: <http://www.w3.org/2000/01/rdf-schema#label>
 
@@ -373,7 +372,7 @@ DataPropertyRange(:BZK_0010028 rdfs:Literal)
 
 AnnotationAssertion(obo:OMO_0002000 :BZK_0010029 "PREFIX owl: <http://www.w3.org/2002/07/owl#> 
 PREFIX has_participant: <http://purl.obolibrary.org/obo/RO_0000057> 
-PREFIX located_in <http://purl.obolibrary.org/obo/RO_0001025>
+PREFIX located_in: <http://purl.obolibrary.org/obo/RO_0001025>
 PREFIX person: <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004> 
 PREFIX deathProcessBound: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010009> 
 PREFIX place: <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000005>
