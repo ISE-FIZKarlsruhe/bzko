@@ -159,7 +159,7 @@ See the `LICENSE.txt` file in this repository for licensing information.
 
 ## Acknowledgements
 
-BZKO is being developed within the **Themenportal Wiedergutmachung** project to support the semantic integration and analysis of archival sources documenting compensation processes for victims of National Socialist persecution.
+BZKO is being developed within the [**Themenportal Wiedergutmachung**](https://www.archivportal-d.de/themenportale/wiedergutmachung) project to support the semantic integration and analysis of archival sources documenting compensation processes for victims of National Socialist persecution.
 
 ---
 
