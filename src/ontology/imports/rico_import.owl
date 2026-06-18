@@ -7,8 +7,8 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<https://bzk.fiz-karlsruhe.de/ontology/bzk/imports/rico_import.owl>
-<https://bzk.fiz-karlsruhe.de/ontology/bzk/releases/2026-06-15/imports/rico_import.owl>
-Annotation(owl:versionInfo "2026-06-15")
+<https://bzk.fiz-karlsruhe.de/ontology/bzk/releases/2026-06-18/imports/rico_import.owl>
+Annotation(owl:versionInfo "2026-06-18")
 
 Declaration(Class(<https://www.ica.org/standards/RiC/ontology#Instantiation>))
 Declaration(Class(<https://www.ica.org/standards/RiC/ontology#Record>))
@@ -44,7 +44,7 @@ AnnotationAssertion(rdfs:label <https://www.ica.org/standards/RiC/ontology#hasOr
 #   Classes
 ############################
 
-# Class: <https://www.ica.org/standards/RiC/ontology#Instantiation> (Repräsentation oder Instanz)
+# Class: <https://www.ica.org/standards/RiC/ontology#Instantiation> (Instanciation)
 
 AnnotationAssertion(rdfs:comment <https://www.ica.org/standards/RiC/ontology#Instantiation> "The inscription of information made by an Agent on a physical
          carrier in any persistent, recoverable form as a means of communicating information through
