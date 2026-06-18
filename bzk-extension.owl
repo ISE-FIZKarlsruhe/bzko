@@ -16,7 +16,7 @@
     <owl:Ontology rdf:about="https://bzk.fiz-karlsruhe.de/ontology/extension">
         <owl:versionIRI rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/extension/1.0.0"/>
         <dcterms:bibliographicCitation>BZKO Ontology. Version 1.0.0, https://bzk.fiz-karlsruhe.de/ontology/</dcterms:bibliographicCitation>
-        <dcterms:created>2026-06-15</dcterms:created>
+        <dcterms:created>2026-06-18</dcterms:created>
         <dcterms:description xml:lang="en">The BZK Ontology (BZKO) has been designed to semantically represent the content of the BZK index cards, a collection held in the German Federal Central Register (Bundeszentralkartei, abbreviated BZK). This central index card archive serves as an internal archival tool for tracking Wiedergutmachung records related to compensation and restitution for National Socialist injustice. BZKO aims to serve as the foundation for a knowledge graph that enables semantic search within Themenportal Wiedergutmachung, a central digital portal for the collection of Wiedergutmachung records.</dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0/"/>
         <dcterms:title>BZK Ontology</dcterms:title>
@@ -668,7 +668,6 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
     <!-- http://www.w3.org/ns/prov#hadPrimarySource -->
 
     <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#hadPrimarySource">
-        <rdfs:range rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010011"/>
         <obo:IAO_0000116 xml:lang="en">In the PROV-O documentation, it is understood that something that had a primary source is a derivation. That is also why the superrelation of &quot;had primary source&quot; is &quot;was derived from&quot;. 
 For instance, a chart had a primary source from a database, or a quotation was derived from a text.
 
@@ -968,9 +967,7 @@ WHERE {
     <owl:DatatypeProperty rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010020">
         <rdfs:domain rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0000002"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <obo:OMO_0002000>PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt; 
-PREFIX IAO: &lt;http://purl.obolibrary.org/obo/IAO_&gt; .
-
+        <obo:OMO_0002000>PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt;
 PREFIX denotes: &lt;http://purl.obolibrary.org/obo/IAO_0000219&gt;
 PREFIX labeled: &lt;http://www.w3.org/2000/01/rdf-schema#label&gt;
 PREFIX bzk_card: &lt;https://bzk.fiz-karlsruhe.de/ontology/BZK_0000002&gt;
@@ -995,43 +992,22 @@ WHERE {
     <!-- https://bzk.fiz-karlsruhe.de/ontology/BZK_0010021 -->
 
     <owl:DatatypeProperty rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010021">
-        <rdfs:domain rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0000013"/>
-        <rdfs:domain rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010010"/>
+        <rdfs:domain rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <obo:OMO_0002000>PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt; 
 PREFIX denotedBy: &lt;http://purl.obolibrary.org/obo/IAO_0000235&gt;
-PREFIX indexing: &lt;https://bzk.fiz-karlsruhe.de/ontology/BZK_0010000&gt;  
-PREFIX has_role: &lt;http://purl.obolibrary.org/obo/RO_0000087&gt; 
-PREFIX participates_in: &lt;http://purl.obolibrary.org/obo/RO_0000056&gt; 
-PREFIX realizes: &lt;http://purl.obolibrary.org/obo/BFO_0000055&gt; 
 PREFIX person: &lt;https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004&gt; 
-PREFIX applicant_role: &lt;https://bzk.fiz-karlsruhe.de/ontology/BZK_0010003&gt; 
-PREFIX persecutee_role: &lt;https://bzk.fiz-karlsruhe.de/ontology/BZK_0010002&gt; 
 PREFIX givenName: &lt;http://purl.obolibrary.org/obo/IAO_0020016&gt;
 PREFIX labeled: &lt;http://www.w3.org/2000/01/rdf-schema#label&gt;
 
 PREFIX has_given_name: &lt;https://bzk.fiz-karlsruhe.de/ontology/BZK_0010021&gt; 
 
-CONSTRUCT { ?wgm_agent has_given_name: ?label}
+CONSTRUCT { ?person1 has_given_name: ?label}
 WHERE {
-   ?wgm_applicant1 a person: .
-   ?applicant_role1 a applicant_role: .  
-   ?indexing1 a indexing: .
-   ?indexing2 a indexing: .
-   ?wgm_applicant1 has_role:  ?applicant_role1 .
-   ?wgm_applicant1 participates_in: ?indexing1 .
-   ?indexing1 realizes: ?applicant_role1 .
-
-   ?persecutee_nazi1 a person: .
-   ?persecutee_role1 a persecutee_role: .  
-   ?persecutee_nazi1 has_role:  ?persecutee_role1 .
-   ?persecutee_nazi1 participates_in: ?indexing1 | ?indexing2 .
-   ?indexing1 | ?indexing2 realizes: ?persecutee_role1 .
-
-   ?wgm_agent a wgm_applicant1: |  persecutee_nazi1: .
+   ?person1 a person: .
    ?givenName1 a givenName: .
-   ?wgm_agent denotedBy: ?givenName1: .
-   ?givenName1 labeled: ?label: .
+   ?person1 denotedBy: ?givenName1 .
+   ?givenName1 labeled: ?label .
 }</obo:OMO_0002000>
         <rdfs:label xml:lang="en">has given name</rdfs:label>
         <skos:definition xml:lang="en">This data property links a person to their given (first) name.</skos:definition>
@@ -1043,11 +1019,25 @@ WHERE {
 
     <owl:DatatypeProperty rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010022">
         <rdfs:subPropertyOf rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010021"/>
-        <rdfs:domain rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0000013"/>
-        <rdfs:domain rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010010"/>
+        <rdfs:domain rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <obo:OMO_0002000>PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt; 
+PREFIX denotedBy: &lt;http://purl.obolibrary.org/obo/IAO_0000235&gt;
+PREFIX alterGivenName: &lt;https://bzk.fiz-karlsruhe.de/ontology/BZK_0010007&gt;
+PREFIX person: &lt;https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004&gt; 
+PREFIX labeled: &lt;http://www.w3.org/2000/01/rdf-schema#label&gt;
+
+PREFIX has_alter_given_name: &lt;https://bzk.fiz-karlsruhe.de/ontology/BZK_0010022&gt; 
+
+CONSTRUCT { ?person1 has_alter_given_name: ?label}
+WHERE {
+   ?person1 a person: .
+   ?alterGivenName1 a alterGivenName: .
+   ?person1 denotedBy: ?alterGivenName1 .
+   ?alterGivenName1 labeled: ?label .
+}</obo:OMO_0002000>
         <rdfs:label xml:lang="en">has alternative given name</rdfs:label>
-        <skos:definition>This data property links a person to a given name that has been altered or rendered in a German or Latin form.</skos:definition>
+        <skos:definition>This data property links a person to an alternative given name.</skos:definition>
     </owl:DatatypeProperty>
     
 
@@ -1055,36 +1045,25 @@ WHERE {
     <!-- https://bzk.fiz-karlsruhe.de/ontology/BZK_0010025 -->
 
     <owl:DatatypeProperty rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010025">
-        <rdfs:domain rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010010"/>
+        <rdfs:domain rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <obo:OMO_0002000>PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt; 
 PREFIX is_about: &lt;http://purl.obolibrary.org/obo/IAO_0000136&gt;
-PREFIX indexing: &lt;https://bzk.fiz-karlsruhe.de/ontology/BZK_0010000&gt;  
-PREFIX has_role: &lt;http://purl.obolibrary.org/obo/RO_0000087&gt; 
-PREFIX participates_in: &lt;http://purl.obolibrary.org/obo/RO_0000056&gt; 
-PREFIX realizes: &lt;http://purl.obolibrary.org/obo/BFO_0000055&gt; 
 PREFIX person: &lt;https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004&gt; 
-PREFIX persecutee_role: &lt;https://bzk.fiz-karlsruhe.de/ontology/BZK_0010002&gt; 
 PREFIX lastResidentialAdd: &lt;https://bzk.fiz-karlsruhe.de/ontology/BZK_0010006&gt;
 PREFIX labeled: &lt;http://www.w3.org/2000/01/rdf-schema#label&gt;
 
 PREFIX has_last_residen_add: &lt;https://bzk.fiz-karlsruhe.de/ontology/BZK_0010025&gt; 
 
-CONSTRUCT { ?persecutee_nazi1 has_last_residen_add: ?label}
+CONSTRUCT { ?person1 has_last_residen_add: ?label}
 WHERE {
-?persecutee_nazi1 a person: .
-?persecutee_role1 a persecutee_role: . 
-?indexing1 a indexing: . 
-?persecutee_nazi1 has_role:  ?persecutee_role1 .
-?persecutee_nazi1 participates_in: ?indexing1 .
-?indexing1 realizes: ?persecutee_role1 .
-
+?person1 a person: .
 ?lastResidentialAdd1 a lastResidentialAdd: .
-?lastResidentialAdd1 is_about: ?persecutee_nazi1: .
-?lastResidentialAdd1 labeled: ?label: .
+?lastResidentialAdd1 is_about: ?person1 .
+?lastResidentialAdd1 labeled: ?label .
 }</obo:OMO_0002000>
         <rdfs:label xml:lang="en">has last residential address</rdfs:label>
-        <skos:definition xml:lang="en">In BZKO, this data property links a person who either left Germany or died before the compensation process to their the last known address.</skos:definition>
+        <skos:definition xml:lang="en">This data property links a person to their last residential address before a specified event.</skos:definition>
     </owl:DatatypeProperty>
     
 
@@ -1119,14 +1098,10 @@ WHERE {
 
     <owl:DatatypeProperty rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010027">
         <rdfs:domain rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010012"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <obo:OMO_0002000>PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt; 
 PREFIX denotedBy: &lt;http://purl.obolibrary.org/obo/IAO_0000235&gt;
 PREFIX organization: &lt;http://purl.obolibrary.org/obo/OBI_0000245&gt; 
-PREFIX indexing: &lt;https://bzk.fiz-karlsruhe.de/ontology/BZK_0010000&gt;  
-PREFIX has_role: &lt;http://purl.obolibrary.org/obo/RO_0000087&gt; 
-PREFIX realized_in: &lt;http://purl.obolibrary.org/obo/BFO_0000054&gt; 
-PREFIX participates_in: &lt;http://purl.obolibrary.org/obo/RO_0000056&gt; 
-PREFIX CO_role: &lt;https://bzk.fiz-karlsruhe.de/ontology/BZK_0010001&gt; 
 PREFIX compOffiName: &lt;https://bzk.fiz-karlsruhe.de/ontology/BZK_0010005&gt;
 PREFIX labeled: &lt;http://www.w3.org/2000/01/rdf-schema#label&gt;
 
@@ -1134,15 +1109,9 @@ PREFIX has_compen_off_name: &lt;https://bzk.fiz-karlsruhe.de/ontology/BZK_001002
 CONSTRUCT { ?compen_office1 has_compen_off_name: ?label}
 WHERE {
    ?compen_office1 a organization: .
-   ?indexing1 a indexing: .
-   ?CO_role1 a CO_role: .
-   ?compen_office1 has_role:  ?CO_role1  .
-   ?CO_role1 realized_in: ?indexing1 .
-   ?compen_office1 participates_in: ?indexing1 .
-
    ?compOffiName1 a compOffiName: .
-   ?compen_office1 denotedBy: ?compOffiName1: .
-   ?compOffiName1 labeled: ?label: .
+   ?compen_office1 denotedBy: ?compOffiName1 .
+   ?compOffiName1 labeled: ?label .
 }</obo:OMO_0002000>
         <rdfs:label xml:lang="en">has compensation office name</rdfs:label>
         <skos:definition xml:lang="en">This property links a compensation office to its name.</skos:definition>
@@ -1153,9 +1122,29 @@ WHERE {
     <!-- https://bzk.fiz-karlsruhe.de/ontology/BZK_0010028 -->
 
     <owl:DatatypeProperty rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010028">
-        <rdfs:domain rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0000013"/>
-        <rdfs:domain rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010010"/>
+        <rdfs:domain rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <obo:OMO_0002000>PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt; 
+PREFIX person: &lt;https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004&gt; 
+PREFIX birthProcessBound: &lt;https://bzk.fiz-karlsruhe.de/ontology/BZK_0010008&gt; 
+PREFIX place: &lt;https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000005&gt;
+PREFIX has_participant: &lt;http://purl.obolibrary.org/obo/RO_0000057&gt; 
+PREFIX located_in: &lt;http://purl.obolibrary.org/obo/RO_0001025&gt;
+PREFIX environs: &lt;http://purl.obolibrary.org/obo/BFO_0000183&gt;
+PREFIX labeled: &lt;http://www.w3.org/2000/01/rdf-schema#label&gt;
+
+PREFIX has_birthplace: &lt;https://bzk.fiz-karlsruhe.de/ontology/BZK_0010028&gt; 
+
+CONSTRUCT { ?person1 has_birthplace: ?label}
+WHERE {
+?person1 a person: .
+?birthProcessBound1 a birthProcessBound: .
+?birthplace1 a place: .
+?birthProcessBound1 has_participant: ?person1 .
+?birthplace1 environs: ?birthProcessBound1 . 
+?person1 located_in: ?birthplace1 .
+?birthplace1 labeled: ?label .
+}</obo:OMO_0002000>
         <rdfs:label xml:lang="en">has birthplace</rdfs:label>
         <skos:definition xml:lang="en">This data property links a person to the place where they were born.</skos:definition>
     </owl:DatatypeProperty>
@@ -1165,40 +1154,27 @@ WHERE {
     <!-- https://bzk.fiz-karlsruhe.de/ontology/BZK_0010029 -->
 
     <owl:DatatypeProperty rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010029">
-        <rdfs:domain rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0000013"/>
-        <rdfs:domain rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010010"/>
+        <rdfs:domain rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <obo:OMO_0002000>PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt; 
-PREFIX indexing: &lt;https://bzk.fiz-karlsruhe.de/ontology/BZK_0010000&gt;  
-PREFIX has_role: &lt;http://purl.obolibrary.org/obo/RO_0000087&gt; 
 PREFIX has_participant: &lt;http://purl.obolibrary.org/obo/RO_0000057&gt; 
-PREFIX realizes: &lt;http://purl.obolibrary.org/obo/BFO_0000055&gt; 
-PREFIX located_in &lt;http://purl.obolibrary.org/obo/RO_0001025&gt;
+PREFIX located_in: &lt;http://purl.obolibrary.org/obo/RO_0001025&gt;
 PREFIX person: &lt;https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004&gt; 
-PREFIX persecutee_role: &lt;https://bzk.fiz-karlsruhe.de/ontology/BZK_0010002&gt; 
 PREFIX deathProcessBound: &lt;https://bzk.fiz-karlsruhe.de/ontology/BZK_0010009&gt; 
 PREFIX place: &lt;https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000005&gt;
 PREFIX environs: &lt;http://purl.obolibrary.org/obo/BFO_0000183&gt;
 PREFIX labeled: &lt;http://www.w3.org/2000/01/rdf-schema#label&gt;
 
 PREFIX has_deathplace: &lt;https://bzk.fiz-karlsruhe.de/ontology/BZK_0010029&gt; 
-CONSTRUCT { ?persecutee_nazi1 has_deathplace: ?label}
+CONSTRUCT { ?person1 has_deathplace: ?label}
 WHERE {
-?persecutee_nazi1 a person: .
-?persecutee_role1 a persecutee_role: . 
-?indexing1 a indexing: . 
-
-?persecutee_nazi1 has_role:  ?persecutee_role1 .
-?persecutee_nazi1 participates_in: ?indexing1 .
-?indexing1 realizes: ?persecutee_role1 .
-
+?person1 a person: .
 ?deathProcessBound1 a deathProcessBound: .
-?deathProcessBound1 has_participant: ?persecutee_nazi1 .
 ?deathplace1 a place: .
+?deathProcessBound1 has_participant: ?person1 .
 ?deathplace1 environs: ?deathProcessBound1 . 
-?persecutee_nazi1 located_in: ?deathplace1 .
-?deathplace1 labeled: ?label: .
-
+?person1 located_in: ?deathplace1 .
+?deathplace1 labeled: ?label .
 }</obo:OMO_0002000>
         <rdfs:label xml:lang="en">has deathplace</rdfs:label>
         <skos:definition xml:lang="en">This data property links a person to the place where they were died.</skos:definition>
@@ -1209,9 +1185,23 @@ WHERE {
     <!-- https://bzk.fiz-karlsruhe.de/ontology/BZK_0010121 -->
 
     <owl:DatatypeProperty rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010121">
-        <rdfs:domain rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0000013"/>
-        <rdfs:domain rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010010"/>
+        <rdfs:domain rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <obo:OMO_0002000>PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt; 
+PREFIX denotedBy: &lt;http://purl.obolibrary.org/obo/IAO_0000235&gt;
+PREFIX person: &lt;https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004&gt; 
+PREFIX familyName: &lt;http://purl.obolibrary.org/obo/IAO_0020017&gt;
+PREFIX labeled: &lt;http://www.w3.org/2000/01/rdf-schema#label&gt;
+
+PREFIX has_family_name: &lt;https://bzk.fiz-karlsruhe.de/ontology/BZK_0010121&gt; 
+
+CONSTRUCT { ?person1 has_family_name: ?label}
+WHERE {
+   ?person1 a person: .
+   ?familyName1 a familyName: .
+   ?person1 denotedBy: ?familyName1 .
+   ?familyName1 labeled: ?label .
+}</obo:OMO_0002000>
         <rdfs:label xml:lang="en">has family name</rdfs:label>
         <skos:definition xml:lang="en">This property links a person to their family (last) name.</skos:definition>
     </owl:DatatypeProperty>
@@ -1222,11 +1212,25 @@ WHERE {
 
     <owl:DatatypeProperty rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010122">
         <rdfs:subPropertyOf rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010121"/>
-        <rdfs:domain rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0000013"/>
-        <rdfs:domain rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010010"/>
+        <rdfs:domain rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <obo:OMO_0002000>PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt; 
+PREFIX denotedBy: &lt;http://purl.obolibrary.org/obo/IAO_0000235&gt;
+PREFIX person: &lt;https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004&gt; 
+PREFIX alterFamilyName: &lt;https://bzk.fiz-karlsruhe.de/ontology/BZK_0000007&gt;
+PREFIX labeled: &lt;http://www.w3.org/2000/01/rdf-schema#label&gt;
+
+PREFIX has_alter_family_name: &lt;https://bzk.fiz-karlsruhe.de/ontology/BZK_0010122&gt; 
+
+CONSTRUCT { ?person1 has_alter_family_name: ?label}
+WHERE {
+   ?person1 a person: .
+   ?alterFamilyName1 a alterFamilyName: .
+   ?person1 denotedBy: ?alterFamilyName1 .
+   ?alterFamilyName1 labeled: ?label .
+}</obo:OMO_0002000>
         <rdfs:label xml:lang="en">has alternative family name</rdfs:label>
-        <skos:definition xml:lang="en">This data property links a person to a family name that has been altered or rendered in a German or Latin form.</skos:definition>
+        <skos:definition xml:lang="en">This data property links a person to an alternative family name.</skos:definition>
     </owl:DatatypeProperty>
     
 
@@ -1235,12 +1239,44 @@ WHERE {
 
     <owl:DatatypeProperty rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010123">
         <rdfs:subPropertyOf rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010121"/>
-        <rdfs:domain rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0000013"/>
-        <rdfs:domain rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010010"/>
+        <rdfs:domain rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <obo:OMO_0002000>PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt; 
+PREFIX denotedBy: &lt;http://purl.obolibrary.org/obo/IAO_0000235&gt;
+PREFIX person: &lt;https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004&gt; 
+PREFIX birthName: &lt;https://bzk.fiz-karlsruhe.de/ontology/BZK_0000006&gt;
+PREFIX labeled: &lt;http://www.w3.org/2000/01/rdf-schema#label&gt;
+
+PREFIX has_birth_name: &lt;https://bzk.fiz-karlsruhe.de/ontology/BZK_0010123&gt; 
+
+CONSTRUCT { ?person1 has_birth_name: ?label}
+WHERE {
+   ?person1 a person: .
+   ?birthName1 a birthName: .
+   ?person1 denotedBy: ?birthName1 .
+   ?birthName1 labeled: ?label .
+}</obo:OMO_0002000>
         <rdfs:comment xml:lang="en">Same as &quot;maiden name&quot;</rdfs:comment>
         <rdfs:label xml:lang="en">has birth name</rdfs:label>
         <skos:definition xml:lang="en">This property links a woman to the family name she used before marriage.</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://bzk.fiz-karlsruhe.de/ontology/BZK_0010124 -->
+
+    <owl:DatatypeProperty rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010124">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000245"/>
+                    <rdf:Description rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <obo:IAO_0000115>This data property links a person or an organisation to their current postal address.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">has current address</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -1295,6 +1331,27 @@ WHERE {
     <!-- https://schema.org/birthDate -->
 
     <owl:DatatypeProperty rdf:about="https://schema.org/birthDate">
+        <rdfs:domain rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <obo:OMO_0002000>PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt; 
+PREFIX person: &lt;https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004&gt; 
+PREFIX birthProcessBound: &lt;https://bzk.fiz-karlsruhe.de/ontology/BZK_0010008&gt; 
+PREFIX temporalInstant: &lt;https://bzk.fiz-karlsruhe.de/ontology/BZK_0023012&gt;
+PREFIX occup_temp_region: &lt;http://purl.obolibrary.org/obo/BFO_0000199&gt;
+PREFIX has_participant: &lt;http://purl.obolibrary.org/obo/RO_0000057&gt; 
+PREFIX labeled: &lt;http://www.w3.org/2000/01/rdf-schema#label&gt;
+
+PREFIX birthdate: &lt;https://schema.org/birthDate&gt; 
+
+CONSTRUCT { ?person1 birthdate: ?label}
+WHERE {
+?person1 a person: .
+?birthProcessBound1 a birthProcessBound: .
+?dateOfBirth1 a temporalInstant: .
+?birthProcessBound1 has_participant: ?person1 .
+?birthProcessBound1 occup_temp_region: ?dateOfBirth1 .
+?dateOfBirth1 labeled: ?label .
+}</obo:OMO_0002000>
         <rdfs:comment xml:lang="en">Date of birth.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://schema.org/birthDate"/>
         <rdfs:label xml:lang="en">birthDate</rdfs:label>
@@ -1305,38 +1362,26 @@ WHERE {
     <!-- https://schema.org/deathDate -->
 
     <owl:DatatypeProperty rdf:about="https://schema.org/deathDate">
+        <rdfs:domain rdf:resource="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <obo:OMO_0002000>PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt; 
-PREFIX indexing: &lt;https://bzk.fiz-karlsruhe.de/ontology/BZK_0010000&gt;  
-PREFIX has_role: &lt;http://purl.obolibrary.org/obo/RO_0000087&gt; 
-PREFIX has_participant: &lt;http://purl.obolibrary.org/obo/RO_0000057&gt; 
-PREFIX realizes: &lt;http://purl.obolibrary.org/obo/BFO_0000055&gt; 
-PREFIX located_in &lt;http://purl.obolibrary.org/obo/RO_0001025&gt;
 PREFIX person: &lt;https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004&gt; 
-PREFIX persecutee_role: &lt;https://bzk.fiz-karlsruhe.de/ontology/BZK_0010002&gt; 
 PREFIX deathProcessBound: &lt;https://bzk.fiz-karlsruhe.de/ontology/BZK_0010009&gt; 
+PREFIX temporalInstant: &lt;https://bzk.fiz-karlsruhe.de/ontology/BZK_0023012&gt;
 PREFIX occup_temp_region: &lt;http://purl.obolibrary.org/obo/BFO_0000199&gt;
-PREFIX temp_instant: &lt;https://bzk.fiz-karlsruhe.de/ontology/BZK_0023012&gt;
+PREFIX has_participant: &lt;http://purl.obolibrary.org/obo/RO_0000057&gt; 
 PREFIX labeled: &lt;http://www.w3.org/2000/01/rdf-schema#label&gt;
 
 PREFIX deathdate: &lt;https://schema.org/deathDate&gt; 
 
-CONSTRUCT { ?persecutee_nazi1 deathdate: ?label}
+CONSTRUCT { ?person1 deathdate: ?label}
 WHERE {
-?persecutee_nazi1 a person: .
-?persecutee_role1 a persecutee_role: . 
-?indexing1 a indexing: . 
-
-?persecutee_nazi1 has_role:  ?persecutee_role1 .
-?persecutee_nazi1 participates_in: ?indexing1 .
-?indexing1 realizes: ?persecutee_role1 .
-
+?person1 a person: .
 ?deathProcessBound1 a deathProcessBound: .
-?deathProcessBound1 has_participant: ?persecutee_nazi1 .
-
-?dateOfDeath1 a temp_instant: .
+?dateOfDeath1 a temporalInstant: .
+?deathProcessBound1 has_participant: ?person1 .
 ?deathProcessBound1 occup_temp_region: ?dateOfDeath1 .
-?dateOfDeath1 labeled: ?label: .
-
+?dateOfDeath1 labeled: ?label .
 }</obo:OMO_0002000>
         <rdfs:comment xml:lang="en">Date of death.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://schema.org/deathDate"/>
@@ -1974,6 +2019,22 @@ for now.</obo:IAO_0000116>
                 <owl:someValuesFrom rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/BZK_0000002"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:OMO_0002000>PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt; 
+PREFIX bzk_number: &lt;https://bzk.fiz-karlsruhe.de/ontology/BZK_0000003&gt;
+PREFIX digitBZKcard: &lt;https://bzk.fiz-karlsruhe.de/ontology/BZK_0010011&gt;
+PREFIX bzk_card: &lt;https://bzk.fiz-karlsruhe.de/ontology/BZK_0000002&gt; 
+PREFIX denotes: &lt;http://purl.obolibrary.org/obo/IAO_0000219&gt;
+PREFIX is_about: &lt;http://purl.obolibrary.org/obo/IAO_0000136&gt;
+PREFIX had_primary_source: &lt;http://www.w3.org/ns/prov#hadPrimarySource&gt;
+
+
+CONSTRUCT { ?bzk_number1  had_primary_source:  ?digitBZKcard1 }  
+WHERE
+ { ?bzk_number1 a bzk_number: .
+?bzk_card1 a bzk_card: .
+?digitBZKcard1 a digitBZKcard: .
+?bzk_number1  denotes: ?bzk_card1 .  
+?digitBZKcard1 is_about: ?bzk_card1 . }</obo:OMO_0002000>
         <rdfs:comment>A BZK number can be modelled as a part of a digitised BZK card. However, in some layout types, the BZK number appears in one of the textual parts instead of at the top-right of the card.</rdfs:comment>
         <rdfs:comment xml:lang="en">A BZK number is not unique, viz., the same number can occur on different BZK Cards issued by different compensation offices.</rdfs:comment>
         <rdfs:label xml:lang="en">bzk number</rdfs:label>
@@ -1996,7 +2057,7 @@ for now.</obo:IAO_0000116>
 
     <owl:Class rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0000007">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0020017"/>
-        <rdfs:comment>In BZKO, an alternative family name can happen in two ways: the family name was changed to a German or Latin form, or the person changed their family name.</rdfs:comment>
+        <rdfs:comment>An alternative family name is a family (last) name that has been altered, adapted, transliterated, or rendered in a different language form.</rdfs:comment>
         <rdfs:label xml:lang="en">alternative family name</rdfs:label>
     </owl:Class>
     
@@ -2122,7 +2183,6 @@ A BZK applicant can be a persecutee at the same time.</obo:IAO_0000116>
 
     <owl:Class rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010005">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000303"/>
-        <rdfs:comment>institutional identification can be a sublass of iao:identifier. the documentation will be read.</rdfs:comment>
         <rdfs:label xml:lang="en">compensation office name</rdfs:label>
         <skos:definition xml:lang="en">A textual entity intended to identify a particular compensation office</skos:definition>
     </owl:Class>
@@ -2133,6 +2193,7 @@ A BZK applicant can be a persecutee at the same time.</obo:IAO_0000116>
 
     <owl:Class rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010006">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000422"/>
+        <rdfs:comment>This is the last residential address of a person prior to a specified event, such as deportation, migration, relocation, or death.</rdfs:comment>
         <rdfs:label xml:lang="en">last residential address</rdfs:label>
         <skos:definition xml:lang="en">A last residential address is the postal address of a person&apos;s residence at the relevant point in time.</skos:definition>
     </owl:Class>
@@ -2143,7 +2204,7 @@ A BZK applicant can be a persecutee at the same time.</obo:IAO_0000116>
 
     <owl:Class rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010007">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0020016"/>
-        <rdfs:comment xml:lang="en">In BZKO, an alternative given name can happen in two ways: the name was changed to a German or Latin form, or the person changed their given name.</rdfs:comment>
+        <rdfs:comment xml:lang="en">An alternative given name is a given(first) name that has been altered, adapted, transliterated, or rendered in a different language form.</rdfs:comment>
         <rdfs:label xml:lang="en">alternative given name</rdfs:label>
     </owl:Class>
     
@@ -2201,6 +2262,7 @@ A BZK applicant can be a persecutee at the same time.</obo:IAO_0000116>
 
     <owl:Class rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010011">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000310"/>
+        <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#Instantiation"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>

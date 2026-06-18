@@ -16,7 +16,7 @@
 <https://bzk.fiz-karlsruhe.de/ontology/> rdf:type owl:Ontology ;
                                           owl:versionIRI <https://bzk.fiz-karlsruhe.de/ontology/1.0.0> ;
                                           dcterms:bibliographicCitation "BZKO Ontology. Version 1.0.0, https://bzk.fiz-karlsruhe.de/ontology/" ;
-                                          dcterms:created "2026-06-15" ;
+                                          dcterms:created "2026-06-18" ;
                                           dcterms:description "The BZK Ontology (BZKO) has been designed to semantically represent the content of the BZK index cards, a collection held in the German Federal Central Register (Bundeszentralkartei, abbreviated BZK). This central index card archive serves as an internal archival tool for tracking Wiedergutmachung records related to compensation and restitution for National Socialist injustice. BZKO aims to serve as the foundation for a knowledge graph that enables semantic search within Themenportal Wiedergutmachung, a central digital portal for the collection of Wiedergutmachung records."@en ;
                                           dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
                                           dcterms:title "BZK Ontology" ;
@@ -494,100 +494,11 @@ obo:RO_0002566 rdf:type owl:ObjectProperty ;
                rdfs:label "causally influences" .
 
 
-###  http://www.w3.org/ns/prov#hadPrimarySource
-<http://www.w3.org/ns/prov#hadPrimarySource> rdf:type owl:ObjectProperty ;
-                                             rdfs:label "hadPrimarySource" .
-
-
 ###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000226
 ontology:NFDI_0000226 rdf:type owl:ObjectProperty ;
                       rdfs:label "is subject of"@en ;
                       skos:altLabel "is described by" ;
                       skos:definition "inverse of the relation 'is about'" .
-
-
-###  https://schema.org/address
-<https://schema.org/address> rdf:type owl:ObjectProperty ;
-                             rdfs:comment "Physical address of the item."@en ;
-                             rdfs:isDefinedBy <https://schema.org/address> ;
-                             rdfs:label "address"@en .
-
-
-###  https://schema.org/archiveHeld
-<https://schema.org/archiveHeld> rdf:type owl:ObjectProperty ;
-                                 owl:inverseOf <https://schema.org/holdingArchive> ;
-                                 rdfs:comment "Collection, <a href=\"https://en.wikipedia.org/wiki/Fonds\">fonds</a>, or item held, kept or maintained by an <a class=\"localLink\" href=\"/ArchiveOrganization\">ArchiveOrganization</a>."@en ;
-                                 rdfs:isDefinedBy <https://pending.schema.org/archiveHeld> ;
-                                 rdfs:label "archiveHeld"@en .
-
-
-###  https://schema.org/birthPlace
-<https://schema.org/birthPlace> rdf:type owl:ObjectProperty ;
-                                rdfs:comment "The place where the person was born."@en ;
-                                rdfs:isDefinedBy <https://schema.org/birthPlace> ;
-                                rdfs:label "birthPlace"@en .
-
-
-###  https://schema.org/deathPlace
-<https://schema.org/deathPlace> rdf:type owl:ObjectProperty ;
-                                rdfs:comment "The place where the person died."@en ;
-                                rdfs:isDefinedBy <https://schema.org/deathPlace> ;
-                                rdfs:label "deathPlace"@en .
-
-
-###  https://schema.org/familyName
-<https://schema.org/familyName> rdf:type owl:ObjectProperty ;
-                                rdfs:comment "Family name. In the U.S., the last name of a Person."@en ;
-                                rdfs:isDefinedBy <https://schema.org/familyName> ;
-                                rdfs:label "familyName"@en .
-
-
-###  https://schema.org/givenName
-<https://schema.org/givenName> rdf:type owl:ObjectProperty ;
-                               rdfs:comment "Given name. In the U.S., the first name of a Person."@en ;
-                               rdfs:isDefinedBy <https://schema.org/givenName> ;
-                               rdfs:label "givenName"@en .
-
-
-###  https://schema.org/holdingArchive
-<https://schema.org/holdingArchive> rdf:type owl:ObjectProperty ;
-                                    rdfs:comment "<a class=\"localLink\" href=\"/ArchiveOrganization\">ArchiveOrganization</a> that holds, keeps or maintains the <a class=\"localLink\" href=\"/ArchiveComponent\">ArchiveComponent</a>."@en ;
-                                    rdfs:isDefinedBy <https://pending.schema.org/holdingArchive> ;
-                                    rdfs:label "holdingArchive"@en .
-
-
-###  https://schema.org/name
-<https://schema.org/name> rdf:type owl:ObjectProperty ;
-                          rdfs:comment "The name of the item."@en ;
-                          rdfs:isDefinedBy <https://schema.org/name> ;
-                          rdfs:label "name"@en .
-
-
-###  https://schema.org/url
-<https://schema.org/url> rdf:type owl:ObjectProperty ;
-                         rdfs:comment "URL of the item."@en ;
-                         rdfs:isDefinedBy <https://schema.org/url> ;
-                         rdfs:label "url"@en .
-
-
-###  https://www.ica.org/standards/RiC/ontology#hasOrHadDigitalInstantiation
-<https://www.ica.org/standards/RiC/ontology#hasOrHadDigitalInstantiation> rdf:type owl:ObjectProperty ;
-                                                                          rdfs:domain <https://www.ica.org/standards/RiC/ontology#RecordResource> ;
-                                                                          rdfs:range <https://www.ica.org/standards/RiC/ontology#Instantiation> ;
-                                                                          rdfs:comment """Connects a record resource to one of its digital instantiations,
-         whether it exists or has been lost or destroyed."""@en ;
-                                                                          rdfs:label "a ou a eu pour instanciation numérique"@fr ,
-                                                                                     "has or had digital instantiation"@en ,
-                                                                                     "tiene o tenía como instanciación digital"@es .
-
-
-###  https://www.ica.org/standards/RiC/ontology#hasOrHadIdentifier
-<https://www.ica.org/standards/RiC/ontology#hasOrHadIdentifier> rdf:type owl:ObjectProperty ;
-                                                                rdfs:comment """Connects a Thing to one of its past or present
-         Identifiers."""@en ;
-                                                                rdfs:label "a ou a eu pour identifiant"@fr ,
-                                                                           "has or had identifier"@en ,
-                                                                           "tiene o tenía como identificador"@es .
 
 
 #################################################################
@@ -609,38 +520,6 @@ ontology:NFDI_0001008 rdf:type owl:DatatypeProperty ;
                       rdfs:range xsd:anyURI ;
                       rdfs:label "has url"@en ;
                       skos:definition "A relation between an information content entity and its specific url."@en .
-
-
-###  https://personsincontext.org/model#deceased
-<https://personsincontext.org/model#deceased> rdf:type owl:DatatypeProperty ;
-                                              rdfs:label "deceased"@en ;
-                                              skos:definition "Indication if a person is deceased." .
-
-
-###  https://personsincontext.org/model#eventDate
-<https://personsincontext.org/model#eventDate> rdf:type owl:DatatypeProperty ;
-                                               rdfs:label "eventDate"@en ;
-                                               skos:definition "The date of a life event." .
-
-
-###  https://personsincontext.org/model#eventPlace
-<https://personsincontext.org/model#eventPlace> rdf:type owl:DatatypeProperty ;
-                                                rdfs:label "eventPlace"@en ;
-                                                skos:definition "The place where a life event occured." .
-
-
-###  https://schema.org/birthDate
-<https://schema.org/birthDate> rdf:type owl:DatatypeProperty ;
-                               rdfs:comment "Date of birth."@en ;
-                               rdfs:isDefinedBy <https://schema.org/birthDate> ;
-                               rdfs:label "birthDate"@en .
-
-
-###  https://schema.org/deathDate
-<https://schema.org/deathDate> rdf:type owl:DatatypeProperty ;
-                               rdfs:comment "Date of death."@en ;
-                               rdfs:isDefinedBy <https://schema.org/deathDate> ;
-                               rdfs:label "deathDate"@en .
 
 
 #################################################################
@@ -1145,7 +1024,7 @@ for now."""@en ;
 ###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0000007
 :BZK_0000007 rdf:type owl:Class ;
              rdfs:subClassOf obo:IAO_0020017 ;
-             rdfs:comment "In BZKO, an alternative family name can happen in two ways: the family name was changed to a German or Latin form, or the person changed their family name." ;
+             rdfs:comment "An alternative family name is a family (last) name that has been altered, adapted, transliterated, or rendered in a different language form." ;
              rdfs:label "alternative family name"@en .
 
 
@@ -1207,7 +1086,6 @@ for now."""@en ;
 ###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010005
 :BZK_0010005 rdf:type owl:Class ;
              rdfs:subClassOf obo:IAO_0000303 ;
-             rdfs:comment "institutional identification can be a sublass of iao:identifier. the documentation will be read." ;
              rdfs:label "compensation office name"@en ;
              skos:definition "A textual entity intended to identify a particular compensation office"@en .
 
@@ -1215,6 +1093,7 @@ for now."""@en ;
 ###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010006
 :BZK_0010006 rdf:type owl:Class ;
              rdfs:subClassOf obo:IAO_0000422 ;
+             rdfs:comment "This is the last residential address of a person prior to a specified event, such as deportation, migration, relocation, or death." ;
              rdfs:label "last residential address"@en ;
              skos:definition "A last residential address is the postal address of a person's residence at the relevant point in time."@en .
 
@@ -1222,7 +1101,7 @@ for now."""@en ;
 ###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010007
 :BZK_0010007 rdf:type owl:Class ;
              rdfs:subClassOf obo:IAO_0020016 ;
-             rdfs:comment "In BZKO, an alternative given name can happen in two ways: the name was changed to a German or Latin form, or the person changed their given name."@en ;
+             rdfs:comment "An alternative given name is a given(first) name that has been altered, adapted, transliterated, or rendered in a different language form."@en ;
              rdfs:label "alternative given name"@en .
 
 
@@ -1354,45 +1233,6 @@ ontology:NFDI_0001041 rdf:type owl:Class ;
                       rdfs:isDefinedBy "http://purl.obolibrary.org/obo/IAO_0000646" ;
                       rdfs:label "postal code"@en ;
                       skos:definition "An identifier that denotes some postal delivery route, some aggregate of postal delivery routes or a geographical region and was created for the purpose of sorting and delivering mail." .
-
-
-###  https://personsincontext.org/model#PersonObservation
-<https://personsincontext.org/model#PersonObservation> rdf:type owl:Class ;
-                                                       rdfs:label "PersonObservation"@en ;
-                                                       skos:definition "A Person observation is a person that can be observed on a Source"@en .
-
-
-###  https://www.ica.org/standards/RiC/ontology#Instantiation
-<https://www.ica.org/standards/RiC/ontology#Instantiation> rdf:type owl:Class ;
-                                                           rdfs:comment """The inscription of information made by an Agent on a physical
-         carrier in any persistent, recoverable form as a means of communicating information through
-         time and space."""@en ;
-                                                           rdfs:label "Instanciación"@es ,
-                                                                      "Instanciation"@fr ,
-                                                                      "Instantiation"@en ,
-                                                                      "Repräsentation oder Instanz"@de .
-
-
-###  https://www.ica.org/standards/RiC/ontology#Record
-<https://www.ica.org/standards/RiC/ontology#Record> rdf:type owl:Class ;
-                                                    rdfs:subClassOf <https://www.ica.org/standards/RiC/ontology#RecordResource> ;
-                                                    rdfs:comment """Discrete information content formed and inscribed, at least once,
-         by any method on any carrier in any persistent, recoverable form by an Agent in the course
-         of life or work activity."""@en ;
-                                                    rdfs:label "Documento"@es ,
-                                                               "Objet informationnel"@fr ,
-                                                               "Record"@de ,
-                                                               "Record"@en .
-
-
-###  https://www.ica.org/standards/RiC/ontology#RecordResource
-<https://www.ica.org/standards/RiC/ontology#RecordResource> rdf:type owl:Class ;
-                                                            rdfs:comment """Information produced or acquired and retained by an Agent in the
-         course of life or work activity."""@en ;
-                                                            rdfs:label "Record Resource"@en ,
-                                                                       "Recordressource"@de ,
-                                                                       "Recurso documental"@es ,
-                                                                       "Ressource archivistique"@fr .
 
 
 #################################################################

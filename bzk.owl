@@ -16,7 +16,7 @@
     <owl:Ontology rdf:about="https://bzk.fiz-karlsruhe.de/ontology/">
         <owl:versionIRI rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/1.0.0"/>
         <dcterms:bibliographicCitation>BZKO Ontology. Version 1.0.0, https://bzk.fiz-karlsruhe.de/ontology/</dcterms:bibliographicCitation>
-        <dcterms:created>2026-06-15</dcterms:created>
+        <dcterms:created>2026-06-18</dcterms:created>
         <dcterms:description xml:lang="en">The BZK Ontology (BZKO) has been designed to semantically represent the content of the BZK index cards, a collection held in the German Federal Central Register (Bundeszentralkartei, abbreviated BZK). This central index card archive serves as an internal archival tool for tracking Wiedergutmachung records related to compensation and restitution for National Socialist injustice. BZKO aims to serve as the foundation for a knowledge graph that enables semantic search within Themenportal Wiedergutmachung, a central digital portal for the collection of Wiedergutmachung records.</dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0/"/>
         <dcterms:title>BZK Ontology</dcterms:title>
@@ -665,137 +665,12 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
     
 
 
-    <!-- http://www.w3.org/ns/prov#hadPrimarySource -->
-
-    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#hadPrimarySource">
-        <rdfs:label>hadPrimarySource</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000226 -->
 
     <owl:ObjectProperty rdf:about="https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000226">
         <rdfs:label xml:lang="en">is subject of</rdfs:label>
         <skos:altLabel>is described by</skos:altLabel>
         <skos:definition>inverse of the relation &apos;is about&apos;</skos:definition>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://schema.org/address -->
-
-    <owl:ObjectProperty rdf:about="https://schema.org/address">
-        <rdfs:comment xml:lang="en">Physical address of the item.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://schema.org/address"/>
-        <rdfs:label xml:lang="en">address</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://schema.org/archiveHeld -->
-
-    <owl:ObjectProperty rdf:about="https://schema.org/archiveHeld">
-        <owl:inverseOf rdf:resource="https://schema.org/holdingArchive"/>
-        <rdfs:comment xml:lang="en">Collection, &lt;a href=&quot;https://en.wikipedia.org/wiki/Fonds&quot;&gt;fonds&lt;/a&gt;, or item held, kept or maintained by an &lt;a class=&quot;localLink&quot; href=&quot;/ArchiveOrganization&quot;&gt;ArchiveOrganization&lt;/a&gt;.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://pending.schema.org/archiveHeld"/>
-        <rdfs:label xml:lang="en">archiveHeld</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://schema.org/birthPlace -->
-
-    <owl:ObjectProperty rdf:about="https://schema.org/birthPlace">
-        <rdfs:comment xml:lang="en">The place where the person was born.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://schema.org/birthPlace"/>
-        <rdfs:label xml:lang="en">birthPlace</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://schema.org/deathPlace -->
-
-    <owl:ObjectProperty rdf:about="https://schema.org/deathPlace">
-        <rdfs:comment xml:lang="en">The place where the person died.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://schema.org/deathPlace"/>
-        <rdfs:label xml:lang="en">deathPlace</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://schema.org/familyName -->
-
-    <owl:ObjectProperty rdf:about="https://schema.org/familyName">
-        <rdfs:comment xml:lang="en">Family name. In the U.S., the last name of a Person.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://schema.org/familyName"/>
-        <rdfs:label xml:lang="en">familyName</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://schema.org/givenName -->
-
-    <owl:ObjectProperty rdf:about="https://schema.org/givenName">
-        <rdfs:comment xml:lang="en">Given name. In the U.S., the first name of a Person.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://schema.org/givenName"/>
-        <rdfs:label xml:lang="en">givenName</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://schema.org/holdingArchive -->
-
-    <owl:ObjectProperty rdf:about="https://schema.org/holdingArchive">
-        <rdfs:comment xml:lang="en">&lt;a class=&quot;localLink&quot; href=&quot;/ArchiveOrganization&quot;&gt;ArchiveOrganization&lt;/a&gt; that holds, keeps or maintains the &lt;a class=&quot;localLink&quot; href=&quot;/ArchiveComponent&quot;&gt;ArchiveComponent&lt;/a&gt;.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://pending.schema.org/holdingArchive"/>
-        <rdfs:label xml:lang="en">holdingArchive</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://schema.org/name -->
-
-    <owl:ObjectProperty rdf:about="https://schema.org/name">
-        <rdfs:comment xml:lang="en">The name of the item.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://schema.org/name"/>
-        <rdfs:label xml:lang="en">name</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://schema.org/url -->
-
-    <owl:ObjectProperty rdf:about="https://schema.org/url">
-        <rdfs:comment xml:lang="en">URL of the item.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://schema.org/url"/>
-        <rdfs:label xml:lang="en">url</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://www.ica.org/standards/RiC/ontology#hasOrHadDigitalInstantiation -->
-
-    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#hasOrHadDigitalInstantiation">
-        <rdfs:domain rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordResource"/>
-        <rdfs:range rdf:resource="https://www.ica.org/standards/RiC/ontology#Instantiation"/>
-        <rdfs:comment xml:lang="en">Connects a record resource to one of its digital instantiations,
-         whether it exists or has been lost or destroyed.</rdfs:comment>
-        <rdfs:label xml:lang="fr">a ou a eu pour instanciation numérique</rdfs:label>
-        <rdfs:label xml:lang="en">has or had digital instantiation</rdfs:label>
-        <rdfs:label xml:lang="es">tiene o tenía como instanciación digital</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://www.ica.org/standards/RiC/ontology#hasOrHadIdentifier -->
-
-    <owl:ObjectProperty rdf:about="https://www.ica.org/standards/RiC/ontology#hasOrHadIdentifier">
-        <rdfs:comment xml:lang="en">Connects a Thing to one of its past or present
-         Identifiers.</rdfs:comment>
-        <rdfs:label xml:lang="fr">a ou a eu pour identifiant</rdfs:label>
-        <rdfs:label xml:lang="en">has or had identifier</rdfs:label>
-        <rdfs:label xml:lang="es">tiene o tenía como identificador</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -832,53 +707,6 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
         <rdfs:label xml:lang="en">has url</rdfs:label>
         <skos:definition xml:lang="en">A relation between an information content entity and its specific url.</skos:definition>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://personsincontext.org/model#deceased -->
-
-    <owl:DatatypeProperty rdf:about="https://personsincontext.org/model#deceased">
-        <rdfs:label xml:lang="en">deceased</rdfs:label>
-        <skos:definition>Indication if a person is deceased.</skos:definition>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://personsincontext.org/model#eventDate -->
-
-    <owl:DatatypeProperty rdf:about="https://personsincontext.org/model#eventDate">
-        <rdfs:label xml:lang="en">eventDate</rdfs:label>
-        <skos:definition>The date of a life event.</skos:definition>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://personsincontext.org/model#eventPlace -->
-
-    <owl:DatatypeProperty rdf:about="https://personsincontext.org/model#eventPlace">
-        <rdfs:label xml:lang="en">eventPlace</rdfs:label>
-        <skos:definition>The place where a life event occured.</skos:definition>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://schema.org/birthDate -->
-
-    <owl:DatatypeProperty rdf:about="https://schema.org/birthDate">
-        <rdfs:comment xml:lang="en">Date of birth.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://schema.org/birthDate"/>
-        <rdfs:label xml:lang="en">birthDate</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://schema.org/deathDate -->
-
-    <owl:DatatypeProperty rdf:about="https://schema.org/deathDate">
-        <rdfs:comment xml:lang="en">Date of death.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://schema.org/deathDate"/>
-        <rdfs:label xml:lang="en">deathDate</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -1521,7 +1349,7 @@ for now.</obo:IAO_0000116>
 
     <owl:Class rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0000007">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0020017"/>
-        <rdfs:comment>In BZKO, an alternative family name can happen in two ways: the family name was changed to a German or Latin form, or the person changed their family name.</rdfs:comment>
+        <rdfs:comment>An alternative family name is a family (last) name that has been altered, adapted, transliterated, or rendered in a different language form.</rdfs:comment>
         <rdfs:label xml:lang="en">alternative family name</rdfs:label>
     </owl:Class>
     
@@ -1611,7 +1439,6 @@ for now.</obo:IAO_0000116>
 
     <owl:Class rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010005">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000303"/>
-        <rdfs:comment>institutional identification can be a sublass of iao:identifier. the documentation will be read.</rdfs:comment>
         <rdfs:label xml:lang="en">compensation office name</rdfs:label>
         <skos:definition xml:lang="en">A textual entity intended to identify a particular compensation office</skos:definition>
     </owl:Class>
@@ -1622,6 +1449,7 @@ for now.</obo:IAO_0000116>
 
     <owl:Class rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010006">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000422"/>
+        <rdfs:comment>This is the last residential address of a person prior to a specified event, such as deportation, migration, relocation, or death.</rdfs:comment>
         <rdfs:label xml:lang="en">last residential address</rdfs:label>
         <skos:definition xml:lang="en">A last residential address is the postal address of a person&apos;s residence at the relevant point in time.</skos:definition>
     </owl:Class>
@@ -1632,7 +1460,7 @@ for now.</obo:IAO_0000116>
 
     <owl:Class rdf:about="https://bzk.fiz-karlsruhe.de/ontology/BZK_0010007">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0020016"/>
-        <rdfs:comment xml:lang="en">In BZKO, an alternative given name can happen in two ways: the name was changed to a German or Latin form, or the person changed their given name.</rdfs:comment>
+        <rdfs:comment xml:lang="en">An alternative given name is a given(first) name that has been altered, adapted, transliterated, or rendered in a different language form.</rdfs:comment>
         <rdfs:label xml:lang="en">alternative given name</rdfs:label>
     </owl:Class>
     
@@ -1814,57 +1642,6 @@ for now.</obo:IAO_0000116>
         <rdfs:isDefinedBy>http://purl.obolibrary.org/obo/IAO_0000646</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">postal code</rdfs:label>
         <skos:definition>An identifier that denotes some postal delivery route, some aggregate of postal delivery routes or a geographical region and was created for the purpose of sorting and delivering mail.</skos:definition>
-    </owl:Class>
-    
-
-
-    <!-- https://personsincontext.org/model#PersonObservation -->
-
-    <owl:Class rdf:about="https://personsincontext.org/model#PersonObservation">
-        <rdfs:label xml:lang="en">PersonObservation</rdfs:label>
-        <skos:definition xml:lang="en">A Person observation is a person that can be observed on a Source</skos:definition>
-    </owl:Class>
-    
-
-
-    <!-- https://www.ica.org/standards/RiC/ontology#Instantiation -->
-
-    <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#Instantiation">
-        <rdfs:comment xml:lang="en">The inscription of information made by an Agent on a physical
-         carrier in any persistent, recoverable form as a means of communicating information through
-         time and space.</rdfs:comment>
-        <rdfs:label xml:lang="es">Instanciación</rdfs:label>
-        <rdfs:label xml:lang="fr">Instanciation</rdfs:label>
-        <rdfs:label xml:lang="en">Instantiation</rdfs:label>
-        <rdfs:label xml:lang="de">Repräsentation oder Instanz</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://www.ica.org/standards/RiC/ontology#Record -->
-
-    <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#Record">
-        <rdfs:subClassOf rdf:resource="https://www.ica.org/standards/RiC/ontology#RecordResource"/>
-        <rdfs:comment xml:lang="en">Discrete information content formed and inscribed, at least once,
-         by any method on any carrier in any persistent, recoverable form by an Agent in the course
-         of life or work activity.</rdfs:comment>
-        <rdfs:label xml:lang="es">Documento</rdfs:label>
-        <rdfs:label xml:lang="fr">Objet informationnel</rdfs:label>
-        <rdfs:label xml:lang="de">Record</rdfs:label>
-        <rdfs:label xml:lang="en">Record</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://www.ica.org/standards/RiC/ontology#RecordResource -->
-
-    <owl:Class rdf:about="https://www.ica.org/standards/RiC/ontology#RecordResource">
-        <rdfs:comment xml:lang="en">Information produced or acquired and retained by an Agent in the
-         course of life or work activity.</rdfs:comment>
-        <rdfs:label xml:lang="en">Record Resource</rdfs:label>
-        <rdfs:label xml:lang="de">Recordressource</rdfs:label>
-        <rdfs:label xml:lang="es">Recurso documental</rdfs:label>
-        <rdfs:label xml:lang="fr">Ressource archivistique</rdfs:label>
     </owl:Class>
     
 
