@@ -1,6 +1,6 @@
 # BZK Ontology (BZKO)
 
-The **BZK Ontology (BZKO)** is a BFO-based ontology for representing the **Federal Central Register (Bundeszentralkartei, BZK)** of the German *Wiedergutmachung* process. The ontology provides a semantically rigorous representation of BZK index cards documenting compensation claims submitted by victims of National Socialist persecution and their relatives.
+The **BZK Ontology (BZKO)** is a BFO-based ontology for representing the **Central Federal Card Index (Bundeszentralkartei, BZK)** of the German *Wiedergutmachung* process. The ontology provides a semantically rigorous representation of BZK index cards documenting compensation claims submitted by victims of National Socialist persecution and their relatives.
 
 BZKO is being developed within the **Themenportal Wiedergutmachung** project to support semantic integration, provenance-aware knowledge graph construction, and interoperability with archival and Digital Humanities infrastructures.
 
@@ -17,7 +17,7 @@ The ontology models the entities and relations represented on BZK index cards, i
 - Personal names and identifiers
 - Birth and death information
 - Addresses and places
-- Card layouts
+- Card layout types
 - Provenance links between extracted information and archival sources
 
 The ontology follows the **Basic Formal Ontology (BFO)** and reuses existing ontology modules wherever possible to maximize interoperability and semantic consistency.
@@ -108,10 +108,10 @@ src/
     ├── components/
     ├── bzk-edit.owl
     └── bzk-extension-edit.owl
-bzk.ttl		# release artefact of knowledge layer
-bzk.owl		# release artefact of knowledge layer
-bzk-extension.ttl   # release artefact of extension layer 
-bzk-extension.owl 	# release artefact of extension layer 
+bzk.ttl		# release artifact of knowledge layer
+bzk.owl		# release artifact of knowledge layer
+bzk-extension.ttl   # release artifact of extension layer 
+bzk-extension.owl 	# release artifact of extension layer 
 
 ```
 
