@@ -476,7 +476,7 @@ DataPropertyRange(:BZK_0010124 rdfs:Literal)
 AnnotationAssertion(obo:OMO_0002000 <https://schema.org/birthDate> "PREFIX owl: <http://www.w3.org/2002/07/owl#> 
 PREFIX person: <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004> 
 PREFIX birthProcessBound: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010008> 
-PREFIX temporalInstant: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0023012>
+PREFIX temporalInstant: <http://purl.obolibrary.org/obo/BFO_0000203>
 PREFIX occup_temp_region: <http://purl.obolibrary.org/obo/BFO_0000199>
 PREFIX has_participant: <http://purl.obolibrary.org/obo/RO_0000057> 
 PREFIX labeled: <http://www.w3.org/2000/01/rdf-schema#label>
@@ -500,7 +500,7 @@ DataPropertyRange(<https://schema.org/birthDate> rdfs:Literal)
 AnnotationAssertion(obo:OMO_0002000 <https://schema.org/deathDate> "PREFIX owl: <http://www.w3.org/2002/07/owl#> 
 PREFIX person: <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004> 
 PREFIX deathProcessBound: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010009> 
-PREFIX temporalInstant: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0023012>
+PREFIX temporalInstant: <http://purl.obolibrary.org/obo/BFO_0000203>
 PREFIX occup_temp_region: <http://purl.obolibrary.org/obo/BFO_0000199>
 PREFIX has_participant: <http://purl.obolibrary.org/obo/RO_0000057> 
 PREFIX labeled: <http://www.w3.org/2000/01/rdf-schema#label>
