@@ -61,22 +61,26 @@ prefix = """
 @prefix street_name: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000014> .
 @prefix house_number: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000015> . 
 @prefix postal_code: <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001041> . 
-@prefix neighborhood: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010020> .
+@prefix neighborhood: <https://bzk.fiz-karlsruhe.de/ontology/BZK_X010020> .
 @prefix city: <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000106> .
-@prefix district: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010021> .
+@prefix district: <https://bzk.fiz-karlsruhe.de/ontology/BZK_X010021> .
 @prefix place: <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000005> .
-@prefix region: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010022> .
+@prefix region: <https://bzk.fiz-karlsruhe.de/ontology/BZK_X010022> .
 @prefix state: <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000134> .
 @prefix country: <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000119> .
 @prefix bzk_nummer: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000003> . # the bzk nummer
-@prefix has_time: <http://www.w3.org/2006/time#inXSDDate> .
+#@prefix has_time: <http://www.w3.org/2006/time#inXSDDate> .
+@prefix has_time: <http://www.w3.org/2000/01/rdf-schema#label> . # currently not formatted properly
+@prefix has_label: <http://www.w3.org/2000/01/rdf-schema#label> . 
 @prefix office_role: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010001> .
 @prefix applicant_role: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010003> .
 @prefix persecutee_role: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010002> . # persecutee role
 @prefix card: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000002> .  # bfo object
+@prefix digitized_card: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010011> . #i.c.e
 @prefix death_process_boundary: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010009> .
 @prefix birth_process_boundary: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010008> .
 @prefix last_residential_address: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010006> .
+@prefix denotes: <http://purl.obolibrary.org/obo/IAO_0000219> .
 
 @prefix has_role: <http://purl.obolibrary.org/obo/RO_0000087> .
 @prefix denoted_by: <http://purl.obolibrary.org/obo/IAO_0000235> .
@@ -96,7 +100,7 @@ prefix = """
 @prefix occurs_in: <http://purl.obolibrary.org/obo/BFO_0000066> .
 @prefix has_part: <http://purl.obolibrary.org/obo/BFO_0000051> . 
 @prefix causally_influences: <http://purl.obolibrary.org/obo/RO_0002566> .
-
+@prefix located_in: <http://purl.obolibrary.org/obo/RO_0001025> .
 
 ## we need these assertions, otherwise Protege/Owlapi inferring them as annotation properties
 has_role: a owl:ObjectProperty .
@@ -127,7 +131,7 @@ office_tmplt="""
 <OFFICEIRI_role> a office_role: .
 <OFFICEIRI> denoted_by: <OFFICEIRI_name> . 
 <OFFICEIRI_name> a organization_name: .
-<OFFICEIRI_name> has_value: "NAME" .
+<OFFICEIRI_name> has_label: "NAME" .
 """
 
 office_process="""
@@ -138,12 +142,16 @@ office_process="""
 bzk_card_tmplt="""
 <BZKIRI_card> a card: . 
 <BZKIRI_card> participates_in: <CASEIRI> .
+<BZKIRI_digicard> a digitized_card: . 
+<BZKIRI_digicard> is_about: <BZKIRI_card> .
+<CASEIRI> concretizes: <BZKIRI_digicard> .
 """
 
 bzk_num_tmplt="""
 <BZKIRI> a bzk_nummer: .
-<BZKIRI> has_value: "BZKLABEL" .
-<BZKIRI> is_about: <BZKIRI_card> . 
+<BZKIRI> has_label: "BZKLABEL" .
+<BZKIRI> denotes: <BZKIRI_card> . 
+
 """
 
 def getNameTmplt(nametype):
@@ -181,13 +189,7 @@ birth_date_tmplt="""
 <BIRTH_instant> has_time: "TIME" .
 """
 
-birth_place_tmplt="""
-<BIRTH_place> environs: <BIRTH> .
-<BIRTH_place> a site: .
-<BIRTH_place> has_role: <BIRTH_place_role> .
-<BIRTH_place_role> a birth_place_role: .
-<BIRTH_place> has_value: "PLACELABEL" .
-"""
+
 
 
 death_tmplt="""
@@ -201,18 +203,11 @@ death_date_tmplt="""
 <DEATH_instant> has_time: "TIME" .
 """
 
-death_place_tmplt="""
-<DEATH_place> environs: <DEATH> .
-<DEATH_place> a site: .
-<DEATH_place> has_role: <DEATH_place_role> .
-<DEATH_place_role> a death_place_role: .
-<DEATH_place> has_value: "PLACELABEL" .
-"""
 
 
 
 
-with open('bzkopen-2026-04-17/bzkopen_raw_train.csv', newline='') as csvfile:
+with open('bzkopen-2026-04-17/bzkopen_raw_validation.csv', newline='') as csvfile:
 	reader = csv.reader(csvfile)
 	next(reader, None) # skip header row
 
@@ -301,6 +296,7 @@ with open('bzkopen-2026-04-17/bzkopen_raw_train.csv', newline='') as csvfile:
 				print (birthRDF)
 				print (birthDateRDF)
 
+			split_row_cases[split_row]["applicant"]=applicantIRI
 			split_row_cases[split_row]["applicant_birth"]=birthIRI
 			split_row_cases[split_row]["applicant_birth_rdf"]=birthRDF ## we will print it again for the place, if existing
 
@@ -344,6 +340,8 @@ with open('bzkopen-2026-04-17/bzkopen_raw_train.csv', newline='') as csvfile:
 
 			birthIRI=victimIRI+"_birth"
 			birthRDF=birth_tmplt.replace("BIRTH", birthIRI).replace("PERSON", victimIRI)
+
+			split_row_cases[split_row]["persecutee"]=victimIRI
 			split_row_cases[split_row]["persecutee_birth"]=birthIRI
 			split_row_cases[split_row]["persecutee_birth_rdf"]=birthRDF
 
@@ -370,38 +368,39 @@ with open('bzkopen-2026-04-17/bzkopen_raw_train.csv', newline='') as csvfile:
 
 address_tmplt="""
 <ADDRESS> a address: .
-<ADDRESS> has_value: "ADDRLABEL" .
-<ADDRESS> is_about: <PLACE> .
-<PLACE> a place: .
+<ADDRESS> has_label: "ADDRLABEL" .
+#<ADDRESS> is_about: <PLACE> .
+<PLACE> a place: . 
+<PLACE> has_label: "ADDRLABEL" .
 """
 
 unit_tmplt="""
-<UNIT> a unit_number: .
-<UNIT> has_value: "NUMBER" .
-<ADDRESS> has_part: <UNIT> .
+#<UNIT> a unit_number: .
+#<UNIT> has_value: "NUMBER" .
+#<ADDRESS> has_part: <UNIT> .
 """
 
 house_tmplt="""
-<HOUSE> a house_number: .
-<HOUSE> has_value: "NUMBER" .
-<ADDRESS> has_part: <HOUSE> .
+#<HOUSE> a house_number: .
+#<HOUSE> has_value: "NUMBER" .
+#<ADDRESS> has_part: <HOUSE> .
 """
 
 street_tmplt="""
-<STREET> a street_name: .
-<STREET> has_value: "VALUE" .
-<ADDRESS> has_part: <STREET> .
+#<STREET> a street_name: .
+#<STREET> has_value: "VALUE" .
+#<ADDRESS> has_part: <STREET> .
 """
 
 postalcode_tmplt="""
-<CODE> a postal_code: .
-<CODE> has_value: "VALUE" .
-<ADDRESS> has_part: <CODE> .
+#<CODE> a postal_code: .
+#<CODE> has_value: "VALUE" .
+#<ADDRESS> has_part: <CODE> .
 """
 
 places_tmplt="""
 <IRI> a TEMPLATE: .
-<IRI> has_value: "VALUE" .
+<IRI> has_label: "VALUE" .
 <ADDRESS> is_about: <IRI> .
 """
 
@@ -430,7 +429,7 @@ VictimCurrentAddress
 VictimDeathPlace
 '''
 
-with open('bzkopen-2026-04-17/bzkopen_addresses_train.csv', newline='') as csvfile:
+with open('bzkopen-2026-04-17/bzkopen_addresses_validation.csv', newline='') as csvfile:
 	reader = csv.reader(csvfile)
 	next(reader, None) # skip header row
 
@@ -493,11 +492,13 @@ with open('bzkopen-2026-04-17/bzkopen_addresses_train.csv', newline='') as csvfi
 			field=row[1]
 
 			if field=="ApplicantBirthPlace":
+				applicantIRI=split_row_cases[split_row]["applicant"]
 				birth=split_row_cases[split_row]["applicant_birth"]
 				birthRDF=split_row_cases[split_row]["applicant_birth_rdf"]
 				if birth:
 					print(birthRDF)
-					print(f"<{birth}> occurs_in: <{placeIRI}> .")
+					print(f"<{birth}> occurs_in: <{placeIRI}> . ")
+					print(f"<{applicantIRI}> located_in: <{placeIRI}> .")
 					
 			if field=="ApplicantCurrentAddress":
 				person=split_row_cases[split_row]["applicant"]
@@ -505,27 +506,32 @@ with open('bzkopen-2026-04-17/bzkopen_addresses_train.csv', newline='') as csvfi
 					print(f"<{addressIri}> is_about: <{person}> .")
 
 			if field=="VictimBirthPlace":
-				if "victim_birth" in split_row_cases[split_row].keys():
-					birth=split_row_cases[split_row]["victim_birth"]
-					birthRDF=split_row_cases[split_row]["victim_birth_rdf"]
+				if "persecutee_birth" in split_row_cases[split_row].keys():
+					victimIRI=split_row_cases[split_row]["persecutee"]
+					birth=split_row_cases[split_row]["persecutee_birth"]
+					birthRDF=split_row_cases[split_row]["persecutee_birth_rdf"]
 					if birth:
 						print(birthRDF)
 						print(f"<{birth}> occurs_in: <{placeIRI}> .")
+						print(f"<{victimIRI}> located_in: <{placeIRI}> .")
 					
 			if field=="VictimCurrentAddress":
-				person=split_row_cases[split_row]["victim"]
+				person=split_row_cases[split_row]["persecutee"]
 				if person:
 					print(f"<{addressIri}> is_about: <{person}> .")
 					print(f"<{addressIri}> a last_residential_address: .")
 					
 
 			if field=="VictimDeathPlace":
-				if "victim_death" in split_row_cases[split_row].keys():
-					death=split_row_cases[split_row]["victim_death"]
-					deathRDF=split_row_cases[split_row]["victim_death_rdf"]
+				if "persecutee_death" in split_row_cases[split_row].keys():
+					victimIRI=split_row_cases[split_row]["persecutee"]
+					death=split_row_cases[split_row]["persecutee_death"]
+					deathRDF=split_row_cases[split_row]["persecutee_death_rdf"]
 					if death:
 						print(deathRDF)
 						print(f"<{death}> occurs_in: <{placeIRI}> .")
+						print(f"<{victimIRI}> located_in: <{placeIRI}> .")
+					
 
 
 
