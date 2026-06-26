@@ -109,17 +109,17 @@ has_value: a owl:DatatypeProperty .
 
 <http://bzk.fiz-karlsruhe.de/data/4_firstname> a given_name: .
 <http://bzk.fiz-karlsruhe.de/data/4_firstname> denotes: <http://bzk.fiz-karlsruhe.de/data/4> . 
-<http://bzk.fiz-karlsruhe.de/data/4_firstname> has_value: "Margarete" .
+<http://bzk.fiz-karlsruhe.de/data/4_firstname> has_label: "Margarete" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/4_lastname> a last_name: .
 <http://bzk.fiz-karlsruhe.de/data/4_lastname> denotes: <http://bzk.fiz-karlsruhe.de/data/4> . 
-<http://bzk.fiz-karlsruhe.de/data/4_lastname> has_value: "Feichtmayer" .
+<http://bzk.fiz-karlsruhe.de/data/4_lastname> has_label: "Feichtmayer" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/4_birthname> a birth_name: .
 <http://bzk.fiz-karlsruhe.de/data/4_birthname> denotes: <http://bzk.fiz-karlsruhe.de/data/4> . 
-<http://bzk.fiz-karlsruhe.de/data/4_birthname> has_value: "Held" .
+<http://bzk.fiz-karlsruhe.de/data/4_birthname> has_label: "Held" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/4> participates_in: <http://bzk.fiz-karlsruhe.de/data/1> .
@@ -140,12 +140,12 @@ has_value: a owl:DatatypeProperty .
 
 <http://bzk.fiz-karlsruhe.de/data/5_firstname> a given_name: .
 <http://bzk.fiz-karlsruhe.de/data/5_firstname> denotes: <http://bzk.fiz-karlsruhe.de/data/5> . 
-<http://bzk.fiz-karlsruhe.de/data/5_firstname> has_value: "Dr. Heinrich" .
+<http://bzk.fiz-karlsruhe.de/data/5_firstname> has_label: "Dr. Heinrich" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/5_lastname> a last_name: .
 <http://bzk.fiz-karlsruhe.de/data/5_lastname> denotes: <http://bzk.fiz-karlsruhe.de/data/5> . 
-<http://bzk.fiz-karlsruhe.de/data/5_lastname> has_value: "Held" .
+<http://bzk.fiz-karlsruhe.de/data/5_lastname> has_label: "Held" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/5> participates_in: <http://bzk.fiz-karlsruhe.de/data/1> .
@@ -202,17 +202,17 @@ has_value: a owl:DatatypeProperty .
 
 <http://bzk.fiz-karlsruhe.de/data/10_firstname> a given_name: .
 <http://bzk.fiz-karlsruhe.de/data/10_firstname> denotes: <http://bzk.fiz-karlsruhe.de/data/10> . 
-<http://bzk.fiz-karlsruhe.de/data/10_firstname> has_value: "Selma" .
+<http://bzk.fiz-karlsruhe.de/data/10_firstname> has_label: "Selma" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/10_lastname> a last_name: .
 <http://bzk.fiz-karlsruhe.de/data/10_lastname> denotes: <http://bzk.fiz-karlsruhe.de/data/10> . 
-<http://bzk.fiz-karlsruhe.de/data/10_lastname> has_value: "Schröder" .
+<http://bzk.fiz-karlsruhe.de/data/10_lastname> has_label: "Schröder" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/10_birthname> a birth_name: .
 <http://bzk.fiz-karlsruhe.de/data/10_birthname> denotes: <http://bzk.fiz-karlsruhe.de/data/10> . 
-<http://bzk.fiz-karlsruhe.de/data/10_birthname> has_value: "Weinberg" .
+<http://bzk.fiz-karlsruhe.de/data/10_birthname> has_label: "Weinberg" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/10> participates_in: <http://bzk.fiz-karlsruhe.de/data/6> .
@@ -260,12 +260,12 @@ has_value: a owl:DatatypeProperty .
 
 <http://bzk.fiz-karlsruhe.de/data/15_firstname> a given_name: .
 <http://bzk.fiz-karlsruhe.de/data/15_firstname> denotes: <http://bzk.fiz-karlsruhe.de/data/15> . 
-<http://bzk.fiz-karlsruhe.de/data/15_firstname> has_value: "Albert" .
+<http://bzk.fiz-karlsruhe.de/data/15_firstname> has_label: "Albert" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/15_lastname> a last_name: .
 <http://bzk.fiz-karlsruhe.de/data/15_lastname> denotes: <http://bzk.fiz-karlsruhe.de/data/15> . 
-<http://bzk.fiz-karlsruhe.de/data/15_lastname> has_value: "Emden" .
+<http://bzk.fiz-karlsruhe.de/data/15_lastname> has_label: "Emden" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/15> participates_in: <http://bzk.fiz-karlsruhe.de/data/11> .
@@ -313,12 +313,12 @@ has_value: a owl:DatatypeProperty .
 
 <http://bzk.fiz-karlsruhe.de/data/19_firstname> a given_name: .
 <http://bzk.fiz-karlsruhe.de/data/19_firstname> denotes: <http://bzk.fiz-karlsruhe.de/data/19> . 
-<http://bzk.fiz-karlsruhe.de/data/19_firstname> has_value: "Alexander" .
+<http://bzk.fiz-karlsruhe.de/data/19_firstname> has_label: "Alexander" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/19_lastname> a last_name: .
 <http://bzk.fiz-karlsruhe.de/data/19_lastname> denotes: <http://bzk.fiz-karlsruhe.de/data/19> . 
-<http://bzk.fiz-karlsruhe.de/data/19_lastname> has_value: "Löwe" .
+<http://bzk.fiz-karlsruhe.de/data/19_lastname> has_label: "Löwe" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/19> participates_in: <http://bzk.fiz-karlsruhe.de/data/16> .
@@ -366,12 +366,12 @@ has_value: a owl:DatatypeProperty .
 
 <http://bzk.fiz-karlsruhe.de/data/24_firstname> a given_name: .
 <http://bzk.fiz-karlsruhe.de/data/24_firstname> denotes: <http://bzk.fiz-karlsruhe.de/data/24> . 
-<http://bzk.fiz-karlsruhe.de/data/24_firstname> has_value: "Aron" .
+<http://bzk.fiz-karlsruhe.de/data/24_firstname> has_label: "Aron" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/24_lastname> a last_name: .
 <http://bzk.fiz-karlsruhe.de/data/24_lastname> denotes: <http://bzk.fiz-karlsruhe.de/data/24> . 
-<http://bzk.fiz-karlsruhe.de/data/24_lastname> has_value: "de Vries" .
+<http://bzk.fiz-karlsruhe.de/data/24_lastname> has_label: "de Vries" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/24> participates_in: <http://bzk.fiz-karlsruhe.de/data/21> .
@@ -419,12 +419,12 @@ has_value: a owl:DatatypeProperty .
 
 <http://bzk.fiz-karlsruhe.de/data/29_firstname> a given_name: .
 <http://bzk.fiz-karlsruhe.de/data/29_firstname> denotes: <http://bzk.fiz-karlsruhe.de/data/29> . 
-<http://bzk.fiz-karlsruhe.de/data/29_firstname> has_value: "Mara" .
+<http://bzk.fiz-karlsruhe.de/data/29_firstname> has_label: "Mara" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/29_lastname> a last_name: .
 <http://bzk.fiz-karlsruhe.de/data/29_lastname> denotes: <http://bzk.fiz-karlsruhe.de/data/29> . 
-<http://bzk.fiz-karlsruhe.de/data/29_lastname> has_value: "Meyer" .
+<http://bzk.fiz-karlsruhe.de/data/29_lastname> has_label: "Meyer" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/29> participates_in: <http://bzk.fiz-karlsruhe.de/data/26> .
@@ -472,17 +472,17 @@ has_value: a owl:DatatypeProperty .
 
 <http://bzk.fiz-karlsruhe.de/data/34_firstname> a given_name: .
 <http://bzk.fiz-karlsruhe.de/data/34_firstname> denotes: <http://bzk.fiz-karlsruhe.de/data/34> . 
-<http://bzk.fiz-karlsruhe.de/data/34_firstname> has_value: "Sophie" .
+<http://bzk.fiz-karlsruhe.de/data/34_firstname> has_label: "Sophie" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/34_lastname> a last_name: .
 <http://bzk.fiz-karlsruhe.de/data/34_lastname> denotes: <http://bzk.fiz-karlsruhe.de/data/34> . 
-<http://bzk.fiz-karlsruhe.de/data/34_lastname> has_value: "Gehwald" .
+<http://bzk.fiz-karlsruhe.de/data/34_lastname> has_label: "Gehwald" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/34_altlastname> a alt_last_name: .
 <http://bzk.fiz-karlsruhe.de/data/34_altlastname> denotes: <http://bzk.fiz-karlsruhe.de/data/34> . 
-<http://bzk.fiz-karlsruhe.de/data/34_altlastname> has_value: "Lesser" .
+<http://bzk.fiz-karlsruhe.de/data/34_altlastname> has_label: "Lesser" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/34> participates_in: <http://bzk.fiz-karlsruhe.de/data/31> .
@@ -530,22 +530,22 @@ has_value: a owl:DatatypeProperty .
 
 <http://bzk.fiz-karlsruhe.de/data/39_firstname> a given_name: .
 <http://bzk.fiz-karlsruhe.de/data/39_firstname> denotes: <http://bzk.fiz-karlsruhe.de/data/39> . 
-<http://bzk.fiz-karlsruhe.de/data/39_firstname> has_value: "Emilie" .
+<http://bzk.fiz-karlsruhe.de/data/39_firstname> has_label: "Emilie" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/39_lastname> a last_name: .
 <http://bzk.fiz-karlsruhe.de/data/39_lastname> denotes: <http://bzk.fiz-karlsruhe.de/data/39> . 
-<http://bzk.fiz-karlsruhe.de/data/39_lastname> has_value: "Samson-Newmark" .
+<http://bzk.fiz-karlsruhe.de/data/39_lastname> has_label: "Samson-Newmark" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/39_altfirstname> a alt_first_name: .
 <http://bzk.fiz-karlsruhe.de/data/39_altfirstname> denotes: <http://bzk.fiz-karlsruhe.de/data/39> . 
-<http://bzk.fiz-karlsruhe.de/data/39_altfirstname> has_value: "Milli" .
+<http://bzk.fiz-karlsruhe.de/data/39_altfirstname> has_label: "Milli" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/39_birthname> a birth_name: .
 <http://bzk.fiz-karlsruhe.de/data/39_birthname> denotes: <http://bzk.fiz-karlsruhe.de/data/39> . 
-<http://bzk.fiz-karlsruhe.de/data/39_birthname> has_value: "David" .
+<http://bzk.fiz-karlsruhe.de/data/39_birthname> has_label: "David" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/39> participates_in: <http://bzk.fiz-karlsruhe.de/data/36> .
@@ -585,12 +585,12 @@ has_value: a owl:DatatypeProperty .
 
 <http://bzk.fiz-karlsruhe.de/data/43_firstname> a given_name: .
 <http://bzk.fiz-karlsruhe.de/data/43_firstname> denotes: <http://bzk.fiz-karlsruhe.de/data/43> . 
-<http://bzk.fiz-karlsruhe.de/data/43_firstname> has_value: "Sigmund" .
+<http://bzk.fiz-karlsruhe.de/data/43_firstname> has_label: "Sigmund" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/43_lastname> a last_name: .
 <http://bzk.fiz-karlsruhe.de/data/43_lastname> denotes: <http://bzk.fiz-karlsruhe.de/data/43> . 
-<http://bzk.fiz-karlsruhe.de/data/43_lastname> has_value: "Böhm" .
+<http://bzk.fiz-karlsruhe.de/data/43_lastname> has_label: "Böhm" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/43> participates_in: <http://bzk.fiz-karlsruhe.de/data/41> .
@@ -638,12 +638,12 @@ has_value: a owl:DatatypeProperty .
 
 <http://bzk.fiz-karlsruhe.de/data/48_firstname> a given_name: .
 <http://bzk.fiz-karlsruhe.de/data/48_firstname> denotes: <http://bzk.fiz-karlsruhe.de/data/48> . 
-<http://bzk.fiz-karlsruhe.de/data/48_firstname> has_value: "Berhardine" .
+<http://bzk.fiz-karlsruhe.de/data/48_firstname> has_label: "Berhardine" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/48_lastname> a last_name: .
 <http://bzk.fiz-karlsruhe.de/data/48_lastname> denotes: <http://bzk.fiz-karlsruhe.de/data/48> . 
-<http://bzk.fiz-karlsruhe.de/data/48_lastname> has_value: "Koene" .
+<http://bzk.fiz-karlsruhe.de/data/48_lastname> has_label: "Koene" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/48> participates_in: <http://bzk.fiz-karlsruhe.de/data/45> .
@@ -691,17 +691,17 @@ has_value: a owl:DatatypeProperty .
 
 <http://bzk.fiz-karlsruhe.de/data/53_firstname> a given_name: .
 <http://bzk.fiz-karlsruhe.de/data/53_firstname> denotes: <http://bzk.fiz-karlsruhe.de/data/53> . 
-<http://bzk.fiz-karlsruhe.de/data/53_firstname> has_value: "Rose" .
+<http://bzk.fiz-karlsruhe.de/data/53_firstname> has_label: "Rose" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/53_lastname> a last_name: .
 <http://bzk.fiz-karlsruhe.de/data/53_lastname> denotes: <http://bzk.fiz-karlsruhe.de/data/53> . 
-<http://bzk.fiz-karlsruhe.de/data/53_lastname> has_value: "Stern" .
+<http://bzk.fiz-karlsruhe.de/data/53_lastname> has_label: "Stern" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/53_birthname> a birth_name: .
 <http://bzk.fiz-karlsruhe.de/data/53_birthname> denotes: <http://bzk.fiz-karlsruhe.de/data/53> . 
-<http://bzk.fiz-karlsruhe.de/data/53_birthname> has_value: "Spierer" .
+<http://bzk.fiz-karlsruhe.de/data/53_birthname> has_label: "Spierer" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/53> participates_in: <http://bzk.fiz-karlsruhe.de/data/50> .
@@ -749,12 +749,12 @@ has_value: a owl:DatatypeProperty .
 
 <http://bzk.fiz-karlsruhe.de/data/59_firstname> a given_name: .
 <http://bzk.fiz-karlsruhe.de/data/59_firstname> denotes: <http://bzk.fiz-karlsruhe.de/data/59> . 
-<http://bzk.fiz-karlsruhe.de/data/59_firstname> has_value: "1) Paul 2) Alice" .
+<http://bzk.fiz-karlsruhe.de/data/59_firstname> has_label: "1) Paul 2) Alice" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/59_lastname> a last_name: .
 <http://bzk.fiz-karlsruhe.de/data/59_lastname> denotes: <http://bzk.fiz-karlsruhe.de/data/59> . 
-<http://bzk.fiz-karlsruhe.de/data/59_lastname> has_value: "Schlesinger" .
+<http://bzk.fiz-karlsruhe.de/data/59_lastname> has_label: "Schlesinger" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/59> participates_in: <http://bzk.fiz-karlsruhe.de/data/55> .
@@ -794,17 +794,17 @@ has_value: a owl:DatatypeProperty .
 
 <http://bzk.fiz-karlsruhe.de/data/63_firstname> a given_name: .
 <http://bzk.fiz-karlsruhe.de/data/63_firstname> denotes: <http://bzk.fiz-karlsruhe.de/data/63> . 
-<http://bzk.fiz-karlsruhe.de/data/63_firstname> has_value: "Friedericke" .
+<http://bzk.fiz-karlsruhe.de/data/63_firstname> has_label: "Friedericke" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/63_lastname> a last_name: .
 <http://bzk.fiz-karlsruhe.de/data/63_lastname> denotes: <http://bzk.fiz-karlsruhe.de/data/63> . 
-<http://bzk.fiz-karlsruhe.de/data/63_lastname> has_value: "Klarmann" .
+<http://bzk.fiz-karlsruhe.de/data/63_lastname> has_label: "Klarmann" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/63_birthname> a birth_name: .
 <http://bzk.fiz-karlsruhe.de/data/63_birthname> denotes: <http://bzk.fiz-karlsruhe.de/data/63> . 
-<http://bzk.fiz-karlsruhe.de/data/63_birthname> has_value: "Wittig" .
+<http://bzk.fiz-karlsruhe.de/data/63_birthname> has_label: "Wittig" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/63> participates_in: <http://bzk.fiz-karlsruhe.de/data/60> .
@@ -844,12 +844,12 @@ has_value: a owl:DatatypeProperty .
 
 <http://bzk.fiz-karlsruhe.de/data/66_firstname> a given_name: .
 <http://bzk.fiz-karlsruhe.de/data/66_firstname> denotes: <http://bzk.fiz-karlsruhe.de/data/66> . 
-<http://bzk.fiz-karlsruhe.de/data/66_firstname> has_value: "Paul" .
+<http://bzk.fiz-karlsruhe.de/data/66_firstname> has_label: "Paul" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/66_lastname> a last_name: .
 <http://bzk.fiz-karlsruhe.de/data/66_lastname> denotes: <http://bzk.fiz-karlsruhe.de/data/66> . 
-<http://bzk.fiz-karlsruhe.de/data/66_lastname> has_value: "Gründer" .
+<http://bzk.fiz-karlsruhe.de/data/66_lastname> has_label: "Gründer" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/66> participates_in: <http://bzk.fiz-karlsruhe.de/data/64> .
@@ -897,17 +897,17 @@ has_value: a owl:DatatypeProperty .
 
 <http://bzk.fiz-karlsruhe.de/data/71_firstname> a given_name: .
 <http://bzk.fiz-karlsruhe.de/data/71_firstname> denotes: <http://bzk.fiz-karlsruhe.de/data/71> . 
-<http://bzk.fiz-karlsruhe.de/data/71_firstname> has_value: "Julius" .
+<http://bzk.fiz-karlsruhe.de/data/71_firstname> has_label: "Julius" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/71_lastname> a last_name: .
 <http://bzk.fiz-karlsruhe.de/data/71_lastname> denotes: <http://bzk.fiz-karlsruhe.de/data/71> . 
-<http://bzk.fiz-karlsruhe.de/data/71_lastname> has_value: "Bauer Prof Dr" .
+<http://bzk.fiz-karlsruhe.de/data/71_lastname> has_label: "Bauer Prof Dr" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/71_altfirstname> a alt_first_name: .
 <http://bzk.fiz-karlsruhe.de/data/71_altfirstname> denotes: <http://bzk.fiz-karlsruhe.de/data/71> . 
-<http://bzk.fiz-karlsruhe.de/data/71_altfirstname> has_value: "Isaak" .
+<http://bzk.fiz-karlsruhe.de/data/71_altfirstname> has_label: "Isaak" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/71> participates_in: <http://bzk.fiz-karlsruhe.de/data/68> .
@@ -947,12 +947,12 @@ has_value: a owl:DatatypeProperty .
 
 <http://bzk.fiz-karlsruhe.de/data/75_firstname> a given_name: .
 <http://bzk.fiz-karlsruhe.de/data/75_firstname> denotes: <http://bzk.fiz-karlsruhe.de/data/75> . 
-<http://bzk.fiz-karlsruhe.de/data/75_firstname> has_value: "Rachela" .
+<http://bzk.fiz-karlsruhe.de/data/75_firstname> has_label: "Rachela" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/75_lastname> a last_name: .
 <http://bzk.fiz-karlsruhe.de/data/75_lastname> denotes: <http://bzk.fiz-karlsruhe.de/data/75> . 
-<http://bzk.fiz-karlsruhe.de/data/75_lastname> has_value: "Nadler" .
+<http://bzk.fiz-karlsruhe.de/data/75_lastname> has_label: "Nadler" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/75> participates_in: <http://bzk.fiz-karlsruhe.de/data/73> .
@@ -1000,12 +1000,12 @@ has_value: a owl:DatatypeProperty .
 
 <http://bzk.fiz-karlsruhe.de/data/80_firstname> a given_name: .
 <http://bzk.fiz-karlsruhe.de/data/80_firstname> denotes: <http://bzk.fiz-karlsruhe.de/data/80> . 
-<http://bzk.fiz-karlsruhe.de/data/80_firstname> has_value: "Dudu Elijahu Alkalay" .
+<http://bzk.fiz-karlsruhe.de/data/80_firstname> has_label: "Dudu Elijahu Alkalay" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/80_lastname> a last_name: .
 <http://bzk.fiz-karlsruhe.de/data/80_lastname> denotes: <http://bzk.fiz-karlsruhe.de/data/80> . 
-<http://bzk.fiz-karlsruhe.de/data/80_lastname> has_value: "Adato" .
+<http://bzk.fiz-karlsruhe.de/data/80_lastname> has_label: "Adato" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/80> participates_in: <http://bzk.fiz-karlsruhe.de/data/77> .
@@ -1045,12 +1045,12 @@ has_value: a owl:DatatypeProperty .
 
 <http://bzk.fiz-karlsruhe.de/data/84_firstname> a given_name: .
 <http://bzk.fiz-karlsruhe.de/data/84_firstname> denotes: <http://bzk.fiz-karlsruhe.de/data/84> . 
-<http://bzk.fiz-karlsruhe.de/data/84_firstname> has_value: "Beja" .
+<http://bzk.fiz-karlsruhe.de/data/84_firstname> has_label: "Beja" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/84_lastname> a last_name: .
 <http://bzk.fiz-karlsruhe.de/data/84_lastname> denotes: <http://bzk.fiz-karlsruhe.de/data/84> . 
-<http://bzk.fiz-karlsruhe.de/data/84_lastname> has_value: "Assa" .
+<http://bzk.fiz-karlsruhe.de/data/84_lastname> has_label: "Assa" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/84> participates_in: <http://bzk.fiz-karlsruhe.de/data/82> .
@@ -1098,12 +1098,12 @@ has_value: a owl:DatatypeProperty .
 
 <http://bzk.fiz-karlsruhe.de/data/89_firstname> a given_name: .
 <http://bzk.fiz-karlsruhe.de/data/89_firstname> denotes: <http://bzk.fiz-karlsruhe.de/data/89> . 
-<http://bzk.fiz-karlsruhe.de/data/89_firstname> has_value: "Bochor" .
+<http://bzk.fiz-karlsruhe.de/data/89_firstname> has_label: "Bochor" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/89_lastname> a last_name: .
 <http://bzk.fiz-karlsruhe.de/data/89_lastname> denotes: <http://bzk.fiz-karlsruhe.de/data/89> . 
-<http://bzk.fiz-karlsruhe.de/data/89_lastname> has_value: "Benaroya" .
+<http://bzk.fiz-karlsruhe.de/data/89_lastname> has_label: "Benaroya" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/89> participates_in: <http://bzk.fiz-karlsruhe.de/data/86> .
@@ -1143,12 +1143,12 @@ has_value: a owl:DatatypeProperty .
 
 <http://bzk.fiz-karlsruhe.de/data/93_firstname> a given_name: .
 <http://bzk.fiz-karlsruhe.de/data/93_firstname> denotes: <http://bzk.fiz-karlsruhe.de/data/93> . 
-<http://bzk.fiz-karlsruhe.de/data/93_firstname> has_value: "Leon" .
+<http://bzk.fiz-karlsruhe.de/data/93_firstname> has_label: "Leon" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/93_lastname> a last_name: .
 <http://bzk.fiz-karlsruhe.de/data/93_lastname> denotes: <http://bzk.fiz-karlsruhe.de/data/93> . 
-<http://bzk.fiz-karlsruhe.de/data/93_lastname> has_value: "Aladjem" .
+<http://bzk.fiz-karlsruhe.de/data/93_lastname> has_label: "Aladjem" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/93> participates_in: <http://bzk.fiz-karlsruhe.de/data/91> .
@@ -1188,12 +1188,12 @@ has_value: a owl:DatatypeProperty .
 
 <http://bzk.fiz-karlsruhe.de/data/98_firstname> a given_name: .
 <http://bzk.fiz-karlsruhe.de/data/98_firstname> denotes: <http://bzk.fiz-karlsruhe.de/data/98> . 
-<http://bzk.fiz-karlsruhe.de/data/98_firstname> has_value: "Friedrich" .
+<http://bzk.fiz-karlsruhe.de/data/98_firstname> has_label: "Friedrich" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/98_lastname> a last_name: .
 <http://bzk.fiz-karlsruhe.de/data/98_lastname> denotes: <http://bzk.fiz-karlsruhe.de/data/98> . 
-<http://bzk.fiz-karlsruhe.de/data/98_lastname> has_value: "Glas" .
+<http://bzk.fiz-karlsruhe.de/data/98_lastname> has_label: "Glas" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/98> participates_in: <http://bzk.fiz-karlsruhe.de/data/95> .
@@ -1241,17 +1241,17 @@ has_value: a owl:DatatypeProperty .
 
 <http://bzk.fiz-karlsruhe.de/data/102_firstname> a given_name: .
 <http://bzk.fiz-karlsruhe.de/data/102_firstname> denotes: <http://bzk.fiz-karlsruhe.de/data/102> . 
-<http://bzk.fiz-karlsruhe.de/data/102_firstname> has_value: "Lina" .
+<http://bzk.fiz-karlsruhe.de/data/102_firstname> has_label: "Lina" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/102_lastname> a last_name: .
 <http://bzk.fiz-karlsruhe.de/data/102_lastname> denotes: <http://bzk.fiz-karlsruhe.de/data/102> . 
-<http://bzk.fiz-karlsruhe.de/data/102_lastname> has_value: "Huber" .
+<http://bzk.fiz-karlsruhe.de/data/102_lastname> has_label: "Huber" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/102_birthname> a birth_name: .
 <http://bzk.fiz-karlsruhe.de/data/102_birthname> denotes: <http://bzk.fiz-karlsruhe.de/data/102> . 
-<http://bzk.fiz-karlsruhe.de/data/102_birthname> has_value: "-.-" .
+<http://bzk.fiz-karlsruhe.de/data/102_birthname> has_label: "-.-" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/102> participates_in: <http://bzk.fiz-karlsruhe.de/data/99> .
@@ -1291,17 +1291,17 @@ has_value: a owl:DatatypeProperty .
 
 <http://bzk.fiz-karlsruhe.de/data/106_firstname> a given_name: .
 <http://bzk.fiz-karlsruhe.de/data/106_firstname> denotes: <http://bzk.fiz-karlsruhe.de/data/106> . 
-<http://bzk.fiz-karlsruhe.de/data/106_firstname> has_value: "Arthur" .
+<http://bzk.fiz-karlsruhe.de/data/106_firstname> has_label: "Arthur" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/106_lastname> a last_name: .
 <http://bzk.fiz-karlsruhe.de/data/106_lastname> denotes: <http://bzk.fiz-karlsruhe.de/data/106> . 
-<http://bzk.fiz-karlsruhe.de/data/106_lastname> has_value: "Jung" .
+<http://bzk.fiz-karlsruhe.de/data/106_lastname> has_label: "Jung" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/106_birthname> a birth_name: .
 <http://bzk.fiz-karlsruhe.de/data/106_birthname> denotes: <http://bzk.fiz-karlsruhe.de/data/106> . 
-<http://bzk.fiz-karlsruhe.de/data/106_birthname> has_value: "---" .
+<http://bzk.fiz-karlsruhe.de/data/106_birthname> has_label: "---" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/106> participates_in: <http://bzk.fiz-karlsruhe.de/data/104> .
@@ -1349,12 +1349,12 @@ has_value: a owl:DatatypeProperty .
 
 <http://bzk.fiz-karlsruhe.de/data/112_firstname> a given_name: .
 <http://bzk.fiz-karlsruhe.de/data/112_firstname> denotes: <http://bzk.fiz-karlsruhe.de/data/112> . 
-<http://bzk.fiz-karlsruhe.de/data/112_firstname> has_value: "Emanuel" .
+<http://bzk.fiz-karlsruhe.de/data/112_firstname> has_label: "Emanuel" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/112_lastname> a last_name: .
 <http://bzk.fiz-karlsruhe.de/data/112_lastname> denotes: <http://bzk.fiz-karlsruhe.de/data/112> . 
-<http://bzk.fiz-karlsruhe.de/data/112_lastname> has_value: "Alexander" .
+<http://bzk.fiz-karlsruhe.de/data/112_lastname> has_label: "Alexander" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/112> participates_in: <http://bzk.fiz-karlsruhe.de/data/108> .
@@ -1394,12 +1394,12 @@ has_value: a owl:DatatypeProperty .
 
 <http://bzk.fiz-karlsruhe.de/data/115_firstname> a given_name: .
 <http://bzk.fiz-karlsruhe.de/data/115_firstname> denotes: <http://bzk.fiz-karlsruhe.de/data/115> . 
-<http://bzk.fiz-karlsruhe.de/data/115_firstname> has_value: "Salomon" .
+<http://bzk.fiz-karlsruhe.de/data/115_firstname> has_label: "Salomon" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/115_lastname> a last_name: .
 <http://bzk.fiz-karlsruhe.de/data/115_lastname> denotes: <http://bzk.fiz-karlsruhe.de/data/115> . 
-<http://bzk.fiz-karlsruhe.de/data/115_lastname> has_value: "Aron" .
+<http://bzk.fiz-karlsruhe.de/data/115_lastname> has_label: "Aron" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/115> participates_in: <http://bzk.fiz-karlsruhe.de/data/113> .
@@ -1447,12 +1447,12 @@ has_value: a owl:DatatypeProperty .
 
 <http://bzk.fiz-karlsruhe.de/data/120_firstname> a given_name: .
 <http://bzk.fiz-karlsruhe.de/data/120_firstname> denotes: <http://bzk.fiz-karlsruhe.de/data/120> . 
-<http://bzk.fiz-karlsruhe.de/data/120_firstname> has_value: "Josef" .
+<http://bzk.fiz-karlsruhe.de/data/120_firstname> has_label: "Josef" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/120_lastname> a last_name: .
 <http://bzk.fiz-karlsruhe.de/data/120_lastname> denotes: <http://bzk.fiz-karlsruhe.de/data/120> . 
-<http://bzk.fiz-karlsruhe.de/data/120_lastname> has_value: "Feifel" .
+<http://bzk.fiz-karlsruhe.de/data/120_lastname> has_label: "Feifel" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/120> participates_in: <http://bzk.fiz-karlsruhe.de/data/117> .
@@ -1500,12 +1500,12 @@ has_value: a owl:DatatypeProperty .
 
 <http://bzk.fiz-karlsruhe.de/data/126_firstname> a given_name: .
 <http://bzk.fiz-karlsruhe.de/data/126_firstname> denotes: <http://bzk.fiz-karlsruhe.de/data/126> . 
-<http://bzk.fiz-karlsruhe.de/data/126_firstname> has_value: "Konrad" .
+<http://bzk.fiz-karlsruhe.de/data/126_firstname> has_label: "Konrad" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/126_lastname> a last_name: .
 <http://bzk.fiz-karlsruhe.de/data/126_lastname> denotes: <http://bzk.fiz-karlsruhe.de/data/126> . 
-<http://bzk.fiz-karlsruhe.de/data/126_lastname> has_value: "Döll" .
+<http://bzk.fiz-karlsruhe.de/data/126_lastname> has_label: "Döll" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/126> participates_in: <http://bzk.fiz-karlsruhe.de/data/122> .
@@ -1553,12 +1553,12 @@ has_value: a owl:DatatypeProperty .
 
 <http://bzk.fiz-karlsruhe.de/data/131_firstname> a given_name: .
 <http://bzk.fiz-karlsruhe.de/data/131_firstname> denotes: <http://bzk.fiz-karlsruhe.de/data/131> . 
-<http://bzk.fiz-karlsruhe.de/data/131_firstname> has_value: "Friedrich" .
+<http://bzk.fiz-karlsruhe.de/data/131_firstname> has_label: "Friedrich" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/131_lastname> a last_name: .
 <http://bzk.fiz-karlsruhe.de/data/131_lastname> denotes: <http://bzk.fiz-karlsruhe.de/data/131> . 
-<http://bzk.fiz-karlsruhe.de/data/131_lastname> has_value: "Budde" .
+<http://bzk.fiz-karlsruhe.de/data/131_lastname> has_label: "Budde" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/131> participates_in: <http://bzk.fiz-karlsruhe.de/data/127> .
@@ -1598,17 +1598,17 @@ has_value: a owl:DatatypeProperty .
 
 <http://bzk.fiz-karlsruhe.de/data/134_firstname> a given_name: .
 <http://bzk.fiz-karlsruhe.de/data/134_firstname> denotes: <http://bzk.fiz-karlsruhe.de/data/134> . 
-<http://bzk.fiz-karlsruhe.de/data/134_firstname> has_value: "Gertrud" .
+<http://bzk.fiz-karlsruhe.de/data/134_firstname> has_label: "Gertrud" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/134_lastname> a last_name: .
 <http://bzk.fiz-karlsruhe.de/data/134_lastname> denotes: <http://bzk.fiz-karlsruhe.de/data/134> . 
-<http://bzk.fiz-karlsruhe.de/data/134_lastname> has_value: "Henke" .
+<http://bzk.fiz-karlsruhe.de/data/134_lastname> has_label: "Henke" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/134_birthname> a birth_name: .
 <http://bzk.fiz-karlsruhe.de/data/134_birthname> denotes: <http://bzk.fiz-karlsruhe.de/data/134> . 
-<http://bzk.fiz-karlsruhe.de/data/134_birthname> has_value: "Holz" .
+<http://bzk.fiz-karlsruhe.de/data/134_birthname> has_label: "Holz" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/134> participates_in: <http://bzk.fiz-karlsruhe.de/data/132> .
@@ -1629,17 +1629,17 @@ has_value: a owl:DatatypeProperty .
 
 <http://bzk.fiz-karlsruhe.de/data/135_firstname> a given_name: .
 <http://bzk.fiz-karlsruhe.de/data/135_firstname> denotes: <http://bzk.fiz-karlsruhe.de/data/135> . 
-<http://bzk.fiz-karlsruhe.de/data/135_firstname> has_value: "a) Benno b) Rosa" .
+<http://bzk.fiz-karlsruhe.de/data/135_firstname> has_label: "a) Benno b) Rosa" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/135_lastname> a last_name: .
 <http://bzk.fiz-karlsruhe.de/data/135_lastname> denotes: <http://bzk.fiz-karlsruhe.de/data/135> . 
-<http://bzk.fiz-karlsruhe.de/data/135_lastname> has_value: "a) Holz b) Heimann" .
+<http://bzk.fiz-karlsruhe.de/data/135_lastname> has_label: "a) Holz b) Heimann" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/135_birthname> a birth_name: .
 <http://bzk.fiz-karlsruhe.de/data/135_birthname> denotes: <http://bzk.fiz-karlsruhe.de/data/135> . 
-<http://bzk.fiz-karlsruhe.de/data/135_birthname> has_value: "b) Holz" .
+<http://bzk.fiz-karlsruhe.de/data/135_birthname> has_label: "b) Holz" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/135> participates_in: <http://bzk.fiz-karlsruhe.de/data/132> .
@@ -1696,12 +1696,12 @@ has_value: a owl:DatatypeProperty .
 
 <http://bzk.fiz-karlsruhe.de/data/139_firstname> a given_name: .
 <http://bzk.fiz-karlsruhe.de/data/139_firstname> denotes: <http://bzk.fiz-karlsruhe.de/data/139> . 
-<http://bzk.fiz-karlsruhe.de/data/139_firstname> has_value: "Robert" .
+<http://bzk.fiz-karlsruhe.de/data/139_firstname> has_label: "Robert" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/139_lastname> a last_name: .
 <http://bzk.fiz-karlsruhe.de/data/139_lastname> denotes: <http://bzk.fiz-karlsruhe.de/data/139> . 
-<http://bzk.fiz-karlsruhe.de/data/139_lastname> has_value: "HIRSCH" .
+<http://bzk.fiz-karlsruhe.de/data/139_lastname> has_label: "HIRSCH" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/139> participates_in: <http://bzk.fiz-karlsruhe.de/data/136> .
@@ -1749,17 +1749,17 @@ has_value: a owl:DatatypeProperty .
 
 <http://bzk.fiz-karlsruhe.de/data/145_firstname> a given_name: .
 <http://bzk.fiz-karlsruhe.de/data/145_firstname> denotes: <http://bzk.fiz-karlsruhe.de/data/145> . 
-<http://bzk.fiz-karlsruhe.de/data/145_firstname> has_value: "Regina" .
+<http://bzk.fiz-karlsruhe.de/data/145_firstname> has_label: "Regina" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/145_lastname> a last_name: .
 <http://bzk.fiz-karlsruhe.de/data/145_lastname> denotes: <http://bzk.fiz-karlsruhe.de/data/145> . 
-<http://bzk.fiz-karlsruhe.de/data/145_lastname> has_value: "LENNER" .
+<http://bzk.fiz-karlsruhe.de/data/145_lastname> has_label: "LENNER" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/145_birthname> a birth_name: .
 <http://bzk.fiz-karlsruhe.de/data/145_birthname> denotes: <http://bzk.fiz-karlsruhe.de/data/145> . 
-<http://bzk.fiz-karlsruhe.de/data/145_birthname> has_value: "Weiss" .
+<http://bzk.fiz-karlsruhe.de/data/145_birthname> has_label: "Weiss" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/145> participates_in: <http://bzk.fiz-karlsruhe.de/data/141> .
@@ -1807,12 +1807,12 @@ has_value: a owl:DatatypeProperty .
 
 <http://bzk.fiz-karlsruhe.de/data/150_firstname> a given_name: .
 <http://bzk.fiz-karlsruhe.de/data/150_firstname> denotes: <http://bzk.fiz-karlsruhe.de/data/150> . 
-<http://bzk.fiz-karlsruhe.de/data/150_firstname> has_value: "Ruben Moses" .
+<http://bzk.fiz-karlsruhe.de/data/150_firstname> has_label: "Ruben Moses" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/150_lastname> a last_name: .
 <http://bzk.fiz-karlsruhe.de/data/150_lastname> denotes: <http://bzk.fiz-karlsruhe.de/data/150> . 
-<http://bzk.fiz-karlsruhe.de/data/150_lastname> has_value: "Eschwege" .
+<http://bzk.fiz-karlsruhe.de/data/150_lastname> has_label: "Eschwege" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/150> participates_in: <http://bzk.fiz-karlsruhe.de/data/146> .
@@ -1843,12 +1843,12 @@ has_value: a owl:DatatypeProperty .
 
 <http://bzk.fiz-karlsruhe.de/data/154_firstname> a given_name: .
 <http://bzk.fiz-karlsruhe.de/data/154_firstname> denotes: <http://bzk.fiz-karlsruhe.de/data/154> . 
-<http://bzk.fiz-karlsruhe.de/data/154_firstname> has_value: "Mendel" .
+<http://bzk.fiz-karlsruhe.de/data/154_firstname> has_label: "Mendel" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/154_lastname> a last_name: .
 <http://bzk.fiz-karlsruhe.de/data/154_lastname> denotes: <http://bzk.fiz-karlsruhe.de/data/154> . 
-<http://bzk.fiz-karlsruhe.de/data/154_lastname> has_value: "Reichman" .
+<http://bzk.fiz-karlsruhe.de/data/154_lastname> has_label: "Reichman" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/154> participates_in: <http://bzk.fiz-karlsruhe.de/data/151> .
@@ -1890,17 +1890,17 @@ has_value: a owl:DatatypeProperty .
 
 <http://bzk.fiz-karlsruhe.de/data/158_firstname> a given_name: .
 <http://bzk.fiz-karlsruhe.de/data/158_firstname> denotes: <http://bzk.fiz-karlsruhe.de/data/158> . 
-<http://bzk.fiz-karlsruhe.de/data/158_firstname> has_value: "Julianna" .
+<http://bzk.fiz-karlsruhe.de/data/158_firstname> has_label: "Julianna" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/158_lastname> a last_name: .
 <http://bzk.fiz-karlsruhe.de/data/158_lastname> denotes: <http://bzk.fiz-karlsruhe.de/data/158> . 
-<http://bzk.fiz-karlsruhe.de/data/158_lastname> has_value: "STANISLAWSKA NOWAK" .
+<http://bzk.fiz-karlsruhe.de/data/158_lastname> has_label: "STANISLAWSKA NOWAK" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/158_birthname> a birth_name: .
 <http://bzk.fiz-karlsruhe.de/data/158_birthname> denotes: <http://bzk.fiz-karlsruhe.de/data/158> . 
-<http://bzk.fiz-karlsruhe.de/data/158_birthname> has_value: "BRZOZOWSKA" .
+<http://bzk.fiz-karlsruhe.de/data/158_birthname> has_label: "BRZOZOWSKA" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/158> participates_in: <http://bzk.fiz-karlsruhe.de/data/155> .
@@ -1940,17 +1940,17 @@ has_value: a owl:DatatypeProperty .
 
 <http://bzk.fiz-karlsruhe.de/data/162_firstname> a given_name: .
 <http://bzk.fiz-karlsruhe.de/data/162_firstname> denotes: <http://bzk.fiz-karlsruhe.de/data/162> . 
-<http://bzk.fiz-karlsruhe.de/data/162_firstname> has_value: "Leopold" .
+<http://bzk.fiz-karlsruhe.de/data/162_firstname> has_label: "Leopold" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/162_lastname> a last_name: .
 <http://bzk.fiz-karlsruhe.de/data/162_lastname> denotes: <http://bzk.fiz-karlsruhe.de/data/162> . 
-<http://bzk.fiz-karlsruhe.de/data/162_lastname> has_value: "Lindner" .
+<http://bzk.fiz-karlsruhe.de/data/162_lastname> has_label: "Lindner" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/162_birthname> a birth_name: .
 <http://bzk.fiz-karlsruhe.de/data/162_birthname> denotes: <http://bzk.fiz-karlsruhe.de/data/162> . 
-<http://bzk.fiz-karlsruhe.de/data/162_birthname> has_value: "-.-" .
+<http://bzk.fiz-karlsruhe.de/data/162_birthname> has_label: "-.-" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/162> participates_in: <http://bzk.fiz-karlsruhe.de/data/160> .
@@ -1971,17 +1971,17 @@ has_value: a owl:DatatypeProperty .
 
 <http://bzk.fiz-karlsruhe.de/data/163_firstname> a given_name: .
 <http://bzk.fiz-karlsruhe.de/data/163_firstname> denotes: <http://bzk.fiz-karlsruhe.de/data/163> . 
-<http://bzk.fiz-karlsruhe.de/data/163_firstname> has_value: "Emma" .
+<http://bzk.fiz-karlsruhe.de/data/163_firstname> has_label: "Emma" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/163_lastname> a last_name: .
 <http://bzk.fiz-karlsruhe.de/data/163_lastname> denotes: <http://bzk.fiz-karlsruhe.de/data/163> . 
-<http://bzk.fiz-karlsruhe.de/data/163_lastname> has_value: "Lindner" .
+<http://bzk.fiz-karlsruhe.de/data/163_lastname> has_label: "Lindner" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/163_birthname> a birth_name: .
 <http://bzk.fiz-karlsruhe.de/data/163_birthname> denotes: <http://bzk.fiz-karlsruhe.de/data/163> . 
-<http://bzk.fiz-karlsruhe.de/data/163_birthname> has_value: "Rosenfeld" .
+<http://bzk.fiz-karlsruhe.de/data/163_birthname> has_label: "Rosenfeld" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/163> participates_in: <http://bzk.fiz-karlsruhe.de/data/160> .
@@ -2038,17 +2038,17 @@ has_value: a owl:DatatypeProperty .
 
 <http://bzk.fiz-karlsruhe.de/data/167_firstname> a given_name: .
 <http://bzk.fiz-karlsruhe.de/data/167_firstname> denotes: <http://bzk.fiz-karlsruhe.de/data/167> . 
-<http://bzk.fiz-karlsruhe.de/data/167_firstname> has_value: "Rachel" .
+<http://bzk.fiz-karlsruhe.de/data/167_firstname> has_label: "Rachel" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/167_lastname> a last_name: .
 <http://bzk.fiz-karlsruhe.de/data/167_lastname> denotes: <http://bzk.fiz-karlsruhe.de/data/167> . 
-<http://bzk.fiz-karlsruhe.de/data/167_lastname> has_value: "Croitoru" .
+<http://bzk.fiz-karlsruhe.de/data/167_lastname> has_label: "Croitoru" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/167_birthname> a birth_name: .
 <http://bzk.fiz-karlsruhe.de/data/167_birthname> denotes: <http://bzk.fiz-karlsruhe.de/data/167> . 
-<http://bzk.fiz-karlsruhe.de/data/167_birthname> has_value: "Fischler" .
+<http://bzk.fiz-karlsruhe.de/data/167_birthname> has_label: "Fischler" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/167> participates_in: <http://bzk.fiz-karlsruhe.de/data/164> .
@@ -2096,12 +2096,12 @@ has_value: a owl:DatatypeProperty .
 
 <http://bzk.fiz-karlsruhe.de/data/172_firstname> a given_name: .
 <http://bzk.fiz-karlsruhe.de/data/172_firstname> denotes: <http://bzk.fiz-karlsruhe.de/data/172> . 
-<http://bzk.fiz-karlsruhe.de/data/172_firstname> has_value: "Rudolf" .
+<http://bzk.fiz-karlsruhe.de/data/172_firstname> has_label: "Rudolf" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/172_lastname> a last_name: .
 <http://bzk.fiz-karlsruhe.de/data/172_lastname> denotes: <http://bzk.fiz-karlsruhe.de/data/172> . 
-<http://bzk.fiz-karlsruhe.de/data/172_lastname> has_value: "KIRCHER" .
+<http://bzk.fiz-karlsruhe.de/data/172_lastname> has_label: "KIRCHER" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/172> participates_in: <http://bzk.fiz-karlsruhe.de/data/169> .
@@ -2149,12 +2149,12 @@ has_value: a owl:DatatypeProperty .
 
 <http://bzk.fiz-karlsruhe.de/data/177_firstname> a given_name: .
 <http://bzk.fiz-karlsruhe.de/data/177_firstname> denotes: <http://bzk.fiz-karlsruhe.de/data/177> . 
-<http://bzk.fiz-karlsruhe.de/data/177_firstname> has_value: "Rudolf" .
+<http://bzk.fiz-karlsruhe.de/data/177_firstname> has_label: "Rudolf" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/177_lastname> a last_name: .
 <http://bzk.fiz-karlsruhe.de/data/177_lastname> denotes: <http://bzk.fiz-karlsruhe.de/data/177> . 
-<http://bzk.fiz-karlsruhe.de/data/177_lastname> has_value: "Kircher" .
+<http://bzk.fiz-karlsruhe.de/data/177_lastname> has_label: "Kircher" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/177> participates_in: <http://bzk.fiz-karlsruhe.de/data/174> .
@@ -2175,12 +2175,12 @@ has_value: a owl:DatatypeProperty .
 
 <http://bzk.fiz-karlsruhe.de/data/178_firstname> a given_name: .
 <http://bzk.fiz-karlsruhe.de/data/178_firstname> denotes: <http://bzk.fiz-karlsruhe.de/data/178> . 
-<http://bzk.fiz-karlsruhe.de/data/178_firstname> has_value: "Remigius" .
+<http://bzk.fiz-karlsruhe.de/data/178_firstname> has_label: "Remigius" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/178_lastname> a last_name: .
 <http://bzk.fiz-karlsruhe.de/data/178_lastname> denotes: <http://bzk.fiz-karlsruhe.de/data/178> . 
-<http://bzk.fiz-karlsruhe.de/data/178_lastname> has_value: "Kircher" .
+<http://bzk.fiz-karlsruhe.de/data/178_lastname> has_label: "Kircher" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/178> participates_in: <http://bzk.fiz-karlsruhe.de/data/174> .
@@ -2229,12 +2229,12 @@ has_value: a owl:DatatypeProperty .
 
 <http://bzk.fiz-karlsruhe.de/data/181_firstname> a given_name: .
 <http://bzk.fiz-karlsruhe.de/data/181_firstname> denotes: <http://bzk.fiz-karlsruhe.de/data/181> . 
-<http://bzk.fiz-karlsruhe.de/data/181_firstname> has_value: "Albert" .
+<http://bzk.fiz-karlsruhe.de/data/181_firstname> has_label: "Albert" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/181_lastname> a last_name: .
 <http://bzk.fiz-karlsruhe.de/data/181_lastname> denotes: <http://bzk.fiz-karlsruhe.de/data/181> . 
-<http://bzk.fiz-karlsruhe.de/data/181_lastname> has_value: "Loeb" .
+<http://bzk.fiz-karlsruhe.de/data/181_lastname> has_label: "Loeb" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/181> participates_in: <http://bzk.fiz-karlsruhe.de/data/179> .
@@ -2274,12 +2274,12 @@ has_value: a owl:DatatypeProperty .
 
 <http://bzk.fiz-karlsruhe.de/data/185_firstname> a given_name: .
 <http://bzk.fiz-karlsruhe.de/data/185_firstname> denotes: <http://bzk.fiz-karlsruhe.de/data/185> . 
-<http://bzk.fiz-karlsruhe.de/data/185_firstname> has_value: "Wilhelm" .
+<http://bzk.fiz-karlsruhe.de/data/185_firstname> has_label: "Wilhelm" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/185_lastname> a last_name: .
 <http://bzk.fiz-karlsruhe.de/data/185_lastname> denotes: <http://bzk.fiz-karlsruhe.de/data/185> . 
-<http://bzk.fiz-karlsruhe.de/data/185_lastname> has_value: "Schaubel" .
+<http://bzk.fiz-karlsruhe.de/data/185_lastname> has_label: "Schaubel" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/185> participates_in: <http://bzk.fiz-karlsruhe.de/data/183> .
@@ -2319,12 +2319,12 @@ has_value: a owl:DatatypeProperty .
 
 <http://bzk.fiz-karlsruhe.de/data/189_firstname> a given_name: .
 <http://bzk.fiz-karlsruhe.de/data/189_firstname> denotes: <http://bzk.fiz-karlsruhe.de/data/189> . 
-<http://bzk.fiz-karlsruhe.de/data/189_firstname> has_value: "Arie" .
+<http://bzk.fiz-karlsruhe.de/data/189_firstname> has_label: "Arie" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/189_lastname> a last_name: .
 <http://bzk.fiz-karlsruhe.de/data/189_lastname> denotes: <http://bzk.fiz-karlsruhe.de/data/189> . 
-<http://bzk.fiz-karlsruhe.de/data/189_lastname> has_value: "Berger, Dr." .
+<http://bzk.fiz-karlsruhe.de/data/189_lastname> has_label: "Berger, Dr." .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/189> participates_in: <http://bzk.fiz-karlsruhe.de/data/187> .
@@ -2364,12 +2364,12 @@ has_value: a owl:DatatypeProperty .
 
 <http://bzk.fiz-karlsruhe.de/data/193_firstname> a given_name: .
 <http://bzk.fiz-karlsruhe.de/data/193_firstname> denotes: <http://bzk.fiz-karlsruhe.de/data/193> . 
-<http://bzk.fiz-karlsruhe.de/data/193_firstname> has_value: "Hans" .
+<http://bzk.fiz-karlsruhe.de/data/193_firstname> has_label: "Hans" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/193_lastname> a last_name: .
 <http://bzk.fiz-karlsruhe.de/data/193_lastname> denotes: <http://bzk.fiz-karlsruhe.de/data/193> . 
-<http://bzk.fiz-karlsruhe.de/data/193_lastname> has_value: "Dorn" .
+<http://bzk.fiz-karlsruhe.de/data/193_lastname> has_label: "Dorn" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/193> participates_in: <http://bzk.fiz-karlsruhe.de/data/191> .
@@ -2417,12 +2417,12 @@ has_value: a owl:DatatypeProperty .
 
 <http://bzk.fiz-karlsruhe.de/data/198_firstname> a given_name: .
 <http://bzk.fiz-karlsruhe.de/data/198_firstname> denotes: <http://bzk.fiz-karlsruhe.de/data/198> . 
-<http://bzk.fiz-karlsruhe.de/data/198_firstname> has_value: "August" .
+<http://bzk.fiz-karlsruhe.de/data/198_firstname> has_label: "August" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/198_lastname> a last_name: .
 <http://bzk.fiz-karlsruhe.de/data/198_lastname> denotes: <http://bzk.fiz-karlsruhe.de/data/198> . 
-<http://bzk.fiz-karlsruhe.de/data/198_lastname> has_value: "Holladt" .
+<http://bzk.fiz-karlsruhe.de/data/198_lastname> has_label: "Holladt" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/198> participates_in: <http://bzk.fiz-karlsruhe.de/data/195> .
@@ -2462,17 +2462,17 @@ has_value: a owl:DatatypeProperty .
 
 <http://bzk.fiz-karlsruhe.de/data/202_firstname> a given_name: .
 <http://bzk.fiz-karlsruhe.de/data/202_firstname> denotes: <http://bzk.fiz-karlsruhe.de/data/202> . 
-<http://bzk.fiz-karlsruhe.de/data/202_firstname> has_value: "Johann" .
+<http://bzk.fiz-karlsruhe.de/data/202_firstname> has_label: "Johann" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/202_lastname> a last_name: .
 <http://bzk.fiz-karlsruhe.de/data/202_lastname> denotes: <http://bzk.fiz-karlsruhe.de/data/202> . 
-<http://bzk.fiz-karlsruhe.de/data/202_lastname> has_value: "Grossmann" .
+<http://bzk.fiz-karlsruhe.de/data/202_lastname> has_label: "Grossmann" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/202_birthname> a birth_name: .
 <http://bzk.fiz-karlsruhe.de/data/202_birthname> denotes: <http://bzk.fiz-karlsruhe.de/data/202> . 
-<http://bzk.fiz-karlsruhe.de/data/202_birthname> has_value: "-.-" .
+<http://bzk.fiz-karlsruhe.de/data/202_birthname> has_label: "-.-" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/202> participates_in: <http://bzk.fiz-karlsruhe.de/data/200> .
@@ -2512,17 +2512,17 @@ has_value: a owl:DatatypeProperty .
 
 <http://bzk.fiz-karlsruhe.de/data/206_firstname> a given_name: .
 <http://bzk.fiz-karlsruhe.de/data/206_firstname> denotes: <http://bzk.fiz-karlsruhe.de/data/206> . 
-<http://bzk.fiz-karlsruhe.de/data/206_firstname> has_value: "Brigitte" .
+<http://bzk.fiz-karlsruhe.de/data/206_firstname> has_label: "Brigitte" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/206_lastname> a last_name: .
 <http://bzk.fiz-karlsruhe.de/data/206_lastname> denotes: <http://bzk.fiz-karlsruhe.de/data/206> . 
-<http://bzk.fiz-karlsruhe.de/data/206_lastname> has_value: "Bloch" .
+<http://bzk.fiz-karlsruhe.de/data/206_lastname> has_label: "Bloch" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/206_birthname> a birth_name: .
 <http://bzk.fiz-karlsruhe.de/data/206_birthname> denotes: <http://bzk.fiz-karlsruhe.de/data/206> . 
-<http://bzk.fiz-karlsruhe.de/data/206_birthname> has_value: "Hauptmann" .
+<http://bzk.fiz-karlsruhe.de/data/206_birthname> has_label: "Hauptmann" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/206> participates_in: <http://bzk.fiz-karlsruhe.de/data/204> .
@@ -2543,17 +2543,17 @@ has_value: a owl:DatatypeProperty .
 
 <http://bzk.fiz-karlsruhe.de/data/207_firstname> a given_name: .
 <http://bzk.fiz-karlsruhe.de/data/207_firstname> denotes: <http://bzk.fiz-karlsruhe.de/data/207> . 
-<http://bzk.fiz-karlsruhe.de/data/207_firstname> has_value: "Hans" .
+<http://bzk.fiz-karlsruhe.de/data/207_firstname> has_label: "Hans" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/207_lastname> a last_name: .
 <http://bzk.fiz-karlsruhe.de/data/207_lastname> denotes: <http://bzk.fiz-karlsruhe.de/data/207> . 
-<http://bzk.fiz-karlsruhe.de/data/207_lastname> has_value: "Bloch Dr. jur." .
+<http://bzk.fiz-karlsruhe.de/data/207_lastname> has_label: "Bloch Dr. jur." .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/207_altfirstname> a alt_first_name: .
 <http://bzk.fiz-karlsruhe.de/data/207_altfirstname> denotes: <http://bzk.fiz-karlsruhe.de/data/207> . 
-<http://bzk.fiz-karlsruhe.de/data/207_altfirstname> has_value: "Albert" .
+<http://bzk.fiz-karlsruhe.de/data/207_altfirstname> has_label: "Albert" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/207> participates_in: <http://bzk.fiz-karlsruhe.de/data/204> .
@@ -2610,12 +2610,12 @@ has_value: a owl:DatatypeProperty .
 
 <http://bzk.fiz-karlsruhe.de/data/211_firstname> a given_name: .
 <http://bzk.fiz-karlsruhe.de/data/211_firstname> denotes: <http://bzk.fiz-karlsruhe.de/data/211> . 
-<http://bzk.fiz-karlsruhe.de/data/211_firstname> has_value: "Jakob" .
+<http://bzk.fiz-karlsruhe.de/data/211_firstname> has_label: "Jakob" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/211_lastname> a last_name: .
 <http://bzk.fiz-karlsruhe.de/data/211_lastname> denotes: <http://bzk.fiz-karlsruhe.de/data/211> . 
-<http://bzk.fiz-karlsruhe.de/data/211_lastname> has_value: "Meyer" .
+<http://bzk.fiz-karlsruhe.de/data/211_lastname> has_label: "Meyer" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/211> participates_in: <http://bzk.fiz-karlsruhe.de/data/208> .
@@ -2655,12 +2655,12 @@ has_value: a owl:DatatypeProperty .
 
 <http://bzk.fiz-karlsruhe.de/data/215_firstname> a given_name: .
 <http://bzk.fiz-karlsruhe.de/data/215_firstname> denotes: <http://bzk.fiz-karlsruhe.de/data/215> . 
-<http://bzk.fiz-karlsruhe.de/data/215_firstname> has_value: "Max" .
+<http://bzk.fiz-karlsruhe.de/data/215_firstname> has_label: "Max" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/215_lastname> a last_name: .
 <http://bzk.fiz-karlsruhe.de/data/215_lastname> denotes: <http://bzk.fiz-karlsruhe.de/data/215> . 
-<http://bzk.fiz-karlsruhe.de/data/215_lastname> has_value: "Mohr" .
+<http://bzk.fiz-karlsruhe.de/data/215_lastname> has_label: "Mohr" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/215> participates_in: <http://bzk.fiz-karlsruhe.de/data/213> .
@@ -2708,12 +2708,12 @@ has_value: a owl:DatatypeProperty .
 
 <http://bzk.fiz-karlsruhe.de/data/221_firstname> a given_name: .
 <http://bzk.fiz-karlsruhe.de/data/221_firstname> denotes: <http://bzk.fiz-karlsruhe.de/data/221> . 
-<http://bzk.fiz-karlsruhe.de/data/221_firstname> has_value: "Walther" .
+<http://bzk.fiz-karlsruhe.de/data/221_firstname> has_label: "Walther" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/221_lastname> a last_name: .
 <http://bzk.fiz-karlsruhe.de/data/221_lastname> denotes: <http://bzk.fiz-karlsruhe.de/data/221> . 
-<http://bzk.fiz-karlsruhe.de/data/221_lastname> has_value: "Rosen" .
+<http://bzk.fiz-karlsruhe.de/data/221_lastname> has_label: "Rosen" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/221> participates_in: <http://bzk.fiz-karlsruhe.de/data/217> .
@@ -2755,12 +2755,12 @@ has_value: a owl:DatatypeProperty .
 
 <http://bzk.fiz-karlsruhe.de/data/225_firstname> a given_name: .
 <http://bzk.fiz-karlsruhe.de/data/225_firstname> denotes: <http://bzk.fiz-karlsruhe.de/data/225> . 
-<http://bzk.fiz-karlsruhe.de/data/225_firstname> has_value: "Borys" .
+<http://bzk.fiz-karlsruhe.de/data/225_firstname> has_label: "Borys" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/225_lastname> a last_name: .
 <http://bzk.fiz-karlsruhe.de/data/225_lastname> denotes: <http://bzk.fiz-karlsruhe.de/data/225> . 
-<http://bzk.fiz-karlsruhe.de/data/225_lastname> has_value: "MAZURKEWYCZ" .
+<http://bzk.fiz-karlsruhe.de/data/225_lastname> has_label: "MAZURKEWYCZ" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/225> participates_in: <http://bzk.fiz-karlsruhe.de/data/222> .
@@ -2808,12 +2808,12 @@ has_value: a owl:DatatypeProperty .
 
 <http://bzk.fiz-karlsruhe.de/data/230_firstname> a given_name: .
 <http://bzk.fiz-karlsruhe.de/data/230_firstname> denotes: <http://bzk.fiz-karlsruhe.de/data/230> . 
-<http://bzk.fiz-karlsruhe.de/data/230_firstname> has_value: "Hugo sen." .
+<http://bzk.fiz-karlsruhe.de/data/230_firstname> has_label: "Hugo sen." .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/230_lastname> a last_name: .
 <http://bzk.fiz-karlsruhe.de/data/230_lastname> denotes: <http://bzk.fiz-karlsruhe.de/data/230> . 
-<http://bzk.fiz-karlsruhe.de/data/230_lastname> has_value: "Salzmann" .
+<http://bzk.fiz-karlsruhe.de/data/230_lastname> has_label: "Salzmann" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/230> participates_in: <http://bzk.fiz-karlsruhe.de/data/227> .
@@ -2853,12 +2853,12 @@ has_value: a owl:DatatypeProperty .
 
 <http://bzk.fiz-karlsruhe.de/data/235_firstname> a given_name: .
 <http://bzk.fiz-karlsruhe.de/data/235_firstname> denotes: <http://bzk.fiz-karlsruhe.de/data/235> . 
-<http://bzk.fiz-karlsruhe.de/data/235_firstname> has_value: "Adam" .
+<http://bzk.fiz-karlsruhe.de/data/235_firstname> has_label: "Adam" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/235_lastname> a last_name: .
 <http://bzk.fiz-karlsruhe.de/data/235_lastname> denotes: <http://bzk.fiz-karlsruhe.de/data/235> . 
-<http://bzk.fiz-karlsruhe.de/data/235_lastname> has_value: "Etienne" .
+<http://bzk.fiz-karlsruhe.de/data/235_lastname> has_label: "Etienne" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/235> participates_in: <http://bzk.fiz-karlsruhe.de/data/232> .
@@ -2892,17 +2892,17 @@ has_value: a owl:DatatypeProperty .
 
 <http://bzk.fiz-karlsruhe.de/data/238_firstname> a given_name: .
 <http://bzk.fiz-karlsruhe.de/data/238_firstname> denotes: <http://bzk.fiz-karlsruhe.de/data/238> . 
-<http://bzk.fiz-karlsruhe.de/data/238_firstname> has_value: "Stanislawa" .
+<http://bzk.fiz-karlsruhe.de/data/238_firstname> has_label: "Stanislawa" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/238_lastname> a last_name: .
 <http://bzk.fiz-karlsruhe.de/data/238_lastname> denotes: <http://bzk.fiz-karlsruhe.de/data/238> . 
-<http://bzk.fiz-karlsruhe.de/data/238_lastname> has_value: "BARTKOWSKA" .
+<http://bzk.fiz-karlsruhe.de/data/238_lastname> has_label: "BARTKOWSKA" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/238_birthname> a birth_name: .
 <http://bzk.fiz-karlsruhe.de/data/238_birthname> denotes: <http://bzk.fiz-karlsruhe.de/data/238> . 
-<http://bzk.fiz-karlsruhe.de/data/238_birthname> has_value: "KMIECIK" .
+<http://bzk.fiz-karlsruhe.de/data/238_birthname> has_label: "KMIECIK" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/238> participates_in: <http://bzk.fiz-karlsruhe.de/data/236> .
@@ -2950,12 +2950,12 @@ has_value: a owl:DatatypeProperty .
 
 <http://bzk.fiz-karlsruhe.de/data/243_firstname> a given_name: .
 <http://bzk.fiz-karlsruhe.de/data/243_firstname> denotes: <http://bzk.fiz-karlsruhe.de/data/243> . 
-<http://bzk.fiz-karlsruhe.de/data/243_firstname> has_value: "Engelbert" .
+<http://bzk.fiz-karlsruhe.de/data/243_firstname> has_label: "Engelbert" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/243_lastname> a last_name: .
 <http://bzk.fiz-karlsruhe.de/data/243_lastname> denotes: <http://bzk.fiz-karlsruhe.de/data/243> . 
-<http://bzk.fiz-karlsruhe.de/data/243_lastname> has_value: "Fischer" .
+<http://bzk.fiz-karlsruhe.de/data/243_lastname> has_label: "Fischer" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/243> participates_in: <http://bzk.fiz-karlsruhe.de/data/240> .
@@ -3003,12 +3003,12 @@ has_value: a owl:DatatypeProperty .
 
 <http://bzk.fiz-karlsruhe.de/data/248_firstname> a given_name: .
 <http://bzk.fiz-karlsruhe.de/data/248_firstname> denotes: <http://bzk.fiz-karlsruhe.de/data/248> . 
-<http://bzk.fiz-karlsruhe.de/data/248_firstname> has_value: "Gertie" .
+<http://bzk.fiz-karlsruhe.de/data/248_firstname> has_label: "Gertie" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/248_lastname> a last_name: .
 <http://bzk.fiz-karlsruhe.de/data/248_lastname> denotes: <http://bzk.fiz-karlsruhe.de/data/248> . 
-<http://bzk.fiz-karlsruhe.de/data/248_lastname> has_value: "Hartkopf" .
+<http://bzk.fiz-karlsruhe.de/data/248_lastname> has_label: "Hartkopf" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/248> participates_in: <http://bzk.fiz-karlsruhe.de/data/245> .
@@ -3029,12 +3029,12 @@ has_value: a owl:DatatypeProperty .
 
 <http://bzk.fiz-karlsruhe.de/data/249_firstname> a given_name: .
 <http://bzk.fiz-karlsruhe.de/data/249_firstname> denotes: <http://bzk.fiz-karlsruhe.de/data/249> . 
-<http://bzk.fiz-karlsruhe.de/data/249_firstname> has_value: "Lina; Aron" .
+<http://bzk.fiz-karlsruhe.de/data/249_firstname> has_label: "Lina; Aron" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/249_lastname> a last_name: .
 <http://bzk.fiz-karlsruhe.de/data/249_lastname> denotes: <http://bzk.fiz-karlsruhe.de/data/249> . 
-<http://bzk.fiz-karlsruhe.de/data/249_lastname> has_value: "Strauss; Strauss" .
+<http://bzk.fiz-karlsruhe.de/data/249_lastname> has_label: "Strauss; Strauss" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/249> participates_in: <http://bzk.fiz-karlsruhe.de/data/245> .
@@ -3076,12 +3076,12 @@ has_value: a owl:DatatypeProperty .
 
 <http://bzk.fiz-karlsruhe.de/data/253_firstname> a given_name: .
 <http://bzk.fiz-karlsruhe.de/data/253_firstname> denotes: <http://bzk.fiz-karlsruhe.de/data/253> . 
-<http://bzk.fiz-karlsruhe.de/data/253_firstname> has_value: "Johann" .
+<http://bzk.fiz-karlsruhe.de/data/253_firstname> has_label: "Johann" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/253_lastname> a last_name: .
 <http://bzk.fiz-karlsruhe.de/data/253_lastname> denotes: <http://bzk.fiz-karlsruhe.de/data/253> . 
-<http://bzk.fiz-karlsruhe.de/data/253_lastname> has_value: "Klein" .
+<http://bzk.fiz-karlsruhe.de/data/253_lastname> has_label: "Klein" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/253> participates_in: <http://bzk.fiz-karlsruhe.de/data/250> .
@@ -3129,12 +3129,12 @@ has_value: a owl:DatatypeProperty .
 
 <http://bzk.fiz-karlsruhe.de/data/258_firstname> a given_name: .
 <http://bzk.fiz-karlsruhe.de/data/258_firstname> denotes: <http://bzk.fiz-karlsruhe.de/data/258> . 
-<http://bzk.fiz-karlsruhe.de/data/258_firstname> has_value: "Wilhelm" .
+<http://bzk.fiz-karlsruhe.de/data/258_firstname> has_label: "Wilhelm" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/258_lastname> a last_name: .
 <http://bzk.fiz-karlsruhe.de/data/258_lastname> denotes: <http://bzk.fiz-karlsruhe.de/data/258> . 
-<http://bzk.fiz-karlsruhe.de/data/258_lastname> has_value: "Kuhn" .
+<http://bzk.fiz-karlsruhe.de/data/258_lastname> has_label: "Kuhn" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/258> participates_in: <http://bzk.fiz-karlsruhe.de/data/255> .
@@ -3174,12 +3174,12 @@ has_value: a owl:DatatypeProperty .
 
 <http://bzk.fiz-karlsruhe.de/data/263_firstname> a given_name: .
 <http://bzk.fiz-karlsruhe.de/data/263_firstname> denotes: <http://bzk.fiz-karlsruhe.de/data/263> . 
-<http://bzk.fiz-karlsruhe.de/data/263_firstname> has_value: "Wilhelm" .
+<http://bzk.fiz-karlsruhe.de/data/263_firstname> has_label: "Wilhelm" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/263_lastname> a last_name: .
 <http://bzk.fiz-karlsruhe.de/data/263_lastname> denotes: <http://bzk.fiz-karlsruhe.de/data/263> . 
-<http://bzk.fiz-karlsruhe.de/data/263_lastname> has_value: "Bücker" .
+<http://bzk.fiz-karlsruhe.de/data/263_lastname> has_label: "Bücker" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/263> participates_in: <http://bzk.fiz-karlsruhe.de/data/260> .
@@ -3219,17 +3219,17 @@ has_value: a owl:DatatypeProperty .
 
 <http://bzk.fiz-karlsruhe.de/data/266_firstname> a given_name: .
 <http://bzk.fiz-karlsruhe.de/data/266_firstname> denotes: <http://bzk.fiz-karlsruhe.de/data/266> . 
-<http://bzk.fiz-karlsruhe.de/data/266_firstname> has_value: "Irene" .
+<http://bzk.fiz-karlsruhe.de/data/266_firstname> has_label: "Irene" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/266_lastname> a last_name: .
 <http://bzk.fiz-karlsruhe.de/data/266_lastname> denotes: <http://bzk.fiz-karlsruhe.de/data/266> . 
-<http://bzk.fiz-karlsruhe.de/data/266_lastname> has_value: "Baumann" .
+<http://bzk.fiz-karlsruhe.de/data/266_lastname> has_label: "Baumann" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/266_birthname> a birth_name: .
 <http://bzk.fiz-karlsruhe.de/data/266_birthname> denotes: <http://bzk.fiz-karlsruhe.de/data/266> . 
-<http://bzk.fiz-karlsruhe.de/data/266_birthname> has_value: "Dicker" .
+<http://bzk.fiz-karlsruhe.de/data/266_birthname> has_label: "Dicker" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/266> participates_in: <http://bzk.fiz-karlsruhe.de/data/264> .
@@ -3277,22 +3277,22 @@ has_value: a owl:DatatypeProperty .
 
 <http://bzk.fiz-karlsruhe.de/data/272_firstname> a given_name: .
 <http://bzk.fiz-karlsruhe.de/data/272_firstname> denotes: <http://bzk.fiz-karlsruhe.de/data/272> . 
-<http://bzk.fiz-karlsruhe.de/data/272_firstname> has_value: "Gertrud" .
+<http://bzk.fiz-karlsruhe.de/data/272_firstname> has_label: "Gertrud" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/272_lastname> a last_name: .
 <http://bzk.fiz-karlsruhe.de/data/272_lastname> denotes: <http://bzk.fiz-karlsruhe.de/data/272> . 
-<http://bzk.fiz-karlsruhe.de/data/272_lastname> has_value: "Frehe" .
+<http://bzk.fiz-karlsruhe.de/data/272_lastname> has_label: "Frehe" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/272_altfirstname> a alt_first_name: .
 <http://bzk.fiz-karlsruhe.de/data/272_altfirstname> denotes: <http://bzk.fiz-karlsruhe.de/data/272> . 
-<http://bzk.fiz-karlsruhe.de/data/272_altfirstname> has_value: "Frida Elise" .
+<http://bzk.fiz-karlsruhe.de/data/272_altfirstname> has_label: "Frida Elise" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/272_birthname> a birth_name: .
 <http://bzk.fiz-karlsruhe.de/data/272_birthname> denotes: <http://bzk.fiz-karlsruhe.de/data/272> . 
-<http://bzk.fiz-karlsruhe.de/data/272_birthname> has_value: "Ott" .
+<http://bzk.fiz-karlsruhe.de/data/272_birthname> has_label: "Ott" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/272> participates_in: <http://bzk.fiz-karlsruhe.de/data/268> .
@@ -3332,17 +3332,17 @@ has_value: a owl:DatatypeProperty .
 
 <http://bzk.fiz-karlsruhe.de/data/275_firstname> a given_name: .
 <http://bzk.fiz-karlsruhe.de/data/275_firstname> denotes: <http://bzk.fiz-karlsruhe.de/data/275> . 
-<http://bzk.fiz-karlsruhe.de/data/275_firstname> has_value: "Hermine" .
+<http://bzk.fiz-karlsruhe.de/data/275_firstname> has_label: "Hermine" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/275_lastname> a last_name: .
 <http://bzk.fiz-karlsruhe.de/data/275_lastname> denotes: <http://bzk.fiz-karlsruhe.de/data/275> . 
-<http://bzk.fiz-karlsruhe.de/data/275_lastname> has_value: "Lümkemann" .
+<http://bzk.fiz-karlsruhe.de/data/275_lastname> has_label: "Lümkemann" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/275_birthname> a birth_name: .
 <http://bzk.fiz-karlsruhe.de/data/275_birthname> denotes: <http://bzk.fiz-karlsruhe.de/data/275> . 
-<http://bzk.fiz-karlsruhe.de/data/275_birthname> has_value: "Ortpaul" .
+<http://bzk.fiz-karlsruhe.de/data/275_birthname> has_label: "Ortpaul" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/275> participates_in: <http://bzk.fiz-karlsruhe.de/data/273> .
@@ -3390,12 +3390,12 @@ has_value: a owl:DatatypeProperty .
 
 <http://bzk.fiz-karlsruhe.de/data/280_firstname> a given_name: .
 <http://bzk.fiz-karlsruhe.de/data/280_firstname> denotes: <http://bzk.fiz-karlsruhe.de/data/280> . 
-<http://bzk.fiz-karlsruhe.de/data/280_firstname> has_value: "Sara" .
+<http://bzk.fiz-karlsruhe.de/data/280_firstname> has_label: "Sara" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/280_lastname> a last_name: .
 <http://bzk.fiz-karlsruhe.de/data/280_lastname> denotes: <http://bzk.fiz-karlsruhe.de/data/280> . 
-<http://bzk.fiz-karlsruhe.de/data/280_lastname> has_value: "POHL" .
+<http://bzk.fiz-karlsruhe.de/data/280_lastname> has_label: "POHL" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/280> participates_in: <http://bzk.fiz-karlsruhe.de/data/277> .
@@ -3416,12 +3416,12 @@ has_value: a owl:DatatypeProperty .
 
 <http://bzk.fiz-karlsruhe.de/data/281_firstname> a given_name: .
 <http://bzk.fiz-karlsruhe.de/data/281_firstname> denotes: <http://bzk.fiz-karlsruhe.de/data/281> . 
-<http://bzk.fiz-karlsruhe.de/data/281_firstname> has_value: "Joseph" .
+<http://bzk.fiz-karlsruhe.de/data/281_firstname> has_label: "Joseph" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/281_lastname> a last_name: .
 <http://bzk.fiz-karlsruhe.de/data/281_lastname> denotes: <http://bzk.fiz-karlsruhe.de/data/281> . 
-<http://bzk.fiz-karlsruhe.de/data/281_lastname> has_value: "STEINBACH" .
+<http://bzk.fiz-karlsruhe.de/data/281_lastname> has_label: "STEINBACH" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/281> participates_in: <http://bzk.fiz-karlsruhe.de/data/277> .
@@ -3460,12 +3460,12 @@ has_value: a owl:DatatypeProperty .
 
 <http://bzk.fiz-karlsruhe.de/data/286_firstname> a given_name: .
 <http://bzk.fiz-karlsruhe.de/data/286_firstname> denotes: <http://bzk.fiz-karlsruhe.de/data/286> . 
-<http://bzk.fiz-karlsruhe.de/data/286_firstname> has_value: "Wilhelm" .
+<http://bzk.fiz-karlsruhe.de/data/286_firstname> has_label: "Wilhelm" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/286_lastname> a last_name: .
 <http://bzk.fiz-karlsruhe.de/data/286_lastname> denotes: <http://bzk.fiz-karlsruhe.de/data/286> . 
-<http://bzk.fiz-karlsruhe.de/data/286_lastname> has_value: "Gensch" .
+<http://bzk.fiz-karlsruhe.de/data/286_lastname> has_label: "Gensch" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/286> participates_in: <http://bzk.fiz-karlsruhe.de/data/282> .
@@ -3501,17 +3501,17 @@ has_value: a owl:DatatypeProperty .
 
 <http://bzk.fiz-karlsruhe.de/data/290_firstname> a given_name: .
 <http://bzk.fiz-karlsruhe.de/data/290_firstname> denotes: <http://bzk.fiz-karlsruhe.de/data/290> . 
-<http://bzk.fiz-karlsruhe.de/data/290_firstname> has_value: "Etta" .
+<http://bzk.fiz-karlsruhe.de/data/290_firstname> has_label: "Etta" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/290_lastname> a last_name: .
 <http://bzk.fiz-karlsruhe.de/data/290_lastname> denotes: <http://bzk.fiz-karlsruhe.de/data/290> . 
-<http://bzk.fiz-karlsruhe.de/data/290_lastname> has_value: "Hauptmann" .
+<http://bzk.fiz-karlsruhe.de/data/290_lastname> has_label: "Hauptmann" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/290_birthname> a birth_name: .
 <http://bzk.fiz-karlsruhe.de/data/290_birthname> denotes: <http://bzk.fiz-karlsruhe.de/data/290> . 
-<http://bzk.fiz-karlsruhe.de/data/290_birthname> has_value: "Federbusch" .
+<http://bzk.fiz-karlsruhe.de/data/290_birthname> has_label: "Federbusch" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/290> participates_in: <http://bzk.fiz-karlsruhe.de/data/287> .
@@ -3553,17 +3553,17 @@ has_value: a owl:DatatypeProperty .
 
 <http://bzk.fiz-karlsruhe.de/data/294_firstname> a given_name: .
 <http://bzk.fiz-karlsruhe.de/data/294_firstname> denotes: <http://bzk.fiz-karlsruhe.de/data/294> . 
-<http://bzk.fiz-karlsruhe.de/data/294_firstname> has_value: "Eugenie" .
+<http://bzk.fiz-karlsruhe.de/data/294_firstname> has_label: "Eugenie" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/294_lastname> a last_name: .
 <http://bzk.fiz-karlsruhe.de/data/294_lastname> denotes: <http://bzk.fiz-karlsruhe.de/data/294> . 
-<http://bzk.fiz-karlsruhe.de/data/294_lastname> has_value: "Klinger" .
+<http://bzk.fiz-karlsruhe.de/data/294_lastname> has_label: "Klinger" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/294_birthname> a birth_name: .
 <http://bzk.fiz-karlsruhe.de/data/294_birthname> denotes: <http://bzk.fiz-karlsruhe.de/data/294> . 
-<http://bzk.fiz-karlsruhe.de/data/294_birthname> has_value: "Braun" .
+<http://bzk.fiz-karlsruhe.de/data/294_birthname> has_label: "Braun" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/294> participates_in: <http://bzk.fiz-karlsruhe.de/data/291> .
@@ -3603,17 +3603,17 @@ has_value: a owl:DatatypeProperty .
 
 <http://bzk.fiz-karlsruhe.de/data/298_firstname> a given_name: .
 <http://bzk.fiz-karlsruhe.de/data/298_firstname> denotes: <http://bzk.fiz-karlsruhe.de/data/298> . 
-<http://bzk.fiz-karlsruhe.de/data/298_firstname> has_value: "Cyla" .
+<http://bzk.fiz-karlsruhe.de/data/298_firstname> has_label: "Cyla" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/298_lastname> a last_name: .
 <http://bzk.fiz-karlsruhe.de/data/298_lastname> denotes: <http://bzk.fiz-karlsruhe.de/data/298> . 
-<http://bzk.fiz-karlsruhe.de/data/298_lastname> has_value: "Kolko" .
+<http://bzk.fiz-karlsruhe.de/data/298_lastname> has_label: "Kolko" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/298_birthname> a birth_name: .
 <http://bzk.fiz-karlsruhe.de/data/298_birthname> denotes: <http://bzk.fiz-karlsruhe.de/data/298> . 
-<http://bzk.fiz-karlsruhe.de/data/298_birthname> has_value: "Feldman" .
+<http://bzk.fiz-karlsruhe.de/data/298_birthname> has_label: "Feldman" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/298> participates_in: <http://bzk.fiz-karlsruhe.de/data/296> .
@@ -3634,12 +3634,12 @@ has_value: a owl:DatatypeProperty .
 
 <http://bzk.fiz-karlsruhe.de/data/299_firstname> a given_name: .
 <http://bzk.fiz-karlsruhe.de/data/299_firstname> denotes: <http://bzk.fiz-karlsruhe.de/data/299> . 
-<http://bzk.fiz-karlsruhe.de/data/299_firstname> has_value: "Filip" .
+<http://bzk.fiz-karlsruhe.de/data/299_firstname> has_label: "Filip" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/299_lastname> a last_name: .
 <http://bzk.fiz-karlsruhe.de/data/299_lastname> denotes: <http://bzk.fiz-karlsruhe.de/data/299> . 
-<http://bzk.fiz-karlsruhe.de/data/299_lastname> has_value: "Kolko" .
+<http://bzk.fiz-karlsruhe.de/data/299_lastname> has_label: "Kolko" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/299> participates_in: <http://bzk.fiz-karlsruhe.de/data/296> .
@@ -3688,17 +3688,17 @@ has_value: a owl:DatatypeProperty .
 
 <http://bzk.fiz-karlsruhe.de/data/303_firstname> a given_name: .
 <http://bzk.fiz-karlsruhe.de/data/303_firstname> denotes: <http://bzk.fiz-karlsruhe.de/data/303> . 
-<http://bzk.fiz-karlsruhe.de/data/303_firstname> has_value: "Juda" .
+<http://bzk.fiz-karlsruhe.de/data/303_firstname> has_label: "Juda" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/303_lastname> a last_name: .
 <http://bzk.fiz-karlsruhe.de/data/303_lastname> denotes: <http://bzk.fiz-karlsruhe.de/data/303> . 
-<http://bzk.fiz-karlsruhe.de/data/303_lastname> has_value: "ZOMBEK" .
+<http://bzk.fiz-karlsruhe.de/data/303_lastname> has_label: "ZOMBEK" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/303_altlastname> a alt_last_name: .
 <http://bzk.fiz-karlsruhe.de/data/303_altlastname> denotes: <http://bzk.fiz-karlsruhe.de/data/303> . 
-<http://bzk.fiz-karlsruhe.de/data/303_altlastname> has_value: "SOMBEK" .
+<http://bzk.fiz-karlsruhe.de/data/303_altlastname> has_label: "SOMBEK" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/303> participates_in: <http://bzk.fiz-karlsruhe.de/data/300> .
@@ -3738,17 +3738,17 @@ has_value: a owl:DatatypeProperty .
 
 <http://bzk.fiz-karlsruhe.de/data/306_firstname> a given_name: .
 <http://bzk.fiz-karlsruhe.de/data/306_firstname> denotes: <http://bzk.fiz-karlsruhe.de/data/306> . 
-<http://bzk.fiz-karlsruhe.de/data/306_firstname> has_value: "Ladislaus" .
+<http://bzk.fiz-karlsruhe.de/data/306_firstname> has_label: "Ladislaus" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/306_lastname> a last_name: .
 <http://bzk.fiz-karlsruhe.de/data/306_lastname> denotes: <http://bzk.fiz-karlsruhe.de/data/306> . 
-<http://bzk.fiz-karlsruhe.de/data/306_lastname> has_value: "Dr. Abraham" .
+<http://bzk.fiz-karlsruhe.de/data/306_lastname> has_label: "Dr. Abraham" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/306_altfirstname> a alt_first_name: .
 <http://bzk.fiz-karlsruhe.de/data/306_altfirstname> denotes: <http://bzk.fiz-karlsruhe.de/data/306> . 
-<http://bzk.fiz-karlsruhe.de/data/306_altfirstname> has_value: "Vasile" .
+<http://bzk.fiz-karlsruhe.de/data/306_altfirstname> has_label: "Vasile" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/306> participates_in: <http://bzk.fiz-karlsruhe.de/data/304> .
@@ -3782,12 +3782,12 @@ has_value: a owl:DatatypeProperty .
 
 <http://bzk.fiz-karlsruhe.de/data/310_firstname> a given_name: .
 <http://bzk.fiz-karlsruhe.de/data/310_firstname> denotes: <http://bzk.fiz-karlsruhe.de/data/310> . 
-<http://bzk.fiz-karlsruhe.de/data/310_firstname> has_value: "Georg" .
+<http://bzk.fiz-karlsruhe.de/data/310_firstname> has_label: "Georg" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/310_lastname> a last_name: .
 <http://bzk.fiz-karlsruhe.de/data/310_lastname> denotes: <http://bzk.fiz-karlsruhe.de/data/310> . 
-<http://bzk.fiz-karlsruhe.de/data/310_lastname> has_value: "Hupfeld" .
+<http://bzk.fiz-karlsruhe.de/data/310_lastname> has_label: "Hupfeld" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/310> participates_in: <http://bzk.fiz-karlsruhe.de/data/308> .
@@ -3835,17 +3835,17 @@ has_value: a owl:DatatypeProperty .
 
 <http://bzk.fiz-karlsruhe.de/data/315_firstname> a given_name: .
 <http://bzk.fiz-karlsruhe.de/data/315_firstname> denotes: <http://bzk.fiz-karlsruhe.de/data/315> . 
-<http://bzk.fiz-karlsruhe.de/data/315_firstname> has_value: "Martha" .
+<http://bzk.fiz-karlsruhe.de/data/315_firstname> has_label: "Martha" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/315_lastname> a last_name: .
 <http://bzk.fiz-karlsruhe.de/data/315_lastname> denotes: <http://bzk.fiz-karlsruhe.de/data/315> . 
-<http://bzk.fiz-karlsruhe.de/data/315_lastname> has_value: "Kessler" .
+<http://bzk.fiz-karlsruhe.de/data/315_lastname> has_label: "Kessler" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/315_birthname> a birth_name: .
 <http://bzk.fiz-karlsruhe.de/data/315_birthname> denotes: <http://bzk.fiz-karlsruhe.de/data/315> . 
-<http://bzk.fiz-karlsruhe.de/data/315_birthname> has_value: "Kurth" .
+<http://bzk.fiz-karlsruhe.de/data/315_birthname> has_label: "Kurth" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/315> participates_in: <http://bzk.fiz-karlsruhe.de/data/312> .
@@ -3885,12 +3885,12 @@ has_value: a owl:DatatypeProperty .
 
 <http://bzk.fiz-karlsruhe.de/data/320_firstname> a given_name: .
 <http://bzk.fiz-karlsruhe.de/data/320_firstname> denotes: <http://bzk.fiz-karlsruhe.de/data/320> . 
-<http://bzk.fiz-karlsruhe.de/data/320_firstname> has_value: "Heinrich" .
+<http://bzk.fiz-karlsruhe.de/data/320_firstname> has_label: "Heinrich" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/320_lastname> a last_name: .
 <http://bzk.fiz-karlsruhe.de/data/320_lastname> denotes: <http://bzk.fiz-karlsruhe.de/data/320> . 
-<http://bzk.fiz-karlsruhe.de/data/320_lastname> has_value: "Repp" .
+<http://bzk.fiz-karlsruhe.de/data/320_lastname> has_label: "Repp" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/320> participates_in: <http://bzk.fiz-karlsruhe.de/data/317> .
@@ -3930,12 +3930,12 @@ has_value: a owl:DatatypeProperty .
 
 <http://bzk.fiz-karlsruhe.de/data/323_firstname> a given_name: .
 <http://bzk.fiz-karlsruhe.de/data/323_firstname> denotes: <http://bzk.fiz-karlsruhe.de/data/323> . 
-<http://bzk.fiz-karlsruhe.de/data/323_firstname> has_value: "Walter Karl" .
+<http://bzk.fiz-karlsruhe.de/data/323_firstname> has_label: "Walter Karl" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/323_lastname> a last_name: .
 <http://bzk.fiz-karlsruhe.de/data/323_lastname> denotes: <http://bzk.fiz-karlsruhe.de/data/323> . 
-<http://bzk.fiz-karlsruhe.de/data/323_lastname> has_value: "Buchhaas" .
+<http://bzk.fiz-karlsruhe.de/data/323_lastname> has_label: "Buchhaas" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/323> participates_in: <http://bzk.fiz-karlsruhe.de/data/321> .
@@ -3975,22 +3975,22 @@ has_value: a owl:DatatypeProperty .
 
 <http://bzk.fiz-karlsruhe.de/data/327_firstname> a given_name: .
 <http://bzk.fiz-karlsruhe.de/data/327_firstname> denotes: <http://bzk.fiz-karlsruhe.de/data/327> . 
-<http://bzk.fiz-karlsruhe.de/data/327_firstname> has_value: "Gertrude" .
+<http://bzk.fiz-karlsruhe.de/data/327_firstname> has_label: "Gertrude" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/327_lastname> a last_name: .
 <http://bzk.fiz-karlsruhe.de/data/327_lastname> denotes: <http://bzk.fiz-karlsruhe.de/data/327> . 
-<http://bzk.fiz-karlsruhe.de/data/327_lastname> has_value: "Gumpel" .
+<http://bzk.fiz-karlsruhe.de/data/327_lastname> has_label: "Gumpel" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/327_altfirstname> a alt_first_name: .
 <http://bzk.fiz-karlsruhe.de/data/327_altfirstname> denotes: <http://bzk.fiz-karlsruhe.de/data/327> . 
-<http://bzk.fiz-karlsruhe.de/data/327_altfirstname> has_value: "Lotte" .
+<http://bzk.fiz-karlsruhe.de/data/327_altfirstname> has_label: "Lotte" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/327_birthname> a birth_name: .
 <http://bzk.fiz-karlsruhe.de/data/327_birthname> denotes: <http://bzk.fiz-karlsruhe.de/data/327> . 
-<http://bzk.fiz-karlsruhe.de/data/327_birthname> has_value: "Blum" .
+<http://bzk.fiz-karlsruhe.de/data/327_birthname> has_label: "Blum" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/327> participates_in: <http://bzk.fiz-karlsruhe.de/data/325> .
@@ -4011,12 +4011,12 @@ has_value: a owl:DatatypeProperty .
 
 <http://bzk.fiz-karlsruhe.de/data/328_firstname> a given_name: .
 <http://bzk.fiz-karlsruhe.de/data/328_firstname> denotes: <http://bzk.fiz-karlsruhe.de/data/328> . 
-<http://bzk.fiz-karlsruhe.de/data/328_firstname> has_value: "Alfons" .
+<http://bzk.fiz-karlsruhe.de/data/328_firstname> has_label: "Alfons" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/328_lastname> a last_name: .
 <http://bzk.fiz-karlsruhe.de/data/328_lastname> denotes: <http://bzk.fiz-karlsruhe.de/data/328> . 
-<http://bzk.fiz-karlsruhe.de/data/328_lastname> has_value: "Blum" .
+<http://bzk.fiz-karlsruhe.de/data/328_lastname> has_label: "Blum" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/328> participates_in: <http://bzk.fiz-karlsruhe.de/data/325> .
@@ -4065,12 +4065,12 @@ has_value: a owl:DatatypeProperty .
 
 <http://bzk.fiz-karlsruhe.de/data/331_firstname> a given_name: .
 <http://bzk.fiz-karlsruhe.de/data/331_firstname> denotes: <http://bzk.fiz-karlsruhe.de/data/331> . 
-<http://bzk.fiz-karlsruhe.de/data/331_firstname> has_value: "Bernhard" .
+<http://bzk.fiz-karlsruhe.de/data/331_firstname> has_label: "Bernhard" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/331_lastname> a last_name: .
 <http://bzk.fiz-karlsruhe.de/data/331_lastname> denotes: <http://bzk.fiz-karlsruhe.de/data/331> . 
-<http://bzk.fiz-karlsruhe.de/data/331_lastname> has_value: "Schlager" .
+<http://bzk.fiz-karlsruhe.de/data/331_lastname> has_label: "Schlager" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/331> participates_in: <http://bzk.fiz-karlsruhe.de/data/329> .
@@ -4110,12 +4110,12 @@ has_value: a owl:DatatypeProperty .
 
 <http://bzk.fiz-karlsruhe.de/data/335_firstname> a given_name: .
 <http://bzk.fiz-karlsruhe.de/data/335_firstname> denotes: <http://bzk.fiz-karlsruhe.de/data/335> . 
-<http://bzk.fiz-karlsruhe.de/data/335_firstname> has_value: "Heniek" .
+<http://bzk.fiz-karlsruhe.de/data/335_firstname> has_label: "Heniek" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/335_lastname> a last_name: .
 <http://bzk.fiz-karlsruhe.de/data/335_lastname> denotes: <http://bzk.fiz-karlsruhe.de/data/335> . 
-<http://bzk.fiz-karlsruhe.de/data/335_lastname> has_value: "Grunwald" .
+<http://bzk.fiz-karlsruhe.de/data/335_lastname> has_label: "Grunwald" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/335> participates_in: <http://bzk.fiz-karlsruhe.de/data/333> .
@@ -4155,12 +4155,12 @@ has_value: a owl:DatatypeProperty .
 
 <http://bzk.fiz-karlsruhe.de/data/339_firstname> a given_name: .
 <http://bzk.fiz-karlsruhe.de/data/339_firstname> denotes: <http://bzk.fiz-karlsruhe.de/data/339> . 
-<http://bzk.fiz-karlsruhe.de/data/339_firstname> has_value: "Izek" .
+<http://bzk.fiz-karlsruhe.de/data/339_firstname> has_label: "Izek" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/339_lastname> a last_name: .
 <http://bzk.fiz-karlsruhe.de/data/339_lastname> denotes: <http://bzk.fiz-karlsruhe.de/data/339> . 
-<http://bzk.fiz-karlsruhe.de/data/339_lastname> has_value: "Rzezak" .
+<http://bzk.fiz-karlsruhe.de/data/339_lastname> has_label: "Rzezak" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/339> participates_in: <http://bzk.fiz-karlsruhe.de/data/337> .
@@ -4200,17 +4200,17 @@ has_value: a owl:DatatypeProperty .
 
 <http://bzk.fiz-karlsruhe.de/data/344_firstname> a given_name: .
 <http://bzk.fiz-karlsruhe.de/data/344_firstname> denotes: <http://bzk.fiz-karlsruhe.de/data/344> . 
-<http://bzk.fiz-karlsruhe.de/data/344_firstname> has_value: "Blima-Bella" .
+<http://bzk.fiz-karlsruhe.de/data/344_firstname> has_label: "Blima-Bella" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/344_lastname> a last_name: .
 <http://bzk.fiz-karlsruhe.de/data/344_lastname> denotes: <http://bzk.fiz-karlsruhe.de/data/344> . 
-<http://bzk.fiz-karlsruhe.de/data/344_lastname> has_value: "Klein" .
+<http://bzk.fiz-karlsruhe.de/data/344_lastname> has_label: "Klein" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/344_birthname> a birth_name: .
 <http://bzk.fiz-karlsruhe.de/data/344_birthname> denotes: <http://bzk.fiz-karlsruhe.de/data/344> . 
-<http://bzk.fiz-karlsruhe.de/data/344_birthname> has_value: "Braun" .
+<http://bzk.fiz-karlsruhe.de/data/344_birthname> has_label: "Braun" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/344> participates_in: <http://bzk.fiz-karlsruhe.de/data/341> .
@@ -4250,12 +4250,12 @@ has_value: a owl:DatatypeProperty .
 
 <http://bzk.fiz-karlsruhe.de/data/347_firstname> a given_name: .
 <http://bzk.fiz-karlsruhe.de/data/347_firstname> denotes: <http://bzk.fiz-karlsruhe.de/data/347> . 
-<http://bzk.fiz-karlsruhe.de/data/347_firstname> has_value: "Frima" .
+<http://bzk.fiz-karlsruhe.de/data/347_firstname> has_label: "Frima" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/347_lastname> a last_name: .
 <http://bzk.fiz-karlsruhe.de/data/347_lastname> denotes: <http://bzk.fiz-karlsruhe.de/data/347> . 
-<http://bzk.fiz-karlsruhe.de/data/347_lastname> has_value: "Verzberger" .
+<http://bzk.fiz-karlsruhe.de/data/347_lastname> has_label: "Verzberger" .
 	
 
 <http://bzk.fiz-karlsruhe.de/data/347> participates_in: <http://bzk.fiz-karlsruhe.de/data/345> .

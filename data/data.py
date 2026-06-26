@@ -158,7 +158,7 @@ def getNameTmplt(nametype):
 	return """
 <NAMEIRI> a """ + nametype + """ .
 <NAMEIRI> denotes: <PERSONIRI> . 
-<NAMEIRI> has_value: "NAMELABEL" .
+<NAMEIRI> has_label: "NAMELABEL" .
 	"""
 
 case_has_applicant="""
