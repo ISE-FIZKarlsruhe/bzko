@@ -14,13 +14,13 @@
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:ontology="https://nfdi.fiz-karlsruhe.de/ontology/">
     <owl:Ontology rdf:about="https://bzk.fiz-karlsruhe.de/ontology/extension">
-        <owl:versionIRI rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/extension/1.0.0"/>
-        <dcterms:bibliographicCitation>BZKO Ontology. Version 1.0.0, https://bzk.fiz-karlsruhe.de/ontology/</dcterms:bibliographicCitation>
+        <owl:versionIRI rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/extension/1.0.1"/>
+        <dcterms:bibliographicCitation>BZKO Ontology. Version 1.0.1, https://bzk.fiz-karlsruhe.de/ontology/</dcterms:bibliographicCitation>
         <dcterms:created>2026-06-26</dcterms:created>
         <dcterms:description xml:lang="en">The BZK Ontology (BZKO) has been designed to semantically represent the content of the BZK index cards, a collection held in the German Federal Central Register (Bundeszentralkartei, abbreviated BZK). This central index card archive serves as an internal archival tool for tracking Wiedergutmachung records related to compensation and restitution for National Socialist injustice. BZKO aims to serve as the foundation for a knowledge graph that enables semantic search within Themenportal Wiedergutmachung, a central digital portal for the collection of Wiedergutmachung records.</dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0/"/>
         <dcterms:title>BZK Ontology</dcterms:title>
-        <owl:versionInfo>1.0.0</owl:versionInfo>
+        <owl:versionInfo>1.0.1</owl:versionInfo>
     </owl:Ontology>
     
 
