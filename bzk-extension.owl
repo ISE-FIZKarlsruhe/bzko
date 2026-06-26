@@ -16,7 +16,7 @@
     <owl:Ontology rdf:about="https://bzk.fiz-karlsruhe.de/ontology/extension">
         <owl:versionIRI rdf:resource="https://bzk.fiz-karlsruhe.de/ontology/extension/1.0.0"/>
         <dcterms:bibliographicCitation>BZKO Ontology. Version 1.0.0, https://bzk.fiz-karlsruhe.de/ontology/</dcterms:bibliographicCitation>
-        <dcterms:created>2026-06-18</dcterms:created>
+        <dcterms:created>2026-06-26</dcterms:created>
         <dcterms:description xml:lang="en">The BZK Ontology (BZKO) has been designed to semantically represent the content of the BZK index cards, a collection held in the German Federal Central Register (Bundeszentralkartei, abbreviated BZK). This central index card archive serves as an internal archival tool for tracking Wiedergutmachung records related to compensation and restitution for National Socialist injustice. BZKO aims to serve as the foundation for a knowledge graph that enables semantic search within Themenportal Wiedergutmachung, a central digital portal for the collection of Wiedergutmachung records.</dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0/"/>
         <dcterms:title>BZK Ontology</dcterms:title>
@@ -1336,7 +1336,7 @@ WHERE {
         <obo:OMO_0002000>PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt; 
 PREFIX person: &lt;https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004&gt; 
 PREFIX birthProcessBound: &lt;https://bzk.fiz-karlsruhe.de/ontology/BZK_0010008&gt; 
-PREFIX temporalInstant: &lt;https://bzk.fiz-karlsruhe.de/ontology/BZK_0023012&gt;
+PREFIX temporalInstant: &lt;http://purl.obolibrary.org/obo/BFO_0000203&gt;
 PREFIX occup_temp_region: &lt;http://purl.obolibrary.org/obo/BFO_0000199&gt;
 PREFIX has_participant: &lt;http://purl.obolibrary.org/obo/RO_0000057&gt; 
 PREFIX labeled: &lt;http://www.w3.org/2000/01/rdf-schema#label&gt;
@@ -1367,7 +1367,7 @@ WHERE {
         <obo:OMO_0002000>PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt; 
 PREFIX person: &lt;https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004&gt; 
 PREFIX deathProcessBound: &lt;https://bzk.fiz-karlsruhe.de/ontology/BZK_0010009&gt; 
-PREFIX temporalInstant: &lt;https://bzk.fiz-karlsruhe.de/ontology/BZK_0023012&gt;
+PREFIX temporalInstant: &lt;http://purl.obolibrary.org/obo/BFO_0000203&gt;
 PREFIX occup_temp_region: &lt;http://purl.obolibrary.org/obo/BFO_0000199&gt;
 PREFIX has_participant: &lt;http://purl.obolibrary.org/obo/RO_0000057&gt; 
 PREFIX labeled: &lt;http://www.w3.org/2000/01/rdf-schema#label&gt;
