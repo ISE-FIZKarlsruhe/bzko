@@ -369,7 +369,7 @@ with open('bzkopen-2026-04-17/bzkopen_raw_validation.csv', newline='') as csvfil
 address_tmplt="""
 <ADDRESS> a address: .
 <ADDRESS> has_label: "ADDRLABEL" .
-#<ADDRESS> is_about: <PLACE> .
+<ADDRESS> is_about: <PLACE> .
 <PLACE> a place: . 
 <PLACE> has_label: "ADDRLABEL" .
 """
