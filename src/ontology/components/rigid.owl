@@ -41,6 +41,7 @@ Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010007>))
 Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010008>))
 Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010009>))
 Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010011>))
+Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010125>))
 Declaration(Class(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004>))
 Declaration(Class(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000005>))
 Declaration(Class(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000106>))
@@ -157,14 +158,14 @@ SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010001> ObjectSomeValuesF
 # Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010002> (persecutee role)
 
 AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010002> "persecutee role"@en)
-AnnotationAssertion(skos:definition <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010002> "A person who has a persecutee role is oppressed, harassed, or maltreated because of their gender, race, religion, or beliefs."@en)
+AnnotationAssertion(skos:definition <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010002> "A role borne by an agent who is subjected to oppression, harassment, or maltreatment because of their gender, race, religion, beliefs, or other characteristics."@en)
 SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010002> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000229>)
 SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010002> ObjectSomeValuesFrom(obo:BFO_0000054 <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010000>))
 
 # Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010003> (applicant role)
 
 AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010003> "applicant role"@en)
-AnnotationAssertion(skos:definition <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010003> "A person who has an applicant role applies to an organisation for themselves or for another person."@en)
+AnnotationAssertion(skos:definition <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010003> "A role borne by an agent who applies to an organization for themselves or on behalf of another agent."@en)
 SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010003> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000229>)
 SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010003> ObjectSomeValuesFrom(obo:BFO_0000054 <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010000>))
 
@@ -180,12 +181,13 @@ AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_001000
 AnnotationAssertion(skos:definition <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010005> "A textual entity intended to identify a particular compensation office"@en)
 SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010005> obo:IAO_0000303)
 
-# Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010006> (last residential address)
+# Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010006> (DEPRECATED last residential address)
 
-AnnotationAssertion(rdfs:comment <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010006> "This is the last residential address of a person prior to a specified event, such as deportation, migration, relocation, or death.")
-AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010006> "last residential address"@en)
-AnnotationAssertion(skos:definition <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010006> "A last residential address is the postal address of a person's residence at the relevant point in time."@en)
-SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010006> obo:IAO_0000422)
+AnnotationAssertion(rdfs:comment <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010006> "DEPRECATED This is the last residential address of a person prior to a specified event, such as deportation, migration, relocation, or death.")
+AnnotationAssertion(rdfs:comment <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010006> "We have defined the \"last residential address\" class and the \"has last residential address\" object property with the intention of differentiating between two possible addresses of a persecuted person. However, such a distinction is not necessary in the ontology, as the  archival terminology \"residence prior to persecution\" specifies the postal address of a persecuted person under the Nazi regime, while \"residence at the time of application\" specifies the postal address of a WGM applicant. Thus, there is no need to model a separate \"last residential address\" class and property; a single address field (`postal address` [IAO:0000422]) for both persecuted persons and applicants is sufficient.")
+AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010006> "DEPRECATED last residential address"@en)
+AnnotationAssertion(owl:deprecated <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010006> "true"^^xsd:boolean)
+AnnotationAssertion(skos:definition <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010006> "DEPRECATED A last residential address is the postal address of a person's residence at the relevant point in time."@en)
 
 # Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010007> (alternative given name)
 
@@ -212,6 +214,12 @@ AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_001001
 AnnotationAssertion(skos:definition <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010011> "A digitised BZK Card refers to a scanned version of the corresponding physical BZK card."@en)
 SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010011> obo:IAO_0000310)
 SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010011> ObjectSomeValuesFrom(obo:IAO_0000136 <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000002>))
+
+# Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010125> (lawyer role)
+
+AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010125> "lawyer role"@en)
+AnnotationAssertion(skos:definition <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010125> "A role that is borne by a person who is qualified and authorized to practice law.")
+SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010125> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000229>)
 
 # Class: <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004> (person)
 

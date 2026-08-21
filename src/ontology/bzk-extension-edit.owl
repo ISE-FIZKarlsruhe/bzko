@@ -28,6 +28,7 @@ Declaration(Class(:BZK_0010010))
 Declaration(Class(:BZK_0010012))
 Declaration(Class(:BZK_0010118))
 Declaration(Class(:BZK_0010119))
+Declaration(Class(:BZK_0010126))
 Declaration(Class(:BZK_0023010))
 Declaration(Class(:BZK_0023012))
 Declaration(ObjectProperty(:BZK_0010013))
@@ -275,25 +276,12 @@ SubDataPropertyOf(:BZK_0010022 :BZK_0010021)
 DataPropertyDomain(:BZK_0010022 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004>)
 DataPropertyRange(:BZK_0010022 rdfs:Literal)
 
-# Data Property: :BZK_0010025 (has last residential address)
+# Data Property: :BZK_0010025 (DEPRECATED has last residential address)
 
-AnnotationAssertion(obo:OMO_0002000 :BZK_0010025 "PREFIX owl: <http://www.w3.org/2002/07/owl#> 
-PREFIX is_about: <http://purl.obolibrary.org/obo/IAO_0000136>
-PREFIX person: <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004> 
-PREFIX lastResidentialAdd: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010006>
-PREFIX labeled: <http://www.w3.org/2000/01/rdf-schema#label>
-
-PREFIX has_last_residen_add: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010025> 
-
-CONSTRUCT { ?person1 has_last_residen_add: ?label}
-WHERE {
-?person1 a person: .
-?lastResidentialAdd1 a lastResidentialAdd: .
-?lastResidentialAdd1 is_about: ?person1 .
-?lastResidentialAdd1 labeled: ?label .
-}")
-AnnotationAssertion(rdfs:label :BZK_0010025 "has last residential address"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :BZK_0010025 "This data property links a person to their last residential address before a specified event."@en)
+AnnotationAssertion(rdfs:comment :BZK_0010025 "We have defined the \"last residential address\" class and the \"has last residential address\" object property with the intention of differentiating between two possible addresses of a persecuted person. However, such a distinction is not necessary in the ontology, as the  archival terminology \"residence prior to persecution\" specifies the postal address of a persecuted person under the Nazi regime, while \"residence at the time of application\" specifies the postal address of a WGM applicant. Thus, there is no need to model a separate \"last residential address\" class and property; a single address field (`postal address` [IAO:0000422]) for both persecuted persons and applicants is sufficient.")
+AnnotationAssertion(rdfs:label :BZK_0010025 "DEPRECATED has last residential address"@en)
+AnnotationAssertion(owl:deprecated :BZK_0010025 "true"^^xsd:boolean)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :BZK_0010025 "DEPRECATED This data property links a person to their last residential address before a specified event."@en)
 DataPropertyDomain(:BZK_0010025 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004>)
 DataPropertyRange(:BZK_0010025 rdfs:Literal)
 
@@ -556,16 +544,23 @@ AnnotationAssertion(obo:IAO_0000116 :BZK_0000013 "The name of a BZK applicant ca
 A BZK applicant can be a persecutee at the same time.")
 AnnotationAssertion(rdfs:label :BZK_0000013 "wgm applicant"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :BZK_0000013 "A WGM applicant is a person who was recorded as an applicant on a BZK card and applies for compensation as a persecuted person.")
-EquivalentClasses(:BZK_0000013 ObjectIntersectionOf(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004> ObjectSomeValuesFrom(obo:RO_0000087 :BZK_0010003)))
 SubClassOf(:BZK_0000013 <https://personsincontext.org/model#PersonObservation>)
+SubClassOf(:BZK_0000013 ObjectIntersectionOf(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004> ObjectSomeValuesFrom(obo:RO_0000087 :BZK_0010003)))
 SubClassOf(:BZK_0000013 ObjectSomeValuesFrom(:BZK_0010013 :BZK_0010012))
+
+# Class: :BZK_0010000 (compensation card indexing)
+
+SubClassOf(:BZK_0010000 ObjectSomeValuesFrom(obo:RO_0000057 :BZK_0000013))
+SubClassOf(:BZK_0010000 ObjectSomeValuesFrom(obo:RO_0000057 :BZK_0010010))
+SubClassOf(:BZK_0010000 ObjectSomeValuesFrom(obo:RO_0000057 :BZK_0010012))
+SubClassOf(:BZK_0010000 ObjectSomeValuesFrom(obo:RO_0000057 :BZK_0010126))
 
 # Class: :BZK_0010010 (persecutee of the nazi regimee)
 
 AnnotationAssertion(rdfs:label :BZK_0010010 "persecutee of the nazi regimee"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :BZK_0010010 "A person who was subjected to persecution by the Nazi regimee, including but not limited to discrimination, dispossession, forced displacement, or violence, on political, racial, religious, or other grounds."@en)
-EquivalentClasses(:BZK_0010010 ObjectIntersectionOf(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004> ObjectSomeValuesFrom(obo:RO_0000087 :BZK_0010002)))
 SubClassOf(:BZK_0010010 <https://personsincontext.org/model#PersonObservation>)
+SubClassOf(:BZK_0010010 ObjectIntersectionOf(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004> ObjectSomeValuesFrom(obo:RO_0000087 :BZK_0010002)))
 
 # Class: :BZK_0010011 (digitised bzk card)
 
@@ -590,6 +585,15 @@ SubClassOf(:BZK_0010118 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000005>)
 AnnotationAssertion(rdfs:label :BZK_0010119 "deathplace"@en)
 EquivalentClasses(:BZK_0010119 ObjectIntersectionOf(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000005> ObjectSomeValuesFrom(obo:BFO_0000183 :BZK_0010009)))
 SubClassOf(:BZK_0010119 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000005>)
+
+# Class: :BZK_0010126 (lawyer)
+
+AnnotationAssertion(rdfs:label :BZK_0010126 "lawyer"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :BZK_0010126 "A person who bears a lawyer role that is realized in activities involving the provision of legal services, such as legal advice, representation, or advocacy."@en)
+EquivalentClasses(:BZK_0010126 ObjectIntersectionOf(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004> ObjectSomeValuesFrom(obo:RO_0000087 :BZK_0010125)))
+SubClassOf(:BZK_0010126 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004>)
+SubClassOf(:BZK_0010126 ObjectSomeValuesFrom(:BZK_0010013 :BZK_0010012))
+SubClassOf(:BZK_0010126 ObjectSomeValuesFrom(:BZK_0010016 :BZK_0010010))
 
 # Class: :BZK_0023010 (date of birth)
 
