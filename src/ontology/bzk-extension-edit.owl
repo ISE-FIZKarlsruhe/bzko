@@ -452,10 +452,11 @@ SubDataPropertyOf(:BZK_0010123 :BZK_0010121)
 DataPropertyDomain(:BZK_0010123 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004>)
 DataPropertyRange(:BZK_0010123 rdfs:Literal)
 
-# Data Property: :BZK_0010124 (has current address)
+# Data Property: :BZK_0010124 (DEPRECATED has current address)
 
-AnnotationAssertion(obo:IAO_0000115 :BZK_0010124 "This data property links a person or an organisation to their current postal address.")
-AnnotationAssertion(rdfs:label :BZK_0010124 "has current address"@en)
+AnnotationAssertion(rdfs:comment :BZK_0010124 "We have defined the \"last residential address\" class and the \"has last residential address\" object property with the intention of differentiating between two possible addresses of a persecuted person. However, such a distinction is not necessary in the ontology, as the archival terminology \"residence prior to persecution\" specifies the postal address of a persecuted person under the Nazi regime, while \"residence at the time of application\" specifies the postal address of a WGM applicant. Thus, there is also no need to include the \"has current address\" object property in the ontology.")
+AnnotationAssertion(rdfs:label :BZK_0010124 "DEPRECATED has current address"@en)
+AnnotationAssertion(owl:deprecated :BZK_0010124 "true"^^xsd:boolean)
 DataPropertyDomain(:BZK_0010124 ObjectUnionOf(obo:OBI_0000245 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004>))
 DataPropertyRange(:BZK_0010124 rdfs:Literal)
 
