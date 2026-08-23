@@ -26,6 +26,8 @@ Declaration(Class(:BZK_0000013))
 Declaration(Class(:BZK_0010009))
 Declaration(Class(:BZK_0010010))
 Declaration(Class(:BZK_0010012))
+Declaration(Class(:BZK_0010014))
+Declaration(Class(:BZK_0010015))
 Declaration(Class(:BZK_0010118))
 Declaration(Class(:BZK_0010119))
 Declaration(Class(:BZK_0010126))
@@ -574,6 +576,18 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> :BZK_001001
 EquivalentClasses(:BZK_0010012 ObjectIntersectionOf(obo:OBI_0000245 ObjectSomeValuesFrom(obo:RO_0000087 :BZK_0010001)))
 SubClassOf(:BZK_0010012 ObjectSomeValuesFrom(:BZK_0010024 :BZK_0000002))
 SubClassOf(:BZK_0010012 ObjectAllValuesFrom(obo:IAO_0000235 :BZK_0010005))
+
+# Class: :BZK_0010014 (postal address of wgm applicant)
+
+AnnotationAssertion(rdfs:label :BZK_0010014 "postal address of wgm applicant"@en)
+SubClassOf(:BZK_0010014 obo:IAO_0000422)
+SubClassOf(:BZK_0010014 ObjectSomeValuesFrom(obo:IAO_0000136 :BZK_0000013))
+
+# Class: :BZK_0010015 (postal address of persecutee of the nazi regime)
+
+AnnotationAssertion(rdfs:label :BZK_0010015 "postal address of persecutee of the nazi regime"@en)
+SubClassOf(:BZK_0010015 obo:IAO_0000422)
+SubClassOf(:BZK_0010015 ObjectSomeValuesFrom(obo:IAO_0000136 :BZK_0010010))
 
 # Class: :BZK_0010118 (birthplace)
 
