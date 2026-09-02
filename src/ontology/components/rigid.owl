@@ -19,6 +19,7 @@ Declaration(Class(obo:BFO_0000031))
 Declaration(Class(obo:BFO_0000035))
 Declaration(Class(obo:BFO_0000203))
 Declaration(Class(obo:IAO_0000030))
+Declaration(Class(obo:IAO_0000300))
 Declaration(Class(obo:IAO_0000303))
 Declaration(Class(obo:IAO_0000310))
 Declaration(Class(obo:IAO_0000422))
@@ -40,8 +41,12 @@ Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010006>))
 Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010007>))
 Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010008>))
 Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010009>))
+Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010010>))
 Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010011>))
+Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010012>))
 Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010125>))
+Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010128>))
+Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010129>))
 Declaration(Class(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004>))
 Declaration(Class(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000005>))
 Declaration(Class(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000106>))
@@ -94,6 +99,7 @@ Declaration(NamedIndividual(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010114>)
 Declaration(NamedIndividual(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010115>))
 Declaration(NamedIndividual(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010116>))
 Declaration(NamedIndividual(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010117>))
+Declaration(AnnotationProperty(obo:IAO_0000115))
 Declaration(AnnotationProperty(obo:IAO_0000116))
 Declaration(AnnotationProperty(skos:definition))
 
@@ -207,6 +213,12 @@ AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_001000
 AnnotationAssertion(skos:definition <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010009> "A death process boundary is an instantaneous transition within a death process that marks the instant at which an organism ceases to exist.")
 SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010009> obo:BFO_0000035)
 
+# Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010010> (deathplace datum)
+
+AnnotationAssertion(obo:IAO_0000115 <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010010> "A textual entity that expresses the place where a person was died.")
+AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010010> "deathplace datum"@en)
+SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010010> obo:IAO_0000300)
+
 # Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010011> (digitised bzk card)
 
 AnnotationAssertion(rdfs:comment <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010011> "All digitised BZK cards are digital versions of physical BZK Cards, but some BZK Cards may not have their scans in the database. For instance, the back of a BZK card may not have been scanned or linked to the front of the card."@en)
@@ -215,11 +227,27 @@ AnnotationAssertion(skos:definition <https://bzk.fiz-karlsruhe.de/ontology/BZK_0
 SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010011> obo:IAO_0000310)
 SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010011> ObjectSomeValuesFrom(obo:IAO_0000136 <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000002>))
 
+# Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010012> (date datum)
+
+AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010012> "date datum"@en)
+SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010012> obo:IAO_0000300)
+
 # Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010125> (lawyer role)
 
 AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010125> "lawyer role"@en)
 AnnotationAssertion(skos:definition <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010125> "A role that is borne by a person who is qualified and authorized to practice law.")
 SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010125> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000229>)
+
+# Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010128> (birthplace datum)
+
+AnnotationAssertion(obo:IAO_0000115 <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010128> "A textual entity that expresses the place where a person was born.")
+AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010128> "birthplace datum"@en)
+SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010128> obo:IAO_0000300)
+
+# Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010129> (marital status datum)
+
+AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010129> "marital status datum"@en)
+SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010129> obo:IAO_0000300)
 
 # Class: <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004> (person)
 

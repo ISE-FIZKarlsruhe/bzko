@@ -6,7 +6,7 @@ http://purl.obolibrary.org/obo/IAO_0000422 # postal addresss
 
 http://purl.obolibrary.org/obo/IAO_0000303 # institutional identification
 http://purl.obolibrary.org/obo/BFO_0000015 # process
-http://purl.obolibrary.org/obo/BFO_0000030 # 
+http://purl.obolibrary.org/obo/BFO_0000030 # object
 http://purl.obolibrary.org/obo/IAO_0020016 # given_name
 http://purl.obolibrary.org/obo/IAO_0020017 # last_name 
 
@@ -35,18 +35,20 @@ https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001041 # postal code (soon replaced
 https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001008 # has_url
 https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010013 # term_tracker_annotation 
 
-https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004
-https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000005
+https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001009 #GND identifier
+
+https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004 # person
+https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000005 # place
 
 # obsoleted "document"
 #https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000022
 # instead we use
-http://purl.obolibrary.org/obo/IAO_0000310
+http://purl.obolibrary.org/obo/IAO_0000310 #iao:document
 
 # ??
-https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000106
-https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000119
-https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000134
+https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000106 # city
+https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000119 # country
+https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000134 # federal state
 
 http://purl.obolibrary.org/obo/OMO_0002000 # defined by construct
 
