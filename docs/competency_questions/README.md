@@ -18,6 +18,7 @@ flowchart LR
 
 ## Use cases
 The personas are grouped into four use cases. 
+
 | Use case | Users |
 |---|---|
 | [Private Use](private-use.md) | Family members and descendants of persecuted persons, remembrance initiatives, genealogists|
@@ -25,7 +26,7 @@ The personas are grouped into four use cases.
 | [Historical & Educational Use](historical-educational-use.md) | Schools, museums, local historians, journalists |
 | [Official Use](official-use.md) | Federal and state archives, public authorities, lawyers | 
 
-All users access the TP WGM, the public online portal that provides semantic search over the BZK cards. Public access is limited at two distinct levels: (1) cards: TP WGM provides access only to cards that are outside the archival restriction period, and (2) data: for these freely accessible cards, the results pages display only a selected subset of the data represented in the BZK KG. Thus, the BZK KG contains data that is not available through TP WGM and is itself not publicly accessible.
+All users access TP WGM, the public online portal that provides semantic search over the BZK cards. Public access is limited at two distinct levels: (1) cards: TP WGM provides access only to cards that are outside the archival restriction period, and (2) data: for these freely accessible cards, the results pages display only a selected subset of the data represented in the BZK KG. Thus, the BZK KG contains data that is not available through TP WGM and is itself not publicly accessible.
 
 Therefore, when an inquiry requires information beyond what TP WGM provides, one of the following cases applies:
 
@@ -52,7 +53,7 @@ Each competency question falls into one of three categories, depending on the in
 | P01 | [Angela](private-use.md#angela-did-my-grandmother-apply-for-compensation)<br><sub>Family member of a persecuted person</sub> | "Did my grandmother apply for compensation?" | Private Use |
 | P02 | [John](private-use.md#john-who-are-the-heirs-my-relatives-in-europe)<br><sub>Distant relative of a persecuted person</sub> | "Who are the heirs, my relatives in Europe?" | Private Use |
 | P03 | [Stolperstein-Initiative Rheinhausen](private-use.md#stolperstein-initiative-rheinhausen-who-lived-in-rheinhausen-and-where-are-their-records)<br><sub>Local remembrance initiative</sub> | "Who lived in Rheinhausen, and where are their records?" | Private Use |
-| P04 | [Markus](private-use.md#markus-is-there-evidence-of-my-grandfathers-german-citizenship)<br><sub>Decendant of a person who emigrated to the USA in 1937 due to persecution and became an American citizen</sub> | "Is there evidence of my grandfather's German citizenship?" | Private Use |
+| P04 | [Markus](private-use.md#markus-is-there-evidence-of-my-grandfathers-german-citizenship)<br><sub>Descendant of a person who emigrated to the USA in 1937 due to persecution and became an American citizen</sub> | "Is there evidence of my grandfather's German citizenship?" | Private Use |
 | P05 | [David](scientific-use.md#david-who-emigrated-to-argentina-and-applied-for-compensation)<br><sub>Doctoral researcher of Genocide Studies</sub> | "Who emigrated to Argentina and applied for compensation?" | Scientific Use |
 | P06 | [Lisa](scientific-use.md#lisa-which-widows-applied-on-behalf-of-their-persecuted-husbands)<br><sub>Master student in Gender Studies</sub> | "Which widows applied on behalf of their persecuted husbands?" | Scientific Use |
 | P07 | [Jürgen](scientific-use.md#jürgen-how-did-the-munich-and-bremen-offices-handle-applications)<br><sub>Postdoctoral researcher in Modern History</sub> | "How did the Munich and Bremen offices handle applications?" | Scientific Use |
@@ -76,7 +77,7 @@ Each competency question falls into one of three categories, depending on the in
 
 ## All CQs and machine-readable catalog
 
-- [All CQs in one table](all-cqs.md), with knowledge gaps and use cases not yet covered
+- [All CQs in one table](all-cqs.md), with their categories
 - [`cq_catalog.csv`](cq_catalog.csv): one row per CQ, for scripts and the later SPARQL evaluation
 
 ## References
