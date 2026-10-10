@@ -24,6 +24,7 @@ Declaration(Class(obo:IAO_0000303))
 Declaration(Class(obo:IAO_0000310))
 Declaration(Class(obo:IAO_0000422))
 Declaration(Class(obo:IAO_0020000))
+Declaration(Class(obo:IAO_0020015))
 Declaration(Class(obo:IAO_0020016))
 Declaration(Class(obo:IAO_0020017))
 Declaration(Class(obo:OBI_0000245))
@@ -47,19 +48,41 @@ Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010012>))
 Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010125>))
 Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010128>))
 Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010129>))
+Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010131>))
+Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010132>))
+Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010133>))
+Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010134>))
+Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010135>))
+Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010136>))
+Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010137>))
+Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010138>))
+Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010139>))
+Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010140>))
+Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010141>))
+Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010142>))
+Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0023010>))
+Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0023012>))
 Declaration(Class(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004>))
 Declaration(Class(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000005>))
 Declaration(Class(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000106>))
 Declaration(Class(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000119>))
 Declaration(Class(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000134>))
 Declaration(Class(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000229>))
+Declaration(Class(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010030>))
 Declaration(ObjectProperty(obo:BFO_0000054))
+Declaration(ObjectProperty(obo:BFO_0000062))
+Declaration(ObjectProperty(obo:BFO_0000183))
+Declaration(ObjectProperty(obo:BFO_0000199))
 Declaration(ObjectProperty(obo:IAO_0000136))
+Declaration(ObjectProperty(obo:IAO_0000219))
 Declaration(ObjectProperty(obo:IAO_0000235))
+Declaration(ObjectProperty(obo:RO_0000056))
 Declaration(ObjectProperty(obo:RO_0000057))
 Declaration(ObjectProperty(obo:RO_0000059))
 Declaration(ObjectProperty(obo:RO_0000081))
 Declaration(ObjectProperty(obo:RO_0000087))
+Declaration(ObjectProperty(obo:RO_0002233))
+Declaration(ObjectProperty(obo:RO_0002353))
 Declaration(NamedIndividual(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010075>))
 Declaration(NamedIndividual(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010076>))
 Declaration(NamedIndividual(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010078>))
@@ -109,13 +132,24 @@ Declaration(AnnotationProperty(skos:definition))
 #   Classes
 ############################
 
+# Class: obo:IAO_0000422 (postal address)
+
+SubClassOf(obo:IAO_0000422 ObjectSomeValuesFrom(obo:IAO_0000136 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004>))
+SubClassOf(obo:IAO_0000422 ObjectSomeValuesFrom(obo:RO_0002353 <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010131>))
+
+# Class: obo:IAO_0020015 (personal name)
+
+SubClassOf(obo:IAO_0020015 ObjectSomeValuesFrom(obo:IAO_0000219 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004>))
+
 # Class: obo:IAO_0020016 (given name)
 
 SubClassOf(obo:IAO_0020016 ObjectSomeValuesFrom(obo:IAO_0000136 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004>))
+SubClassOf(obo:IAO_0020016 ObjectSomeValuesFrom(obo:IAO_0000219 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004>))
 
 # Class: obo:IAO_0020017 (family name)
 
 SubClassOf(obo:IAO_0020017 ObjectSomeValuesFrom(obo:IAO_0000136 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004>))
+SubClassOf(obo:IAO_0020017 ObjectSomeValuesFrom(obo:IAO_0000219 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004>))
 
 # Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000002> (bzk card)
 
@@ -124,6 +158,7 @@ AnnotationAssertion(rdfs:comment <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000
 AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000002> "bzk card"@en)
 AnnotationAssertion(skos:definition <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000002> "A BZK Index Card, or simply a BZK Card, is a document used to initiate the compensation process."@en)
 SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0000002> obo:BFO_0000030)
+SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0000002> ObjectSomeValuesFrom(obo:RO_0000056 <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010000>))
 
 # Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000003> (bzk number)
 
@@ -132,19 +167,21 @@ AnnotationAssertion(rdfs:comment <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000
 AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000003> "bzk number"@en)
 AnnotationAssertion(skos:definition <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000003> "A BZK number is an identifier for a BZK Card, which is a Federal Central Register number used for compensation claims."@en)
 SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0000003> obo:IAO_0020000)
-SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0000003> ObjectSomeValuesFrom(obo:IAO_0000136 <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000002>))
+SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0000003> ObjectSomeValuesFrom(obo:IAO_0000219 <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000002>))
 
 # Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000006> (birth name)
 
 AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000006> "birth name"@en)
 AnnotationAssertion(skos:definition <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000006> "A birth name is a family name that a woman had before marriage."@en)
 SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0000006> obo:IAO_0020017)
+SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0000006> ObjectSomeValuesFrom(obo:IAO_0000219 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004>))
 
 # Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000007> (alternative family name)
 
 AnnotationAssertion(rdfs:comment <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000007> "An alternative family name is a family (last) name that has been altered, adapted, transliterated, or rendered in a different language form.")
 AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000007> "alternative family name"@en)
 SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0000007> obo:IAO_0020017)
+SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0000007> ObjectSomeValuesFrom(obo:IAO_0000219 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004>))
 
 # Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010000> (compensation card indexing)
 
@@ -185,7 +222,9 @@ SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004> obo:BFO_0000031)
 
 AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010005> "compensation office name"@en)
 AnnotationAssertion(skos:definition <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010005> "A textual entity intended to identify a particular compensation office"@en)
+EquivalentClasses(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010005> ObjectSomeValuesFrom(obo:IAO_0000219 ObjectIntersectionOf(obo:OBI_0000245 ObjectSomeValuesFrom(obo:RO_0000087 <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010001>))))
 SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010005> obo:IAO_0000303)
+SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010005> ObjectSomeValuesFrom(obo:RO_0002353 <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010132>))
 
 # Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010006> (DEPRECATED last residential address)
 
@@ -200,24 +239,29 @@ AnnotationAssertion(skos:definition <https://bzk.fiz-karlsruhe.de/ontology/BZK_0
 AnnotationAssertion(rdfs:comment <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010007> "An alternative given name is a given(first) name that has been altered, adapted, transliterated, or rendered in a different language form."@en)
 AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010007> "alternative given name"@en)
 SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010007> obo:IAO_0020016)
+SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010007> ObjectSomeValuesFrom(obo:IAO_0000219 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004>))
 
 # Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010008> (birth process boundary)
 
 AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010008> "birth process boundary"@en)
 AnnotationAssertion(skos:definition <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010008> "A birth process boundary is an instantaneous transition within a birth process that marks the instant at which an organism begins to exist.")
 SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010008> obo:BFO_0000035)
+SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010008> ObjectSomeValuesFrom(obo:RO_0000057 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004>))
 
 # Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010009> (death process boundary)
 
 AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010009> "death process boundary"@en)
 AnnotationAssertion(skos:definition <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010009> "A death process boundary is an instantaneous transition within a death process that marks the instant at which an organism ceases to exist.")
 SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010009> obo:BFO_0000035)
+SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010009> ObjectSomeValuesFrom(obo:RO_0000057 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004>))
 
 # Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010010> (deathplace datum)
 
 AnnotationAssertion(obo:IAO_0000115 <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010010> "A textual entity that expresses the place where a person was died.")
 AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010010> "deathplace datum"@en)
-SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010010> obo:IAO_0000300)
+SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010010> <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010140>)
+SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010010> ObjectSomeValuesFrom(obo:IAO_0000136 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004>))
+SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010010> ObjectSomeValuesFrom(obo:RO_0002353 <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010131>))
 
 # Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010011> (digitised bzk card)
 
@@ -242,17 +286,124 @@ SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010125> <https://nfdi.fiz
 
 AnnotationAssertion(obo:IAO_0000115 <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010128> "A textual entity that expresses the place where a person was born.")
 AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010128> "birthplace datum"@en)
-SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010128> obo:IAO_0000300)
+SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010128> <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010140>)
+SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010128> ObjectSomeValuesFrom(obo:IAO_0000136 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004>))
+SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010128> ObjectSomeValuesFrom(obo:RO_0002353 <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010131>))
 
 # Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010129> (marital status datum)
 
 AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010129> "marital status datum"@en)
 SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010129> obo:IAO_0000300)
+SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010129> ObjectSomeValuesFrom(obo:IAO_0000136 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004>))
+
+# Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010131> (information extraction process)
+
+AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010131> "information extraction process"@en)
+SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010131> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010030>)
+SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010131> ObjectSomeValuesFrom(obo:RO_0002233 <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010011>))
+
+# Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010132> (compensation office data postprocessing)
+
+AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010132> "compensation office data postprocessing"@en)
+SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010132> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010030>)
+SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010132> ObjectSomeValuesFrom(obo:BFO_0000062 <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010131>))
+
+# Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010133> (compensation office datum)
+
+AnnotationAssertion(rdfs:comment <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010133> "This class refers to textual entities representing the names of compensation offices recorded on BZK index cards."@en)
+AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010133> "compensation office datum"@en)
+SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010133> obo:IAO_0000300)
+SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010133> ObjectSomeValuesFrom(obo:IAO_0000136 ObjectIntersectionOf(obo:OBI_0000245 ObjectSomeValuesFrom(obo:RO_0000087 <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010001>))))
+SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010133> ObjectSomeValuesFrom(obo:RO_0002353 <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010131>))
+
+# Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010134> (archive name)
+
+AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010134> "archive name"@en)
+EquivalentClasses(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010134> ObjectSomeValuesFrom(obo:IAO_0000219 ObjectIntersectionOf(obo:OBI_0000245 ObjectSomeValuesFrom(obo:RO_0000087 <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010135>))))
+SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010134> obo:IAO_0020000)
+
+# Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010135> (archive role)
+
+AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010135> "archive role"@en)
+SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010135> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000229>)
+SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010135> ObjectSomeValuesFrom(obo:BFO_0000054 <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010136>))
+
+# Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010136> (archiving)
+
+AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010136> "archiving"@en)
+SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010136> obo:BFO_0000015)
+
+# Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010137> (date data postprocessing)
+
+AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010137> "date data postprocessing"@en)
+SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010137> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010030>)
+SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010137> ObjectSomeValuesFrom(obo:RO_0002233 <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010138>))
+SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010137> ObjectSomeValuesFrom(obo:RO_0002233 <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010139>))
+
+# Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010138> (date of birth datum)
+
+AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010138> "date of birth datum"@en)
+SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010138> <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010012>)
+SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010138> ObjectSomeValuesFrom(obo:IAO_0000136 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004>))
+SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010138> ObjectSomeValuesFrom(obo:RO_0002353 <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010131>))
+
+# Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010139> (date of death datum)
+
+AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010139> "date of death datum"@en)
+SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010139> <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010012>)
+SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010139> ObjectSomeValuesFrom(obo:IAO_0000136 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004>))
+SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010139> ObjectSomeValuesFrom(obo:RO_0002353 <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010131>))
+
+# Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010140> (location datum)
+
+AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010140> "location datum"@en)
+SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010140> obo:IAO_0000300)
+
+# Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010141> (location data postprocessing)
+
+AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010141> "location data postprocessing"@en)
+SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010141> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010030>)
+SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010141> ObjectSomeValuesFrom(obo:RO_0002233 obo:IAO_0000422))
+SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010141> ObjectSomeValuesFrom(obo:RO_0002233 <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010010>))
+SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010141> ObjectSomeValuesFrom(obo:RO_0002233 <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010128>))
+
+# Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010142> (heir datum)
+
+AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010142> "heir datum"@en)
+SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010142> obo:IAO_0000300)
+SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010142> ObjectSomeValuesFrom(obo:IAO_0000136 ObjectIntersectionOf(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004> ObjectSomeValuesFrom(obo:RO_0000087 <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010002>))))
+SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010142> ObjectSomeValuesFrom(obo:RO_0002353 <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010131>))
+
+# Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0023010> (date of birth)
+
+AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0023010> "date of birth"@en)
+EquivalentClasses(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0023010> ObjectIntersectionOf(obo:BFO_0000203 ObjectSomeValuesFrom(ObjectInverseOf(obo:BFO_0000199) <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010008>)))
+SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0023010> obo:BFO_0000203)
+SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0023010> ObjectSomeValuesFrom(obo:RO_0002353 <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010137>))
+
+# Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0023012> (date of death)
+
+AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0023012> "date of death"@en)
+EquivalentClasses(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0023012> ObjectIntersectionOf(obo:BFO_0000203 ObjectSomeValuesFrom(ObjectInverseOf(obo:BFO_0000199) <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010009>)))
+SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0023012> obo:BFO_0000203)
+SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0023012> ObjectSomeValuesFrom(obo:RO_0002353 <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010137>))
 
 # Class: <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004> (person)
 
 SubClassOf(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004> ObjectSomeValuesFrom(obo:IAO_0000235 obo:IAO_0020016))
 SubClassOf(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004> ObjectSomeValuesFrom(obo:IAO_0000235 obo:IAO_0020017))
+
+# Class: <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000106> (city)
+
+SubClassOf(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000106> ObjectSomeValuesFrom(obo:BFO_0000183 <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010008>))
+SubClassOf(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000106> ObjectSomeValuesFrom(obo:BFO_0000183 <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010009>))
+SubClassOf(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000106> ObjectSomeValuesFrom(obo:RO_0002353 <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010141>))
+
+# Class: <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000119> (country)
+
+SubClassOf(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000119> ObjectSomeValuesFrom(obo:BFO_0000183 <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010008>))
+SubClassOf(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000119> ObjectSomeValuesFrom(obo:BFO_0000183 <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010009>))
+SubClassOf(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000119> ObjectSomeValuesFrom(obo:RO_0002353 <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010141>))
 
 
 ############################

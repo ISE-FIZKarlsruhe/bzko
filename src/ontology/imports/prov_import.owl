@@ -22,4 +22,7 @@ AnnotationAssertion(rdfs:label <http://www.w3.org/ns/prov#hadPrimarySource> "had
 
 
 
+AnnotationAssertion(rdfs:comment <https://www.ica.org/standards/RiC/ontology#hasOrHadDigitalInstantiation> "The superclass of 'bzko:bzk car'd has been corrected to 'rico:Instantiation'. Therefore, the relationship between 'bzko:bzk card' and 'bzko:digitised bzk card' should be 'rico:has or had derived instantiatio'n rather than 'rico:has or had digital instantiation'.")
+AnnotationAssertion(rdfs:seeAlso <https://www.ica.org/standards/RiC/ontology#hasOrHadDigitalInstantiation> <https://www.ica.org/standards/RiC/ontology#hasOrHadDerivedInstantiation>)
+AnnotationAssertion(owl:deprecated <https://www.ica.org/standards/RiC/ontology#hasOrHadDigitalInstantiation> "true"^^xsd:boolean)
 )

@@ -1,0 +1,9 @@
+# Information extraction and post-processing are completely executed planned processes. 
+
+# classes
+http://purl.obolibrary.org/obo/COB_0000082 # planned process
+http://purl.obolibrary.org/obo/COB_0000035 # completelly executed planned process
+
+# object properties
+http://purl.obolibrary.org/obo/OBI_0000293 # has specified input
+http://purl.obolibrary.org/obo/OBI_0000299 # has specified output

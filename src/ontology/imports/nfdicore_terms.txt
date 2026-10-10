@@ -29,6 +29,9 @@ http://purl.obolibrary.org/obo/BFO_0000183 # environs
 http://purl.obolibrary.org/obo/RO_0001025 # located in
 http://purl.obolibrary.org/obo/RO_0000059 # concretizes
 http://purl.obolibrary.org/obo/BFO_0000055 # realizes
+http://purl.obolibrary.org/obo/RO_0002233 # has input
+http://purl.obolibrary.org/obo/RO_0002234 # has output
+http://purl.obolibrary.org/obo/BFO_0000063 # precedes
 
 https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001007 # has_value
 https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001041 # postal code (soon replaced by IAO postal code)
@@ -39,13 +42,14 @@ https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001009 #GND identifier
 
 https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004 # person
 https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000005 # place
+https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010030 # data processing process
 
 # obsoleted "document"
 #https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000022
 # instead we use
 http://purl.obolibrary.org/obo/IAO_0000310 #iao:document
 
-# ??
+# address parts
 https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000106 # city
 https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000119 # country
 https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000134 # federal state

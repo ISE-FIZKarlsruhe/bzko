@@ -47,6 +47,9 @@ import_group:
     - id: prov
       mirror_from: https://www.w3.org/ns/prov-o
 
+#    - id: cob
+#      mirror_from: https://raw.githubusercontent.com/OBOFoundry/COB/refs/heads/master/cob.owl
+
 components:
   products:
       - filename: imports-edit.owl
