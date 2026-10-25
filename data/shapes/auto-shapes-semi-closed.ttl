@@ -13,30 +13,55 @@ PREFIX tosh:               <http://topbraid.org/tosh#>
 PREFIX xml:                <http://www.w3.org/XML/1998/namespace>
 PREFIX xsd:                <http://www.w3.org/2001/XMLSchema#>
 
-<http://purl.obolibrary.org/obo/RO_0000085-shape>
+<http://purl.obolibrary.org/obo/BFO_0000062-shape>
+        rdf:type             sh:NodeShape;
+        sh:class             <http://purl.obolibrary.org/obo/BFO_0000003>;
+        sh:targetSubjectsOf  <http://purl.obolibrary.org/obo/BFO_0000062> .
+
+<http://purl.obolibrary.org/obo/RO_0000058-shape>
+        rdf:type             sh:NodeShape;
+        sh:class             <http://purl.obolibrary.org/obo/BFO_0000031>;
+        sh:targetSubjectsOf  <http://purl.obolibrary.org/obo/RO_0000058> .
+
+<http://purl.obolibrary.org/obo/IAO_0000235-shape>
+        rdf:type             sh:NodeShape;
+        sh:class             <http://purl.obolibrary.org/obo/BFO_0000001>;
+        sh:targetSubjectsOf  <http://purl.obolibrary.org/obo/IAO_0000235> .
+
+<http://purl.obolibrary.org/obo/RO_0001025-shape>
         rdf:type             sh:NodeShape;
         sh:class             <http://purl.obolibrary.org/obo/BFO_0000004>;
-        sh:targetSubjectsOf  <http://purl.obolibrary.org/obo/RO_0000085> .
+        sh:targetSubjectsOf  <http://purl.obolibrary.org/obo/RO_0001025> .
+
+<http://purl.obolibrary.org/obo/RO_0002233-shape>
+        rdf:type             sh:NodeShape;
+        sh:class             <http://purl.obolibrary.org/obo/BFO_0000015>;
+        sh:targetSubjectsOf  <http://purl.obolibrary.org/obo/RO_0002233> .
 
 <http://purl.obolibrary.org/obo/RO_0000087-shape>
         rdf:type             sh:NodeShape;
         sh:class             <http://purl.obolibrary.org/obo/BFO_0000004>;
         sh:targetSubjectsOf  <http://purl.obolibrary.org/obo/RO_0000087> .
 
-<http://purl.obolibrary.org/obo/RO_0000079-shape>
+<http://purl.obolibrary.org/obo/RO_0000085-shape>
         rdf:type             sh:NodeShape;
-        sh:class             <http://purl.obolibrary.org/obo/BFO_0000034>;
-        sh:targetSubjectsOf  <http://purl.obolibrary.org/obo/RO_0000079> .
+        sh:class             <http://purl.obolibrary.org/obo/BFO_0000004>;
+        sh:targetSubjectsOf  <http://purl.obolibrary.org/obo/RO_0000085> .
 
 <http://purl.obolibrary.org/obo/IAO_0000219-shape>
         rdf:type             sh:NodeShape;
         sh:class             <http://purl.obolibrary.org/obo/IAO_0000030>;
         sh:targetSubjectsOf  <http://purl.obolibrary.org/obo/IAO_0000219> .
 
-<http://purl.obolibrary.org/obo/RO_0000058-shape>
+<http://purl.obolibrary.org/obo/RO_0000079-shape>
         rdf:type             sh:NodeShape;
-        sh:class             <http://purl.obolibrary.org/obo/BFO_0000031>;
-        sh:targetSubjectsOf  <http://purl.obolibrary.org/obo/RO_0000058> .
+        sh:class             <http://purl.obolibrary.org/obo/BFO_0000034>;
+        sh:targetSubjectsOf  <http://purl.obolibrary.org/obo/RO_0000079> .
+
+<http://purl.obolibrary.org/obo/BFO_0000063-shape>
+        rdf:type             sh:NodeShape;
+        sh:class             <http://purl.obolibrary.org/obo/BFO_0000003>;
+        sh:targetSubjectsOf  <http://purl.obolibrary.org/obo/BFO_0000063> .
 
 <http://purl.obolibrary.org/obo/RO_0000057-shape>
         rdf:type             sh:NodeShape;
@@ -53,11 +78,6 @@ PREFIX xsd:                <http://www.w3.org/2001/XMLSchema#>
         sh:class             <http://purl.obolibrary.org/obo/IAO_0000030>;
         sh:targetSubjectsOf  <http://purl.obolibrary.org/obo/IAO_0000136> .
 
-<http://purl.obolibrary.org/obo/IAO_0000235-shape>
-        rdf:type             sh:NodeShape;
-        sh:class             <http://purl.obolibrary.org/obo/BFO_0000001>;
-        sh:targetSubjectsOf  <http://purl.obolibrary.org/obo/IAO_0000235> .
-
 <http://purl.obolibrary.org/obo/BFO_0000055-shape>
         rdf:type             sh:NodeShape;
         sh:class             <http://purl.obolibrary.org/obo/BFO_0000015>;
@@ -73,11 +93,6 @@ PREFIX xsd:                <http://www.w3.org/2001/XMLSchema#>
         sh:class             <http://purl.obolibrary.org/obo/BFO_0000017>;
         sh:targetSubjectsOf  <http://purl.obolibrary.org/obo/BFO_0000054> .
 
-<http://purl.obolibrary.org/obo/RO_0001025-shape>
-        rdf:type             sh:NodeShape;
-        sh:class             <http://purl.obolibrary.org/obo/BFO_0000004>;
-        sh:targetSubjectsOf  <http://purl.obolibrary.org/obo/RO_0001025> .
-
 <http://purl.obolibrary.org/obo/RO_0002566-shape>
         rdf:type             sh:NodeShape;
         sh:class             <http://purl.obolibrary.org/obo/BFO_0000002>;
@@ -86,17 +101,6 @@ PREFIX xsd:                <http://www.w3.org/2001/XMLSchema#>
 <http://purl.obolibrary.org/obo/BFO_0000034-http___purl.obolibrary.org_obo_RO_0000079>
         rdf:type  sh:PropertyShape;
         sh:path   <http://purl.obolibrary.org/obo/RO_0000079> .
-
-<http://purl.obolibrary.org/obo/BFO_0000035-http___purl.obolibrary.org_obo_BFO_0000199>
-        rdf:type     sh:PropertyShape;
-        sh:class     <http://purl.obolibrary.org/obo/BFO_0000008>;
-        sh:maxCount  1;
-        sh:path      <http://purl.obolibrary.org/obo/BFO_0000199> .
-
-<http://purl.obolibrary.org/obo/BFO_0000015-http___purl.obolibrary.org_obo_RO_0000059>
-        rdf:type  sh:PropertyShape;
-        sh:class  <http://purl.obolibrary.org/obo/BFO_0000031>;
-        sh:path   <http://purl.obolibrary.org/obo/RO_0000059> .
 
 <http://purl.obolibrary.org/obo/BFO_0000020-http___purl.obolibrary.org_obo_RO_0000059>
         rdf:type  sh:PropertyShape;
@@ -107,14 +111,6 @@ PREFIX xsd:                <http://www.w3.org/2001/XMLSchema#>
         rdf:type  sh:PropertyShape;
         sh:class  <http://purl.obolibrary.org/obo/IAO_0000030>;
         sh:path   <http://purl.obolibrary.org/obo/IAO_0000235> .
-
-<http://purl.obolibrary.org/obo/BFO_0000040-http___purl.obolibrary.org_obo_BFO_0000183>
-        rdf:type  sh:PropertyShape;
-        sh:path   <http://purl.obolibrary.org/obo/BFO_0000183> .
-
-<http://purl.obolibrary.org/obo/BFO_0000031-http___purl.obolibrary.org_obo_RO_0000058>
-        rdf:type  sh:PropertyShape;
-        sh:path   <http://purl.obolibrary.org/obo/RO_0000058> .
 
 <http://purl.obolibrary.org/obo/BFO_0000017-http___purl.obolibrary.org_obo_BFO_0000054>
         rdf:type  sh:PropertyShape;
@@ -140,11 +136,6 @@ PREFIX xsd:                <http://www.w3.org/2001/XMLSchema#>
         rdf:type  sh:PropertyShape;
         sh:path   <http://purl.obolibrary.org/obo/BFO_0000066> .
 
-<http://purl.obolibrary.org/obo/IAO_0000030-http___purl.obolibrary.org_obo_IAO_0000219>
-        rdf:type  sh:PropertyShape;
-        sh:class  <http://purl.obolibrary.org/obo/BFO_0000001>;
-        sh:path   <http://purl.obolibrary.org/obo/IAO_0000219> .
-
 <http://purl.obolibrary.org/obo/BFO_0000003-http___purl.obolibrary.org_obo_RO_0000057>
         rdf:type  sh:PropertyShape;
         sh:class  <http://purl.obolibrary.org/obo/BFO_0000002>;
@@ -160,9 +151,28 @@ PREFIX xsd:                <http://www.w3.org/2001/XMLSchema#>
         sh:class  <http://purl.obolibrary.org/obo/BFO_0000017>;
         sh:path   <http://purl.obolibrary.org/obo/BFO_0000055> .
 
-<http://purl.obolibrary.org/obo/BFO_0000034>
-        rdf:type     rdfs:Class , sh:NodeShape;
-        sh:property  <http://purl.obolibrary.org/obo/BFO_0000034-http___purl.obolibrary.org_obo_RO_0000079> .
+<http://purl.obolibrary.org/obo/BFO_0000003-http___purl.obolibrary.org_obo_BFO_0000063>
+        rdf:type  sh:PropertyShape;
+        sh:class  <http://purl.obolibrary.org/obo/BFO_0000003>;
+        sh:path   <http://purl.obolibrary.org/obo/BFO_0000063> .
+
+<http://purl.obolibrary.org/obo/BFO_0000035-http___purl.obolibrary.org_obo_BFO_0000066>
+        rdf:type  sh:PropertyShape;
+        sh:path   <http://purl.obolibrary.org/obo/BFO_0000066> .
+
+<http://purl.obolibrary.org/obo/BFO_0000031-http___purl.obolibrary.org_obo_RO_0000058>
+        rdf:type  sh:PropertyShape;
+        sh:path   <http://purl.obolibrary.org/obo/RO_0000058> .
+
+<http://purl.obolibrary.org/obo/BFO_0000004-http___purl.obolibrary.org_obo_RO_0000091>
+        rdf:type  sh:PropertyShape;
+        sh:class  <http://purl.obolibrary.org/obo/BFO_0000016>;
+        sh:path   <http://purl.obolibrary.org/obo/RO_0000091> .
+
+<http://purl.obolibrary.org/obo/IAO_0000030-http___purl.obolibrary.org_obo_IAO_0000219>
+        rdf:type  sh:PropertyShape;
+        sh:class  <http://purl.obolibrary.org/obo/BFO_0000001>;
+        sh:path   <http://purl.obolibrary.org/obo/IAO_0000219> .
 
 <http://purl.obolibrary.org/obo/BFO_0000029-http___purl.obolibrary.org_obo_BFO_0000183>
         rdf:type  sh:PropertyShape;
@@ -173,21 +183,41 @@ PREFIX xsd:                <http://www.w3.org/2001/XMLSchema#>
         sh:class  <http://purl.obolibrary.org/obo/BFO_0000002>;
         sh:path   <http://purl.obolibrary.org/obo/RO_0002566> .
 
-<http://purl.obolibrary.org/obo/BFO_0000035>
-        rdf:type     rdfs:Class , sh:NodeShape;
-        sh:property  <http://purl.obolibrary.org/obo/BFO_0000035-http___purl.obolibrary.org_obo_BFO_0000066> , <http://purl.obolibrary.org/obo/BFO_0000035-http___purl.obolibrary.org_obo_BFO_0000199> .
-
-<http://purl.obolibrary.org/obo/BFO_0000035-http___purl.obolibrary.org_obo_BFO_0000066>
-        rdf:type  sh:PropertyShape;
-        sh:path   <http://purl.obolibrary.org/obo/BFO_0000066> .
-
-<http://purl.obolibrary.org/obo/BFO_0000031>
-        rdf:type     rdfs:Class , sh:NodeShape;
-        sh:property  <http://purl.obolibrary.org/obo/BFO_0000031-http___purl.obolibrary.org_obo_RO_0000058> .
+<http://purl.obolibrary.org/obo/BFO_0000035-http___purl.obolibrary.org_obo_BFO_0000199>
+        rdf:type     sh:PropertyShape;
+        sh:class     <http://purl.obolibrary.org/obo/BFO_0000008>;
+        sh:maxCount  1;
+        sh:path      <http://purl.obolibrary.org/obo/BFO_0000199> .
 
 <http://purl.obolibrary.org/obo/BFO_0000040>
-        rdf:type     rdfs:Class , sh:NodeShape;
+        rdf:type     sh:NodeShape , rdfs:Class;
         sh:property  <http://purl.obolibrary.org/obo/BFO_0000040-http___purl.obolibrary.org_obo_BFO_0000183> .
+
+<http://purl.obolibrary.org/obo/BFO_0000035>
+        rdf:type     sh:NodeShape , rdfs:Class;
+        sh:property  <http://purl.obolibrary.org/obo/BFO_0000035-http___purl.obolibrary.org_obo_BFO_0000066> , <http://purl.obolibrary.org/obo/BFO_0000035-http___purl.obolibrary.org_obo_BFO_0000199> .
+
+<http://purl.obolibrary.org/obo/BFO_0000015-http___purl.obolibrary.org_obo_RO_0000059>
+        rdf:type  sh:PropertyShape;
+        sh:class  <http://purl.obolibrary.org/obo/BFO_0000031>;
+        sh:path   <http://purl.obolibrary.org/obo/RO_0000059> .
+
+<http://purl.obolibrary.org/obo/BFO_0000040-http___purl.obolibrary.org_obo_BFO_0000183>
+        rdf:type  sh:PropertyShape;
+        sh:path   <http://purl.obolibrary.org/obo/BFO_0000183> .
+
+<http://purl.obolibrary.org/obo/BFO_0000003-http___purl.obolibrary.org_obo_BFO_0000062>
+        rdf:type  sh:PropertyShape;
+        sh:class  <http://purl.obolibrary.org/obo/BFO_0000003>;
+        sh:path   <http://purl.obolibrary.org/obo/BFO_0000062> .
+
+<http://purl.obolibrary.org/obo/BFO_0000001>
+        rdf:type     sh:NodeShape , rdfs:Class;
+        sh:property  <http://purl.obolibrary.org/obo/BFO_0000001-http___purl.obolibrary.org_obo_IAO_0000235> .
+
+<http://purl.obolibrary.org/obo/BFO_0000034>
+        rdf:type     sh:NodeShape , rdfs:Class;
+        sh:property  <http://purl.obolibrary.org/obo/BFO_0000034-http___purl.obolibrary.org_obo_RO_0000079> .
 
 <http://purl.obolibrary.org/obo/BFO_0000015-http___purl.obolibrary.org_obo_BFO_0000199>
         rdf:type     sh:PropertyShape;
@@ -195,42 +225,17 @@ PREFIX xsd:                <http://www.w3.org/2001/XMLSchema#>
         sh:maxCount  1;
         sh:path      <http://purl.obolibrary.org/obo/BFO_0000199> .
 
-<http://purl.obolibrary.org/obo/BFO_0000020>
-        rdf:type     sh:NodeShape , rdfs:Class;
-        sh:property  <http://purl.obolibrary.org/obo/BFO_0000020-http___purl.obolibrary.org_obo_RO_0000059> .
+<http://purl.obolibrary.org/obo/BFO_0000015-http___purl.obolibrary.org_obo_RO_0002233>
+        rdf:type  sh:PropertyShape;
+        sh:path   <http://purl.obolibrary.org/obo/RO_0002233> .
 
 <http://purl.obolibrary.org/obo/BFO_0000029>
         rdf:type     sh:NodeShape , rdfs:Class;
         sh:property  <http://purl.obolibrary.org/obo/BFO_0000029-http___purl.obolibrary.org_obo_BFO_0000183> .
 
-<http://purl.obolibrary.org/obo/BFO_0000003>
-        rdf:type     rdfs:Class , sh:NodeShape;
-        sh:property  <http://purl.obolibrary.org/obo/BFO_0000003-http___purl.obolibrary.org_obo_RO_0000057> .
-
-<http://purl.obolibrary.org/obo/BFO_0000002>
-        rdf:type     rdfs:Class , sh:NodeShape;
-        sh:property  <http://purl.obolibrary.org/obo/BFO_0000002-http___purl.obolibrary.org_obo_RO_0002566> , <http://purl.obolibrary.org/obo/BFO_0000002-http___purl.obolibrary.org_obo_RO_0000056> .
-
-<http://purl.obolibrary.org/obo/BFO_0000004>
-        rdf:type     rdfs:Class , sh:NodeShape;
-        sh:property  <http://purl.obolibrary.org/obo/BFO_0000004-http___purl.obolibrary.org_obo_RO_0000085> , <http://purl.obolibrary.org/obo/BFO_0000004-http___purl.obolibrary.org_obo_RO_0000087> , <http://purl.obolibrary.org/obo/BFO_0000004-http___purl.obolibrary.org_obo_RO_0000091> , <http://purl.obolibrary.org/obo/BFO_0000004-http___purl.obolibrary.org_obo_RO_0001025> .
-
-<http://purl.obolibrary.org/obo/BFO_0000001>
-        rdf:type     rdfs:Class , sh:NodeShape;
-        sh:property  <http://purl.obolibrary.org/obo/BFO_0000001-http___purl.obolibrary.org_obo_IAO_0000235> .
-
 <http://purl.obolibrary.org/obo/BFO_0000015>
         rdf:type     sh:NodeShape , rdfs:Class;
-        sh:property  <http://purl.obolibrary.org/obo/BFO_0000015-http___purl.obolibrary.org_obo_RO_0000059> , <http://purl.obolibrary.org/obo/BFO_0000015-http___purl.obolibrary.org_obo_BFO_0000055> , <http://purl.obolibrary.org/obo/BFO_0000015-http___purl.obolibrary.org_obo_BFO_0000199> , <http://purl.obolibrary.org/obo/BFO_0000015-http___purl.obolibrary.org_obo_BFO_0000066> .
-
-<http://purl.obolibrary.org/obo/BFO_0000017>
-        rdf:type     sh:NodeShape , rdfs:Class;
-        sh:property  <http://purl.obolibrary.org/obo/BFO_0000017-http___purl.obolibrary.org_obo_BFO_0000054> .
-
-<http://purl.obolibrary.org/obo/BFO_0000004-http___purl.obolibrary.org_obo_RO_0000091>
-        rdf:type  sh:PropertyShape;
-        sh:class  <http://purl.obolibrary.org/obo/BFO_0000016>;
-        sh:path   <http://purl.obolibrary.org/obo/RO_0000091> .
+        sh:property  <http://purl.obolibrary.org/obo/BFO_0000015-http___purl.obolibrary.org_obo_RO_0000059> , <http://purl.obolibrary.org/obo/BFO_0000015-http___purl.obolibrary.org_obo_RO_0002233> , <http://purl.obolibrary.org/obo/BFO_0000015-http___purl.obolibrary.org_obo_BFO_0000055> , <http://purl.obolibrary.org/obo/BFO_0000015-http___purl.obolibrary.org_obo_BFO_0000199> , <http://purl.obolibrary.org/obo/BFO_0000015-http___purl.obolibrary.org_obo_BFO_0000066> .
 
 :BZK_0010011-http___purl.obolibrary.org_obo_IAO_0000136
         rdf:type                sh:PropertyShape;
@@ -238,45 +243,28 @@ PREFIX xsd:                <http://www.w3.org/2001/XMLSchema#>
         sh:minCount             1;
         sh:path                 <http://purl.obolibrary.org/obo/IAO_0000136> .
 
-<http://purl.obolibrary.org/obo/IAO_0000030-http___purl.obolibrary.org_obo_IAO_0000136>
+:BZK_0010005-http___purl.obolibrary.org_obo_RO_0002353
         rdf:type                sh:PropertyShape;
-        dash:hasValueWithClass  <http://purl.obolibrary.org/obo/BFO_0000001>;
+        dash:hasValueWithClass  :BZK_0010132;
         sh:minCount             1;
-        sh:path                 <http://purl.obolibrary.org/obo/IAO_0000136> .
+        sh:path                 <http://purl.obolibrary.org/obo/RO_0002353> .
 
-:BZK_0000003-http___purl.obolibrary.org_obo_IAO_0000136
-        rdf:type                sh:PropertyShape;
-        dash:hasValueWithClass  :BZK_0000002;
-        sh:minCount             1;
-        sh:path                 <http://purl.obolibrary.org/obo/IAO_0000136> .
+:BZK_0010133-http___purl.obolibrary.org_obo_IAO_0000136
+        rdf:type     sh:PropertyShape;
+        sh:minCount  1;
+        sh:path      <http://purl.obolibrary.org/obo/IAO_0000136> .
 
-:BZK_0010001-http___purl.obolibrary.org_obo_BFO_0000054
-        rdf:type                sh:PropertyShape;
-        dash:hasValueWithClass  :BZK_0010000;
-        sh:class                <http://purl.obolibrary.org/obo/BFO_0000015>;
-        sh:minCount             1;
-        sh:path                 <http://purl.obolibrary.org/obo/BFO_0000054> .
-
-<http://purl.obolibrary.org/obo/IAO_0020017-http___purl.obolibrary.org_obo_IAO_0000136>
+<http://purl.obolibrary.org/obo/IAO_0000422-http___purl.obolibrary.org_obo_IAO_0000136>
         rdf:type                sh:PropertyShape;
         dash:hasValueWithClass  <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004>;
         sh:minCount             1;
         sh:path                 <http://purl.obolibrary.org/obo/IAO_0000136> .
 
-<http://purl.obolibrary.org/obo/IAO_0020016>
-        rdf:type     sh:NodeShape , rdfs:Class;
-        sh:property  <http://purl.obolibrary.org/obo/IAO_0020016-http___purl.obolibrary.org_obo_IAO_0000136> .
-
-<http://purl.obolibrary.org/obo/IAO_0020017>
-        rdf:type     sh:NodeShape , rdfs:Class;
-        sh:property  <http://purl.obolibrary.org/obo/IAO_0020017-http___purl.obolibrary.org_obo_IAO_0000136> .
-
-:BZK_0010000-http___purl.obolibrary.org_obo_RO_0000059
+:BZK_0010128-http___purl.obolibrary.org_obo_IAO_0000136
         rdf:type                sh:PropertyShape;
-        dash:hasValueWithClass  :BZK_0010011;
-        sh:class                <http://purl.obolibrary.org/obo/BFO_0000031>;
+        dash:hasValueWithClass  <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004>;
         sh:minCount             1;
-        sh:path                 <http://purl.obolibrary.org/obo/RO_0000059> .
+        sh:path                 <http://purl.obolibrary.org/obo/IAO_0000136> .
 
 :BZK_0010000-http___purl.obolibrary.org_obo_RO_0000057
         rdf:type                sh:PropertyShape;
@@ -285,16 +273,21 @@ PREFIX xsd:                <http://www.w3.org/2001/XMLSchema#>
         sh:minCount             1;
         sh:path                 <http://purl.obolibrary.org/obo/RO_0000057> .
 
-:BZK_0010002-http___purl.obolibrary.org_obo_BFO_0000054
-        rdf:type                sh:PropertyShape;
-        dash:hasValueWithClass  :BZK_0010000;
-        sh:class                <http://purl.obolibrary.org/obo/BFO_0000015>;
-        sh:minCount             1;
-        sh:path                 <http://purl.obolibrary.org/obo/BFO_0000054> .
+<http://purl.obolibrary.org/obo/BFO_0000017-http___purl.obolibrary.org_obo_BFO_0000050>
+        rdf:type  sh:PropertyShape;
+        sh:class  <http://purl.obolibrary.org/obo/BFO_0000017>;
+        sh:path   <http://purl.obolibrary.org/obo/BFO_0000050> .
 
-<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004>
-        rdf:type     sh:NodeShape , rdfs:Class;
-        sh:property  <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004-http___purl.obolibrary.org_obo_IAO_0000235> .
+<http://purl.obolibrary.org/obo/BFO_0000002-http___purl.obolibrary.org_obo_BFO_0000050>
+        rdf:type  sh:PropertyShape;
+        sh:class  <http://purl.obolibrary.org/obo/BFO_0000002>;
+        sh:path   <http://purl.obolibrary.org/obo/BFO_0000050> .
+
+:BZK_0010138-http___purl.obolibrary.org_obo_IAO_0000136
+        rdf:type                sh:PropertyShape;
+        dash:hasValueWithClass  <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004>;
+        sh:minCount             1;
+        sh:path                 <http://purl.obolibrary.org/obo/IAO_0000136> .
 
 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000102-http___purl.obolibrary.org_obo_RO_0000087>
         rdf:type                sh:PropertyShape;
@@ -315,24 +308,12 @@ PREFIX xsd:                <http://www.w3.org/2001/XMLSchema#>
         sh:minCount             1;
         sh:path                 <http://purl.obolibrary.org/obo/BFO_0000054> .
 
-<http://purl.obolibrary.org/obo/IAO_0000030>
-        rdf:type     rdfs:Class , sh:NodeShape;
-        sh:property  <http://purl.obolibrary.org/obo/IAO_0000030-http___purl.obolibrary.org_obo_IAO_0000219> , <http://purl.obolibrary.org/obo/IAO_0000030-http___purl.obolibrary.org_obo_IAO_0000136> .
-
-:BZK_0010000  rdf:type  rdfs:Class , sh:NodeShape;
-        sh:property  :BZK_0010000-http___purl.obolibrary.org_obo_RO_0000057 , :BZK_0010000-http___purl.obolibrary.org_obo_RO_0000059 .
-
-:BZK_0010001  rdf:type  rdfs:Class , sh:NodeShape;
-        sh:property  :BZK_0010001-http___purl.obolibrary.org_obo_BFO_0000054 .
-
-:BZK_0010002  rdf:type  rdfs:Class , sh:NodeShape;
-        sh:property  :BZK_0010002-http___purl.obolibrary.org_obo_BFO_0000054 .
-
-:BZK_0010003  rdf:type  rdfs:Class , sh:NodeShape;
-        sh:property  :BZK_0010003-http___purl.obolibrary.org_obo_BFO_0000054 .
-
-:BZK_0010011  rdf:type  rdfs:Class , sh:NodeShape;
-        sh:property  :BZK_0010011-http___purl.obolibrary.org_obo_IAO_0000136 .
+:BZK_0010009-http___purl.obolibrary.org_obo_RO_0000057
+        rdf:type                sh:PropertyShape;
+        dash:hasValueWithClass  <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004>;
+        sh:class                <http://purl.obolibrary.org/obo/BFO_0000002>;
+        sh:minCount             1;
+        sh:path                 <http://purl.obolibrary.org/obo/RO_0000057> .
 
 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004-http___purl.obolibrary.org_obo_IAO_0000235>
         rdf:type                sh:PropertyShape;
@@ -341,23 +322,449 @@ PREFIX xsd:                <http://www.w3.org/2001/XMLSchema#>
         sh:minCount             1;
         sh:path                 <http://purl.obolibrary.org/obo/IAO_0000235> .
 
+:BZK_0010142-http___purl.obolibrary.org_obo_IAO_0000136
+        rdf:type     sh:PropertyShape;
+        sh:minCount  1;
+        sh:path      <http://purl.obolibrary.org/obo/IAO_0000136> .
+
+<http://purl.obolibrary.org/obo/BFO_0000020-http___purl.obolibrary.org_obo_BFO_0000050>
+        rdf:type  sh:PropertyShape;
+        sh:class  <http://purl.obolibrary.org/obo/BFO_0000020>;
+        sh:path   <http://purl.obolibrary.org/obo/BFO_0000050> .
+
+:BZK_0000003-http___purl.obolibrary.org_obo_IAO_0000219
+        rdf:type                sh:PropertyShape;
+        dash:hasValueWithClass  :BZK_0000002;
+        sh:class                <http://purl.obolibrary.org/obo/BFO_0000001>;
+        sh:minCount             1;
+        sh:path                 <http://purl.obolibrary.org/obo/IAO_0000219> .
+
+:BZK_0000002-http___purl.obolibrary.org_obo_RO_0000056
+        rdf:type                sh:PropertyShape;
+        dash:hasValueWithClass  :BZK_0010000;
+        sh:class                <http://purl.obolibrary.org/obo/BFO_0000003>;
+        sh:minCount             1;
+        sh:path                 <http://purl.obolibrary.org/obo/RO_0000056> .
+
+<http://purl.obolibrary.org/obo/IAO_0020016-http___purl.obolibrary.org_obo_IAO_0000219>
+        rdf:type                sh:PropertyShape;
+        dash:hasValueWithClass  <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004>;
+        sh:class                <http://purl.obolibrary.org/obo/BFO_0000001>;
+        sh:minCount             1;
+        sh:path                 <http://purl.obolibrary.org/obo/IAO_0000219> .
+
+:BZK_0010129-http___purl.obolibrary.org_obo_IAO_0000136
+        rdf:type                sh:PropertyShape;
+        dash:hasValueWithClass  <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004>;
+        sh:minCount             1;
+        sh:path                 <http://purl.obolibrary.org/obo/IAO_0000136> .
+
+:BZK_0010010-http___purl.obolibrary.org_obo_RO_0002353
+        rdf:type                sh:PropertyShape;
+        dash:hasValueWithClass  :BZK_0010131;
+        sh:minCount             1;
+        sh:path                 <http://purl.obolibrary.org/obo/RO_0002353> .
+
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000106-http___purl.obolibrary.org_obo_RO_0002353>
+        rdf:type                sh:PropertyShape;
+        dash:hasValueWithClass  :BZK_0010141;
+        sh:minCount             1;
+        sh:path                 <http://purl.obolibrary.org/obo/RO_0002353> .
+
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000119-http___purl.obolibrary.org_obo_BFO_0000183>
+        rdf:type                sh:PropertyShape;
+        dash:hasValueWithClass  :BZK_0010008 , :BZK_0010009;
+        sh:minCount             1;
+        sh:path                 <http://purl.obolibrary.org/obo/BFO_0000183> .
+
+:BZK_0010010-http___purl.obolibrary.org_obo_IAO_0000136
+        rdf:type                sh:PropertyShape;
+        dash:hasValueWithClass  <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004>;
+        sh:minCount             1;
+        sh:path                 <http://purl.obolibrary.org/obo/IAO_0000136> .
+
+:BZK_0010137-http___purl.obolibrary.org_obo_RO_0002233
+        rdf:type                sh:PropertyShape;
+        dash:hasValueWithClass  :BZK_0010138 , :BZK_0010139;
+        sh:minCount             1;
+        sh:path                 <http://purl.obolibrary.org/obo/RO_0002233> .
+
+:BZK_0010131-http___purl.obolibrary.org_obo_RO_0002233
+        rdf:type                sh:PropertyShape;
+        dash:hasValueWithClass  :BZK_0010011;
+        sh:minCount             1;
+        sh:path                 <http://purl.obolibrary.org/obo/RO_0002233> .
+
+:BZK_0010139-http___purl.obolibrary.org_obo_IAO_0000136
+        rdf:type                sh:PropertyShape;
+        dash:hasValueWithClass  <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004>;
+        sh:minCount             1;
+        sh:path                 <http://purl.obolibrary.org/obo/IAO_0000136> .
+
+<http://purl.obolibrary.org/obo/IAO_0000030-http___purl.obolibrary.org_obo_IAO_0000136>
+        rdf:type                sh:PropertyShape;
+        dash:hasValueWithClass  <http://purl.obolibrary.org/obo/BFO_0000001>;
+        sh:minCount             1;
+        sh:path                 <http://purl.obolibrary.org/obo/IAO_0000136> .
+
+:BZK_0000006-http___purl.obolibrary.org_obo_IAO_0000219
+        rdf:type                sh:PropertyShape;
+        dash:hasValueWithClass  <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004>;
+        sh:class                <http://purl.obolibrary.org/obo/BFO_0000001>;
+        sh:minCount             1;
+        sh:path                 <http://purl.obolibrary.org/obo/IAO_0000219> .
+
+:BZK_0010133-http___purl.obolibrary.org_obo_RO_0002353
+        rdf:type                sh:PropertyShape;
+        dash:hasValueWithClass  :BZK_0010131;
+        sh:minCount             1;
+        sh:path                 <http://purl.obolibrary.org/obo/RO_0002353> .
+
+<http://purl.obolibrary.org/obo/IAO_0020020-http___purl.obolibrary.org_obo_BFO_0000051>
+        rdf:type                sh:PropertyShape;
+        dash:hasValueWithClass  <http://purl.obolibrary.org/obo/IAO_0020000>;
+        sh:minCount             1;
+        sh:path                 <http://purl.obolibrary.org/obo/BFO_0000051> .
+
+:BZK_0010139-http___purl.obolibrary.org_obo_RO_0002353
+        rdf:type                sh:PropertyShape;
+        dash:hasValueWithClass  :BZK_0010131;
+        sh:minCount             1;
+        sh:path                 <http://purl.obolibrary.org/obo/RO_0002353> .
+
+<http://purl.obolibrary.org/obo/IAO_0000578-http___purl.obolibrary.org_obo_BFO_0000051>
+        rdf:type                sh:PropertyShape;
+        dash:hasValueWithClass  <http://purl.obolibrary.org/obo/IAO_0000577>;
+        sh:minCount             1;
+        sh:path                 <http://purl.obolibrary.org/obo/BFO_0000051> .
+
+<http://purl.obolibrary.org/obo/IAO_0020016>
+        rdf:type     rdfs:Class , sh:NodeShape;
+        sh:property  <http://purl.obolibrary.org/obo/IAO_0020016-http___purl.obolibrary.org_obo_IAO_0000219> , <http://purl.obolibrary.org/obo/IAO_0020016-http___purl.obolibrary.org_obo_IAO_0000136> .
+
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000106-http___purl.obolibrary.org_obo_BFO_0000183>
+        rdf:type                sh:PropertyShape;
+        dash:hasValueWithClass  :BZK_0010009 , :BZK_0010008;
+        sh:minCount             1;
+        sh:path                 <http://purl.obolibrary.org/obo/BFO_0000183> .
+
+<http://purl.obolibrary.org/obo/BFO_0000004-http___purl.obolibrary.org_obo_BFO_0000050>
+        rdf:type  sh:PropertyShape;
+        sh:class  <http://purl.obolibrary.org/obo/BFO_0000004>;
+        sh:path   <http://purl.obolibrary.org/obo/BFO_0000050> .
+
+<http://purl.obolibrary.org/obo/IAO_0000577-http___purl.obolibrary.org_obo_BFO_0000050>
+        rdf:type                sh:PropertyShape;
+        dash:hasValueWithClass  <http://purl.obolibrary.org/obo/IAO_0000578>;
+        sh:minCount             1;
+        sh:path                 <http://purl.obolibrary.org/obo/BFO_0000050> .
+
+<http://purl.obolibrary.org/obo/IAO_0020017-http___purl.obolibrary.org_obo_IAO_0000219>
+        rdf:type                sh:PropertyShape;
+        dash:hasValueWithClass  <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004>;
+        sh:class                <http://purl.obolibrary.org/obo/BFO_0000001>;
+        sh:minCount             1;
+        sh:path                 <http://purl.obolibrary.org/obo/IAO_0000219> .
+
+:BZK_0000007  rdf:type  rdfs:Class , sh:NodeShape;
+        sh:property  :BZK_0000007-http___purl.obolibrary.org_obo_IAO_0000219 .
+
+:BZK_0010128-http___purl.obolibrary.org_obo_RO_0002353
+        rdf:type                sh:PropertyShape;
+        dash:hasValueWithClass  :BZK_0010131;
+        sh:minCount             1;
+        sh:path                 <http://purl.obolibrary.org/obo/RO_0002353> .
+
+:BZK_0000006  rdf:type  rdfs:Class , sh:NodeShape;
+        sh:property  :BZK_0000006-http___purl.obolibrary.org_obo_IAO_0000219 .
+
+:BZK_0010138-http___purl.obolibrary.org_obo_RO_0002353
+        rdf:type                sh:PropertyShape;
+        dash:hasValueWithClass  :BZK_0010131;
+        sh:minCount             1;
+        sh:path                 <http://purl.obolibrary.org/obo/RO_0002353> .
+
+:BZK_0000007-http___purl.obolibrary.org_obo_IAO_0000219
+        rdf:type                sh:PropertyShape;
+        dash:hasValueWithClass  <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004>;
+        sh:class                <http://purl.obolibrary.org/obo/BFO_0000001>;
+        sh:minCount             1;
+        sh:path                 <http://purl.obolibrary.org/obo/IAO_0000219> .
+
+:BZK_0000002  rdf:type  rdfs:Class , sh:NodeShape;
+        sh:property  :BZK_0000002-http___purl.obolibrary.org_obo_RO_0000056 .
+
+<http://purl.obolibrary.org/obo/IAO_0020015>
+        rdf:type     rdfs:Class , sh:NodeShape;
+        sh:property  <http://purl.obolibrary.org/obo/IAO_0020015-http___purl.obolibrary.org_obo_IAO_0000219> .
+
+:BZK_0010000  rdf:type  rdfs:Class , sh:NodeShape;
+        sh:property  :BZK_0010000-http___purl.obolibrary.org_obo_RO_0000057 , :BZK_0010000-http___purl.obolibrary.org_obo_RO_0000059 .
+
+:BZK_0010001  rdf:type  rdfs:Class , sh:NodeShape;
+        sh:property  :BZK_0010001-http___purl.obolibrary.org_obo_BFO_0000054 .
+
+:BZK_0010005  rdf:type  rdfs:Class , sh:NodeShape;
+        sh:property  :BZK_0010005-http___purl.obolibrary.org_obo_RO_0002353 .
+
+:BZK_0010002  rdf:type  rdfs:Class , sh:NodeShape;
+        sh:property  :BZK_0010002-http___purl.obolibrary.org_obo_BFO_0000054 .
+
+:BZK_0010003  rdf:type  rdfs:Class , sh:NodeShape;
+        sh:property  :BZK_0010003-http___purl.obolibrary.org_obo_BFO_0000054 .
+
+:BZK_0010008  rdf:type  rdfs:Class , sh:NodeShape;
+        sh:property  :BZK_0010008-http___purl.obolibrary.org_obo_RO_0000057 .
+
+:BZK_0010129  rdf:type  rdfs:Class , sh:NodeShape;
+        sh:property  :BZK_0010129-http___purl.obolibrary.org_obo_IAO_0000136 .
+
+:BZK_0010007  rdf:type  rdfs:Class , sh:NodeShape;
+        sh:property  :BZK_0010007-http___purl.obolibrary.org_obo_IAO_0000219 .
+
+:BZK_0010128  rdf:type  rdfs:Class , sh:NodeShape;
+        sh:property  :BZK_0010128-http___purl.obolibrary.org_obo_IAO_0000136 , :BZK_0010128-http___purl.obolibrary.org_obo_RO_0002353 .
+
+:BZK_0010132  rdf:type  rdfs:Class , sh:NodeShape;
+        sh:property  :BZK_0010132-http___purl.obolibrary.org_obo_BFO_0000062 .
+
+:BZK_0010011  rdf:type  rdfs:Class , sh:NodeShape;
+        sh:property  :BZK_0010011-http___purl.obolibrary.org_obo_IAO_0000136 .
+
+:BZK_0010133  rdf:type  rdfs:Class , sh:NodeShape;
+        sh:property  :BZK_0010133-http___purl.obolibrary.org_obo_RO_0002353 , :BZK_0010133-http___purl.obolibrary.org_obo_IAO_0000136 .
+
+:BZK_0010131  rdf:type  rdfs:Class , sh:NodeShape;
+        sh:property  :BZK_0010131-http___purl.obolibrary.org_obo_RO_0002233 .
+
+:BZK_0010132-http___purl.obolibrary.org_obo_BFO_0000062
+        rdf:type                sh:PropertyShape;
+        dash:hasValueWithClass  :BZK_0010131;
+        sh:class                <http://purl.obolibrary.org/obo/BFO_0000003>;
+        sh:minCount             1;
+        sh:path                 <http://purl.obolibrary.org/obo/BFO_0000062> .
+
+:BZK_0010137  rdf:type  rdfs:Class , sh:NodeShape;
+        sh:property  :BZK_0010137-http___purl.obolibrary.org_obo_RO_0002233 .
+
+:BZK_0010141-http___purl.obolibrary.org_obo_RO_0002233
+        rdf:type                sh:PropertyShape;
+        dash:hasValueWithClass  :BZK_0010010 , <http://purl.obolibrary.org/obo/IAO_0000422> , :BZK_0010128;
+        sh:minCount             1;
+        sh:path                 <http://purl.obolibrary.org/obo/RO_0002233> .
+
+:BZK_0010135  rdf:type  rdfs:Class , sh:NodeShape;
+        sh:property  :BZK_0010135-http___purl.obolibrary.org_obo_BFO_0000054 .
+
+:BZK_0010139  rdf:type  rdfs:Class , sh:NodeShape;
+        sh:property  :BZK_0010139-http___purl.obolibrary.org_obo_RO_0002353 , :BZK_0010139-http___purl.obolibrary.org_obo_IAO_0000136 .
+
+<http://purl.obolibrary.org/obo/IAO_0000422-http___purl.obolibrary.org_obo_RO_0002353>
+        rdf:type                sh:PropertyShape;
+        dash:hasValueWithClass  :BZK_0010131;
+        sh:minCount             1;
+        sh:path                 <http://purl.obolibrary.org/obo/RO_0002353> .
+
+<http://purl.obolibrary.org/obo/IAO_0020015-http___purl.obolibrary.org_obo_IAO_0000219>
+        rdf:type                sh:PropertyShape;
+        dash:hasValueWithClass  <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004>;
+        sh:class                <http://purl.obolibrary.org/obo/BFO_0000001>;
+        sh:minCount             1;
+        sh:path                 <http://purl.obolibrary.org/obo/IAO_0000219> .
+
+:BZK_0010001-http___purl.obolibrary.org_obo_BFO_0000054
+        rdf:type                sh:PropertyShape;
+        dash:hasValueWithClass  :BZK_0010000;
+        sh:class                <http://purl.obolibrary.org/obo/BFO_0000015>;
+        sh:minCount             1;
+        sh:path                 <http://purl.obolibrary.org/obo/BFO_0000054> .
+
+<http://purl.obolibrary.org/obo/IAO_0020017-http___purl.obolibrary.org_obo_IAO_0000136>
+        rdf:type                sh:PropertyShape;
+        dash:hasValueWithClass  <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004>;
+        sh:minCount             1;
+        sh:path                 <http://purl.obolibrary.org/obo/IAO_0000136> .
+
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000119-http___purl.obolibrary.org_obo_RO_0002353>
+        rdf:type                sh:PropertyShape;
+        dash:hasValueWithClass  :BZK_0010141;
+        sh:minCount             1;
+        sh:path                 <http://purl.obolibrary.org/obo/RO_0002353> .
+
+<http://purl.obolibrary.org/obo/BFO_0000031-http___purl.obolibrary.org_obo_BFO_0000050>
+        rdf:type  sh:PropertyShape;
+        sh:class  <http://purl.obolibrary.org/obo/BFO_0000031>;
+        sh:path   <http://purl.obolibrary.org/obo/BFO_0000050> .
+
+<http://purl.obolibrary.org/obo/IAO_0000030>
+        rdf:type     sh:NodeShape , rdfs:Class;
+        sh:property  <http://purl.obolibrary.org/obo/IAO_0000030-http___purl.obolibrary.org_obo_IAO_0000219> , <http://purl.obolibrary.org/obo/IAO_0000030-http___purl.obolibrary.org_obo_IAO_0000136> .
+
+:BZK_0023012-__947ba8a20a44776aec16cbb5d2c3d0c9
+        rdf:type                sh:PropertyShape;
+        dash:hasValueWithClass  :BZK_0010009;
+        sh:minCount             1;
+        sh:path                 []  .
+
+:BZK_0010000-http___purl.obolibrary.org_obo_RO_0000059
+        rdf:type                sh:PropertyShape;
+        dash:hasValueWithClass  :BZK_0010011;
+        sh:class                <http://purl.obolibrary.org/obo/BFO_0000031>;
+        sh:minCount             1;
+        sh:path                 <http://purl.obolibrary.org/obo/RO_0000059> .
+
+:BZK_0010002-http___purl.obolibrary.org_obo_BFO_0000054
+        rdf:type                sh:PropertyShape;
+        dash:hasValueWithClass  :BZK_0010000;
+        sh:class                <http://purl.obolibrary.org/obo/BFO_0000015>;
+        sh:minCount             1;
+        sh:path                 <http://purl.obolibrary.org/obo/BFO_0000054> .
+
+<http://purl.obolibrary.org/obo/BFO_0000019-http___purl.obolibrary.org_obo_BFO_0000050>
+        rdf:type  sh:PropertyShape;
+        sh:class  <http://purl.obolibrary.org/obo/BFO_0000019>;
+        sh:path   <http://purl.obolibrary.org/obo/BFO_0000050> .
+
+<http://purl.obolibrary.org/obo/IAO_0020017>
+        rdf:type     rdfs:Class , sh:NodeShape;
+        sh:property  <http://purl.obolibrary.org/obo/IAO_0020017-http___purl.obolibrary.org_obo_IAO_0000136> , <http://purl.obolibrary.org/obo/IAO_0020017-http___purl.obolibrary.org_obo_IAO_0000219> .
+
+:BZK_0010009  rdf:type  rdfs:Class , sh:NodeShape;
+        sh:property  :BZK_0010009-http___purl.obolibrary.org_obo_RO_0000057 .
+
+:BZK_0010141  rdf:type  rdfs:Class , sh:NodeShape;
+        sh:property  :BZK_0010141-http___purl.obolibrary.org_obo_RO_0002233 .
+
+:BZK_0010142  rdf:type  rdfs:Class , sh:NodeShape;
+        sh:property  :BZK_0010142-http___purl.obolibrary.org_obo_IAO_0000136 , :BZK_0010142-http___purl.obolibrary.org_obo_RO_0002353 .
+
+<http://purl.obolibrary.org/obo/BFO_0000031>
+        rdf:type     sh:NodeShape , rdfs:Class;
+        sh:property  <http://purl.obolibrary.org/obo/BFO_0000031-http___purl.obolibrary.org_obo_RO_0000058> , <http://purl.obolibrary.org/obo/BFO_0000031-http___purl.obolibrary.org_obo_BFO_0000050> .
+
+:BZK_0010135-http___purl.obolibrary.org_obo_BFO_0000054
+        rdf:type                sh:PropertyShape;
+        dash:hasValueWithClass  :BZK_0010136;
+        sh:class                <http://purl.obolibrary.org/obo/BFO_0000015>;
+        sh:minCount             1;
+        sh:path                 <http://purl.obolibrary.org/obo/BFO_0000054> .
+
+<http://purl.obolibrary.org/obo/BFO_0000003>
+        rdf:type     sh:NodeShape , rdfs:Class;
+        sh:property  <http://purl.obolibrary.org/obo/BFO_0000003-http___purl.obolibrary.org_obo_BFO_0000062> , <http://purl.obolibrary.org/obo/BFO_0000003-http___purl.obolibrary.org_obo_RO_0000057> , <http://purl.obolibrary.org/obo/BFO_0000003-http___purl.obolibrary.org_obo_BFO_0000063> , <http://purl.obolibrary.org/obo/BFO_0000003-http___purl.obolibrary.org_obo_BFO_0000050> .
+
+<http://purl.obolibrary.org/obo/BFO_0000002>
+        rdf:type     sh:NodeShape , rdfs:Class;
+        sh:property  <http://purl.obolibrary.org/obo/BFO_0000002-http___purl.obolibrary.org_obo_RO_0000056> , <http://purl.obolibrary.org/obo/BFO_0000002-http___purl.obolibrary.org_obo_RO_0002566> , <http://purl.obolibrary.org/obo/BFO_0000002-http___purl.obolibrary.org_obo_BFO_0000050> .
+
+<http://purl.obolibrary.org/obo/IAO_0000578>
+        rdf:type     rdfs:Class , sh:NodeShape;
+        sh:property  <http://purl.obolibrary.org/obo/IAO_0000578-http___purl.obolibrary.org_obo_BFO_0000051> .
+
+<http://purl.obolibrary.org/obo/BFO_0000004>
+        rdf:type     sh:NodeShape , rdfs:Class;
+        sh:property  <http://purl.obolibrary.org/obo/BFO_0000004-http___purl.obolibrary.org_obo_RO_0000085> , <http://purl.obolibrary.org/obo/BFO_0000004-http___purl.obolibrary.org_obo_RO_0000087> , <http://purl.obolibrary.org/obo/BFO_0000004-http___purl.obolibrary.org_obo_RO_0000091> , <http://purl.obolibrary.org/obo/BFO_0000004-http___purl.obolibrary.org_obo_RO_0001025> , <http://purl.obolibrary.org/obo/BFO_0000004-http___purl.obolibrary.org_obo_BFO_0000050> .
+
+<http://purl.obolibrary.org/obo/IAO_0000577>
+        rdf:type     rdfs:Class , sh:NodeShape;
+        sh:property  <http://purl.obolibrary.org/obo/IAO_0000577-http___purl.obolibrary.org_obo_BFO_0000050> .
+
+:BZK_0023010-__96d2f56f2d8f912a3aec6b57a100e6cf
+        rdf:type                sh:PropertyShape;
+        dash:hasValueWithClass  :BZK_0010008;
+        sh:minCount             1;
+        sh:path                 []  .
+
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000106>
+        rdf:type     sh:NodeShape , rdfs:Class;
+        sh:property  <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000106-http___purl.obolibrary.org_obo_BFO_0000183> , <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000106-http___purl.obolibrary.org_obo_RO_0002353> .
+
+:BZK_0010007-http___purl.obolibrary.org_obo_IAO_0000219
+        rdf:type                sh:PropertyShape;
+        dash:hasValueWithClass  <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004>;
+        sh:class                <http://purl.obolibrary.org/obo/BFO_0000001>;
+        sh:minCount             1;
+        sh:path                 <http://purl.obolibrary.org/obo/IAO_0000219> .
+
+:BZK_0010008-http___purl.obolibrary.org_obo_RO_0000057
+        rdf:type                sh:PropertyShape;
+        dash:hasValueWithClass  <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004>;
+        sh:class                <http://purl.obolibrary.org/obo/BFO_0000002>;
+        sh:minCount             1;
+        sh:path                 <http://purl.obolibrary.org/obo/RO_0000057> .
+
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000119>
+        rdf:type     sh:NodeShape , rdfs:Class;
+        sh:property  <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000119-http___purl.obolibrary.org_obo_RO_0002353> , <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000119-http___purl.obolibrary.org_obo_BFO_0000183> .
+
+:BZK_0010010  rdf:type  rdfs:Class , sh:NodeShape;
+        sh:property  :BZK_0010010-http___purl.obolibrary.org_obo_IAO_0000136 , :BZK_0010010-http___purl.obolibrary.org_obo_RO_0002353 .
+
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004>
+        rdf:type     sh:NodeShape , rdfs:Class;
+        sh:property  <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004-http___purl.obolibrary.org_obo_IAO_0000235> .
+
+<http://purl.obolibrary.org/obo/IAO_0020020>
+        rdf:type     rdfs:Class , sh:NodeShape;
+        sh:property  <http://purl.obolibrary.org/obo/IAO_0020020-http___purl.obolibrary.org_obo_BFO_0000051> .
+
+<http://purl.obolibrary.org/obo/BFO_0000003-http___purl.obolibrary.org_obo_BFO_0000050>
+        rdf:type  sh:PropertyShape;
+        sh:class  <http://purl.obolibrary.org/obo/BFO_0000003>;
+        sh:path   <http://purl.obolibrary.org/obo/BFO_0000050> .
+
+:BZK_0010142-http___purl.obolibrary.org_obo_RO_0002353
+        rdf:type                sh:PropertyShape;
+        dash:hasValueWithClass  :BZK_0010131;
+        sh:minCount             1;
+        sh:path                 <http://purl.obolibrary.org/obo/RO_0002353> .
+
+<http://purl.obolibrary.org/obo/IAO_0000422>
+        rdf:type     rdfs:Class , sh:NodeShape;
+        sh:property  <http://purl.obolibrary.org/obo/IAO_0000422-http___purl.obolibrary.org_obo_IAO_0000136> , <http://purl.obolibrary.org/obo/IAO_0000422-http___purl.obolibrary.org_obo_RO_0002353> .
+
+:BZK_0000003  rdf:type  rdfs:Class , sh:NodeShape;
+        sh:property  :BZK_0000003-http___purl.obolibrary.org_obo_IAO_0000219 .
+
+:BZK_0010138  rdf:type  rdfs:Class , sh:NodeShape;
+        sh:property  :BZK_0010138-http___purl.obolibrary.org_obo_RO_0002353 , :BZK_0010138-http___purl.obolibrary.org_obo_IAO_0000136 .
+
+<http://purl.obolibrary.org/obo/BFO_0000020>
+        rdf:type     sh:NodeShape , rdfs:Class;
+        sh:property  <http://purl.obolibrary.org/obo/BFO_0000020-http___purl.obolibrary.org_obo_RO_0000059> , <http://purl.obolibrary.org/obo/BFO_0000020-http___purl.obolibrary.org_obo_BFO_0000050> .
+
+<http://purl.obolibrary.org/obo/BFO_0000017>
+        rdf:type     sh:NodeShape , rdfs:Class;
+        sh:property  <http://purl.obolibrary.org/obo/BFO_0000017-http___purl.obolibrary.org_obo_BFO_0000054> , <http://purl.obolibrary.org/obo/BFO_0000017-http___purl.obolibrary.org_obo_BFO_0000050> .
+
 <http://purl.obolibrary.org/obo/IAO_0020016-http___purl.obolibrary.org_obo_IAO_0000136>
         rdf:type                sh:PropertyShape;
         dash:hasValueWithClass  <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004>;
         sh:minCount             1;
         sh:path                 <http://purl.obolibrary.org/obo/IAO_0000136> .
 
-:BZK_0000003  rdf:type  rdfs:Class , sh:NodeShape;
-        sh:property  :BZK_0000003-http___purl.obolibrary.org_obo_IAO_0000136 .
+<http://purl.obolibrary.org/obo/BFO_0000019>
+        rdf:type     sh:NodeShape , rdfs:Class;
+        sh:property  <http://purl.obolibrary.org/obo/BFO_0000019-http___purl.obolibrary.org_obo_BFO_0000050> .
 
-<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000102>
-        rdf:type            rdfs:Class , sh:NodeShape;
+:BZK_0023010  rdf:type      rdfs:Class , sh:NodeShape;
         rdfs:subClassOf     [] ;
         owl:intersectionOf  [] ;
-        sh:property         <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000102-http___purl.obolibrary.org_obo_RO_0000087> .
+        sh:property         :BZK_0023010-__96d2f56f2d8f912a3aec6b57a100e6cf .
+
+:BZK_0023012  rdf:type      rdfs:Class , sh:NodeShape;
+        rdfs:subClassOf     [] ;
+        owl:intersectionOf  [] ;
+        sh:property         :BZK_0023012-__947ba8a20a44776aec16cbb5d2c3d0c9 .
 
 <http://purl.obolibrary.org/obo/IAO_0000311>
         rdf:type            rdfs:Class , sh:NodeShape;
         rdfs:subClassOf     [] ;
         owl:intersectionOf  [] ;
         sh:property         <http://purl.obolibrary.org/obo/IAO_0000311-http___purl.obolibrary.org_obo_OBI_0000312> .
+
+<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000102>
+        rdf:type            sh:NodeShape , rdfs:Class;
+        rdfs:subClassOf     [] ;
+        owl:intersectionOf  [] ;
+        sh:property         <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000102-http___purl.obolibrary.org_obo_RO_0000087> .
