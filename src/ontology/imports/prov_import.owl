@@ -1,4 +1,4 @@
-Prefix(:=<https://bzk.fiz-karlsruhe.de/ontology/bzk/imports/prov_import.owl#>)
+Prefix(:=<https://bzk.fiz-karlsruhe.de/ontology//imports/prov_import.owl#>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
 Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
 Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
@@ -6,9 +6,9 @@ Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
 Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
-Ontology(<https://bzk.fiz-karlsruhe.de/ontology/bzk/imports/prov_import.owl>
-<https://bzk.fiz-karlsruhe.de/ontology/bzk/releases/2026-06-18/imports/prov_import.owl>
-Annotation(owl:versionInfo "2026-06-18")
+Ontology(<https://bzk.fiz-karlsruhe.de/ontology//imports/prov_import.owl>
+<https://bzk.fiz-karlsruhe.de/ontology/1.0.2rc1>
+Annotation(owl:versionInfo "1.0.2rc1")
 
 Declaration(ObjectProperty(<http://www.w3.org/ns/prov#hadPrimarySource>))
 
@@ -22,7 +22,4 @@ AnnotationAssertion(rdfs:label <http://www.w3.org/ns/prov#hadPrimarySource> "had
 
 
 
-AnnotationAssertion(rdfs:comment <https://www.ica.org/standards/RiC/ontology#hasOrHadDigitalInstantiation> "The superclass of 'bzko:bzk car'd has been corrected to 'rico:Instantiation'. Therefore, the relationship between 'bzko:bzk card' and 'bzko:digitised bzk card' should be 'rico:has or had derived instantiatio'n rather than 'rico:has or had digital instantiation'.")
-AnnotationAssertion(rdfs:seeAlso <https://www.ica.org/standards/RiC/ontology#hasOrHadDigitalInstantiation> <https://www.ica.org/standards/RiC/ontology#hasOrHadDerivedInstantiation>)
-AnnotationAssertion(owl:deprecated <https://www.ica.org/standards/RiC/ontology#hasOrHadDigitalInstantiation> "true"^^xsd:boolean)
 )

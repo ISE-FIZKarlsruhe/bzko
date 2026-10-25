@@ -379,14 +379,12 @@ SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010142> ObjectSomeValuesF
 AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0023010> "date of birth"@en)
 EquivalentClasses(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0023010> ObjectIntersectionOf(obo:BFO_0000203 ObjectSomeValuesFrom(ObjectInverseOf(obo:BFO_0000199) <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010008>)))
 SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0023010> obo:BFO_0000203)
-SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0023010> ObjectSomeValuesFrom(obo:RO_0002353 <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010137>))
 
 # Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0023012> (date of death)
 
 AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0023012> "date of death"@en)
 EquivalentClasses(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0023012> ObjectIntersectionOf(obo:BFO_0000203 ObjectSomeValuesFrom(ObjectInverseOf(obo:BFO_0000199) <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010009>)))
 SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0023012> obo:BFO_0000203)
-SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0023012> ObjectSomeValuesFrom(obo:RO_0002353 <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010137>))
 
 # Class: <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004> (person)
 
