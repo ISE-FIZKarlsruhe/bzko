@@ -44,7 +44,7 @@ AnnotationAssertion(rdfs:label <https://www.ica.org/standards/RiC/ontology#hasOr
 #   Classes
 ############################
 
-# Class: <https://www.ica.org/standards/RiC/ontology#Instantiation> (Instanciation)
+# Class: <https://www.ica.org/standards/RiC/ontology#Instantiation> (Repräsentation oder Instanz)
 
 AnnotationAssertion(rdfs:comment <https://www.ica.org/standards/RiC/ontology#Instantiation> "The inscription of information made by an Agent on a physical
          carrier in any persistent, recoverable form as a means of communicating information through

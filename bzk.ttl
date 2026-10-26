@@ -15,14 +15,12 @@
 
 <https://bzk.fiz-karlsruhe.de/ontology/> rdf:type owl:Ontology ;
                                           owl:versionIRI <https://bzk.fiz-karlsruhe.de/ontology/1.0.2rc1> ;
-                                          dcterms:bibliographicCitation "BZKO Ontology. Version 1.0.1, https://bzk.fiz-karlsruhe.de/ontology/" ,
-                                                                        "BZKO Ontology. Version 1.0.2rc1, https://bzk.fiz-karlsruhe.de/ontology/" ;
-                                          dcterms:created "2026-06-26" ,
-                                                          "2026-10-23" ;
+                                          dcterms:bibliographicCitation "BZKO Ontology. Version 1.0.2rc1, https://bzk.fiz-karlsruhe.de/ontology/" ;
+                                          dcterms:created "2026-10-26" ;
                                           dcterms:description "The BZK Ontology (BZKO) has been designed to semantically represent the content of the BZK index cards, a collection held in the German Federal Central Register (Bundeszentralkartei, abbreviated BZK). This central index card archive serves as an internal archival tool for tracking Wiedergutmachung records related to compensation and restitution for National Socialist injustice. BZKO aims to serve as the foundation for a knowledge graph that enables semantic search within Themenportal Wiedergutmachung, a central digital portal for the collection of Wiedergutmachung records."@en ;
                                           dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
                                           dcterms:title "BZK Ontology" ;
-                                          owl:versionInfo "1.0.1" .
+                                          owl:versionInfo "1.0.2rc1" .
 
 #################################################################
 #    Annotation properties
@@ -173,9 +171,46 @@ ontology:NFDI_0010013 rdf:type owl:AnnotationProperty ;
                       skos:editorialNote "adapted from http://openenergy-platform.org/ontology/oeo/OEO_00020426" .
 
 
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010015
+ontology:NFDI_0010015 rdf:type owl:AnnotationProperty .
+
+
 #################################################################
 #    Object Properties
 #################################################################
+
+###  http://purl.obolibrary.org/obo/BFO_0000050
+obo:BFO_0000050 rdf:type owl:ObjectProperty ;
+                owl:inverseOf obo:BFO_0000051 ;
+                rdf:type owl:TransitiveProperty ;
+                obo:IAO_0000112 "my brain is part of my body (continuant parthood, two material entities)"@en ,
+                                "my stomach cavity is part of my stomach (continuant parthood, immaterial entity is part of material entity)"@en ,
+                                "this day is part of this year (occurrent parthood)"@en ;
+                obo:IAO_0000115 "a core relation that holds between a part and its whole"@en ;
+                obo:IAO_0000116 "Everything is part of itself. Any part of any part of a thing is itself part of that thing. Two distinct things cannot be part of each other."@en ,
+                                "Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See http://purl.obolibrary.org/obo/ro/docs/temporal-semantics/"@en ,
+                                """Parthood requires the part and the whole to have compatible classes: only an occurrent can be part of an occurrent; only a process can be part of a process; only a continuant can be part of a continuant; only an independent continuant can be part of an independent continuant; only an immaterial entity can be part of an immaterial entity; only a specifically dependent continuant can be part of a specifically dependent continuant; only a generically dependent continuant can be part of a generically dependent continuant. (This list is not exhaustive.)
+
+A continuant cannot be part of an occurrent: use 'participates in'. An occurrent cannot be part of a continuant: use 'has participant'. A material entity cannot be part of an immaterial entity: use 'has location'. A specifically dependent continuant cannot be part of an independent continuant: use 'inheres in'. An independent continuant cannot be part of a specifically dependent continuant: use 'bearer of'."""@en ;
+                obo:IAO_0000118 "part_of"@en ;
+                rdfs:label "part of"@en .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000051
+obo:BFO_0000051 rdf:type owl:ObjectProperty ,
+                         owl:TransitiveProperty ;
+                obo:IAO_0000112 "my body has part my brain (continuant parthood, two material entities)"@en ,
+                                "my stomach has part my stomach cavity (continuant parthood, material entity has part immaterial entity)"@en ,
+                                "this year has part this day (occurrent parthood)"@en ;
+                obo:IAO_0000115 "a core relation that holds between a whole and its part"@en ;
+                obo:IAO_0000116 "Everything has itself as a part. Any part of any part of a thing is itself part of that thing. Two distinct things cannot have each other as a part."@en ,
+                                "Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See http://purl.obolibrary.org/obo/ro/docs/temporal-semantics/"@en ,
+                                """Parthood requires the part and the whole to have compatible classes: only an occurrent have an occurrent as part; only a process can have a process as part; only a continuant can have a continuant as part; only an independent continuant can have an independent continuant as part; only a specifically dependent continuant can have a specifically dependent continuant as part; only a generically dependent continuant can have a generically dependent continuant as part. (This list is not exhaustive.)
+
+A continuant cannot have an occurrent as part: use 'participates in'. An occurrent cannot have a continuant as part: use 'has participant'. An immaterial entity cannot have a material entity as part: use 'location of'. An independent continuant cannot have a specifically dependent continuant as part: use 'bearer of'. A specifically dependent continuant cannot have an independent continuant as part: use 'inheres in'."""@en ;
+                obo:IAO_0000118 "has_part"@en ;
+                rdfs:label "has part"@en .
+
 
 ###  http://purl.obolibrary.org/obo/BFO_0000054
 obo:BFO_0000054 rdf:type owl:ObjectProperty ;
@@ -198,6 +233,31 @@ obo:BFO_0000055 rdf:type owl:ObjectProperty ;
                 skos:definition "(Elucidation) realizes is a relation between a process b and realizable entity c such that c inheres in some d & for all t, if b has participant d then c exists & the type instantiated by b is correlated with the type instantiated by c"@en ;
                 skos:example "A balding process realizes a disposition to go bald; a studying process realizes a student role; a process of pumping blood realizes the pumping function of a heart"@en ;
                 skos:scopeNote "Users that require more sophisticated representations of time are encouraged to import a temporal extension of BFO-Core provided by the BFO development team. See documentation for guidance: <Link>"@en .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000062
+obo:BFO_0000062 rdf:type owl:ObjectProperty ;
+                owl:inverseOf obo:BFO_0000063 ;
+                rdf:type owl:TransitiveProperty ;
+                rdfs:domain obo:BFO_0000003 ;
+                rdfs:range obo:BFO_0000003 ;
+                dce:identifier "213-BFO" ;
+                rdfs:label "preceded by"@en ;
+                skos:definition "b preceded by c =Def b precedes c"@en ;
+                skos:example "The temporal region occupied by the second half of the match is preceded by the temporal region occupied by the first half of the match"@en .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000063
+obo:BFO_0000063 rdf:type owl:ObjectProperty ,
+                         owl:TransitiveProperty ;
+                rdfs:domain obo:BFO_0000003 ;
+                rdfs:range obo:BFO_0000003 ;
+                dce:identifier "270-BFO" ;
+                rdfs:label "precedes"@en ;
+                skos:definition "(Elucidation) precedes is a relation between occurrents o, o' such that if t is the temporal extent of o & t' is the temporal extent of o' then either the last instant of o is before the first instant of o' or the last instant of o is the first instant of o' & neither o nor o' are temporal instants"@en ;
+                skos:example "The temporal region occupied by Mary's birth precedes the temporal region occupied by Mary's death."@en ;
+                skos:scopeNote "Each temporal region is its own temporal extent. The temporal extent of a spatiotemporal region is the temporal region it temporally projects onto. The temporal extent of a process or process boundary that occupies temporal region t is t." ,
+                               "Precedes defines a strict partial order on occurrents." .
 
 
 ###  http://purl.obolibrary.org/obo/BFO_0000066
@@ -344,6 +404,9 @@ obo:RO_0000056 rdf:type owl:ObjectProperty ;
 obo:RO_0000057 rdf:type owl:ObjectProperty ;
                rdfs:domain obo:BFO_0000003 ;
                rdfs:range obo:BFO_0000002 ;
+               owl:propertyChainAxiom ( obo:BFO_0000051
+                                        obo:RO_0000057
+                                      ) ;
                obo:IAO_0000112 "this blood coagulation has participant this blood clot"@en ,
                                "this investigation has participant this investigator"@en ,
                                "this process has participant this input material (or this output material)"@en ;
@@ -472,12 +535,46 @@ obo:RO_0001025 rdf:type owl:ObjectProperty ,
                                                ) ;
                             rdf:type owl:Class
                           ] ;
+               owl:propertyChainAxiom ( obo:RO_0001025
+                                        obo:BFO_0000050
+                                      ) ;
                obo:IAO_0000112 "my brain is located in my head"@en ,
                                "this rat is located in this cage"@en ;
                obo:IAO_0000115 "a relation between two independent continuants, the target and the location, in which the target is entirely within the location"@en ;
                obo:IAO_0000116 "Location as a relation between instances: The primitive instance-level relation c located_in r at t reflects the fact that each continuant is at any given time associated with exactly one spatial region, namely its exact location. Following we can use this relation to define a further instance-level location relation - not between a continuant and the region which it exactly occupies, but rather between one continuant and another. c is located in c1, in this sense, whenever the spatial region occupied by c is part_of the spatial region occupied by c1.    Note that this relation comprehends both the relation of exact location between one continuant and another which obtains when r and r1 are identical (for example, when a portion of fluid exactly fills a cavity), as well as those sorts of inexact location relations which obtain, for example, between brain and head or between ovum and uterus"@en ,
                                "Most location relations will only hold at certain times, but this is difficult to specify in OWL. See http://purl.obolibrary.org/obo/ro/docs/temporal-semantics/"@en ;
                rdfs:label "located in"@en .
+
+
+###  http://purl.obolibrary.org/obo/RO_0002233
+obo:RO_0002233 rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf obo:RO_0000057 ;
+               owl:inverseOf obo:RO_0002352 ;
+               rdfs:domain obo:BFO_0000015 ;
+               obo:IAO_0000115 "p has input c iff: p is a process, c is a material entity, c is a participant in p, c is present at the start of p, and the state of c is modified during p." ;
+               rdfs:label "has input"@en .
+
+
+###  http://purl.obolibrary.org/obo/RO_0002234
+obo:RO_0002234 rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf obo:RO_0000057 ;
+               owl:inverseOf obo:RO_0002353 ;
+               obo:IAO_0000115 "p has output c iff c is a participant in p, c is present at the end of p, and c is not present in the same state at the beginning of p." ;
+               rdfs:label "has output"@en .
+
+
+###  http://purl.obolibrary.org/obo/RO_0002352
+obo:RO_0002352 rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf obo:RO_0000056 ;
+               obo:IAO_0000115 "inverse of has input" ;
+               rdfs:label "input of"@en .
+
+
+###  http://purl.obolibrary.org/obo/RO_0002353
+obo:RO_0002353 rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf obo:RO_0000056 ;
+               obo:IAO_0000115 "inverse of has output" ;
+               rdfs:label "output of"@en .
 
 
 ###  http://purl.obolibrary.org/obo/RO_0002559
@@ -543,8 +640,16 @@ obo:BFO_0000001 rdf:type owl:Class ;
 
 ###  http://purl.obolibrary.org/obo/BFO_0000002
 obo:BFO_0000002 rdf:type owl:Class ;
-                rdfs:subClassOf obo:BFO_0000001 ;
-                owl:disjointWith obo:BFO_0000003 ;
+                rdfs:subClassOf obo:BFO_0000001 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:allValuesFrom obo:BFO_0000002
+                                ] ;
+                owl:disjointWith obo:BFO_0000003 ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty obo:BFO_0000050 ;
+                                   owl:someValuesFrom obo:BFO_0000003
+                                 ] ;
                 obo:IAO_0000115 "An entity that exists in full at any time in which it exists at all, persists through time while maintaining its identity and has no temporal parts."@en ;
                 obo:IAO_0000116 "BFO 2 Reference: Continuant entities are entities which can be sliced to yield parts only along the spatial dimension, yielding for example the parts of your table which we call its legs, its top, its nails. ‘My desk stretches from the window to the door. It has spatial parts, and can be sliced (in space) in two. With respect to time, however, a thing is a continuant.’ [60, p. 240"@en ;
                 dce:identifier "008-BFO" ;
@@ -555,7 +660,15 @@ obo:BFO_0000002 rdf:type owl:Class ;
 
 ###  http://purl.obolibrary.org/obo/BFO_0000003
 obo:BFO_0000003 rdf:type owl:Class ;
-                rdfs:subClassOf obo:BFO_0000001 ;
+                rdfs:subClassOf obo:BFO_0000001 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:allValuesFrom obo:BFO_0000003
+                                ] ;
+                owl:disjointWith [ rdf:type owl:Restriction ;
+                                   owl:onProperty obo:BFO_0000050 ;
+                                   owl:someValuesFrom obo:BFO_0000002
+                                 ] ;
                 obo:IAO_0000115 "An entity that has temporal parts and that happens, unfolds or develops through time."@en ;
                 obo:IAO_0000116 "BFO 2 Reference: every occurrent that is not a temporal or spatiotemporal region is s-dependent on some independent continuant that is not a spatial region"@en ,
                                 "BFO 2 Reference: s-dependence obtains between every process and its participants in the sense that, as a matter of necessity, this process could not have existed unless these or those participants existed also. A process may have a succession of participants at different phases of its unfolding. Thus there may be different players on the field at different times during the course of a football game; but the process which is the entire game s-depends_on all of these players nonetheless. Some temporal parts of this process will s-depend_on on only some of the players."@en ;
@@ -567,7 +680,11 @@ obo:BFO_0000003 rdf:type owl:Class ;
 
 ###  http://purl.obolibrary.org/obo/BFO_0000004
 obo:BFO_0000004 rdf:type owl:Class ;
-                rdfs:subClassOf obo:BFO_0000002 ;
+                rdfs:subClassOf obo:BFO_0000002 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:allValuesFrom obo:BFO_0000004
+                                ] ;
                 owl:disjointWith obo:BFO_0000020 ,
                                  obo:BFO_0000031 ;
                 obo:IAO_0000112 "a chair"@en ,
@@ -652,7 +769,11 @@ obo:BFO_0000016 rdf:type owl:Class ;
 
 ###  http://purl.obolibrary.org/obo/BFO_0000017
 obo:BFO_0000017 rdf:type owl:Class ;
-                rdfs:subClassOf obo:BFO_0000020 ;
+                rdfs:subClassOf obo:BFO_0000020 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:allValuesFrom obo:BFO_0000017
+                                ] ;
                 owl:disjointWith obo:BFO_0000019 ;
                 obo:IAO_0000112 "the disposition of this piece of metal to conduct electricity."@en ,
                                 "the disposition of your blood to coagulate"@en ,
@@ -668,7 +789,11 @@ obo:BFO_0000017 rdf:type owl:Class ;
 
 ###  http://purl.obolibrary.org/obo/BFO_0000019
 obo:BFO_0000019 rdf:type owl:Class ;
-                rdfs:subClassOf obo:BFO_0000020 ;
+                rdfs:subClassOf obo:BFO_0000020 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:allValuesFrom obo:BFO_0000019
+                                ] ;
                 obo:IAO_0000112 "the ambient temperature of this portion of air"@en ,
                                 "the color of a tomato"@en ,
                                 "the length of the circumference of your waist"@en ,
@@ -683,7 +808,11 @@ obo:BFO_0000019 rdf:type owl:Class ;
 
 ###  http://purl.obolibrary.org/obo/BFO_0000020
 obo:BFO_0000020 rdf:type owl:Class ;
-                rdfs:subClassOf obo:BFO_0000002 ;
+                rdfs:subClassOf obo:BFO_0000002 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:allValuesFrom obo:BFO_0000020
+                                ] ;
                 owl:disjointWith obo:BFO_0000031 ;
                 obo:IAO_0000112 "Reciprocal specifically dependent continuants: the function of this key to open this lock and the mutually dependent disposition of this lock: to be opened by this key"@en ,
                                 "of one-sided specifically dependent continuants: the mass of this tomato"@en ,
@@ -744,7 +873,11 @@ obo:BFO_0000030 rdf:type owl:Class ;
 
 ###  http://purl.obolibrary.org/obo/BFO_0000031
 obo:BFO_0000031 rdf:type owl:Class ;
-                rdfs:subClassOf obo:BFO_0000002 ;
+                rdfs:subClassOf obo:BFO_0000002 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:allValuesFrom obo:BFO_0000031
+                                ] ;
                 obo:IAO_0000112 "The entries in your database are patterns instantiated as quality instances in your hard drive. The database itself is an aggregate of such patterns. When you create the database you create a particular instance of the generically dependent continuant type database. Each entry in the database is an instance of the generically dependent continuant type IAO: information content entity."@en ,
                                 "the pdf file on your laptop, the pdf file that is a copy thereof on my laptop"@en ,
                                 "the sequence of this protein molecule; the sequence that is a copy thereof in that protein molecule."@en ;
@@ -826,6 +959,19 @@ obo:BFO_0000203 rdf:type owl:Class ;
                 skos:example "The millennium"@en .
 
 
+###  http://purl.obolibrary.org/obo/IAO_0000028
+obo:IAO_0000028 rdf:type owl:Class ;
+                rdfs:subClassOf obo:IAO_0000030 ;
+                obo:IAO_0000112 "a serial number such as \"12324X\""@en ,
+                                "a stop sign"@en ,
+                                "a written proper name such as \"OBI\""@en ;
+                obo:IAO_0000115 "An information content entity that is a mark(s) or character(s) used as a conventional representation of another entity."@en ;
+                obo:IAO_0000116 "20091104, MC: this needs work and will most probably change"@en ,
+                                "2014-03-31: We would like to have a deeper analysis of 'mark' and 'sign' in the future (see https://github.com/information-artifact-ontology/IAO/issues/154)."@en ;
+                obo:IAO_0000119 "based on Oxford English Dictionary"@en ;
+                rdfs:label "symbol"@en .
+
+
 ###  http://purl.obolibrary.org/obo/IAO_0000030
 obo:IAO_0000030 rdf:type owl:Class ;
                 rdfs:subClassOf obo:BFO_0000031 ,
@@ -893,7 +1039,15 @@ obo:IAO_0000311 rdf:type owl:Class ;
 
 ###  http://purl.obolibrary.org/obo/IAO_0000422
 obo:IAO_0000422 rdf:type owl:Class ;
-                rdfs:subClassOf obo:IAO_0000300 ;
+                rdfs:subClassOf obo:IAO_0000300 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:IAO_0000136 ;
+                                  owl:someValuesFrom ontology:NFDI_0000004
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:RO_0002353 ;
+                                  owl:someValuesFrom :BZK_0010131
+                                ] ;
                 obo:IAO_0000115 "A textual entity that is used as directive to deliver something to a person, or organization" ;
                 obo:IAO_0000116 "2010-05-24 Alan Ruttenberg. Use label for the string representation. See issue https://github.com/information-artifact-ontology/IAO/issues/59" ;
                 rdfs:label "postal address"@en .
@@ -907,6 +1061,54 @@ obo:IAO_0000444 rdf:type owl:Class ;
                 rdfs:label "publishing process"@en .
 
 
+###  http://purl.obolibrary.org/obo/IAO_0000577
+obo:IAO_0000577 rdf:type owl:Class ;
+                rdfs:subClassOf obo:IAO_0000028 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:someValuesFrom obo:IAO_0000578
+                                ] ;
+                obo:IAO_0000112 "The sentence \"The article has Pubmed ID 12345.\" contains a CRID that has two parts: one part is the CRID symbol, which is '12345'; the other part denotes the CRID registry, which is Pubmed."@en ;
+                obo:IAO_0000115 "A symbol that is part of a CRID and that is sufficient to look up a record from the CRID's registry."@en ;
+                obo:IAO_0000118 "CRID symbol" ;
+                obo:IAO_0000119 "Original proposal from Bjoern, discussions at IAO calls"@en ;
+                rdfs:label "centrally registered identifier symbol"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000578
+obo:IAO_0000578 rdf:type owl:Class ;
+                rdfs:subClassOf obo:IAO_0020000 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000051 ;
+                                  owl:someValuesFrom obo:IAO_0000577
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000051 ;
+                                  owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                       owl:onProperty obo:IAO_0000219 ;
+                                                       owl:someValuesFrom obo:IAO_0000579
+                                                     ]
+                                ] ;
+                obo:IAO_0000112 "The sentence \"The article has Pubmed ID 12345.\" contains a CRID that has two parts: one part is the CRID symbol, which is '12345'; the other part denotes the CRID registry, which is Pubmed."@en ;
+                obo:IAO_0000115 "An information content entity that consists of a CRID symbol and additional information about the CRID registry to which it belongs."@en ;
+                obo:IAO_0000116 "2014-05-05: In defining this term we take no position on what the CRID denotes. In particular do not assume it denotes a *record* in the CRID registry (since the registry might not have 'records')."@en ,
+                                "Alan, IAO call 20101124: potentially the CRID denotes the instance it was associated with during creation."@en ,
+                                "Note, IAO call 20101124: URIs are not always CRID, as not centrally registered. We acknowledge that CRID is a subset of a larger identifier class, but this subset fulfills our current needs. OBI PURLs are CRID as they are registered with OCLC. UPCs (Universal Product Codes from AC Nielsen)are not CRID as they are not centrally registered."@en ;
+                obo:IAO_0000118 "CRID" ;
+                obo:IAO_0000119 "Original proposal from Bjoern, discussions at IAO calls"@en ;
+                rdfs:label "centrally registered identifier"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000579
+obo:IAO_0000579 rdf:type owl:Class ;
+                rdfs:subClassOf obo:IAO_0020020 ;
+                obo:IAO_0000112 "PubMed is a CRID registry. It has a code set of PubMed identifiers associated with journal articles. "@en ;
+                obo:IAO_0000115 "A code set of CRID records, each consisting of a CRID symbol and additional information which was recorded in the code set through an assigning a centrally registered identifier process."@en ;
+                obo:IAO_0000118 "CRID registry" ;
+                obo:IAO_0000119 "Original proposal from Bjoern, discussions at IAO calls"@en ;
+                rdfs:label "centrally registered identifier registry"@en .
+
+
 ###  http://purl.obolibrary.org/obo/IAO_0020000
 obo:IAO_0020000 rdf:type owl:Class ;
                 rdfs:subClassOf obo:IAO_0000030 ;
@@ -917,7 +1119,11 @@ obo:IAO_0020000 rdf:type owl:Class ;
 
 ###  http://purl.obolibrary.org/obo/IAO_0020015
 obo:IAO_0020015 rdf:type owl:Class ;
-                rdfs:subClassOf obo:IAO_0020000 ;
+                rdfs:subClassOf obo:IAO_0020000 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:IAO_0000219 ;
+                                  owl:someValuesFrom ontology:NFDI_0000004
+                                ] ;
                 obo:IAO_0000115 "An identifier referring to an individual entity that is ascribed personhood by the user of the identifier."@en ;
                 obo:IAO_0000119 "http://en.wikipedia.org/wiki/Personal_name" ;
                 rdfs:label "personal name"@en .
@@ -925,11 +1131,7 @@ obo:IAO_0020015 rdf:type owl:Class ;
 
 ###  http://purl.obolibrary.org/obo/IAO_0020016
 obo:IAO_0020016 rdf:type owl:Class ;
-                rdfs:subClassOf obo:IAO_0020015 ,
-                                [ rdf:type owl:Restriction ;
-                                  owl:onProperty obo:IAO_0000136 ;
-                                  owl:someValuesFrom ontology:NFDI_0000004
-                                ] ;
+                rdfs:subClassOf obo:IAO_0020015 ;
                 obo:IAO_0000115 "A personal name that specifies and differentiates between members of a group of individuals, especially in a family, all of whose members usually share the same family name (surname). A given name is purposefully given, usually by a child's parents at or near birth, in contrast to an inherited one such as a family name"@en ;
                 obo:IAO_0000118 "first name"@en ;
                 obo:IAO_0000119 "http://en.wikipedia.org/wiki/Given_name" ;
@@ -940,7 +1142,7 @@ obo:IAO_0020016 rdf:type owl:Class ;
 obo:IAO_0020017 rdf:type owl:Class ;
                 rdfs:subClassOf obo:IAO_0020000 ,
                                 [ rdf:type owl:Restriction ;
-                                  owl:onProperty obo:IAO_0000136 ;
+                                  owl:onProperty obo:IAO_0000219 ;
                                   owl:someValuesFrom ontology:NFDI_0000004
                                 ] ;
                 obo:IAO_0000115 "An identifier that is typically a part of a person's name which has been passed, according to law or custom, from one or both parents to their children."@en ;
@@ -948,6 +1150,22 @@ obo:IAO_0020017 rdf:type owl:Class ;
                                 "surname"@en ;
                 obo:IAO_0000119 "http://en.wikipedia.org/wiki/Family_name" ;
                 rdfs:label "family name"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0020020
+obo:IAO_0020020 rdf:type owl:Class ;
+                rdfs:subClassOf obo:IAO_0000030 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000051 ;
+                                  owl:someValuesFrom obo:IAO_0020000
+                                ] ;
+                obo:IAO_0000115 "An information content entity that is a collection of other information content entities that has been created to identify or annotate things in a specified domain, and where the intention of its creators is that the collection has a one-to-one correspondence with those things."@en ;
+                obo:IAO_0000118 "code map"@en ,
+                                "code system"@en ,
+                                "codeset"@en ,
+                                "coding system"@en ,
+                                "controlled vocabulary"@en ;
+                rdfs:label "code set"@en .
 
 
 ###  http://purl.obolibrary.org/obo/OBI_0000245
@@ -996,7 +1214,11 @@ for now."""@en ;
 
 ###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0000002
 :BZK_0000002 rdf:type owl:Class ;
-             rdfs:subClassOf obo:BFO_0000030 ;
+             rdfs:subClassOf obo:BFO_0000030 ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty obo:RO_0000056 ;
+                               owl:someValuesFrom :BZK_0010000
+                             ] ;
              rdfs:comment "A BZK card is a physical card that is stored in an archive."@en ,
                           "All digitised BZK cards are digital versions of physical BZK Cards, but some BZK Cards may not have their scans in the database. For instance, the back of a BZK card may not have been scanned or linked to the front of the card."@en ;
              rdfs:label "bzk card"@en ;
@@ -1007,7 +1229,7 @@ for now."""@en ;
 :BZK_0000003 rdf:type owl:Class ;
              rdfs:subClassOf obo:IAO_0020000 ,
                              [ rdf:type owl:Restriction ;
-                               owl:onProperty obo:IAO_0000136 ;
+                               owl:onProperty obo:IAO_0000219 ;
                                owl:someValuesFrom :BZK_0000002
                              ] ;
              rdfs:comment "A BZK number is not unique, viz., the same number can occur on different BZK Cards issued by different compensation offices."@en ,
@@ -1064,7 +1286,7 @@ for now."""@en ;
                                owl:someValuesFrom :BZK_0010000
                              ] ;
              rdfs:label "persecutee role"@en ;
-             skos:definition "A person who has a persecutee role is oppressed, harassed, or maltreated because of their gender, race, religion, or beliefs."@en .
+             skos:definition "A role borne by an agent who is subjected to oppression, harassment, or maltreatment because of their gender, race, religion, beliefs, or other characteristics."@en .
 
 
 ###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010003
@@ -1075,7 +1297,7 @@ for now."""@en ;
                                owl:someValuesFrom :BZK_0010000
                              ] ;
              rdfs:label "applicant role"@en ;
-             skos:definition "A person who has an applicant role applies to an organisation for themselves or for another person."@en .
+             skos:definition "A role borne by an agent who applies to an organization for themselves or on behalf of another agent."@en .
 
 
 ###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010004
@@ -1087,17 +1309,44 @@ for now."""@en ;
 
 ###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010005
 :BZK_0010005 rdf:type owl:Class ;
-             rdfs:subClassOf obo:IAO_0000303 ;
+             owl:equivalentClass [ rdf:type owl:Restriction ;
+                                   owl:onProperty obo:IAO_0000219 ;
+                                   owl:someValuesFrom [ owl:intersectionOf ( obo:OBI_0000245
+                                                                             [ rdf:type owl:Restriction ;
+                                                                               owl:onProperty obo:RO_0000087 ;
+                                                                               owl:someValuesFrom :BZK_0010001
+                                                                             ]
+                                                                           ) ;
+                                                        rdf:type owl:Class
+                                                      ]
+                                 ] ;
+             rdfs:subClassOf obo:IAO_0000303 ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty obo:IAO_0000219 ;
+                               owl:someValuesFrom [ owl:intersectionOf ( obo:OBI_0000245
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty obo:RO_0000087 ;
+                                                                           owl:someValuesFrom :BZK_0010001
+                                                                         ]
+                                                                       ) ;
+                                                    rdf:type owl:Class
+                                                  ]
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty obo:RO_0002353 ;
+                               owl:someValuesFrom :BZK_0010132
+                             ] ;
              rdfs:label "compensation office name"@en ;
              skos:definition "A textual entity intended to identify a particular compensation office"@en .
 
 
 ###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010006
 :BZK_0010006 rdf:type owl:Class ;
-             rdfs:subClassOf obo:IAO_0000422 ;
-             rdfs:comment "This is the last residential address of a person prior to a specified event, such as deportation, migration, relocation, or death." ;
-             rdfs:label "last residential address"@en ;
-             skos:definition "A last residential address is the postal address of a person's residence at the relevant point in time."@en .
+             rdfs:comment "DEPRECATED This is the last residential address of a person prior to a specified event, such as deportation, migration, relocation, or death." ,
+                          "We have defined the \"last residential address\" class and the \"has last residential address\" object property with the intention of differentiating between two possible addresses of a persecuted person. However, such a distinction is not necessary in the ontology, as the  archival terminology \"residence prior to persecution\" specifies the postal address of a persecuted person under the Nazi regime, while \"residence at the time of application\" specifies the postal address of a WGM applicant. Thus, there is no need to model a separate \"last residential address\" class and property; a single address field (`postal address` [IAO:0000422]) for both persecuted persons and applicants is sufficient." ;
+             rdfs:label "DEPRECATED last residential address"@en ;
+             owl:deprecated "true"^^xsd:boolean ;
+             skos:definition "DEPRECATED A last residential address is the postal address of a person's residence at the relevant point in time."@en .
 
 
 ###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010007
@@ -1109,14 +1358,22 @@ for now."""@en ;
 
 ###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010008
 :BZK_0010008 rdf:type owl:Class ;
-             rdfs:subClassOf obo:BFO_0000035 ;
+             rdfs:subClassOf obo:BFO_0000035 ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty obo:RO_0000057 ;
+                               owl:someValuesFrom ontology:NFDI_0000004
+                             ] ;
              rdfs:label "birth process boundary"@en ;
              skos:definition "A birth process boundary is an instantaneous transition within a birth process that marks the instant at which an organism begins to exist." .
 
 
 ###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010009
 :BZK_0010009 rdf:type owl:Class ;
-             rdfs:subClassOf obo:BFO_0000035 ;
+             rdfs:subClassOf obo:BFO_0000035 ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty obo:RO_0000057 ;
+                               owl:someValuesFrom ontology:NFDI_0000004
+                             ] ;
              rdfs:label "death process boundary"@en ;
              skos:definition "A death process boundary is an instantaneous transition within a death process that marks the instant at which an organism ceases to exist." .
 
@@ -1131,6 +1388,272 @@ for now."""@en ;
              rdfs:comment "All digitised BZK cards are digital versions of physical BZK Cards, but some BZK Cards may not have their scans in the database. For instance, the back of a BZK card may not have been scanned or linked to the front of the card."@en ;
              rdfs:label "digitised bzk card"@en ;
              skos:definition "A digitised BZK Card refers to a scanned version of the corresponding physical BZK card."@en .
+
+
+###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010125
+:BZK_0010125 rdf:type owl:Class ;
+             rdfs:subClassOf ontology:NFDI_0000229 ;
+             rdfs:label "lawyer role"@en ;
+             skos:definition "A role that is borne by a person who is qualified and authorized to practice law." .
+
+
+###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010128
+:BZK_0010128 rdf:type owl:Class ;
+             rdfs:subClassOf :BZK_0010140 ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty obo:IAO_0000136 ;
+                               owl:someValuesFrom ontology:NFDI_0000004
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty obo:RO_0002353 ;
+                               owl:someValuesFrom :BZK_0010131
+                             ] ;
+             obo:IAO_0000115 "A textual entity that expresses the place where a person was born." ;
+             rdfs:label "birthplace datum"@en .
+
+
+###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010129
+:BZK_0010129 rdf:type owl:Class ;
+             rdfs:subClassOf obo:IAO_0000300 ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty obo:IAO_0000136 ;
+                               owl:someValuesFrom ontology:NFDI_0000004
+                             ] ;
+             rdfs:label "marital status datum"@en .
+
+
+###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010131
+:BZK_0010131 rdf:type owl:Class ;
+             rdfs:subClassOf ontology:NFDI_0010030 ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty obo:RO_0002233 ;
+                               owl:someValuesFrom :BZK_0010011
+                             ] ;
+             rdfs:label "information extraction process"@en .
+
+
+###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010132
+:BZK_0010132 rdf:type owl:Class ;
+             rdfs:subClassOf ontology:NFDI_0010030 ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty obo:BFO_0000062 ;
+                               owl:someValuesFrom :BZK_0010131
+                             ] ;
+             rdfs:label "compensation office data postprocessing"@en .
+
+
+###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010133
+:BZK_0010133 rdf:type owl:Class ;
+             rdfs:subClassOf obo:IAO_0000300 ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty obo:IAO_0000136 ;
+                               owl:someValuesFrom [ owl:intersectionOf ( obo:OBI_0000245
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty obo:RO_0000087 ;
+                                                                           owl:someValuesFrom :BZK_0010001
+                                                                         ]
+                                                                       ) ;
+                                                    rdf:type owl:Class
+                                                  ]
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty obo:RO_0002353 ;
+                               owl:someValuesFrom :BZK_0010131
+                             ] ;
+             rdfs:comment "This class refers to textual entities representing the names of compensation offices recorded on BZK index cards."@en ;
+             rdfs:label "compensation office datum"@en .
+
+
+###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010134
+:BZK_0010134 rdf:type owl:Class ;
+             owl:equivalentClass [ rdf:type owl:Restriction ;
+                                   owl:onProperty obo:IAO_0000219 ;
+                                   owl:someValuesFrom [ owl:intersectionOf ( obo:OBI_0000245
+                                                                             [ rdf:type owl:Restriction ;
+                                                                               owl:onProperty obo:RO_0000087 ;
+                                                                               owl:someValuesFrom :BZK_0010135
+                                                                             ]
+                                                                           ) ;
+                                                        rdf:type owl:Class
+                                                      ]
+                                 ] ;
+             rdfs:subClassOf obo:IAO_0020000 ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty obo:IAO_0000219 ;
+                               owl:someValuesFrom [ owl:intersectionOf ( obo:OBI_0000245
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty obo:RO_0000087 ;
+                                                                           owl:someValuesFrom :BZK_0010135
+                                                                         ]
+                                                                       ) ;
+                                                    rdf:type owl:Class
+                                                  ]
+                             ] ;
+             rdfs:label "archive name"@en .
+
+
+###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010135
+:BZK_0010135 rdf:type owl:Class ;
+             rdfs:subClassOf ontology:NFDI_0000229 ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty obo:BFO_0000054 ;
+                               owl:someValuesFrom :BZK_0010136
+                             ] ;
+             rdfs:label "archive role"@en .
+
+
+###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010136
+:BZK_0010136 rdf:type owl:Class ;
+             rdfs:subClassOf obo:BFO_0000015 ;
+             rdfs:label "archiving"@en .
+
+
+###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010137
+:BZK_0010137 rdf:type owl:Class ;
+             rdfs:subClassOf ontology:NFDI_0010030 ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty obo:RO_0002233 ;
+                               owl:someValuesFrom :BZK_0010200
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty obo:RO_0002233 ;
+                               owl:someValuesFrom :BZK_0010201
+                             ] ;
+             rdfs:label "date data postprocessing"@en .
+
+
+###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010140
+:BZK_0010140 rdf:type owl:Class ;
+             rdfs:subClassOf obo:IAO_0000300 ;
+             rdfs:label "location datum"@en .
+
+
+###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010141
+:BZK_0010141 rdf:type owl:Class ;
+             rdfs:subClassOf ontology:NFDI_0010030 ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty obo:RO_0002233 ;
+                               owl:someValuesFrom obo:IAO_0000422
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty obo:RO_0002233 ;
+                               owl:someValuesFrom :BZK_0010128
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty obo:RO_0002233 ;
+                               owl:someValuesFrom :BZK_0010203
+                             ] ;
+             rdfs:label "location data postprocessing"@en .
+
+
+###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010142
+:BZK_0010142 rdf:type owl:Class ;
+             rdfs:subClassOf obo:IAO_0000300 ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty obo:IAO_0000136 ;
+                               owl:someValuesFrom [ owl:intersectionOf ( ontology:NFDI_0000004
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty obo:RO_0000087 ;
+                                                                           owl:someValuesFrom :BZK_0010002
+                                                                         ]
+                                                                       ) ;
+                                                    rdf:type owl:Class
+                                                  ]
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty obo:RO_0002353 ;
+                               owl:someValuesFrom :BZK_0010131
+                             ] ;
+             rdfs:label "heir datum"@en .
+
+
+###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010200
+:BZK_0010200 rdf:type owl:Class ;
+             rdfs:subClassOf :BZK_0010202 ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty obo:IAO_0000136 ;
+                               owl:someValuesFrom ontology:NFDI_0000004
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty obo:RO_0002353 ;
+                               owl:someValuesFrom :BZK_0010131
+                             ] ;
+             rdfs:label "date of birth datum"@en .
+
+
+###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010201
+:BZK_0010201 rdf:type owl:Class ;
+             rdfs:subClassOf :BZK_0010202 ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty obo:IAO_0000136 ;
+                               owl:someValuesFrom ontology:NFDI_0000004
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty obo:RO_0002353 ;
+                               owl:someValuesFrom :BZK_0010131
+                             ] ;
+             rdfs:label "date of death datum"@en .
+
+
+###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010202
+:BZK_0010202 rdf:type owl:Class ;
+             rdfs:subClassOf obo:IAO_0000300 ;
+             rdfs:label "date datum"@en .
+
+
+###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0010203
+:BZK_0010203 rdf:type owl:Class ;
+             rdfs:subClassOf :BZK_0010140 ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty obo:IAO_0000136 ;
+                               owl:someValuesFrom ontology:NFDI_0000004
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty obo:RO_0002353 ;
+                               owl:someValuesFrom :BZK_0010131
+                             ] ;
+             obo:IAO_0000115 "A textual entity that expresses the place where a person was died." ;
+             rdfs:label "deathplace datum"@en .
+
+
+###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0023010
+:BZK_0023010 rdf:type owl:Class ;
+             owl:equivalentClass [ owl:intersectionOf ( obo:BFO_0000203
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty [ owl:inverseOf obo:BFO_0000199
+                                                                         ] ;
+                                                          owl:someValuesFrom :BZK_0010008
+                                                        ]
+                                                      ) ;
+                                   rdf:type owl:Class
+                                 ] ;
+             rdfs:subClassOf obo:BFO_0000203 ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty [ owl:inverseOf obo:BFO_0000199
+                                              ] ;
+                               owl:someValuesFrom :BZK_0010008
+                             ] ;
+             rdfs:label "date of birth"@en .
+
+
+###  https://bzk.fiz-karlsruhe.de/ontology/BZK_0023012
+:BZK_0023012 rdf:type owl:Class ;
+             owl:equivalentClass [ owl:intersectionOf ( obo:BFO_0000203
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty [ owl:inverseOf obo:BFO_0000199
+                                                                         ] ;
+                                                          owl:someValuesFrom :BZK_0010009
+                                                        ]
+                                                      ) ;
+                                   rdf:type owl:Class
+                                 ] ;
+             rdfs:subClassOf obo:BFO_0000203 ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty [ owl:inverseOf obo:BFO_0000199
+                                              ] ;
+                               owl:someValuesFrom :BZK_0010009
+                             ] ;
+             rdfs:label "date of death"@en .
 
 
 ###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004
@@ -1191,7 +1714,19 @@ ontology:NFDI_0000102 rdf:type owl:Class ;
 
 ###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000106
 ontology:NFDI_0000106 rdf:type owl:Class ;
-                      rdfs:subClassOf ontology:NFDI_0000005 ;
+                      rdfs:subClassOf ontology:NFDI_0000005 ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty obo:BFO_0000183 ;
+                                        owl:someValuesFrom :BZK_0010008
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty obo:BFO_0000183 ;
+                                        owl:someValuesFrom :BZK_0010009
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty obo:RO_0002353 ;
+                                        owl:someValuesFrom :BZK_0010141
+                                      ] ;
                       rdfs:label "city"@en ;
                       skos:definition "A place that refers to a densely populated urban area."@en ;
                       skos:editorialNote "A city or a town where the thing is located."@en ;
@@ -1200,7 +1735,19 @@ ontology:NFDI_0000106 rdf:type owl:Class ;
 
 ###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000119
 ontology:NFDI_0000119 rdf:type owl:Class ;
-                      rdfs:subClassOf ontology:NFDI_0000005 ;
+                      rdfs:subClassOf ontology:NFDI_0000005 ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty obo:BFO_0000183 ;
+                                        owl:someValuesFrom :BZK_0010008
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty obo:BFO_0000183 ;
+                                        owl:someValuesFrom :BZK_0010009
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty obo:RO_0002353 ;
+                                        owl:someValuesFrom :BZK_0010141
+                                      ] ;
                       rdfs:label "country"@en ;
                       skos:definition "A place that refers to a defined geographical area distinguished by its territorial boundaries, governance structure, and sovereignty."@en ;
                       skos:editorialNote "A country where the thing is located."@en .
@@ -1229,12 +1776,40 @@ ontology:NFDI_0000229 rdf:type owl:Class ;
                       skos:definition "Role of an independent continuant that is realized through an agent's actions, enabling the agent to perform specific functions or achieve particular outcomes within a system or context."@en .
 
 
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001009
+ontology:NFDI_0001009 rdf:type owl:Class ;
+                      rdfs:subClassOf obo:IAO_0000578 ;
+                      obo:IAO_0000118 "Gemeinsame Normdatei"@de ,
+                                      "Integrated Authority File"@en ;
+                      obo:IAO_0000119 "https://www.dnb.de/EN/Professionell/Standardisierung/GND/gnd_node.html" ;
+                      rdfs:label "GND identifier"@en ;
+                      skos:definition "A centrally registered identifier that is issued by the German National Library. The Integrated Authority File (GND) is facilitates the collaborative use and administration of authority data. These authority data represent and describe entities, i.e. persons, corporate bodies, conferences and events, geographic entities, topics and works relating to cultural and academic collections."@en ;
+                      ontology:NFDI_0010013 "https://github.com/ISE-FIZKarlsruhe/nfdicore/issues/61" ;
+                      ontology:NFDI_0010015 "GND"@en .
+
+
 ###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0001041
 ontology:NFDI_0001041 rdf:type owl:Class ;
                       rdfs:subClassOf obo:IAO_0020000 ;
                       rdfs:isDefinedBy "http://purl.obolibrary.org/obo/IAO_0000646" ;
                       rdfs:label "postal code"@en ;
                       skos:definition "An identifier that denotes some postal delivery route, some aggregate of postal delivery routes or a geographical region and was created for the purpose of sorting and delivering mail." .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010028
+ontology:NFDI_0010028 rdf:type owl:Class ;
+                      rdfs:subClassOf obo:BFO_0000015 ;
+                      rdfs:label "data handling process"@en ;
+                      rdfs:seeAlso obo:T4FS_0000012 ;
+                      skos:definition "A process that involves the collection, organization, cleaning, analysis, storage, and sharing of data to ensure its accuracy, accessibility, and usefulness for decision-making, research, or other applications. Data handling encompasses all stages from raw data generation to its final visualization or publication." .
+
+
+###  https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010030
+ontology:NFDI_0010030 rdf:type owl:Class ;
+                      rdfs:subClassOf ontology:NFDI_0010028 ;
+                      rdfs:label "data processing process"@en ;
+                      rdfs:seeAlso obo:T4FS_0000044 ;
+                      skos:definition "A data handling process where raw data is cleaned, transformed, and analyzed to extract meaningful insights, patterns, or trends." .
 
 
 #################################################################
