@@ -32,6 +32,7 @@ Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0000002>))
 Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0000003>))
 Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0000006>))
 Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0000007>))
+Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0000021>))
 Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010000>))
 Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010001>))
 Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010002>))
@@ -47,14 +48,11 @@ Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010125>))
 Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010128>))
 Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010129>))
 Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010131>))
-Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010132>))
 Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010133>))
 Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010134>))
 Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010135>))
 Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010136>))
-Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010137>))
 Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010140>))
-Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010141>))
 Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010142>))
 Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010200>))
 Declaration(Class(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010201>))
@@ -183,6 +181,11 @@ AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_000000
 SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0000007> obo:IAO_0020017)
 SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0000007> ObjectSomeValuesFrom(obo:IAO_0000219 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004>))
 
+# Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000021> (bzk data postprocessing process)
+
+AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0000021> "bzk data postprocessing process"@de)
+SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0000021> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010030>)
+
 # Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010000> (compensation card indexing)
 
 AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010000> "compensation card indexing"@en)
@@ -224,7 +227,6 @@ AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_001000
 AnnotationAssertion(skos:definition <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010005> "A textual entity intended to identify a particular compensation office"@en)
 EquivalentClasses(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010005> ObjectSomeValuesFrom(obo:IAO_0000219 ObjectIntersectionOf(obo:OBI_0000245 ObjectSomeValuesFrom(obo:RO_0000087 <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010001>))))
 SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010005> obo:IAO_0000303)
-SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010005> ObjectSomeValuesFrom(obo:RO_0002353 <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010132>))
 
 # Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010006> (DEPRECATED last residential address)
 
@@ -283,17 +285,11 @@ AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_001012
 SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010129> obo:IAO_0000300)
 SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010129> ObjectSomeValuesFrom(obo:IAO_0000136 <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004>))
 
-# Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010131> (information extraction process)
+# Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010131> (bzk data extraction process)
 
-AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010131> "information extraction process"@en)
+AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010131> "bzk data extraction process"@en)
 SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010131> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010030>)
 SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010131> ObjectSomeValuesFrom(obo:RO_0002233 <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010011>))
-
-# Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010132> (compensation office data postprocessing)
-
-AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010132> "compensation office data postprocessing"@en)
-SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010132> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010030>)
-SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010132> ObjectSomeValuesFrom(obo:BFO_0000062 <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010131>))
 
 # Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010133> (compensation office datum)
 
@@ -320,25 +316,10 @@ SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010135> ObjectSomeValuesF
 AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010136> "archiving"@en)
 SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010136> obo:BFO_0000015)
 
-# Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010137> (date data postprocessing)
-
-AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010137> "date data postprocessing"@en)
-SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010137> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010030>)
-SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010137> ObjectSomeValuesFrom(obo:RO_0002233 <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010200>))
-SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010137> ObjectSomeValuesFrom(obo:RO_0002233 <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010201>))
-
 # Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010140> (location datum)
 
 AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010140> "location datum"@en)
 SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010140> obo:IAO_0000300)
-
-# Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010141> (location data postprocessing)
-
-AnnotationAssertion(rdfs:label <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010141> "location data postprocessing"@en)
-SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010141> <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0010030>)
-SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010141> ObjectSomeValuesFrom(obo:RO_0002233 obo:IAO_0000422))
-SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010141> ObjectSomeValuesFrom(obo:RO_0002233 <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010128>))
-SubClassOf(<https://bzk.fiz-karlsruhe.de/ontology/BZK_0010141> ObjectSomeValuesFrom(obo:RO_0002233 <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010203>))
 
 # Class: <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010142> (heir datum)
 
@@ -395,13 +376,11 @@ SubClassOf(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000004> ObjectSomeValue
 
 SubClassOf(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000106> ObjectSomeValuesFrom(obo:BFO_0000183 <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010008>))
 SubClassOf(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000106> ObjectSomeValuesFrom(obo:BFO_0000183 <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010009>))
-SubClassOf(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000106> ObjectSomeValuesFrom(obo:RO_0002353 <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010141>))
 
 # Class: <https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000119> (country)
 
 SubClassOf(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000119> ObjectSomeValuesFrom(obo:BFO_0000183 <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010008>))
 SubClassOf(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000119> ObjectSomeValuesFrom(obo:BFO_0000183 <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010009>))
-SubClassOf(<https://nfdi.fiz-karlsruhe.de/ontology/NFDI_0000119> ObjectSomeValuesFrom(obo:RO_0002353 <https://bzk.fiz-karlsruhe.de/ontology/BZK_0010141>))
 
 
 ############################
